@@ -6,14 +6,12 @@ import {
   Analysis,
   Book,
   Principle,
-  Streak,
   Suggestion,
   UserRec,
   createAnalysis,
   createDailyLog,
   getOrCreateUser,
   getPrinciple,
-  getStreak,
   listBooks,
   listSuggestions,
   setActiveBook,
@@ -80,7 +78,6 @@ export default function Home() {
   // `analysis` below, which also changes (to a possibly-older result) just
   // from switching books. Only a genuinely new reflection should auto-scroll.
   const [justSubmittedId, setJustSubmittedId] = useState<string | null>(null);
-  const [streak, setStreak] = useState<Streak | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   // null until the browser has been probed, so the flat fallback never flashes.
@@ -137,12 +134,6 @@ export default function Home() {
     bootstrap().catch((e) => setError(String(e)));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  useEffect(() => {
-    if (user && bookId) {
-      getStreak(user.user_id, bookId).then(setStreak).catch(() => setStreak(null));
-    }
-  }, [user, bookId]);
 
   // Any scroll-ish gesture retires the opening title and hands the shelf over
   // to the user. The canvas swallows wheel events itself, so this listens on
@@ -267,7 +258,6 @@ export default function Home() {
           });
         })
         .catch(() => {});
-      getStreak(activeUserId, activeBookId).then(setStreak).catch(() => {});
     } catch (e) {
       setError(String(e));
     } finally {
@@ -281,28 +271,27 @@ export default function Home() {
 
   const form = (
     <div className="ask-form">
-      {streak && (
-        <p className="ask-form__streak">
-          Streak {streak.current_streak_days}d · longest {streak.longest_streak_days}d
-        </p>
-      )}
-
       <label className="field">
         <span className="field__label">Category</span>
+        <p className="field__hint">What part of life this falls under.</p>
         <input
           value={category}
           onChange={(e) => setCategory(e.target.value)}
-          placeholder="work, relationships, health…"
+          placeholder="e.g. work, relationships, health, money…"
         />
       </label>
 
       <label className="field">
         <span className="field__label">What&apos;s happening?</span>
+        <p className="field__hint">
+          Describe the specific situation you want advice on — what happened, and how you reacted.
+          The more concrete, the more useful the reflection.
+        </p>
         <textarea
           rows={4}
           value={action}
           onChange={(e) => setAction(e.target.value)}
-          placeholder="Describe the situation in your own words."
+          placeholder={'e.g. "I skipped the gym again after work and felt guilty about it all evening."'}
         />
       </label>
 

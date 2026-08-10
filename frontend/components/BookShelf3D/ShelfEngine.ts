@@ -77,6 +77,13 @@ const desktopFocusZ = 1.66;
 const desktopFocusScale = 1.08;
 const mobileFocusZ = 1.4;
 const mobileFocusScale = 0.92;
+// Fraction of the viewport the mobile book-details sheet covers from the
+// bottom (must match .shelf-experience .book-details' mobile `height` in
+// globals.css) -- the focused book is framed to sit centered in whatever's
+// left uncovered above it, so it reads as a small 3D render stacked on top
+// of the advice section rather than getting camera-framed into the area the
+// sheet is about to cover.
+const mobilePanelCoverage = 0.6;
 const inspectionIdleLift = 0.014;
 const inspectionIdlePitch = THREE.MathUtils.degToRad(0.28);
 const inspectionIdleYaw = THREE.MathUtils.degToRad(0.48);
@@ -1116,15 +1123,17 @@ export class ShelfEngine {
       width <= 1020
         ? Math.min(compactDetailMaxWidth, width * compactDetailWidthRatio)
         : Math.min(desktopDetailMaxWidth, width * desktopDetailWidthRatio);
-    const focusDistance = isMobile ? 5.8 : 5.4;
-    const verticalHalfSpan =
-      Math.tan(THREE.MathUtils.degToRad(this.camera.fov * 0.5)) * focusDistance;
     const clampedProgress = clamp(progress, 0, 1);
     const horizontalOffset = isMobile
       ? 0
       : detailWidth * 0.5 * clampedProgress;
+    // Push the book up by whatever it takes to center it in the strip the
+    // bottom sheet leaves uncovered, in screen pixels directly -- not tied
+    // to a hand-tuned world-space constant, so it stays correct however
+    // tall mobilePanelCoverage's sheet ends up being.
+    const mobileVisibleTopFraction = 1 - mobilePanelCoverage;
     const verticalOffset = isMobile
-      ? (0.28 / verticalHalfSpan) * height * 0.5 * clampedProgress
+      ? (0.5 - mobileVisibleTopFraction / 2) * height * clampedProgress
       : 0;
 
     if (clampedProgress <= 0.001) {

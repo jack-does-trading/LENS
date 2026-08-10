@@ -277,6 +277,19 @@ button {
   transform: translateY(-16px);
 }
 
+/* The short one-line purpose statement, leading the fuller hero-copy__text
+   paragraph -- same wording as the persistent .lens-tagline that takes over
+   once the wordmark parks (see BookShelf3D.tsx), just styled to read as a
+   proper subtitle at hero scale. */
+.shelf-experience .hero-copy__tagline {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(17px, 1.5vw, 21px);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
 .shelf-experience .hero-copy__text {
   margin: 0;
   color: var(--ink-soft);
@@ -334,6 +347,7 @@ button {
   .shelf-experience .hero-copy,
   .shelf-experience .hero-scrim { transition-duration: 1ms; }
   .shelf-experience .hero-scroll__arrow { animation: none; }
+  .shelf-experience .mobile-drag-hint__arrow { animation: none; }
 }
 
 /* The ported layout assumes border-box; the surrounding page does not set it. */
@@ -611,6 +625,35 @@ button {
   background: currentColor;
 }
 
+/* Mobile's replacement for .input-hint -- desktop-only by default, see the
+   max-width: 760px block below for where it actually shows. */
+.shelf-experience .mobile-drag-hint {
+  display: none;
+}
+
+.shelf-experience .mobile-drag-hint__arrow {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  animation: lens-drag-nudge 1.6s ease-in-out infinite;
+}
+
+.shelf-experience .mobile-drag-hint__arrow--left {
+  transform: rotate(135deg);
+  animation-direction: reverse;
+}
+
+.shelf-experience .mobile-drag-hint__arrow--right {
+  transform: rotate(-45deg);
+}
+
+@keyframes lens-drag-nudge {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+
 .shelf-experience .book-details {
   position: absolute;
   z-index: 22;
@@ -777,6 +820,21 @@ button {
   color: var(--ink-soft, #666);
   font-style: normal;
   letter-spacing: 0.1em;
+}
+
+/* One line of plain-language guidance under a field's label, explaining
+   what to actually type there -- separate from the label itself (a terse
+   all-caps eyebrow) and from the placeholder (an example, gone the moment
+   you start typing). */
+.field__hint {
+  margin: -4px 0 8px;
+  color: var(--ink-soft, #666);
+  font-family: var(--serif, Georgia, serif);
+  font-size: 12px;
+  font-weight: 430;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-transform: none;
 }
 
 .shelf-experience .field input[type="text"],
@@ -1121,11 +1179,13 @@ button {
   bottom: 6px;
   margin: 0;
   text-align: center;
-  color: var(--ink);
+  /* Same ink as the rest of the page, but darker than --ink-soft's 0.62
+     alpha and lighter-weight than the old bold full-strength --ink -- reads
+     as a quiet credit line rather than competing with real UI copy. */
+  color: rgba(37, 35, 31, 0.78);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.04em;
-  opacity: 0.9;
   pointer-events: none;
 }
 
@@ -1134,9 +1194,9 @@ button {
 .site-footer--classic {
   margin: 2.5rem 0 0;
   text-align: center;
-  color: #3a3a3a;
+  color: rgba(58, 58, 58, 0.78);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.02em;
 }
 
@@ -1165,26 +1225,38 @@ button {
     );
   }
 
+  /* Kept deliberately compact and only lightly backed -- this used to run
+     ~150px tall with a fully opaque backdrop, blanking out a big slice of
+     the shelf right where a browsing thumb would expect to see book spines.
+     Smaller type + tighter spacing + a backdrop that never goes fully
+     opaque keeps the title legible while leaving the shelf visible through
+     and around it. */
   .shelf-experience .browse-caption {
     right: 0;
     bottom: 92px;
     left: 0;
     width: auto;
-    padding: 46px 18px 16px;
+    padding: 22px 18px 12px;
     background: linear-gradient(
       180deg,
       rgba(238, 232, 219, 0),
-      rgba(238, 232, 219, 0.96) 40px,
-      var(--paper) 58px
+      rgba(238, 232, 219, 0.85) 28px,
+      rgba(238, 232, 219, 0.85) 100%
     );
   }
 
   .shelf-experience .browse-caption::before { display: none; }
 
+  .shelf-experience .eyebrow { margin-bottom: 6px; }
+
   .shelf-experience .browse-caption h2 {
     max-width: 78vw;
-    font-size: clamp(28px, 9vw, 42px);
+    font-size: clamp(20px, 6.4vw, 30px);
   }
+
+  .shelf-experience .browse-caption__author { margin-top: 6px; font-size: 13px; }
+
+  .shelf-experience .inspect-button { margin-top: 12px; }
 
   .shelf-experience .shelf-arrow {
     top: auto;
@@ -1213,12 +1285,31 @@ button {
 
   .shelf-experience .input-hint { display: none; }
 
+  .shelf-experience .mobile-drag-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    color: var(--ink-soft);
+    font-size: 9px;
+    font-weight: 650;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
   .shelf-experience .book-details {
     top: auto;
     bottom: 0;
     width: 100%;
-    /* Tall enough to hold the form and a full reflection. */
-    height: 88%;
+    /* Leaves the top 40% of the screen uncovered so the focused book stays
+       visible above the sheet -- a small 3D render stacked on top of the
+       advice section, rather than the shelf disappearing entirely once a
+       book is open. Must match ShelfEngine.ts's mobilePanelCoverage, which
+       frames the book to sit centered in whatever this leaves uncovered.
+       book-details__copy scrolls internally, so the form + a full
+       reflection still fit, just with more scrolling than before. */
+    height: 60%;
     transform: translateY(100%);
   }
 

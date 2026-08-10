@@ -48,6 +48,20 @@ export default function BookShelf3D({
   const [status, setStatus] = useState("Preparing the shelf");
 
   const catalog = useMemo(() => toCatalog(books), [books]);
+  // `books` (and so `catalog`) gets a brand-new array reference whenever
+  // page.tsx's bootstrap() swaps the static fallback catalog for the live
+  // one -- even when it's the exact same set of books, just re-fetched. The
+  // engine below is expensive to rebuild and, worse, has no way to tell
+  // React "I just got torn down" -- a fresh engine silently starts back at
+  // mode "browse" without notifying the onMode callback, so if a rebuild
+  // happened while a book was open, React's mode/selectedIndex state stays
+  // stuck on the old "inspect"/"focusing" value forever: the panel (and its
+  // Back button) stays on screen, wired to a new engine that's already in
+  // "browse" mode and so just no-ops every returnToShelf() call. Keying the
+  // rebuild on the book IDs actually present -- not the array identity --
+  // means the common fallback-to-live swap (same books, new array) no
+  // longer rebuilds the engine at all, closing that window.
+  const catalogKey = useMemo(() => catalog.map((entry) => entry.id).join("|"), [catalog]);
   const activeBook = catalog[activeIndex];
   const selectedBook = selectedIndex === null ? null : catalog[selectedIndex];
   const isFocused = mode !== "browse";
@@ -89,8 +103,18 @@ export default function BookShelf3D({
       cancelled = true;
       engine?.dispose();
       engineRef.current = null;
+      // Belt-and-suspenders: if a rebuild ever does happen with a book open
+      // (a genuinely different catalog arriving mid-interaction), don't
+      // leave the panel stuck open against a fresh engine that doesn't know
+      // it's supposed to be focused on anything.
+      setMode("browse");
+      setSelectedIndex(null);
     };
-  }, [catalog]);
+    // catalog is intentionally omitted -- catalogKey is the real dependency
+    // (see comment above); catalog itself is read fresh from this closure
+    // each time catalogKey actually changes.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [catalogKey]);
 
   // Keep the shelf pointed at whatever the rest of the page considers active,
   // including the initial book restored from the user's saved preference.
@@ -101,7 +125,7 @@ export default function BookShelf3D({
     }
     // Only react to an externally driven book change.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [bookId, catalog]);
+  }, [bookId, catalogKey]);
 
   // Closes any open/inspecting book and hands the hero copy back -- the
   // wordmark's "return home" gesture.
@@ -149,17 +173,16 @@ export default function BookShelf3D({
         LENS
       </h1>
 
-      {/* Once the wordmark parks in the corner, the hero-copy paragraph below
-          (the one full explanation of what the app does) fades out with it --
-          so without this, nothing on screen says what Lens is for while
-          you're actually browsing the shelf. Only shown once parked; the
-          hero already covers this while hero is up, so showing both would
-          be redundant. */}
+      {/* Once the wordmark parks in the corner, the hero-copy section below
+          (which has its own copy of this same line, see hero-copy__tagline)
+          fades out with it -- so without this, nothing on screen says what
+          Lens is for while you're actually browsing the shelf. */}
       <p className="lens-tagline" aria-hidden={hero}>
         Get advice from your favourite books.
       </p>
 
       <section className="hero-copy" aria-hidden={!hero}>
+        <p className="hero-copy__tagline">Get advice from your favourite books.</p>
         <p className="hero-copy__text">
           Lens reads your day through the book you&apos;re actually reading. Pick a volume off the
           shelf, describe what&apos;s happening, and get a reflection grounded in that book&apos;s own
@@ -232,6 +255,15 @@ export default function BookShelf3D({
           <span>SCROLL</span>
           <i />
           <span>ARROW KEYS</span>
+        </div>
+        {/* Mobile-only stand-in for .input-hint above: vertical scroll is
+            spoken for (it dismisses the hero / scrolls panel content, not
+            the shelf), so touch browsing is drag-only -- without an
+            explicit hint, nothing on screen suggests that. */}
+        <div className="mobile-drag-hint" aria-hidden="true">
+          <span className="mobile-drag-hint__arrow mobile-drag-hint__arrow--left" />
+          <span>Swipe to browse</span>
+          <span className="mobile-drag-hint__arrow mobile-drag-hint__arrow--right" />
         </div>
       </nav>
 
