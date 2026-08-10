@@ -71,7 +71,7 @@ DEFAULT_GROQ_HOST = "https://api.groq.com/openai/v1"
 # rather than imported: this app and that CLI are deliberately kept fully
 # standalone from each other (architecture SS2/SS8).
 _DEFAULT_GROQ_REQUESTS_PER_MINUTE = 30
-_GROQ_MAX_429_RETRIES = 5
+_GROQ_MAX_RETRIES = 5
 _FALLBACK_BACKOFF_BASE_SECONDS = 2.0
 _FALLBACK_BACKOFF_MAX_SECONDS = 60.0
 
@@ -240,7 +240,7 @@ class GroqLLMClient:
     def generate(self, prompt: str, *, timeout: float | None = None) -> str:
         request_timeout = timeout or self._timeout
 
-        for attempt in range(1, _GROQ_MAX_429_RETRIES + 1):
+        for attempt in range(1, _GROQ_MAX_RETRIES + 1):
             self._throttle()
             self._last_request_at = time.monotonic()
             request = urllib.request.Request(
@@ -250,11 +250,29 @@ class GroqLLMClient:
                         "model": self._model,
                         "messages": [{"role": "user", "content": prompt}],
                         "temperature": self._temperature,
+                        # Belt-and-suspenders alongside app/json_extraction.py's
+                        # fence-stripping: unlike OllamaLLMClient's forced
+                        # format="json", Groq has no default JSON guarantee, so
+                        # ask for it explicitly to cut down how often the model
+                        # wraps its answer in prose/markdown in the first place.
+                        # Every prompt this client is used for already asks for
+                        # "valid JSON only" in its own text, which both
+                        # OpenAI's and Groq's json_object mode require.
+                        "response_format": {"type": "json_object"},
                     }
                 ).encode("utf-8"),
                 headers={
                     "Content-Type": "application/json",
                     "Authorization": f"Bearer {self._api_key}",
+                    # Groq's Cloudflare front end 403s (error code 1010,
+                    # "browser signature" block) on urllib's default
+                    # "Python-urllib/x.y" User-Agent -- every single request,
+                    # not just some, confirmed by curl to the same endpoint
+                    # succeeding with an identical body/auth. Not a rate
+                    # limit and not retried above, so without this header
+                    # every Groq call fails outright and every analysis
+                    # silently falls back to the template.
+                    "User-Agent": "lens-backend/1.0",
                 },
                 method="POST",
             )
@@ -264,16 +282,24 @@ class GroqLLMClient:
                     payload = json.loads(response.read().decode("utf-8"))
             except urllib.error.HTTPError as exc:
                 self._update_rate_limit_state(exc.headers)
-                if exc.code == 429 and attempt < _GROQ_MAX_429_RETRIES:
+                # 429 (rate limit) and 5xx (transient server-side failure --
+                # Groq's free tier returns 503s under load) both get the same
+                # retry treatment; a 5xx is just as likely to succeed on the
+                # next attempt as a 429 is, and neither is the caller's fault.
+                # Other 4xx codes (401 bad key, 400 bad request, 404 unknown
+                # model) are never transient, so those still raise immediately.
+                is_retryable = exc.code == 429 or 500 <= exc.code < 600
+                if is_retryable and attempt < _GROQ_MAX_RETRIES:
                     retry_after = _parse_duration_header(exc.headers, "retry-after")
                     if retry_after is None:
                         retry_after = _fallback_backoff_seconds(attempt)
                     # Silent otherwise: without this, a rate-limit backoff and
                     # a genuine hang look identical from the outside.
                     logger.warning(
-                        "Groq rate-limited (429, attempt %d/%d): retrying in %.0fs",
+                        "Groq request failed (HTTP %d, attempt %d/%d): retrying in %.0fs",
+                        exc.code,
                         attempt,
-                        _GROQ_MAX_429_RETRIES,
+                        _GROQ_MAX_RETRIES,
                         retry_after,
                     )
                     time.sleep(retry_after)
@@ -285,14 +311,14 @@ class GroqLLMClient:
                 # connection reset, read timeout) -- no response, so no
                 # Retry-After to honor. Retried the same way as a
                 # missing-Retry-After 429, same attempt budget.
-                if attempt >= _GROQ_MAX_429_RETRIES:
+                if attempt >= _GROQ_MAX_RETRIES:
                     raise LLMError(f"Groq request failed: {exc}") from exc
                 backoff = _fallback_backoff_seconds(attempt)
                 logger.warning(
                     "Groq request failed (%s, attempt %d/%d): retrying in %.0fs",
                     exc,
                     attempt,
-                    _GROQ_MAX_429_RETRIES,
+                    _GROQ_MAX_RETRIES,
                     backoff,
                 )
                 time.sleep(backoff)

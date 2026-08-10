@@ -79,6 +79,19 @@ def test_verify_analysis_rejects_overlength_quote() -> None:
     assert any("quote" in issue for issue in result.issues)
 
 
+def test_verify_analysis_passes_entailment_wrapped_in_markdown_fences() -> None:
+    # Regression test: unlike Ollama (forced format="json"), Groq routinely
+    # wraps its JSON answer in ```json fences or a sentence of prose. A bare
+    # json.loads(raw) used to fail-closed on every single Groq response,
+    # forcing every analysis to the non-LLM fallback regardless of whether
+    # the model's verdict was actually PASS. See app/json_extraction.py.
+    client = FakeLLMClient(responses=['Here is my verdict:\n```json\n{"verdict": "PASS"}\n```'])
+    result = verify_analysis(
+        client, "Some reflection.", [_suggestion()], [_principle()]
+    )
+    assert result.passed
+
+
 def test_verify_analysis_fails_closed_on_unparseable_entailment_response() -> None:
     client = FakeLLMClient(responses=["I'm not sure, maybe?"])
     result = verify_analysis(

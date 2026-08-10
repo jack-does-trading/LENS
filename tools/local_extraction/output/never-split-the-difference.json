@@ -231,7 +231,7 @@
       "review_status": "pending_review"
     },
     {
-      "principle_id": "avoid-assumptions",
+      "principle_id": "never-split-the-difference-avoid-assumptions",
       "book_id": "never-split-the-difference",
       "name": "Avoid Assumptions",
       "summary": "View assumptions as hypotheses and test them rigorously during negotiation.",

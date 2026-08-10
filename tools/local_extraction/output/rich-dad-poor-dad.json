@@ -233,7 +233,7 @@
       "review_status": "pending_review"
     },
     {
-      "principle_id": "the-importance-of-self-responsibility",
+      "principle_id": "rich-dad-poor-dad-the-importance-of-self-responsibility",
       "book_id": "rich-dad-poor-dad",
       "name": "The Importance of Self-Responsibility",
       "summary": "Rich dad taught that people are responsible for their own success or failure. Taking ownership of one's life can lead to financial freedom and security.",
@@ -298,7 +298,7 @@
       "review_status": "pending_review"
     },
     {
-      "principle_id": "master-your-emotions",
+      "principle_id": "rich-dad-poor-dad-master-your-emotions",
       "book_id": "rich-dad-poor-dad",
       "name": "Master Your Emotions",
       "summary": "Emotions drive human behavior, but can be managed to achieve long-term goals. Acknowledging and understanding emotions can help individuals use them to their advantage.",
@@ -1163,7 +1163,7 @@
       "review_status": "pending_review"
     },
     {
-      "principle_id": "start-small",
+      "principle_id": "rich-dad-poor-dad-start-small",
       "book_id": "rich-dad-poor-dad",
       "name": "Start Small",
       "summary": "Starting small is essential in achieving financial success. As Rich Dad says, 'It takes only a few dollars to start and grow it into something big.'",

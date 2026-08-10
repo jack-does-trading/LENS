@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 
+from app.json_extraction import JSONExtractionError, extract_json_object
 from app.llm import LLMClient
 from app.models import Book, Principle
 
@@ -130,28 +131,11 @@ def build_synthesis_prompt(
     )
 
 
-def _extract_json_object(raw: str) -> str:
-    """Strip markdown fences / stray prose around a single JSON object via
-    balanced-brace scanning. Deliberately does not repair malformed JSON
-    syntax inside the object -- same boundary tools/local_extraction draws.
-    """
-    start = raw.find("{")
-    if start == -1:
-        raise SynthesisError("no JSON object found in model response")
-    depth = 0
-    for i in range(start, len(raw)):
-        if raw[i] == "{":
-            depth += 1
-        elif raw[i] == "}":
-            depth -= 1
-            if depth == 0:
-                return raw[start : i + 1]
-    raise SynthesisError("unbalanced braces in model response")
-
-
 def parse_synthesis_response(raw: str) -> dict:
     try:
-        payload = json.loads(_extract_json_object(raw))
+        payload = json.loads(extract_json_object(raw))
+    except JSONExtractionError as exc:
+        raise SynthesisError(str(exc)) from exc
     except json.JSONDecodeError as exc:
         raise SynthesisError(f"model response was not valid JSON: {exc}") from exc
 

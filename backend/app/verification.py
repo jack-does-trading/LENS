@@ -5,6 +5,7 @@ import re
 from dataclasses import dataclass, field
 
 from app.constraints import MAX_QUOTE_WORDS, MAX_QUOTES_PER_PRINCIPLE, count_words, find_quotes
+from app.json_extraction import JSONExtractionError, extract_json_object
 from app.llm import LLMClient
 from app.models import Principle
 
@@ -109,11 +110,16 @@ def _entailment_passes(client: LLMClient, reflection: str, suggestions: list[dic
     # API key check elsewhere in this app. A plain "PASS"/"FAIL" word (no
     # JSON) used to be accepted here, but forcing the same structured-JSON
     # shape the model already has to hit for synthesis is both more reliable
-    # (Ollama's format="json" mode applies to every call, see app/llm.py)
     # and removes the ambiguity of substring-matching "PASS" in free text.
+    # extract_json_object strips markdown fences/prose first -- Ollama's
+    # format="json" mode makes that a no-op there, but GroqLLMClient has no
+    # such guarantee, so a bare json.loads(raw) used to fail-closed on
+    # *every* Groq response and silently force every analysis to the
+    # fallback template. Same extraction app/synthesis.py's Step B parse
+    # already relies on for the same reason.
     try:
-        verdict = json.loads(raw).get("verdict")
-    except (json.JSONDecodeError, AttributeError):
+        verdict = json.loads(extract_json_object(raw)).get("verdict")
+    except (JSONExtractionError, json.JSONDecodeError, AttributeError):
         return False
     return isinstance(verdict, str) and verdict.strip().upper() == "PASS"
 

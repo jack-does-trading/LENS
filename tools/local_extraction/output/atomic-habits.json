@@ -1211,7 +1211,7 @@
       "review_status": "pending_review"
     },
     {
-      "principle_id": "start-small",
+      "principle_id": "atomic-habits-start-small",
       "book_id": "atomic-habits",
       "name": "Start Small",
       "summary": "Begin with tiny, manageable changes to build momentum and create lasting habits.",

@@ -86,6 +86,19 @@ def test_groq_client_sends_bearer_auth_and_model() -> None:
     assert body["messages"] == [{"role": "user", "content": "hello"}]
 
 
+def test_groq_client_requests_json_object_mode() -> None:
+    # Unlike OllamaLLMClient's forced format="json", Groq has no default
+    # JSON guarantee -- request it explicitly (see app/llm.py's comment on
+    # this, and app/json_extraction.py for the parsing-side half of the fix).
+    client = GroqLLMClient(model="m", api_key="k")
+    with patch("app.llm.urllib.request.urlopen") as mock_urlopen:
+        mock_urlopen.return_value = _chat_response("ok")
+        client.generate("hello")
+    request = mock_urlopen.call_args.args[0]
+    body = json_module.loads(request.data.decode("utf-8"))
+    assert body["response_format"] == {"type": "json_object"}
+
+
 def test_groq_client_throttles_between_calls() -> None:
     client = GroqLLMClient(model="m", api_key="k", requests_per_minute=30)
     with (
@@ -146,6 +159,34 @@ def test_groq_client_raises_after_exhausting_429_retries() -> None:
         mock_urlopen.side_effect = [_http_error(429) for _ in range(10)]
         with pytest.raises(LLMError, match="429"):
             client.generate("prompt")
+
+
+def test_groq_client_retries_on_503_then_succeeds() -> None:
+    # Groq's free tier returns transient 5xx under load -- treated the same
+    # as a 429, not raised immediately like other 4xx codes are.
+    client = GroqLLMClient(model="m", api_key="k")
+    with (
+        patch("app.llm.urllib.request.urlopen") as mock_urlopen,
+        patch("app.llm.time.sleep") as mock_sleep,
+        patch("app.llm.time.monotonic", side_effect=[0.0, 100.0, 100.0]),
+        patch("app.llm.random.uniform", return_value=0.5),
+    ):
+        mock_urlopen.side_effect = [_http_error(503), _chat_response("ok")]
+        result = client.generate("prompt")
+    assert result == "ok"
+    mock_sleep.assert_called_once_with(pytest.approx(2.5))
+
+
+def test_groq_client_raises_immediately_on_non_retryable_4xx() -> None:
+    client = GroqLLMClient(model="m", api_key="k")
+    with (
+        patch("app.llm.urllib.request.urlopen") as mock_urlopen,
+        patch("app.llm.time.sleep") as mock_sleep,
+    ):
+        mock_urlopen.side_effect = [_http_error(401, body=b'{"error": "bad key"}')]
+        with pytest.raises(LLMError, match="401"):
+            client.generate("prompt")
+    mock_sleep.assert_not_called()
 
 
 def test_groq_client_retries_on_network_error_then_succeeds() -> None:

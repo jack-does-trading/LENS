@@ -399,7 +399,7 @@ export default function Home() {
 
       {analysis.verification_status === "fallback_used" && (
         <p className="muted">
-          (The local model couldn&apos;t produce a personalized reflection that passed grounding checks today, so
+          (The AI model couldn&apos;t produce a personalized reflection that passed grounding checks today, so
           this is assembled directly from the book&apos;s own reviewed text instead of generated freely.)
         </p>
       )}
