@@ -17,7 +17,6 @@ import {
   listBooks,
   listSuggestions,
   setActiveBook,
-  updateSuggestion,
 } from "./api";
 import { BOOK_CATALOG_FALLBACK } from "./bookCatalogFallback";
 
@@ -269,11 +268,6 @@ export default function Home() {
         })
         .catch(() => {});
       getStreak(activeUserId, activeBookId).then(setStreak).catch(() => {});
-
-      // Reset the form so the next ask reads as a new, unrelated situation.
-      setAction("");
-      setCategory("");
-      setMood(3);
     } catch (e) {
       setError(String(e));
     } finally {
@@ -281,21 +275,6 @@ export default function Home() {
       setWaking(false);
       setLoading(false);
     }
-  }
-
-  async function markSuggestion(id: string, status: "done" | "skipped") {
-    const updated = await updateSuggestion(id, status);
-    setResultsByBook((prev) => {
-      const existing = bookId ? prev[bookId] : undefined;
-      if (!existing) return prev;
-      return {
-        ...prev,
-        [bookId]: {
-          ...existing,
-          suggestions: existing.suggestions.map((s) => (s.suggestion_id === id ? updated : s)),
-        },
-      };
-    });
   }
 
   const quote = LOADING_QUOTES[quoteIndex];
@@ -406,18 +385,10 @@ export default function Home() {
 
       <p className="eyebrow eyebrow--tips">TOP 3 TIPS</p>
       {suggestions.slice(0, 3).map((s) => (
-        <div key={s.suggestion_id} className={`suggestion ${s.status === "done" ? "done" : ""}`}>
+        <div key={s.suggestion_id} className="suggestion">
           <div className="suggestion-body">
             <strong>{s.text}</strong>
             <p className="muted">{s.explanation}</p>
-          </div>
-          <div className="suggestion-actions">
-            <button onClick={() => markSuggestion(s.suggestion_id, "done")} disabled={s.status !== "pending"}>
-              Done
-            </button>
-            <button onClick={() => markSuggestion(s.suggestion_id, "skipped")} disabled={s.status !== "pending"}>
-              Skip
-            </button>
           </div>
         </div>
       ))}

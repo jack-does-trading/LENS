@@ -149,6 +149,16 @@ export default function BookShelf3D({
         LENS
       </h1>
 
+      {/* Once the wordmark parks in the corner, the hero-copy paragraph below
+          (the one full explanation of what the app does) fades out with it --
+          so without this, nothing on screen says what Lens is for while
+          you're actually browsing the shelf. Only shown once parked; the
+          hero already covers this while hero is up, so showing both would
+          be redundant. */}
+      <p className="lens-tagline" aria-hidden={hero}>
+        Get advice from your favourite books.
+      </p>
+
       <section className="hero-copy" aria-hidden={!hero}>
         <p className="hero-copy__text">
           Lens reads your day through the book you&apos;re actually reading. Pick a volume off the
