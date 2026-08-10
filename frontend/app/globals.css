@@ -905,6 +905,17 @@ button {
   text-transform: uppercase;
 }
 
+/* Replaces the rotating quote specifically while handleSubmit is waiting
+   on a cold Render instance to wake up -- same slot, different message, so
+   it doesn't read as a second, competing loading state. */
+.advice-loading__waking {
+  margin: 16px 0 0;
+  color: var(--ink-soft, #666);
+  font-size: 13px;
+  line-height: 1.45;
+  animation: lens-quote-in 620ms ease both;
+}
+
 @keyframes lens-quote-in {
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }

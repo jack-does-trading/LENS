@@ -19,6 +19,7 @@ import {
   setActiveBook,
   updateSuggestion,
 } from "./api";
+import { BOOK_CATALOG_FALLBACK } from "./bookCatalogFallback";
 
 // WebGL only exists in the browser, so the shelf never renders on the server.
 const BookShelf3D = dynamic(() => import("@/components/BookShelf3D/BookShelf3D"), {
@@ -65,7 +66,11 @@ function supportsWebGL() {
 
 export default function Home() {
   const [user, setUser] = useState<UserRec | null>(null);
-  const [books, setBooks] = useState<Book[]>([]);
+  // Starts as a real snapshot of the reviewed catalog (not placeholder
+  // data) so the shelf is explorable immediately, before the backend has
+  // answered at all -- see bookCatalogFallback.ts and Architecture.md's
+  // "Optimistic shelf render" addendum.
+  const [books, setBooks] = useState<Book[]>(BOOK_CATALOG_FALLBACK);
   const [bookId, setBookId] = useState("");
   const [category, setCategory] = useState("");
   const [action, setAction] = useState("");
@@ -83,53 +88,55 @@ export default function Home() {
   const [webglReady, setWebglReady] = useState<boolean | null>(null);
   const [heroDismissed, setHeroDismissed] = useState(false);
   const [quoteIndex, setQuoteIndex] = useState(0);
-  // Distinguishes "still doing the very first books fetch" from "fetch
-  // finished and there are genuinely zero reviewed books" -- without this,
-  // both looked identical (books.length === 0) and a Render free-tier cold
-  // start (backend asleep, ~30-60s to wake) read as a broken/empty app
-  // rather than a slow-loading one.
-  const [booksLoaded, setBooksLoaded] = useState(false);
-  // Flips true only if the initial fetch is still pending a few seconds in
-  // -- a warm backend responds in well under that, so seeing this means the
-  // wait is almost certainly Render waking the free-tier instance up.
+  // True once the live user + book list have actually loaded, replacing
+  // the static fallback snapshot above. Exploring the shelf never waits on
+  // this -- only an action that needs a real backend round-trip does (see
+  // handleSubmit), and only if it's attempted before this flips.
+  const [backendReady, setBackendReady] = useState(false);
+  // Shown only while something is actively waiting on the backend and it's
+  // taking long enough to suggest a cold Render free-tier instance waking
+  // up (~30-60s) rather than a normal request. Set by handleSubmit, not by
+  // the silent background bootstrap -- there's nothing on-screen to attach
+  // a "waking up" message to while the user is just browsing the shelf.
   const [waking, setWaking] = useState(false);
 
   const resultRef = useRef<HTMLDivElement>(null);
+  // Dedupes the user+books fetch: the background kick-off on mount and a
+  // handleSubmit that fires before it's resolved both await the SAME
+  // in-flight request rather than firing two.
+  const bootstrapRef = useRef<Promise<{ user: UserRec; books: Book[] }> | null>(null);
 
   const currentResult = bookId ? resultsByBook[bookId] : undefined;
   const analysis = currentResult?.analysis ?? null;
   const relatedPrinciples = currentResult?.relatedPrinciples ?? [];
   const suggestions = currentResult?.suggestions ?? [];
 
+  function bootstrap(): Promise<{ user: UserRec; books: Book[] }> {
+    if (!bootstrapRef.current) {
+      bootstrapRef.current = (async () => {
+        const u = await getOrCreateUser();
+        const allBooks = await listBooks();
+        const reviewed = allBooks.filter((b) => b.review_status === "human_reviewed");
+        setUser(u);
+        setBooks(reviewed);
+        setBackendReady(true);
+        // Preserve whatever the user already picked while exploring the
+        // fallback shelf -- only default it if nothing's been chosen yet.
+        setBookId((prev) => prev || u.active_book_id || reviewed[0]?.book_id || "");
+        return { user: u, books: reviewed };
+      })();
+    }
+    return bootstrapRef.current;
+  }
+
   useEffect(() => setWebglReady(supportsWebGL()), []);
 
+  // Fires the instant the page loads, in the background -- gives Render's
+  // free-tier instance the maximum possible head start on waking up before
+  // the user finishes exploring and actually asks for advice.
   useEffect(() => {
-    let settled = false;
-    // A warm backend answers well under this; only a cold Render instance
-    // (or a genuine problem) takes long enough to hit it.
-    const wakeTimer = setTimeout(() => {
-      if (!settled) setWaking(true);
-    }, 4000);
-    (async () => {
-      const u = await getOrCreateUser();
-      setUser(u);
-      const allBooks = await listBooks();
-      const reviewed = allBooks.filter((b) => b.review_status === "human_reviewed");
-      setBooks(reviewed);
-      const initialBookId = u.active_book_id || reviewed[0]?.book_id || "";
-      setBookId(initialBookId);
-    })()
-      .catch((e) => setError(String(e)))
-      .finally(() => {
-        settled = true;
-        clearTimeout(wakeTimer);
-        setWaking(false);
-        setBooksLoaded(true);
-      });
-    return () => {
-      settled = true;
-      clearTimeout(wakeTimer);
-    };
+    bootstrap().catch((e) => setError(String(e)));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -200,7 +207,7 @@ export default function Home() {
   }
 
   async function handleSubmit() {
-    if (!user || !bookId || !action.trim()) return;
+    if (!bookId || !action.trim()) return;
     // Captured so a book switch mid-request can't misfile the result under
     // whatever book happens to be selected by the time it comes back.
     const activeBookId = bookId;
@@ -215,14 +222,27 @@ export default function Home() {
       delete next[activeBookId];
       return next;
     });
+
+    let wakeTimer: ReturnType<typeof setTimeout> | null = null;
     try {
+      // The user explored the shelf off the static fallback catalog faster
+      // than the backend answered -- this is the one action that actually
+      // needs it, so wait here (and only here) for the same in-flight
+      // bootstrap the mount effect already kicked off.
+      let activeUserId = user?.user_id;
+      if (!activeUserId) {
+        wakeTimer = setTimeout(() => setWaking(true), 4000);
+        const bootstrapResult = await bootstrap();
+        activeUserId = bootstrapResult.user.user_id;
+      }
+
       const now = new Date();
       // Each ask is its own independent situation -- a fresh daily_logs row
       // and its own analysis every time, never merged with earlier asks the
       // same day (daily_logs no longer has a per-day uniqueness constraint,
       // see migration 006).
       const log = await createDailyLog({
-        user_id: user.user_id,
+        user_id: activeUserId,
         date: now.toISOString().slice(0, 10),
         chosen_book_id: activeBookId,
         entries: [{ time: now.toTimeString().slice(0, 5), action, category: category || "general" }],
@@ -248,7 +268,7 @@ export default function Home() {
           });
         })
         .catch(() => {});
-      getStreak(user.user_id, activeBookId).then(setStreak).catch(() => {});
+      getStreak(activeUserId, activeBookId).then(setStreak).catch(() => {});
 
       // Reset the form so the next ask reads as a new, unrelated situation.
       setAction("");
@@ -257,6 +277,8 @@ export default function Home() {
     } catch (e) {
       setError(String(e));
     } finally {
+      if (wakeTimer) clearTimeout(wakeTimer);
+      setWaking(false);
       setLoading(false);
     }
   }
@@ -334,10 +356,16 @@ export default function Home() {
           <div className="advice-loading__bar">
             <span />
           </div>
-          <blockquote key={quoteIndex} className="advice-loading__quote">
-            {quote.text}
-            {quote.by && <cite>{quote.by}</cite>}
-          </blockquote>
+          {waking ? (
+            <p className="advice-loading__waking">
+              Waking up the server — this can take up to a minute on the free tier…
+            </p>
+          ) : (
+            <blockquote key={quoteIndex} className="advice-loading__quote">
+              {quote.text}
+              {quote.by && <cite>{quote.by}</cite>}
+            </blockquote>
+          )}
         </div>
       ) : (
         <button type="button" className="advice-button" onClick={handleSubmit} disabled={!action.trim()}>
@@ -405,14 +433,7 @@ export default function Home() {
         <h1>Lens</h1>
         <p className="muted">Read your day through the book you&apos;re reading.</p>
 
-        {!booksLoaded && !error && (
-          <p className="muted">
-            {waking
-              ? "Waking up the server — this can take up to a minute on the free tier…"
-              : "Loading your shelf…"}
-          </p>
-        )}
-        {booksLoaded && books.length === 0 && !error && (
+        {backendReady && books.length === 0 && !error && (
           <p className="muted">No reviewed books available yet.</p>
         )}
 
@@ -456,12 +477,7 @@ export default function Home() {
       ) : (
         <div className="stage-empty">
           <h1 className="stage-empty__mark">LENS</h1>
-          <p className="muted">
-            {error ||
-              (waking
-                ? "Waking up the server — this can take up to a minute on the free tier…"
-                : "Pulling your shelf together…")}
-          </p>
+          <p className="muted">{error || "No reviewed books available yet."}</p>
         </div>
       )}
 

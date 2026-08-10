@@ -1,0 +1,44 @@
+# Render Blueprint (https://render.com/docs/blueprint-spec) for the Lens
+# FastAPI backend. The frontend (Next.js) is deployed separately on Vercel
+# -- Render only hosts this one service.
+#
+# First-time setup: push this repo to GitHub, then in the Render dashboard
+# choose "New +" -> "Blueprint" and point it at the repo. Render reads this
+# file and creates the service below; you still need to fill in the secret
+# env vars marked `sync: false` yourself (Render won't invent them).
+services:
+  - type: web
+    name: lens-backend
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: "pip install -r requirements.txt && alembic upgrade head"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      # --- Secrets: set these in the Render dashboard, not here ------------
+      - key: DATABASE_URL
+        sync: false # Supabase connection string, see deployment notes
+      - key: VOYAGE_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: INGESTION_API_KEY
+        sync: false # any long random string you generate yourself
+      # --- Non-secret config -------------------------------------------
+      - key: LLM_PROVIDER
+        value: groq
+      - key: GROQ_MODEL
+        value: llama-3.3-70b-versatile
+      - key: VOYAGE_MODEL
+        value: voyage-3
+      - key: EMBEDDING_DIMENSION
+        value: "1024"
+      # Update once the Vercel frontend URL is known (see deployment notes) --
+      # a placeholder here would silently block every request with a CORS
+      # error, so this is deliberately left for you to fill in rather than
+      # guessed.
+      - key: CORS_ALLOW_ORIGINS
+        sync: false

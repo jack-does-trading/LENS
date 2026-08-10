@@ -1,0 +1,55 @@
+name: CI
+
+# Runs the real test suites on every push and PR. Deployment itself is
+# handled natively by Vercel and Render's own GitHub integrations (both
+# redeploy automatically on a push to main once the repo is connected in
+# their dashboards) -- this workflow's job is to make sure main never gets
+# broken code, not to trigger the deploy. See docs/DEPLOYMENT.md for the
+# optional test-gated-deploy variant if you'd rather Actions own that too.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend-tests:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: lens
+          POSTGRES_PASSWORD: lens
+          POSTGRES_DB: lens
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U lens -d lens"
+          --health-interval 2s
+          --health-timeout 5s
+          --health-retries 10
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q
+
+  frontend-checks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - run: npm run build
