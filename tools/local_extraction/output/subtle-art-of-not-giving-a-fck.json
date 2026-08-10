@@ -1,0 +1,2681 @@
+{
+  "book": {
+    "book_id": "subtle-art-of-not-giving-a-fck",
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "core_thesis": "Life's purpose is not solely focused on achieving happiness, but rather on living with what we have and accepting the downsides. By giving up attachment to certain outcomes or expectations, we can simplify our lives and focus on what truly matters. This requires taking responsibility for our choices, accepting failure as a necessary part of growth, and recognizing that pain and loss are inevitable parts of life. By embracing uncertainty, imperfection, and vulnerability, we can develop a greater sense of self-worth and live more authentic lives. Ultimately, the key to happiness lies not in achieving greatness, but in living with intention and purpose.",
+    "tone": "pragmatic",
+    "tracked_metrics": [],
+    "review_status": "pending_review",
+    "extraction_method": "local_model",
+    "version": 1
+  },
+  "principles": [
+    {
+      "principle_id": "the-point-of-life-is-not-happiness",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Point of Life Is Not Happiness",
+      "summary": "Life's purpose is not solely focused on achieving happiness. Happiness often stems from solving problems and overcoming challenges. As the author notes, 'Happiness Comes from Solving Problems'.",
+      "source_chapter": "Contents",
+      "applies_to_tags": [
+        "happiness",
+        "problem-solving"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "emotions-are-not-the-ultimate-guide",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Emotions Are Not the Ultimate Guide",
+      "summary": "Emotions can be misleading and should not be the sole basis for decision-making. The author suggests that 'Emotions Are Overrated'.",
+      "source_chapter": "Contents",
+      "applies_to_tags": [
+        "emotional-intelligence",
+        "decision-making"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "you-are-always-responsible-for-your-choices",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "You Are Always Responsible for Your Choices",
+      "summary": "Individuals have the power to choose their struggles and are responsible for the consequences of those choices. The author emphasizes that 'There Is No \u201cHow\u201d'.",
+      "source_chapter": "Contents",
+      "applies_to_tags": [
+        "personal-responsibility",
+        "choice"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "certainty-can-be-a-trap",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Certainty Can Be a Trap",
+      "summary": "Pure certainty can be a hindrance to growth and understanding. The author warns of the dangers of 'Pure Certainty' and encourages readers to be more open-minded.",
+      "source_chapter": "Contents",
+      "applies_to_tags": [
+        "open-mindedness",
+        "critical-thinking"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "failure-is-a-necessary-part-of-growth",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Failure Is a Necessary Part of Growth",
+      "summary": "Failure is an essential component of the learning and growth process. The author suggests that 'Pain Is Part of the Process' and that embracing failure can lead to progress.",
+      "source_chapter": "Contents",
+      "applies_to_tags": [
+        "resilience",
+        "growth-mindset"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "you-must-learn-to-say-no",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "You Must Learn to Say No",
+      "summary": "Setting boundaries and learning to say no is crucial for maintaining one's identity and values. The author emphasizes the importance of 'Boundaries' in building trust and freedom.",
+      "source_chapter": "Contents",
+      "applies_to_tags": [
+        "boundaries",
+        "self-care"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-try-to-overcome-your-shortcomings",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Don't Try to Overcome Your Shortcomings",
+      "summary": "Instead of trying to overcome your flaws, accept and be honest about them. Charles Bukowski's success came from embracing his failures and writing about them. As he said, 'I have decided to starve.'",
+      "source_chapter": "CHAPTER 1: Don\u2019t Try",
+      "applies_to_tags": [
+        "self-acceptance",
+        "honesty"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-what-you-are-not-what-you-lack",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Focus on What You Are, Not What You Lack",
+      "summary": "Conventional life advice often focuses on what you lack, emphasizing your shortcomings and failures. Instead, focus on what you are and what you have. A truly happy person doesn't need to remind themselves of their happiness.",
+      "source_chapter": "CHAPTER 1: Don\u2019t Try",
+      "applies_to_tags": [
+        "self-awareness",
+        "gratitude"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-prove-your-worth-to-others",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Don't Prove Your Worth to Others",
+      "summary": "A confident person doesn't need to prove their worth to others. They are secure in who they are. As the saying goes, 'The smallest dog barks the loudest.'",
+      "source_chapter": "CHAPTER 1: Don\u2019t Try",
+      "applies_to_tags": [
+        "self-confidence",
+        "authenticity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-aware-of-the-messages-you-receive",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Be Aware of the Messages You Receive",
+      "summary": "The world is constantly telling you to give a fuck about more stuff. Be aware of these messages and don't let them dictate your values. Giving a fuck about more stuff is often good for business, not your well-being.",
+      "source_chapter": "CHAPTER 1: Don\u2019t Try",
+      "applies_to_tags": [
+        "media-literacy",
+        "critical-thinking"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "success-is-not-the-same-as-self-improvement",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Success Is Not the Same as Self-Improvement",
+      "summary": "Self-improvement and success often occur together, but they are not the same thing. Bukowski's success came from being honest about his failures, not from becoming a better person.",
+      "source_chapter": "CHAPTER 1: Don\u2019t Try",
+      "applies_to_tags": [
+        "self-improvement",
+        "success"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-feedback-loop-from-hell",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Feedback Loop from Hell",
+      "summary": "The tendency to become anxious or upset about feeling anxious or upset can create a self-reinforcing cycle of negative emotions. This cycle can be broken by acknowledging and accepting one's negative emotions, rather than trying to escape or suppress them.",
+      "source_chapter": "The Feedback Loop from Hell",
+      "applies_to_tags": [
+        "anxiety",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-backwards-law",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Backwards Law",
+      "summary": "Pursuing positive experiences can actually lead to negative outcomes, while accepting and embracing negative experiences can lead to positive growth and self-awareness. As philosopher Alan Watts said, 'the more you pursue feeling better all the time, the less satisfied you become.'",
+      "source_chapter": "The Feedback Loop from Hell",
+      "applies_to_tags": [
+        "happiness",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-try",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Don't Try",
+      "summary": "The pursuit of happiness and meaning can actually lead to feelings of emptiness and disconnection. As existential philosopher Albert Camus said, 'You will never be happy if you continue to search for what happiness consists of.'",
+      "source_chapter": "The Feedback Loop from Hell",
+      "applies_to_tags": [
+        "happiness",
+        "meaning"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "not-giving-a-fuck",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Not Giving a Fuck",
+      "summary": "Giving up attachment to certain outcomes or expectations can lead to greater freedom and creativity. As the author notes, 'if you're able to not give a fuck about the pain, you become unstoppable.'",
+      "source_chapter": "The Feedback Loop from Hell",
+      "applies_to_tags": [
+        "freedom",
+        "creativity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-negative-experience",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Importance of Negative Experience",
+      "summary": "Negative experiences, such as pain and failure, are an inextricable part of life and can lead to growth and self-awareness. As the author notes, 'pain is an inextricable thread in the fabric of life, and to tear it out is not only impossible, but destructive.'",
+      "source_chapter": "The Feedback Loop from Hell",
+      "applies_to_tags": [
+        "resilience",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "letting-go-of-expectations",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Letting Go of Expectations",
+      "summary": "Giving up attachment to certain outcomes or expectations can lead to greater freedom and creativity. As the author notes, 'sometimes when you care less about something, you do better at it.'",
+      "source_chapter": "The Feedback Loop from Hell",
+      "applies_to_tags": [
+        "freedom",
+        "creativity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "comfort-with-being-different",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Comfort with Being Different",
+      "summary": "Not giving a fuck means being comfortable with being different, not indifferent. Indifference is a sign of fear and a lack of meaningful choices.",
+      "source_chapter": "The Subtle Art of Not Giving a Fuck",
+      "applies_to_tags": [
+        "self-awareness",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritizing-what-matters",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Prioritizing What Matters",
+      "summary": "Give fucks to what truly matters, and reserve them for the big things in life. This requires a focus on personal values and a willingness to prioritize.",
+      "source_chapter": "The Subtle Art of Not Giving a Fuck",
+      "applies_to_tags": [
+        "goal-setting",
+        "values-based living"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focusing-on-what-s-important",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Focusing on What's Important",
+      "summary": "To not give a fuck about adversity, you must first give a fuck about something more important. This helps you reserve your fucks for what truly matters.",
+      "source_chapter": "The Subtle Art of Not Giving a Fuck",
+      "applies_to_tags": [
+        "motivation",
+        "meaning-making"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "choosing-what-to-give-a-fuck-about",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Choosing What to Give a Fuck About",
+      "summary": "You are always choosing what to give a fuck about. Recognize this choice and make intentional decisions about how to allocate your fucks.",
+      "source_chapter": "The Subtle Art of Not Giving a Fuck",
+      "applies_to_tags": [
+        "self-awareness",
+        "decision-making"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "resilience-in-the-face-of-adversity",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Resilience in the Face of Adversity",
+      "summary": "Not giving a fuck about adversity means being willing to face challenges and overcome them. This requires a willingness to take risks and be different.",
+      "source_chapter": "The Subtle Art of Not Giving a Fuck",
+      "applies_to_tags": [
+        "resilience",
+        "courage"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "it-s-okay-for-things-to-suck-sometimes",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "It's okay for things to suck sometimes",
+      "summary": "We need to accept that life has its downsides and it's not always okay. This acceptance can prevent overcompensation and lead to a more authentic life.",
+      "source_chapter": "So Mark, What the Fuck Is the Point of This Book Anyway?",
+      "applies_to_tags": [
+        "mental health",
+        "self-acceptance"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "practical-enlightenment-is-about-accepting-suffering-as-inevitable",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Practical enlightenment is about accepting suffering as inevitable",
+      "summary": "Practical enlightenment is not about avoiding pain, but about learning to bear it. \"The only way to overcome pain is to first learn how to bear it.\"",
+      "source_chapter": "So Mark, What the Fuck Is the Point of This Book Anyway?",
+      "applies_to_tags": [
+        "mindfulness",
+        "resilience"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-goal-is-not-to-achieve-greatness-but-to-live-with-what-we-have",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The goal is not to achieve greatness, but to live with what we have",
+      "summary": "We often strive for an unattainable goal of greatness, but this book suggests focusing on living with what we have, rather than trying to achieve something more.",
+      "source_chapter": "So Mark, What the Fuck Is the Point of This Book Anyway?",
+      "applies_to_tags": [
+        "happiness",
+        "acceptance"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "it-s-okay-to-lose-and-let-go",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "It's okay to lose and let go",
+      "summary": "This book teaches us to focus on what's truly important and let go of the rest. It's about moving lightly despite our heavy burdens.",
+      "source_chapter": "So Mark, What the Fuck Is the Point of This Book Anyway?",
+      "applies_to_tags": [
+        "letting go",
+        "simplification"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "giving-fewer-fucks-leads-to-greater-happiness",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Giving fewer fucks leads to greater happiness",
+      "summary": "By focusing on what truly matters, we can simplify our lives and find happiness in the things that truly bring us joy.",
+      "source_chapter": "So Mark, What the Fuck Is the Point of This Book Anyway?",
+      "applies_to_tags": [
+        "happiness",
+        "simplification"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "suffering-is-an-inherent-part-of-life",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Suffering is an inherent part of life",
+      "summary": "Suffering is not limited to specific circumstances, such as poverty or illness, but is a universal aspect of human experience.",
+      "source_chapter": "CHAPTER 2: Happiness Is a Problem",
+      "applies_to_tags": [
+        "suffering",
+        "human-experience"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-pursuit-of-happiness-can-lead-to-emptiness",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The pursuit of happiness can lead to emptiness",
+      "summary": "The relentless pursuit of happiness can actually lead to a sense of emptiness and disconnection from reality.",
+      "source_chapter": "CHAPTER 2: Happiness Is a Problem",
+      "applies_to_tags": [
+        "happiness",
+        "emptiness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "grand-ideas-often-lead-to-more-suffering",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Grand ideas often lead to more suffering",
+      "summary": "Our grand ideas and expectations can often create more problems than they solve, and that a more humble approach may be more effective.",
+      "source_chapter": "CHAPTER 2: Happiness Is a Problem",
+      "applies_to_tags": [
+        "grand-ideas",
+        "suffering"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-value-of-experiences-is-subjective",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The value of experiences is subjective",
+      "summary": "The value of experiences depends on one's perspective and intentions.",
+      "source_chapter": "CHAPTER 2: Happiness Is a Problem",
+      "applies_to_tags": [
+        "value",
+        "experiences"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "suffering-without-purpose-is-meaningless",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Suffering without purpose is meaningless",
+      "summary": "Suffering, in and of itself, is not inherently meaningful or valuable, but rather it's the context and purpose that give it meaning.",
+      "source_chapter": "CHAPTER 2: Happiness Is a Problem",
+      "applies_to_tags": [
+        "suffering",
+        "purpose"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pain-and-loss-are-inevitable",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Pain and Loss are Inevitable",
+      "summary": "Pain and loss are inherent parts of life, and resisting them is futile.",
+      "source_chapter": "The Misadventures of Disappointment Panda",
+      "applies_to_tags": [
+        "emotional-resilience",
+        "mindfulness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "happiness-is-not-algorithmic",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Happiness is Not Algorithmic",
+      "summary": "Happiness cannot be achieved through external means, such as wealth or relationships. It is a state of being that arises from within.",
+      "source_chapter": "The Misadventures of Disappointment Panda",
+      "applies_to_tags": [
+        "happiness",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "dissatisfaction-is-a-necessary-component-of-happiness",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Dissatisfaction is a Necessary Component of Happiness",
+      "summary": "Dissatisfaction and unease are inherent parts of human nature and necessary for creating consistent happiness.",
+      "source_chapter": "The Misadventures of Disappointment Panda",
+      "applies_to_tags": [
+        "happiness",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pain-is-biologically-useful",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Pain is Biologically Useful",
+      "summary": "Pain serves as a feedback mechanism to teach us about our physical and emotional limits.",
+      "source_chapter": "The Misadventures of Disappointment Panda",
+      "applies_to_tags": [
+        "resilience",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoiding-pain-is-not-always-beneficial",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Avoiding Pain is Not Always Beneficial",
+      "summary": "Avoiding pain at all costs can lead to stagnation and a lack of growth.",
+      "source_chapter": "The Misadventures of Disappointment Panda",
+      "applies_to_tags": [
+        "resilience",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-discomfort",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Importance of Discomfort",
+      "summary": "Discomfort and dissatisfaction are essential for growth and innovation.",
+      "source_chapter": "The Misadventures of Disappointment Panda",
+      "applies_to_tags": [
+        "self-awareness",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "physical-and-psychological-pain-are-interconnected",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Physical and psychological pain are interconnected",
+      "summary": "Pain is a sign of something out of equilibrium, and can be a catalyst for growth.",
+      "source_chapter": "Happiness Comes from Solving Problems",
+      "applies_to_tags": [
+        "pain",
+        "growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "problems-are-a-constant-in-life",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Problems are a constant in life",
+      "summary": "Problems never stop; they merely get exchanged and/or upgraded.",
+      "source_chapter": "Happiness Comes from Solving Problems",
+      "applies_to_tags": [
+        "problems",
+        "resilience"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "happiness-comes-from-solving-problems",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Happiness comes from solving problems",
+      "summary": "Happiness is a form of action; it's an activity, not something that is passively bestowed upon you.",
+      "source_chapter": "Happiness Comes from Solving Problems",
+      "applies_to_tags": [
+        "happiness",
+        "problem-solving"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoiding-problems-leads-to-misery",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Avoiding problems leads to misery",
+      "summary": "Solving problems is the key to happiness.",
+      "source_chapter": "Happiness Comes from Solving Problems",
+      "applies_to_tags": [
+        "avoidance",
+        "happiness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "good-problems-are-preferable-to-no-problems",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Good problems are preferable to no problems",
+      "summary": "Don't hope for a life without problems; instead, hope for a life full of good problems.",
+      "source_chapter": "Happiness Comes from Solving Problems",
+      "applies_to_tags": [
+        "problems",
+        "happiness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "happiness-is-a-work-in-progress",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Happiness is a work-in-progress",
+      "summary": "Solving problems is a constant work-in-progress, and true happiness occurs when you find problems you enjoy having and solving.",
+      "source_chapter": "Happiness Comes from Solving Problems",
+      "applies_to_tags": [
+        "happiness",
+        "problem-solving"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "denial-is-a-temporary-escape",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Denial is a Temporary Escape",
+      "summary": "Denial of problems can provide a temporary escape, but it leads to insecurity, neuroticism, and emotional repression.",
+      "source_chapter": "Emotions Are Overrated",
+      "applies_to_tags": [
+        "avoidance",
+        "emotional-repression"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "blame-is-a-form-of-addiction",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Blame is a Form of Addiction",
+      "summary": "Blaming others for problems can provide a quick high, but it leads to anger, helplessness, and despair.",
+      "source_chapter": "Emotions Are Overrated",
+      "applies_to_tags": [
+        "addiction",
+        "blame"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "emotions-are-feedback-mechanisms",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Emotions Are Feedback Mechanisms",
+      "summary": "Emotions are biological signals designed to nudge us towards beneficial change.",
+      "source_chapter": "Emotions Are Overrated",
+      "applies_to_tags": [
+        "emotional-intelligence",
+        "problem-solving"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-trust-your-emotions-blindly",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Don't Trust Your Emotions Blindly",
+      "summary": "We shouldn't always trust our emotions, as they can be misleading.",
+      "source_chapter": "Emotions Are Overrated",
+      "applies_to_tags": [
+        "emotional-intelligence",
+        "decision-making"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pain-serves-a-purpose",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Pain Serves a Purpose",
+      "summary": "Pain and negative emotions serve a purpose: they help us solve problems and learn from our mistakes.",
+      "source_chapter": "Emotions Are Overrated",
+      "applies_to_tags": [
+        "emotional-intelligence",
+        "problem-solving"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "reason-should-guide-emotion",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Reason Should Guide Emotion",
+      "summary": "Decision-making based on emotional intuition without reason can be problematic.",
+      "source_chapter": "Emotions Are Overrated",
+      "applies_to_tags": [
+        "decision-making",
+        "emotional-intelligence"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "emotions-are-fleeting",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Emotions are fleeting",
+      "summary": "Emotions are temporary and will change over time. We can't rely on them for lasting happiness. A fixation on happiness leads to a never-ending pursuit of something else, resulting in a recursive and unavoidable cycle of problems.",
+      "source_chapter": "Choose Your Struggle",
+      "applies_to_tags": [
+        "hedonic-treadmill",
+        "emotional-instability"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "happiness-requires-struggle",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Happiness requires struggle",
+      "summary": "Happiness and fulfillment can't be achieved without facing and managing challenges. Struggle is a necessary component of growth and development. The path to happiness is often marked by difficulties and setbacks.",
+      "source_chapter": "Choose Your Struggle",
+      "applies_to_tags": [
+        "struggle",
+        "happiness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pain-is-a-determinant-of-success",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Pain is a determinant of success",
+      "summary": "The pain and struggles we're willing to endure can determine our level of success. What we gain is often what we lose, and what creates our positive experiences will also define our negative ones.",
+      "source_chapter": "Choose Your Struggle",
+      "applies_to_tags": [
+        "pain",
+        "success"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-process-is-more-important-than-the-result",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The process is more important than the result",
+      "summary": "The journey and the process of achieving something are more important than the end result. We often focus on the reward, but neglect the struggles and difficulties that come with it.",
+      "source_chapter": "Choose Your Struggle",
+      "applies_to_tags": [
+        "process",
+        "result"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "you-are-defined-by-what-you-re-willing-to-struggle-for",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "You are defined by what you're willing to struggle for",
+      "summary": "Our struggles and challenges define who we are and what we're capable of. What we're willing to endure and overcome can shape our identity and determine our successes.",
+      "source_chapter": "Choose Your Struggle",
+      "applies_to_tags": [
+        "identity",
+        "struggle"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-climb-is-the-joy",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The climb is the joy",
+      "summary": "The journey and the process of overcoming challenges are where the true joy and fulfillment lie. We often focus on the end result, but the actual happiness and satisfaction come from the struggles and difficulties we face.",
+      "source_chapter": "Choose Your Struggle",
+      "applies_to_tags": [
+        "joy",
+        "climb"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "feeling-good-about-oneself-doesn-t-guarantee-success",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Feeling good about oneself doesn't guarantee success",
+      "summary": "Feeling good about oneself doesn't guarantee success. Merely feeling good about oneself doesn't mean anything unless you have a good reason to feel good about yourself.",
+      "source_chapter": "CHAPTER 3: You Are Not Special",
+      "applies_to_tags": [
+        "self-esteem",
+        "success"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "entitlement-is-a-failed-strategy",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Entitlement is a failed strategy",
+      "summary": "Entitlement is a failed strategy because it's based on a delusional degree of self-confidence.",
+      "source_chapter": "CHAPTER 3: You Are Not Special",
+      "applies_to_tags": [
+        "entitlement",
+        "self-confidence"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "true-self-worth-comes-from-facing-negatives",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "True self-worth comes from facing negatives",
+      "summary": "A person's true self-worth is measured by how they feel about their negative experiences, not just their positive ones.",
+      "source_chapter": "CHAPTER 3: You Are Not Special",
+      "applies_to_tags": [
+        "self-worth",
+        "negativity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "unresolved-problems-lead-to-feelings-of-helplessness",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Unresolved problems lead to feelings of helplessness",
+      "summary": "Unaddressed issues can cause individuals to feel incapable of solving problems, leading to feelings of misery and powerlessness.",
+      "source_chapter": "Things Fall Apart",
+      "applies_to_tags": [
+        "trauma",
+        "helplessness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "entitlement-stems-from-perceived-uniqueness",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Entitlement stems from perceived uniqueness",
+      "summary": "When individuals feel they have insurmountable problems, they may become entitled, believing they are either uniquely special or uniquely defective.",
+      "source_chapter": "Things Fall Apart",
+      "applies_to_tags": [
+        "entitlement",
+        "self-absorption"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "problems-are-not-unique",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Problems are not unique",
+      "summary": "Most problems are not unique to individuals, as millions of people have experienced similar issues in the past, present, and future.",
+      "source_chapter": "Things Fall Apart",
+      "applies_to_tags": [
+        "problem-solving",
+        "perspective"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "validation-can-be-a-destructive-force",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Validation can be a destructive force",
+      "summary": "Seeking constant validation can lead to self-aggrandizing and overindulgence, causing individuals to feel entitled to say or do whatever they want, regardless of the consequences.",
+      "source_chapter": "Things Fall Apart",
+      "applies_to_tags": [
+        "validation",
+        "self-destructive"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "entitlement-can-manifest-in-different-ways",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Entitlement can manifest in different ways",
+      "summary": "Entitlement can manifest in two ways: feeling superior to others or feeling inferior and deserving of special treatment.",
+      "source_chapter": "Things Fall Apart",
+      "applies_to_tags": [
+        "entitlement",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "construing-oneself-as-a-victim-requires-selfishness",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Construing oneself as a victim requires selfishness",
+      "summary": "Perpetually feeling like a victim requires just as much selfishness as feeling superior to others.",
+      "source_chapter": "Things Fall Apart",
+      "applies_to_tags": [
+        "victimhood",
+        "selfishness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "emotional-resilience-is-lacking",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Emotional resilience is lacking",
+      "summary": "Young people are struggling with emotional resilience and excessive selfish demands.",
+      "source_chapter": "The Tyranny of Exceptionalism",
+      "applies_to_tags": [
+        "emotional-resilience",
+        "entitlement"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-internet-enables-entitlement",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The internet enables entitlement",
+      "summary": "The widespread use of the internet and social media has enabled people's sense of entitlement more than ever before.",
+      "source_chapter": "The Tyranny of Exceptionalism",
+      "applies_to_tags": [
+        "entitlement",
+        "social-media"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "exceptionalism-is-a-statistical-improbability",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Exceptionalism is a statistical improbability",
+      "summary": "It's a statistical improbability that any single person will be an extraordinary performer in all areas of life.",
+      "source_chapter": "The Tyranny of Exceptionalism",
+      "applies_to_tags": [
+        "exceptionalism",
+        "human-nature"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-media-fosters-exceptionalism",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The media fosters exceptionalism",
+      "summary": "The media business thrives on sensational and extreme content, which creates a culture of exceptionalism.",
+      "source_chapter": "The Tyranny of Exceptionalism",
+      "applies_to_tags": [
+        "media",
+        "exceptionalism"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "compensating-for-insecurity",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Compensating for insecurity",
+      "summary": "People cope with feelings of insecurity and desperation by compensating through entitlement and addiction.",
+      "source_chapter": "The Tyranny of Exceptionalism",
+      "applies_to_tags": [
+        "entitlement",
+        "addiction"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "entitlement-is-fueled-by-unrealistic-expectations",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Entitlement is fueled by unrealistic expectations",
+      "summary": "The constant stream of unrealistic media narratives creates feelings of insecurity and entitlement.",
+      "source_chapter": "B-b-b-but, If I\u2019m Not Going to Be Special or Extraordinary, What\u2019s the Point?",
+      "applies_to_tags": [
+        "entitlement",
+        "media"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-pursuit-of-extraordinariness-is-a-recipe-for-disaster",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The pursuit of extraordinariness is a recipe for disaster",
+      "summary": "The idea that everyone can be extraordinary and achieve greatness is inherently contradictory and leads to a culture of entitlement.",
+      "source_chapter": "B-b-b-but, If I\u2019m Not Going to Be Special or Extraordinary, What\u2019s the Point?",
+      "applies_to_tags": [
+        "entitlement",
+        "self-worth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-mediocrity",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Embracing Mediocrity",
+      "summary": "Accepting the mundane truths of life can lead to emotional health. This involves eating our veggies, or accepting the bland and mundane aspects of life, which can free us to accomplish what we truly wish to accomplish.",
+      "source_chapter": "B-b-b-but, If I\u2019m Not Going to Be Special or Extraordinary, What\u2019s the Point?",
+      "applies_to_tags": [
+        "emotional-health",
+        "self-acceptance"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "obsession-with-improvement",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Obsession with Improvement",
+      "summary": "People who become great at something do so not because they believe they're exceptional, but because they're obsessed with improvement. This stems from an unerring belief that they're not that great at all, and that they could be so much better.",
+      "source_chapter": "B-b-b-but, If I\u2019m Not Going to Be Special or Extraordinary, What\u2019s the Point?",
+      "applies_to_tags": [
+        "personal-growth",
+        "humility"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-pressure-to-be-extraordinary",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Pressure to be Extraordinary",
+      "summary": "The constant pressure to be something amazing can lead to stress and anxiety. This pressure is fueled by the idea that everyone can be extraordinary and achieve greatness, which is inherently contradictory and leads to feelings of inadequacy.",
+      "source_chapter": "B-b-b-but, If I\u2019m Not Going to Be Special or Extraordinary, What\u2019s the Point?",
+      "applies_to_tags": [
+        "stress",
+        "anxiety"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "ordinary-experiences-matter",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Ordinary Experiences Matter",
+      "summary": "The pleasures of simple friendship, creating something, helping a person in need, reading a good book, and laughing with someone you care about are what actually matter in life. These experiences are ordinary, but maybe they're ordinary for a reason.",
+      "source_chapter": "B-b-b-but, If I\u2019m Not Going to Be Special or Extraordinary, What\u2019s the Point?",
+      "applies_to_tags": [
+        "happiness",
+        "fulfillment"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-value-of-suffering",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Value of Suffering",
+      "summary": "Suffering can have meaning and purpose, allowing individuals to endure it. People choose how they wish to suffer, and their suffering fulfills a greater cause. This perspective shifts the focus from avoiding suffering to understanding its significance.",
+      "source_chapter": "CHAPTER 4: The Value of Suffering",
+      "applies_to_tags": [
+        "self-discovery",
+        "purpose"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "emotional-awareness",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Emotional Awareness",
+      "summary": "Understanding one's emotions is a fundamental aspect of self-awareness. It takes practice and effort to identify emotional blind spots and express emotions appropriately.",
+      "source_chapter": "The Self-Awareness Onion",
+      "applies_to_tags": [
+        "emotional-intelligence",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "challenging-assumptions",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Challenging Assumptions",
+      "summary": "We often make assumptions about what is true or normal, but these assumptions can be limiting. Challenging our assumptions and examining our values can lead to greater self-awareness and understanding.",
+      "source_chapter": "The Self-Awareness Onion",
+      "applies_to_tags": [
+        "assumptions",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritizing-meaningful-values",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Prioritizing Meaningful Values",
+      "summary": "Some values lead to good problems, while others create bad problems. Prioritize values that lead to meaningful problems, such as honesty, nonviolence, and compassion.",
+      "source_chapter": "Shitty Values",
+      "applies_to_tags": [
+        "pleasure",
+        "values"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-measure-self-worth-by-material-success",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Don't Measure Self-Worth by Material Success",
+      "summary": "Research shows that once basic physical needs are met, the correlation between happiness and worldly success approaches zero. Prioritizing material success over other values can lead to shallow and unpleasant behavior.",
+      "source_chapter": "Shitty Values",
+      "applies_to_tags": [
+        "material success",
+        "self-worth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-negative-emotions",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Embracing Negative Emotions",
+      "summary": "Denying negative emotions leads to deeper and more prolonged negative emotions and emotional dysfunction. Negative emotions are a necessary component of emotional health.",
+      "source_chapter": "Shitty Values",
+      "applies_to_tags": [
+        "negative emotions",
+        "emotional health"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "assume-ignorance-and-stay-open-to-learning",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Assume Ignorance and Stay Open to Learning",
+      "summary": "People who base their self-worth on being right about everything prevent themselves from learning from their mistakes. It's far more helpful to assume that you're ignorant and don't know a lot.",
+      "source_chapter": "Shitty Values",
+      "applies_to_tags": [
+        "ignorance",
+        "learning"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "choose-your-metrics-wisely",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Choose Your Metrics Wisely",
+      "summary": "The way we measure ourselves and our problems determines their meaning. We can choose to measure ourselves by standards that bring us joy and fulfillment.",
+      "source_chapter": "Rock Star Problems",
+      "applies_to_tags": [
+        "self-awareness",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-let-external-validation-define-success",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Don't Let External Validation Define Success",
+      "summary": "Our values and metrics for success should come from within, not from external validation or comparison to others.",
+      "source_chapter": "Rock Star Problems",
+      "applies_to_tags": [
+        "self-worth",
+        "success"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "values-determine-meaning",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Values Determine Meaning",
+      "summary": "The meaning we assign to our problems and experiences is determined by our values and the metrics we use to measure ourselves.",
+      "source_chapter": "Rock Star Problems",
+      "applies_to_tags": [
+        "values",
+        "perspective"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "comparison-is-a-poor-metric",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Comparison Is a Poor Metric",
+      "summary": "Comparing ourselves to others is a poor way to measure ourselves and our problems. It can lead to feelings of inadequacy and unhappiness.",
+      "source_chapter": "Rock Star Problems",
+      "applies_to_tags": [
+        "comparison",
+        "self-acceptance"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "redemption-is-not-always-about-success",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Redemption Is Not Always About Success",
+      "summary": "Redemption and happiness can come from finding new values and metrics that bring us joy and fulfillment, rather than achieving external success.",
+      "source_chapter": "Rock Star Problems",
+      "applies_to_tags": [
+        "redemption",
+        "happiness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "measuring-success",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Measuring Success",
+      "summary": "Our metrics for success can be flawed and lead to feelings of failure. Examining our metrics and values can help us understand why we feel a certain way and make positive changes.",
+      "source_chapter": "The Self-Awareness Onion",
+      "applies_to_tags": [
+        "success",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "honest-self-questioning",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Honest Self-Questioning",
+      "summary": "Honest self-questioning is difficult but necessary for real progress. It requires asking uncomfortable questions and being willing to confront the truth.",
+      "source_chapter": "The Self-Awareness Onion",
+      "applies_to_tags": [
+        "self-reflection",
+        "honesty"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "questioning-emotions",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Questioning Emotions",
+      "summary": "Asking why we feel certain emotions helps us understand the root cause of overwhelming emotions.",
+      "source_chapter": "The Self-Awareness Onion",
+      "applies_to_tags": [
+        "emotional-intelligence",
+        "self-reflection"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "values-based-self-awareness",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Values-Based Self-Awareness",
+      "summary": "Our personal values determine the nature of our problems and the quality of our lives. Understanding our values requires constant questioning and effort.",
+      "source_chapter": "The Self-Awareness Onion",
+      "applies_to_tags": [
+        "values-based",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-confuse-pleasure-with-happiness",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Don't Confuse Pleasure with Happiness",
+      "summary": "Pleasure is a false god and a superficial form of life satisfaction. Research shows that people who focus on superficial pleasures end up more anxious and depressed. Pleasure is not the cause of happiness, but rather the effect of getting other values right.",
+      "source_chapter": "Shitty Values",
+      "applies_to_tags": [
+        "pleasure",
+        "happiness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "face-problems-head-on-to-generate-happiness",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Face Problems Head-On to Generate Happiness",
+      "summary": "Forcing ourselves to stay positive at all times denies the existence of our life's problems. Problems add a sense of meaning and importance to our life. To duck our problems is to lead a meaningless existence.",
+      "source_chapter": "Shitty Values",
+      "applies_to_tags": [
+        "problems",
+        "happiness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "good-values-are-reality-based-and-socially-constructive",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Good Values are Reality-Based and Socially Constructive",
+      "summary": "Good values are grounded in reality, reflecting what is true and possible. They benefit others and contribute to the greater good. Examples include honesty, innovation, and vulnerability.",
+      "source_chapter": "Defining Good and Bad Values",
+      "applies_to_tags": [
+        "values",
+        "reality",
+        "social"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "good-values-are-immediate-and-controllable",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Good Values are Immediate and Controllable",
+      "summary": "Good values can be experienced and controlled in the present moment. They do not rely on external events or circumstances. For example, 'Something like creativity or humility can be experienced right now.'",
+      "source_chapter": "Defining Good and Bad Values",
+      "applies_to_tags": [
+        "values",
+        "control"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "bad-values-are-superstitious-and-socially-destructive",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Bad Values are Superstitious and Socially Destructive",
+      "summary": "Bad values are based on superstition or unrealistic expectations. They often harm others and contribute to negative relationships. Examples include popularity and wealth.",
+      "source_chapter": "Defining Good and Bad Values",
+      "applies_to_tags": [
+        "values",
+        "superstition",
+        "social"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritize-better-values-for-a-better-life",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Prioritize Better Values for a Better Life",
+      "summary": "Prioritizing better values leads to a better life. When we choose better values, we divert our energy and attention to things that matter and improve our well-being. As Mark Manson says, 'When you give better fucks, you get better problems.'",
+      "source_chapter": "Defining Good and Bad Values",
+      "applies_to_tags": [
+        "values",
+        "prioritization"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "personal-responsibility-and-agency",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Personal Responsibility and Agency",
+      "summary": "Taking ownership of our lives and circumstances is crucial for growth and improvement. We are responsible for our experiences, whether we like it or not. As William James demonstrated, believing in our ability to change our circumstances can lead to significant positive outcomes.",
+      "source_chapter": "The Choice",
+      "applies_to_tags": [
+        "personal growth",
+        "empowerment"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-power-of-choice-and-responsibility",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Power of Choice and Responsibility",
+      "summary": "The difference between a problem being painful or powerful lies in our perception of choice. We always get to choose how we see things, how we react to things, and how we value things. As the author notes, 'You always get to choose the metric by which to measure your experiences.'",
+      "source_chapter": "The Responsibility/Fault Fallacy",
+      "applies_to_tags": [
+        "choice",
+        "empowerment"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "accept-imperfections",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Accept Imperfections",
+      "summary": "Accepting the imperfections of our compulsive desires is crucial in managing neurological and genetic disorders. As Imogen says, 'There are still monsters in the back of my mind, and there probably always will be, but they\u2019re getting quieter now.'",
+      "source_chapter": "Genetics and the Hand We\u2019re Dealt",
+      "applies_to_tags": [
+        "genetics",
+        "mental-health"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "responsibility-in-the-face-of-adversity",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Responsibility in the Face of Adversity",
+      "summary": "We are responsible for managing our emotions and reactions, even in the face of tragedy. We can't control the event itself, but we can choose how we respond to it. This includes coping with pain and making choices about how to move forward.",
+      "source_chapter": "Responding to Tragedy",
+      "applies_to_tags": [
+        "grief",
+        "emotional intelligence"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pain-is-inevitable-but-choice-is-not",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Pain is Inevitable, but Choice is Not",
+      "summary": "Pain and suffering are inevitable parts of life, but we get to choose how we respond to them. We can choose to let pain define us or to use it as an opportunity for growth and learning.",
+      "source_chapter": "Responding to Tragedy",
+      "applies_to_tags": [
+        "resilience",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "choose-a-better-problem",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Choose a Better Problem",
+      "summary": "Instead of getting bogged down by our problems, we should choose a better problem to focus on. This principle encourages us to shift our attention from our current struggles to a more manageable and meaningful goal, such as practicing patience or taking control of our thoughts and feelings.",
+      "source_chapter": "Genetics and the Hand We\u2019re Dealt",
+      "applies_to_tags": [
+        "problem-solving",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "responsibility-trumps-blame",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Responsibility Trumps Blame",
+      "summary": "We are not responsible for the hand we're dealt, but it's still our responsibility to make the best choices given our circumstances. As Mark Manson says, 'It\u2019s not their fault. But it\u2019s still their responsibility.' This principle emphasizes the importance of taking ownership of our lives and making choices that align with our values.",
+      "source_chapter": "Genetics and the Hand We\u2019re Dealt",
+      "applies_to_tags": [
+        "personal-responsibility",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "luck-doesn-t-dictate-long-term-results",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Luck Doesn't Dictate Long-Term Results",
+      "summary": "While luck plays a role in life, it doesn't determine our long-term success. The choices we make and the risks we take are what ultimately lead to our outcomes. This principle encourages us to focus on what we can control and make the best choices possible, rather than getting hung up on our circumstances.",
+      "source_chapter": "Genetics and the Hand We\u2019re Dealt",
+      "applies_to_tags": [
+        "resilience",
+        "decision-making"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "value-based-decision-making",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Value-Based Decision Making",
+      "summary": "Our values should guide our decision-making, rather than our compulsions or circumstances. By identifying and prioritizing our values, we can make choices that align with what's truly important to us. This principle emphasizes the importance of living a values-driven life.",
+      "source_chapter": "Genetics and the Hand We\u2019re Dealt",
+      "applies_to_tags": [
+        "values",
+        "goal-setting"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "scars-are-inevitable",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Scars Are Inevitable",
+      "summary": "Nobody makes it through life without collecting scars. This principle acknowledges that adversity is a natural part of life and encourages us to focus on making the best choices possible, rather than getting bogged down by our struggles.",
+      "source_chapter": "Genetics and the Hand We\u2019re Dealt",
+      "applies_to_tags": [
+        "resilience",
+        "mental-toughness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "responsibility-cannot-be-alleviated",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Responsibility Cannot Be Alleviated",
+      "summary": "Individuals cannot pass off responsibility for solving their problems to others. This is a fundamental aspect of personal responsibility. As Mark Manson notes, 'it ultimately changes nothing about the responsibility equation of our individual situation.'",
+      "source_chapter": "Victimhood Chic",
+      "applies_to_tags": [
+        "Personal Responsibility",
+        "Victimhood"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "blame-shifting-is-a-cop-out",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Blame-Shifting Is a Cop-Out",
+      "summary": "The tendency to blame others for one's problems is a form of avoidance. It allows individuals to feel morally righteous without taking action to solve their problems.",
+      "source_chapter": "Victimhood Chic",
+      "applies_to_tags": [
+        "Personal Growth",
+        "Accountability"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-media-perpetuates-outrage",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Media Perpetuates Outrage",
+      "summary": "The media often prioritizes sensationalism and outrage over real issues. This creates a culture of outrage and perpetuates the 'outrage porn' phenomenon, where media outlets generate outrage for profit.",
+      "source_chapter": "Victimhood Chic",
+      "applies_to_tags": [
+        "Media Criticism",
+        "Social Commentary"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "victimhood-has-become-a-status-symbol",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Victimhood Has Become a Status Symbol",
+      "summary": "In today's society, being a victim has become a status symbol. People are rewarded with attention and sympathy for claiming to be oppressed, regardless of the validity of their claims.",
+      "source_chapter": "Victimhood Chic",
+      "applies_to_tags": [
+        "Social Dynamics",
+        "Cultural Commentary"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "outrage-is-a-form-of-attention-seeking",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Outrage Is a Form of Attention-Seeking",
+      "summary": "Outrage is often a means of seeking attention and sympathy. People may feel a temporary high from being outraged, but this comes at the cost of genuine personal growth and problem-solving.",
+      "source_chapter": "Victimhood Chic",
+      "applies_to_tags": [
+        "Personal Growth",
+        "Attention-Seeking"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-outrage-for-outrage-s-sake",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Avoid Outrage for Outrage's Sake",
+      "summary": "Feeling offended can be addictive, but it distracts from real issues and hides actual victims. As Tim Kreider said, 'Outrage is like a lot of other things that feel good but over time devour us from the inside out.'",
+      "source_chapter": "There Is No \u201cHow\u201d",
+      "applies_to_tags": [
+        "emotional regulation",
+        "social responsibility"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritize-democratic-values",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Prioritize Democratic Values",
+      "summary": "In a democracy, we must deal with differing views and people. We should prioritize honesty, transparency, and doubt over being right or feeling good.",
+      "source_chapter": "There Is No \u201cHow\u201d",
+      "applies_to_tags": [
+        "democracy",
+        "critical thinking"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "choose-your-battles-wisely",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Choose Your Battles Wisely",
+      "summary": "Pick your battles carefully and try to empathize with those who disagree. Avoid painting others with a broad brush and approach the news with skepticism.",
+      "source_chapter": "There Is No \u201cHow\u201d",
+      "applies_to_tags": [
+        "conflict resolution",
+        "media literacy"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "change-is-simple-but-hard",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Change is Simple, but Hard",
+      "summary": "Changing your values is as simple as choosing to give a fuck about something else, but it's not easy. You'll face uncertainty, feelings of failure, and rejections.",
+      "source_chapter": "There Is No \u201cHow\u201d",
+      "applies_to_tags": [
+        "personal growth",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-uncertainty-is-normal",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Embracing Uncertainty is Normal",
+      "summary": "Feeling uncertain and questioning your decisions is a normal part of changing your values. It's a sign that you're growing and reassessing your priorities.",
+      "source_chapter": "There Is No \u201cHow\u201d",
+      "applies_to_tags": [
+        "resilience",
+        "self-reflection"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-imperfection",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Embracing Imperfection",
+      "summary": "Personal growth is an iterative process of approaching truth and perfection without reaching it. We should focus on chipping away at our current wrongness rather than seeking absolute rightness. As Michael Jordan said, 'I've missed more than 9,000 shots in my career.'",
+      "source_chapter": "CHAPTER 6: You\u2019re Wrong About Everything (But So Am I)",
+      "applies_to_tags": [
+        "growth",
+        "imperfection"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "certainty-is-the-enemy-of-growth",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Certainty is the Enemy of Growth",
+      "summary": "Certainty can be a barrier to growth as it prevents us from questioning our beliefs and values. We should strive for doubt and openness to change rather than seeking absolute certainty.",
+      "source_chapter": "CHAPTER 6: You\u2019re Wrong About Everything (But So Am I)",
+      "applies_to_tags": [
+        "growth",
+        "certainty"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "values-are-hypotheses",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Values are Hypotheses",
+      "summary": "Our values and beliefs are like hypotheses that we test through our actions and experiences. We should be open to revising or rejecting them as we learn and grow.",
+      "source_chapter": "CHAPTER 6: You\u2019re Wrong About Everything (But So Am I)",
+      "applies_to_tags": [
+        "values",
+        "growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "growth-is-a-process-of-iterative-improvement",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Growth is a Process of Iterative Improvement",
+      "summary": "Personal growth is a continuous process of learning and improvement. We don't go from wrong to right, but rather from wrong to slightly less wrong, and then to even less wrong.",
+      "source_chapter": "CHAPTER 6: You\u2019re Wrong About Everything (But So Am I)",
+      "applies_to_tags": [
+        "growth",
+        "improvement"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "being-wrong-opens-up-opportunities-for-growth",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Being Wrong Opens Up Opportunities for Growth",
+      "summary": "Being wrong can be a catalyst for growth as it allows us to question our assumptions and challenge our current understanding of the world.",
+      "source_chapter": "CHAPTER 6: You\u2019re Wrong About Everything (But So Am I)",
+      "applies_to_tags": [
+        "growth",
+        "wrongness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "doubt-is-essential-for-growth",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Doubt is Essential for Growth",
+      "summary": "Doubt is necessary for growth as it allows us to question our beliefs and values, and to be open to new experiences and perspectives.",
+      "source_chapter": "CHAPTER 6: You\u2019re Wrong About Everything (But So Am I)",
+      "applies_to_tags": [
+        "growth",
+        "doubt"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-trust-your-conceptions",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Don't Trust Your Conceptions",
+      "summary": "Our perceptions of positive and negative experiences are subjective and unreliable. We often misinterpret events and forget things easily. As Mark Manson says, 'All that we know for certain is what hurts in the moment and what doesn\u2019t.'",
+      "source_chapter": "Architects of Our Own Beliefs",
+      "applies_to_tags": [
+        "subjectivity",
+        "perception"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "we-create-our-own-meaning",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "We Create Our Own Meaning",
+      "summary": "Our brains are meaning machines that generate meaning through associations between experiences. We create our own meaning by drawing connections between events, objects, and thoughts.",
+      "source_chapter": "Architects of Our Own Beliefs",
+      "applies_to_tags": [
+        "meaning",
+        "cognition"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-brain-is-imperfect",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Brain Is Imperfect",
+      "summary": "Our brains are prone to mistakes, misinterpretations, and forgetfulness. We often mistake things we see and hear, and our memories can be unreliable.",
+      "source_chapter": "Architects of Our Own Beliefs",
+      "applies_to_tags": [
+        "cognition",
+        "memory"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "we-re-capable-of-believing-in-bullshit",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "We're Capable of Believing in Bullshit",
+      "summary": "Our minds are capable of coming up with and believing in false or irrational ideas. We often create complex explanations for random events, as seen in the button-pushing experiment.",
+      "source_chapter": "Architects of Our Own Beliefs",
+      "applies_to_tags": [
+        "irrationality",
+        "cognition"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "our-certainties-will-be-laughed-at",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Our Certainties Will Be Laughed At",
+      "summary": "Future generations will likely look back on our certainties and laugh at how primitive and misguided they were. Our current understanding of the world is limited and will be surpassed.",
+      "source_chapter": "Architects of Our Own Beliefs",
+      "applies_to_tags": [
+        "history",
+        "perspective"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "our-brains-are-prone-to-inaccuracies-and-biases",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Our brains are prone to inaccuracies and biases",
+      "summary": "Our brains are designed to hold on to meaning, often ignoring contradictory evidence. This leads to inaccurate beliefs and values. As comedian Emo Philips said, 'I used to think the human brain was the most wonderful organ in my body. Then I realized who was telling me this.'",
+      "source_chapter": "Be Careful What You Believe",
+      "applies_to_tags": [
+        "cognitive-bias",
+        "inaccuracy"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "memories-are-malleable-and-prone-to-distortion",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Memories are malleable and prone to distortion",
+      "summary": "Memories are not fixed, but rather a product of our brain's attempt to make sense of experiences. They can be influenced by our current situation, emotions, and biases, leading to inaccuracies and distortions.",
+      "source_chapter": "Be Careful What You Believe",
+      "applies_to_tags": [
+        "memory-distortion",
+        "cognitive-bias"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "our-values-and-experiences-shape-our-perceptions",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Our values and experiences shape our perceptions",
+      "summary": "Our values, experiences, and emotions influence how we perceive and interpret information. This can lead to biased thinking and inaccurate beliefs.",
+      "source_chapter": "Be Careful What You Believe",
+      "applies_to_tags": [
+        "value-influence",
+        "cognitive-bias"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "false-memories-can-be-created-through-suggestion-and-therapy",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "False memories can be created through suggestion and therapy",
+      "summary": "Suggestive explanations, media sensationalism, and certain types of therapy can lead to the creation of false memories. This can result in innocent people being wrongly accused and convicted.",
+      "source_chapter": "Be Careful What You Believe",
+      "applies_to_tags": [
+        "false-memory",
+        "suggestion"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "our-brains-prioritize-coherence-over-accuracy",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Our brains prioritize coherence over accuracy",
+      "summary": "When faced with conflicting information, our brains often prioritize coherence over accuracy. This can lead to the invention of false memories or the reinterpretation of existing ones.",
+      "source_chapter": "Be Careful What You Believe",
+      "applies_to_tags": [
+        "coherence",
+        "cognitive-bias"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "we-are-often-unaware-of-our-own-biases-and-inaccuracies",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "We are often unaware of our own biases and inaccuracies",
+      "summary": "Our brains are designed to be efficient, not accurate. As a result, we often overlook our own biases and inaccuracies, leading to a lack of self-awareness and critical thinking.",
+      "source_chapter": "Be Careful What You Believe",
+      "applies_to_tags": [
+        "self-awareness",
+        "cognitive-bias"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "question-your-own-intentions",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Question Your Own Intentions",
+      "summary": "Self-skepticism is essential for progress. It's liberating to question our own intentions and motivations. As Mark Manson says, 'If we're all wrong, all the time, then isn't self-skepticism... the only logical route to progress?'",
+      "source_chapter": "The Dangers of Pure Certainty",
+      "applies_to_tags": [
+        "self-awareness",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "certainty-breeds-insecurity",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Certainty Breeds Insecurity",
+      "summary": "Pursuing certainty often leads to more insecurity. The more we try to be certain, the more uncertain and insecure we will feel.",
+      "source_chapter": "The Dangers of Pure Certainty",
+      "applies_to_tags": [
+        "self-awareness",
+        "mental health"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "unwavering-certainty-can-lead-to-harm",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Unwavering Certainty Can Lead to Harm",
+      "summary": "Feeling certain about our own righteousness can justify harming others. This is evident in cases of racism, religious fanaticism, and abuse.",
+      "source_chapter": "The Dangers of Pure Certainty",
+      "applies_to_tags": [
+        "social justice",
+        "emotional intelligence"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-uncertainty-can-lead-to-comfort",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Embracing Uncertainty Can Lead to Comfort",
+      "summary": "Accepting uncertainty and not knowing can lead to greater comfort and confidence. It's the opposite of the backwards law, where trying to be certain leads to more uncertainty.",
+      "source_chapter": "The Dangers of Pure Certainty",
+      "applies_to_tags": [
+        "self-awareness",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "values-over-certainty",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Values Over Certainty",
+      "summary": "Having good values is more important than being certain. Even if someone does everything 'right,' their values can still be flawed.",
+      "source_chapter": "The Dangers of Pure Certainty",
+      "applies_to_tags": [
+        "values",
+        "ethics"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "uncertainty-is-key-to-progress",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Uncertainty is Key to Progress",
+      "summary": "Uncertainty allows us to remain open to new experiences and learning. It removes judgments of others and ourselves, enabling growth and progress. As the saying goes, 'the man who believes he knows everything learns nothing.'",
+      "source_chapter": "Manson\u2019s Law of Avoidance",
+      "applies_to_tags": [
+        "uncertainty",
+        "growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "admitting-ignorance-is-essential",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Admitting Ignorance is Essential",
+      "summary": "Recognizing our own ignorance is crucial for growth and change. We must intellectually strip away our current values and beliefs to see their faults and biases.",
+      "source_chapter": "Manson\u2019s Law of Avoidance",
+      "applies_to_tags": [
+        "ignorance",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "manson-s-law-of-avoidance",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Manson's Law of Avoidance",
+      "summary": "We tend to avoid things that threaten our identity, even if they could lead to positive change. This applies to both good and bad things in life, as success and failure can both challenge our sense of self.",
+      "source_chapter": "Manson\u2019s Law of Avoidance",
+      "applies_to_tags": [
+        "avoidance",
+        "identity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "comfort-trumps-potential-growth",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Comfort Trumps Potential Growth",
+      "summary": "The comfort of knowing how we fit in the world can lead us to avoid opportunities that could make our lives better. This comfort can be more appealing than the potential risks and challenges of change.",
+      "source_chapter": "Manson\u2019s Law of Avoidance",
+      "applies_to_tags": [
+        "comfort",
+        "growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "values-are-imperfect-and-incomplete",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Values are Imperfect and Incomplete",
+      "summary": "Our values are not perfect and complete, and assuming they are can lead to a dogmatic mindset. We must be open to changing our values and beliefs to solve our problems.",
+      "source_chapter": "Manson\u2019s Law of Avoidance",
+      "applies_to_tags": [
+        "values",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "change-requires-humility",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Change Requires Humility",
+      "summary": "To achieve real change or growth, we must first admit that our actions and beliefs up to this point have been wrong and are not working. This requires humility and a willingness to learn.",
+      "source_chapter": "Manson\u2019s Law of Avoidance",
+      "applies_to_tags": [
+        "humility",
+        "growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-define-yourself",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Don't Define Yourself",
+      "summary": "Avoid defining yourself by narrow identities that make you feel threatened. Instead, adopt more mundane and broad identities. This allows you to be more open to opportunities and less anxious about failure. As Mark Manson says, 'don't be special; don't be unique.'",
+      "source_chapter": "Kill Yourself",
+      "applies_to_tags": [
+        "identity",
+        "anxiety",
+        "opportunities"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "let-go-of-self-justification",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Let Go of Self-Justification",
+      "summary": "Recognize that your self-image is often a mental construction that traps you. Letting go of this self-image can free you to act and grow. When you admit to yourself that you may not be good at something, you're free to take action and learn.",
+      "source_chapter": "Kill Yourself",
+      "applies_to_tags": [
+        "self-awareness",
+        "growth",
+        "action"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "redefine-your-metrics",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Redefine Your Metrics",
+      "summary": "Stop measuring yourself by grandiose or unique standards. Instead, measure yourself by more mundane and ordinary identities. This helps you stay humble and open to opportunities.",
+      "source_chapter": "Kill Yourself",
+      "applies_to_tags": [
+        "self-perception",
+        "humble",
+        "opportunities"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-narcissism",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Avoid Narcissism",
+      "summary": "Don't assume that your problems are unique or special. This kind of self-absorption can lead to anxiety and fear. Instead, recognize that your problems are common and that you can learn from others.",
+      "source_chapter": "Kill Yourself",
+      "applies_to_tags": [
+        "narcissism",
+        "anxiety",
+        "fear"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "give-up-entitlement",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Give Up Entitlement",
+      "summary": "Recognize that you're not owed anything by the world. Give up your sense of entitlement and your belief that you're special or unique. This helps you stay humble and open to opportunities.",
+      "source_chapter": "Kill Yourself",
+      "applies_to_tags": [
+        "entitlement",
+        "humble",
+        "opportunities"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "question-your-own-thoughts-and-beliefs",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Question Your Own Thoughts and Beliefs",
+      "summary": "Regularly ask yourself if you're wrong about your thoughts and beliefs. This helps develop humility and compassion. As Aristotle said, 'It is the mark of an educated mind to be able to entertain a thought without accepting it.'",
+      "source_chapter": "How to Be a Little Less Certain of Yourself",
+      "applies_to_tags": [
+        "self-awareness",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "consider-the-consequences-of-being-wrong",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Consider the Consequences of Being Wrong",
+      "summary": "Think about what it would mean if you were wrong about something. This helps you evaluate different values and consider alternative perspectives.",
+      "source_chapter": "How to Be a Little Less Certain of Yourself",
+      "applies_to_tags": [
+        "critical thinking",
+        "problem-solving"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritize-humility-over-certainty",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Prioritize Humility Over Certainty",
+      "summary": "Admitting uncertainty can lead to learning and growth. It's better to be humble and open to change than to cling to certainties that may harm others.",
+      "source_chapter": "How to Be a Little Less Certain of Yourself",
+      "applies_to_tags": [
+        "emotional intelligence",
+        "relationships"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "assume-responsibility-for-your-mistakes",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Assume Responsibility for Your Mistakes",
+      "summary": "When faced with conflicts or disagreements, assume you're the one who's screwed up, rather than blaming others.",
+      "source_chapter": "How to Be a Little Less Certain of Yourself",
+      "applies_to_tags": [
+        "conflict resolution",
+        "personal responsibility"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "evaluate-problems-based-on-their-impact",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Evaluate Problems Based on Their Impact",
+      "summary": "Consider whether being wrong would create a better or worse problem than your current one, for yourself and others.",
+      "source_chapter": "How to Be a Little Less Certain of Yourself",
+      "applies_to_tags": [
+        "problem-solving",
+        "decision-making"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-failure-as-a-learning-opportunity",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Embracing Failure as a Learning Opportunity",
+      "summary": "Failure can be a catalyst for growth and learning. As Mark Manson says, 'If every project I started failed, if every post I wrote went unread, I'd only be back exactly where I started.'",
+      "source_chapter": "CHAPTER 7: Failure Is the Way Forward",
+      "applies_to_tags": [
+        "resilience",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "perspective-shapes-our-perception-of-success-and-failure",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Perspective Shapes Our Perception of Success and Failure",
+      "summary": "Our definition of success and failure is subjective and influenced by our goals and values. What may be considered a failure by one person may be seen as a success by another.",
+      "source_chapter": "CHAPTER 7: Failure Is the Way Forward",
+      "applies_to_tags": [
+        "motivation",
+        "goal-setting"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "value-freedom-over-wealth",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Value Freedom Over Wealth",
+      "summary": "Prioritize autonomy and freedom over material wealth. As Picasso said, 'It took me over sixty years to draw this.'",
+      "source_chapter": "The Failure/Success Paradox",
+      "applies_to_tags": [
+        "personal growth",
+        "values"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pain-is-a-catalyst-for-growth",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Pain is a Catalyst for Growth",
+      "summary": "Pain can lead to personal growth, increased resilience, and a stronger sense of self. As Kazimierz Dabrowski noted, 'fear and anxiety are not always undesirable states of mind.'",
+      "source_chapter": "Pain Is Part of the Process",
+      "applies_to_tags": [
+        "personal growth",
+        "resilience"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "action-is-the-cause-of-motivation",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Action is the Cause of Motivation",
+      "summary": "Action can create a chain reaction of inspiration, motivation, and action. As Mark Manson says, 'action isn't just the effect of motivation; it's also the cause of it.'",
+      "source_chapter": "The \u201cDo Something\u201d Principle",
+      "applies_to_tags": [
+        "productivity",
+        "motivation"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-do-something-principle",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The 'Do Something' Principle",
+      "summary": "Taking action, even when we don't feel motivated or inspired, can be the catalyst for change. By doing something, we can create a reaction that inspires us to take further action.",
+      "source_chapter": "The \u201cDo Something\u201d Principle",
+      "applies_to_tags": [
+        "productivity",
+        "motivation"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "start-small-and-take-action",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Start Small and Take Action",
+      "summary": "Breaking down daunting tasks into smaller steps and taking action can create momentum and make progress. As Mark Manson says, 'two hundred crappy words per day, that's it.'",
+      "source_chapter": "The \u201cDo Something\u201d Principle",
+      "applies_to_tags": [
+        "productivity",
+        "goal-setting"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "separate-emotions-from-reality",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Separate Emotions from Reality",
+      "summary": "Recognize that emotions can distort our perception of reality. As Mark Manson says, 'the world is a simple place where two people can walk up to each other at any time and speak.'",
+      "source_chapter": "The \u201cDo Something\u201d Principle",
+      "applies_to_tags": [
+        "emotional-intelligence",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "failure-is-not-the-end",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Failure is Not the End",
+      "summary": "Embracing the idea that any result is progress can help us feel free to fail and move forward.",
+      "source_chapter": "The \u201cDo Something\u201d Principle",
+      "applies_to_tags": [
+        "resilience",
+        "productivity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "freedom-and-commitment",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Freedom and Commitment",
+      "summary": "Freedom without commitment is meaningless. Absolute freedom doesn't bring meaning or happiness. It's through commitment and narrowing of freedom that we find significance. As Mark Manson said, 'Freedom grants the opportunity for greater meaning, but by itself there is nothing necessarily meaningful about it.' This principle applies to individuals who prioritize freedom over stability and relationships.",
+      "source_chapter": "CHAPTER 8: The Importance of Saying No",
+      "applies_to_tags": [
+        "commitment",
+        "freedom",
+        "meaning"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "exposure-to-different-cultures",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Exposure to Different Cultures",
+      "summary": "Travel and exposure to different cultures can help individuals break free from their cultural values and reexamine their own. This exposure can lead to personal growth and a more nuanced understanding of the world. As Mark Manson said, 'Travel is a fantastic self-development tool, because it extricates you from the values of your culture.'",
+      "source_chapter": "CHAPTER 8: The Importance of Saying No",
+      "applies_to_tags": [
+        "culture",
+        "travel",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "authenticity-and-honesty",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Authenticity and Honesty",
+      "summary": "Authentic expression and honesty are crucial for experiencing true freedom. When we can express ourselves without fear of repercussions, we can live more authentically and find liberation. Mark Manson's experience in Saint Petersburg, Russia, showed him the value of blunt expression and honesty.",
+      "source_chapter": "CHAPTER 8: The Importance of Saying No",
+      "applies_to_tags": [
+        "authenticity",
+        "honesty",
+        "freedom"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "value-requires-rejection",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Value Requires Rejection",
+      "summary": "To value something, you must reject alternative values. This is an inherent part of maintaining our values and identity. 'To value X, we must reject non-X.'",
+      "source_chapter": "Rejection Makes Your Life Better",
+      "applies_to_tags": [
+        "values",
+        "identity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoiding-rejection-leads-to-meaninglessness",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Avoiding Rejection Leads to Meaninglessness",
+      "summary": "Avoiding rejection gives short-term pleasure but makes us rudderless and directionless in the long term, leading to an empty and meaningless life.",
+      "source_chapter": "Rejection Makes Your Life Better",
+      "applies_to_tags": [
+        "meaning",
+        "purpose"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "rejection-is-necessary-for-intimacy",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Rejection is Necessary for Intimacy",
+      "summary": "Honesty and openness, which require rejection, are necessary for building trust and intimacy in relationships.",
+      "source_chapter": "Rejection Makes Your Life Better",
+      "applies_to_tags": [
+        "intimacy",
+        "trust"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-cost-of-positivity",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Cost of Positivity",
+      "summary": "The emphasis on positivity and acceptance can lead to a culture of deception and superficial relationships, where people prioritize appearances over authenticity.",
+      "source_chapter": "Rejection Makes Your Life Better",
+      "applies_to_tags": [
+        "positivity",
+        "authenticity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "entitlement-to-happiness",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Entitlement to Happiness",
+      "summary": "The desire to avoid rejection at all costs is a deep and subtle form of entitlement, where individuals feel they deserve to feel great all the time.",
+      "source_chapter": "Rejection Makes Your Life Better",
+      "applies_to_tags": [
+        "entitlement",
+        "happiness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "healthy-relationships-require-clear-boundaries",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Healthy Relationships Require Clear Boundaries",
+      "summary": "Healthy relationships are built on clear boundaries, where each person takes responsibility for their own problems and values. This allows for open communication and mutual support, without one person trying to solve the other's problems. As Mark Manson says, 'You can't solve your problems for you, and you can't solve other people's problems for them either.'",
+      "source_chapter": "Boundaries",
+      "applies_to_tags": [
+        "relationships",
+        "boundaries"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "love-should-not-be-conditional",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Love Should Not Be Conditional",
+      "summary": "Love should not be conditional on receiving benefits or attention from others. True love is unconditional, accepting each other's problems and imperfections without expectation of reward. As Mark Manson says, 'Acts of love are valid only if they're performed without conditions or expectations.'",
+      "source_chapter": "Boundaries",
+      "applies_to_tags": [
+        "love",
+        "relationships"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "responsibility-is-key-to-healthy-relationships",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Responsibility is Key to Healthy Relationships",
+      "summary": "Taking responsibility for one's own problems and values is essential for healthy relationships. When people take responsibility for themselves, they develop strong values and a sense of self-worth, leading to more fulfilling and authentic relationships.",
+      "source_chapter": "Boundaries",
+      "applies_to_tags": [
+        "responsibility",
+        "relationships"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "trust-is-the-foundation",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Trust is the Foundation",
+      "summary": "Trust is the most important ingredient in any relationship. Without trust, the relationship doesn't actually mean anything. A person could tell you they love you, but if you don't trust them, you get no benefit from those statements.",
+      "source_chapter": "How to Build Trust",
+      "applies_to_tags": [
+        "trust",
+        "relationships"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-paradox-of-choice",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Paradox of Choice",
+      "summary": "Too many options lead to dissatisfaction and anxiety. The more choices, the less satisfied we become. 'The more options we\u2019re given, the less satisfied we become.'",
+      "source_chapter": "Freedom Through Commitment",
+      "applies_to_tags": [
+        "choice",
+        "anxiety"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "depth-over-breadth",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Depth Over Breadth",
+      "summary": "Depth of experience is more valuable than breadth. Committing to one thing allows for greater rewards and opportunities.",
+      "source_chapter": "Freedom Through Commitment",
+      "applies_to_tags": [
+        "experience",
+        "commitment"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "freedom-through-commitment",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Freedom Through Commitment",
+      "summary": "Commitment gives freedom by focusing attention on what truly matters. It removes distractions and fear of missing out. As Josh says, 'Seek the truth for yourself, and I will meet you there.'",
+      "source_chapter": "CHAPTER 9: . . . And Then You Die",
+      "applies_to_tags": [
+        "freedom",
+        "commitment",
+        "self-discovery",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "diminishing-returns",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Diminishing Returns",
+      "summary": "Each new experience adds less value as we accumulate more. The law of diminishing returns applies to experiences, possessions, and relationships.",
+      "source_chapter": "Freedom Through Commitment",
+      "applies_to_tags": [
+        "experience",
+        "possessions",
+        "relationships"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-mortality",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Embracing Mortality",
+      "summary": "Confronting one's own mortality can lead to a greater appreciation for life and a more humble attitude. It can also help individuals let go of superficial values and focus on what truly matters. As Mark Twain said, 'The fear of death follows from the fear of life.'",
+      "source_chapter": "The Sunny Side of Death",
+      "applies_to_tags": [
+        "death",
+        "mortality",
+        "values"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "take-responsibility-for-your-life",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Take Responsibility for Your Life",
+      "summary": "The author's transformation after Josh's death shows that taking responsibility for one's life and making changes is possible. This principle encourages individuals to take control of their lives and make positive changes.",
+      "source_chapter": "CHAPTER 9: . . . And Then You Die",
+      "applies_to_tags": [
+        "personal growth",
+        "self-improvement"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-legacy",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Importance of Legacy",
+      "summary": "Considering one's legacy and the impact they will have on the world can help individuals prioritize their values and make meaningful decisions. This can lead to a greater sense of purpose and fulfillment. As Becker pointed out, 'This is arguably the only truly important question in our life.'",
+      "source_chapter": "The Sunny Side of Death",
+      "applies_to_tags": [
+        "legacy",
+        "values",
+        "purpose"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "letting-go-of-entitlement",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Letting Go of Entitlement",
+      "summary": "Recognizing and letting go of entitlement can help individuals focus on what truly matters and develop a greater sense of humility. This can lead to a more authentic and fulfilling life. As the author notes, 'Entitlement isolates us. Our curiosity and excitement for the world turns in upon itself and reflects our own biases and projections.'",
+      "source_chapter": "The Sunny Side of Death",
+      "applies_to_tags": [
+        "entitlement",
+        "humility",
+        "authenticity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-power-of-choice",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Power of Choice",
+      "summary": "Recognizing that we have the power to choose what to give a fuck about can help individuals develop a greater sense of agency and purpose. This can lead to a more fulfilling and meaningful life. As the author notes, 'You are already great because in the face of endless confusion and certain death, you continue to choose what to give a fuck about and what not to.'",
+      "source_chapter": "The Sunny Side of Death",
+      "applies_to_tags": [
+        "choice",
+        "agency",
+        "purpose"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-value-of-vulnerability",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Value of Vulnerability",
+      "summary": "Embracing vulnerability and facing one's fears can help individuals develop a greater sense of courage and resilience. This can lead to a more authentic and fulfilling life. As the author notes, 'There is nothing to be afraid of. Ever.'",
+      "source_chapter": "The Sunny Side of Death",
+      "applies_to_tags": [
+        "vulnerability",
+        "courage",
+        "resilience"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-mindfulness",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "The Importance of Mindfulness",
+      "summary": "Practicing mindfulness and being present in the moment can help individuals develop a greater sense of awareness and appreciation for life. This can lead to a more fulfilling and meaningful life. As the author notes, 'Nothing makes you present and mindful like being mere inches away from your own death.'",
+      "source_chapter": "The Sunny Side of Death",
+      "applies_to_tags": [
+        "mindfulness",
+        "awareness",
+        "presence"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "authenticity-in-interactions",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Authenticity in Interactions",
+      "summary": "Being genuine and true to oneself can lead to deeper connections with others. When we're authentic, we're more likely to form meaningful relationships and have a positive impact on those around us. As seen in the encounter with the Australian man, authenticity can break down barriers and create a sense of understanding. 'Is everything okay? How are you feeling?' - a genuine inquiry can be a powerful tool in building connections.",
+      "source_chapter": "The Sunny Side of Death",
+      "applies_to_tags": [
+        "emotional-intelligence",
+        "social-skills"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "death-is-the-measure-of-life-s-meaning",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Death is the Measure of Life's Meaning",
+      "summary": "The significance of life is often measured by the presence of death. Without death, life would feel inconsequential and arbitrary.",
+      "source_chapter": "Something Beyond Our Selves",
+      "applies_to_tags": [
+        "meaning",
+        "death"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "humans-are-unique-in-their-ability-to-conceptualize-death",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Humans are Unique in Their Ability to Conceptualize Death",
+      "summary": "Humans are the only animals that can think about their own mortality, leading to existential anxiety.",
+      "source_chapter": "Something Beyond Our Selves",
+      "applies_to_tags": [
+        "humanity",
+        "death"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "immortality-projects-drive-human-behavior",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Immortality Projects Drive Human Behavior",
+      "summary": "Humans strive to create lasting legacies through 'immortality projects' to compensate for their fear of death.",
+      "source_chapter": "Something Beyond Our Selves",
+      "applies_to_tags": [
+        "immortality",
+        "human-nature"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "conflict-arises-from-competing-immortality-projects",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Conflict Arises from Competing Immortality Projects",
+      "summary": "Conflicts and wars occur when different groups' immortality projects clash, leading to oppression and bloodshed.",
+      "source_chapter": "Something Beyond Our Selves",
+      "applies_to_tags": [
+        "conflict",
+        "immortality"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "we-have-two-selves-physical-and-conceptual",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "We Have Two Selves: Physical and Conceptual",
+      "summary": "Humans have a physical self and a conceptual self, with the latter being our identity and how we see ourselves.",
+      "source_chapter": "Something Beyond Our Selves",
+      "applies_to_tags": [
+        "self",
+        "identity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "death-terror-underlies-human-existence",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Death Terror Underlies Human Existence",
+      "summary": "A deep existential anxiety, or 'death terror,' underlies everything humans think and do.",
+      "source_chapter": "Something Beyond Our Selves",
+      "applies_to_tags": [
+        "anxiety",
+        "human-existence"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "appreciate-unconditional-support",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Appreciate Unconditional Support",
+      "summary": "Unconditional love and support from family and friends are crucial for personal growth. A supportive partner, in particular, can make a significant difference in one's life. As Mark Manson's wife Fernanda says, 'your unconditional love and constant feedback during the writing process were indispensable.'",
+      "source_chapter": "Acknowledgments",
+      "applies_to_tags": [
+        "family",
+        "relationships"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "value-feedback-and-criticism",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Value Feedback and Criticism",
+      "summary": "Constructive feedback and criticism from others can help refine one's ideas and improve personal growth. Mark Manson credits his editor Luke Dempsey for 'mercilessly tightening the screws on my writing.'",
+      "source_chapter": "Acknowledgments",
+      "applies_to_tags": [
+        "personal growth",
+        "productivity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "acknowledge-help-and-support",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Acknowledge Help and Support",
+      "summary": "Recognizing and appreciating the help and support of others is essential for success. Mark Manson expresses gratitude to his team for their contributions to his book.",
+      "source_chapter": "Acknowledgments",
+      "applies_to_tags": [
+        "gratitude",
+        "teamwork"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "authenticity-matters",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Authenticity Matters",
+      "summary": "Authenticity is crucial in building a genuine connection with readers. Mark Manson's writing style reflects his true personality, making him relatable and trustworthy. As he says, 'I'm just a guy with a blog.'",
+      "source_chapter": "About the Author",
+      "applies_to_tags": [
+        "authenticity",
+        "relatability"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "learn-from-others-experiences",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Learn from Others' Experiences",
+      "summary": "The experiences and insights of others can be a valuable source of learning and growth. Mark Manson notes that the people who read his blog and shared their stories with him have been his 'true education.'",
+      "source_chapter": "Acknowledgments",
+      "applies_to_tags": [
+        "learning",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "respect-intellectual-property",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Respect Intellectual Property",
+      "summary": "The author emphasizes the importance of respecting copyright laws and regulations. This includes obtaining permission before reproducing or sharing copyrighted material.",
+      "source_chapter": "Copyright",
+      "applies_to_tags": [
+        "copyright",
+        "intellectual-property"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "acknowledge-reality-and-respect-boundaries",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Acknowledge Reality and Respect Boundaries",
+      "summary": "The physical world exists independently of our desires and expectations. It's essential to acknowledge and respect its boundaries. As the publisher's addresses demonstrate, even a global company has a physical presence in various locations. \"The world is what it is.\" - Mark Manson",
+      "source_chapter": "About the Publisher",
+      "applies_to_tags": [
+        "reality-check",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "location-can-influence-perspective",
+      "book_id": "subtle-art-of-not-giving-a-fck",
+      "name": "Location Can Influence Perspective",
+      "summary": "Living in a big city like New York can shape one's worldview and writing style. Mark Manson's urban environment likely influences his thoughts and ideas.",
+      "source_chapter": "About the Author",
+      "applies_to_tags": [
+        "environment",
+        "perspective"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    }
+  ],
+  "extraction_metadata": {
+    "chunking_strategy": "toc",
+    "chunking_reason": "embedded PDF TOC yielded 50 chapter-level entries",
+    "chapter_count": 49,
+    "chunk_count": 50,
+    "model": "llama-3.1-8b-instant",
+    "generated_at": "2026-08-07T04:40:42.934385+00:00"
+  }
+}

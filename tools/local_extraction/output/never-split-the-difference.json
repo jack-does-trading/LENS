@@ -1,0 +1,1222 @@
+{
+  "book": {
+    "book_id": "never-split-the-difference",
+    "title": "Never Split the Difference",
+    "author": "Chris Voss",
+    "core_thesis": "Effective negotiation is not about using logic and power to get what you want, but rather about understanding human psychology and emotions to build trust and create mutually beneficial solutions. By establishing trust through empathy, using tactical empathy, and focusing on interests rather than positions, negotiators can create a safe and collaborative environment that fosters creative problem-solving and leads to successful outcomes. This approach involves active listening, calibrated questions, and a deep understanding of the counterpart's perspective, allowing negotiators to separate emotions from problem-solving and find solutions that satisfy both parties' needs.",
+    "tone": "pragmatic",
+    "tracked_metrics": [],
+    "review_status": "pending_review",
+    "extraction_method": "local_model",
+    "version": 1
+  },
+  "principles": [
+    {
+      "principle_id": "establish-trust-through-empathy",
+      "book_id": "never-split-the-difference",
+      "name": "Establish Trust through Empathy",
+      "summary": "Building trust requires understanding and acknowledging the other person's emotions, creating a safe space for open communication.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-tactical-empathy",
+      "book_id": "never-split-the-difference",
+      "name": "Use Tactical Empathy",
+      "summary": "Tactical empathy involves recognizing and repeating the counterpart's perspective to gain trust and understanding.",
+      "source_chapter": "How to Become the Smartest Person . . . in Any Room",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "emotional-intelligence-in-negotiation",
+      "book_id": "never-split-the-difference",
+      "name": "Emotional Intelligence in Negotiation",
+      "summary": "Negotiation is about understanding human psychology and emotions, as logic and power are insufficient.",
+      "source_chapter": "How to Become the Smartest Person . . . in Any Room",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "calibrated-questions",
+      "book_id": "never-split-the-difference",
+      "name": "Calibrated Questions",
+      "summary": "Ask open-ended questions to make the other side feel in control, buying time and gaining leverage.",
+      "source_chapter": "How to Become the Smartest Person . . . in Any Room",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-intellectual-power",
+      "book_id": "never-split-the-difference",
+      "name": "Avoid Intellectual Power",
+      "summary": "Rationality and logic are not enough; human emotions and irrationality must be acknowledged.",
+      "source_chapter": "How to Become the Smartest Person . . . in Any Room",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "separate-emotions-from-problem-solving",
+      "book_id": "never-split-the-difference",
+      "name": "Separate Emotions from Problem-Solving",
+      "summary": "Overcome emotional brain's irrationality through rational, joint problem-solving mindset. '[I]t is self-evident' people are not fully rational.",
+      "source_chapter": "How to Become the Smartest Person . . . in Any Room",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-interests-not-positions",
+      "book_id": "never-split-the-difference",
+      "name": "Focus on Interests, Not Positions",
+      "summary": "Understand what the other side wants by focusing on their interests, not just their demands.",
+      "source_chapter": "How to Become the Smartest Person . . . in Any Room",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "listen-intensely-to-build-rapport",
+      "book_id": "never-split-the-difference",
+      "name": "Listen Intensely to Build Rapport",
+      "summary": "Listening is the cheapest, yet most effective concession to get people to open up, demonstrating empathy and a sincere desire to understand.",
+      "source_chapter": "How to Become the Smartest Person . . . in Any Room",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-assumptions-and-use-active-listening",
+      "book_id": "never-split-the-difference",
+      "name": "Avoid Assumptions and Use Active Listening",
+      "summary": "Replace assumptions with active listening techniques to avoid blind spots.",
+      "source_chapter": "How to Become the Smartest Person . . . in Any Room",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "reframe-to-understand",
+      "book_id": "never-split-the-difference",
+      "name": "Reframe to Understand",
+      "summary": "Emotionally affirm the counterpart's worldview through summaries and paraphrasing to build trust.",
+      "source_chapter": "How to Become the Smartest Person . . . in Any Room",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "step-into-their-world",
+      "book_id": "never-split-the-difference",
+      "name": "Step into Their World",
+      "summary": "Negotiate in the counterpart's world, not yours, to achieve an agreement they'll implement.",
+      "source_chapter": "How to Become the Smartest Person . . . in Any Room",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-aware-of-assumptions",
+      "book_id": "never-split-the-difference",
+      "name": "Be Aware of Assumptions",
+      "summary": "Negotiators should hold multiple hypotheses about the situation and counterpart's wants.",
+      "source_chapter": "How to Quickly Establish Rapport",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "slow-down-negotiations",
+      "book_id": "never-split-the-difference",
+      "name": "Slow Down Negotiations",
+      "summary": "Going too fast can undermine rapport and trust; slowing down creates a positive frame of mind, encouraging collaboration and problem-solving.",
+      "source_chapter": "How to Quickly Establish Rapport",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "establish-calm-rapport",
+      "book_id": "never-split-the-difference",
+      "name": "Establish Calm Rapport",
+      "summary": "Use a calm and reassuring tone to establish trust with others.",
+      "source_chapter": "How to Quickly Establish Rapport",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "mirror-the-other-person-s-energy",
+      "book_id": "never-split-the-difference",
+      "name": "Mirror the Other Person's Energy",
+      "summary": "Reflect the other person's emotions and energy to build rapport and connection.",
+      "source_chapter": "How to Quickly Establish Rapport",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-a-downward-inflecting-tone",
+      "book_id": "never-split-the-difference",
+      "name": "Use a Downward-Inflecting Tone",
+      "summary": "Convey control and confidence by using a downward-inflecting tone of voice.",
+      "source_chapter": "How to Quickly Establish Rapport",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prepare-for-surprises",
+      "book_id": "never-split-the-difference",
+      "name": "Prepare for Surprises",
+      "summary": "A good negotiator prepares to handle unexpected developments, while a great one aims to uncover surprises during the negotiation process.",
+      "source_chapter": "How to Quickly Establish Rapport",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-mirroring-effectively",
+      "book_id": "never-split-the-difference",
+      "name": "Use Mirroring Effectively",
+      "summary": "Mirroring facilitates bonding by insinuating similarity, encouraging empathy and keeping people talking.",
+      "source_chapter": "How to Quickly Establish Rapport",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-assumptions",
+      "book_id": "never-split-the-difference",
+      "name": "Avoid Assumptions",
+      "summary": "View assumptions as hypotheses and test them rigorously during negotiation.",
+      "source_chapter": "How to Quickly Establish Rapport",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "label-emotions-to-validate",
+      "book_id": "never-split-the-difference",
+      "name": "Label Emotions to Validate",
+      "summary": "Label emotions to show empathy, reducing frustration and increasing understanding.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "neutralize-negative-reinforce-positive",
+      "book_id": "never-split-the-difference",
+      "name": "Neutralize Negative, Reinforce Positive",
+      "summary": "Address underlying emotions by labeling negatives to diffuse and positives to reinforce.",
+      "source_chapter": "How to Create Trust with Tactical Empathy",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "do-an-accusation-audit",
+      "book_id": "never-split-the-difference",
+      "name": "Do an Accusation Audit",
+      "summary": "List possible accusations to disarm concerns and create constructive conversation.",
+      "source_chapter": "How to Create Trust with Tactical Empathy",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-clearing-barriers-to-agreement",
+      "book_id": "never-split-the-difference",
+      "name": "Focus on Clearing Barriers to Agreement",
+      "summary": "Identify and address barriers to agreement before making a deal.",
+      "source_chapter": "How to Create Trust with Tactical Empathy",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pause-for-reflection",
+      "book_id": "never-split-the-difference",
+      "name": "Pause for Reflection",
+      "summary": "Pause after labeling or mirroring to allow processing and create a safe space.",
+      "source_chapter": "How to Create Trust with Tactical Empathy",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "master-no-to-gain-momentum",
+      "book_id": "never-split-the-difference",
+      "name": "Master 'No' to Gain Momentum",
+      "summary": "Use 'No' as a tool to maintain control and gain time for negotiation.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two",
+        "tag-three",
+        "tag-four",
+        "tag-five",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "recognize-counterfeit-yes",
+      "book_id": "never-split-the-difference",
+      "name": "Recognize Counterfeit 'Yes'",
+      "summary": "Be aware of three types of 'Yes': counterfeit, confirmation, and commitment.",
+      "source_chapter": "How to Generate Momentum and Make It Safe to Reveal the Real Stakes",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "give-permission-to-say-no",
+      "book_id": "never-split-the-difference",
+      "name": "Give Permission to Say 'No'",
+      "summary": "Give the other party permission to say 'No', allowing them to maintain control.",
+      "source_chapter": "How to Generate Momentum and Make It Safe to Reveal the Real Stakes",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "listen-for-alternative-meanings",
+      "book_id": "never-split-the-difference",
+      "name": "Listen for Alternative Meanings",
+      "summary": "Listen for alternative meanings when someone says 'No'.",
+      "source_chapter": "How to Generate Momentum and Make It Safe to Reveal the Real Stakes",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-ego-based-negotiation",
+      "book_id": "never-split-the-difference",
+      "name": "Avoid Ego-Based Negotiation",
+      "summary": "Negotiations should focus on mutually beneficial solutions, not showcasing skills or ego.",
+      "source_chapter": "How to Generate Momentum and Make It Safe to Reveal the Real Stakes",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-the-other-person-own-the-conversation",
+      "book_id": "never-split-the-difference",
+      "name": "Make the Other Person Own the Conversation",
+      "summary": "Make the other person feel responsible for creating connection and new ideas. 'You see, that whole call had been about me and my ego'",
+      "source_chapter": "How to Generate Momentum and Make It Safe to Reveal the Real Stakes",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "satisfy-primal-urges",
+      "book_id": "never-split-the-difference",
+      "name": "Satisfy Primal Urges",
+      "summary": "Negotiators must satisfy primal urges of safety, security, and control. 'Everyone you meet is driven by two primal urges'",
+      "source_chapter": "How to Generate Momentum and Make It Safe to Reveal the Real Stakes",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-aim-for-yes-at-first",
+      "book_id": "never-split-the-difference",
+      "name": "Don't Aim for 'Yes' at First",
+      "summary": "Asking for 'Yes' too quickly can get the other party's guard up.",
+      "source_chapter": "How to Generate Momentum and Make It Safe to Reveal the Real Stakes",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-the-speaker-feel-safe",
+      "book_id": "never-split-the-difference",
+      "name": "Make the Speaker Feel Safe",
+      "summary": "Saying 'No' makes the speaker feel secure, which helps them listen to you.",
+      "source_chapter": "How to Generate Momentum and Make It Safe to Reveal the Real Stakes",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "negotiate-in-their-world",
+      "book_id": "never-split-the-difference",
+      "name": "Negotiate in Their World",
+      "summary": "Persuasion is about helping the other party convince themselves that your solution is their own idea.",
+      "source_chapter": "How to Generate Momentum and Make It Safe to Reveal the Real Stakes",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "establish-rapport-with-adversaries",
+      "book_id": "never-split-the-difference",
+      "name": "Establish Rapport with Adversaries",
+      "summary": "Create a connection with your adversary to build trust and understanding by mirroring their language and labeling their emotions.",
+      "source_chapter": "How to Gain the Permission to Persuade",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-active-listening-techniques",
+      "book_id": "never-split-the-difference",
+      "name": "Use Active Listening Techniques",
+      "summary": "Employ techniques like effective pauses and summarizing to show you're fully engaged in the conversation.",
+      "source_chapter": "How to Gain the Permission to Persuade",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "look-for-that-s-right-breakthroughs",
+      "book_id": "never-split-the-difference",
+      "name": "Look for 'That's Right!' Breakthroughs",
+      "summary": "Identify moments when your adversary says 'that's right,' indicating they've accepted a point without feeling like they're giving in.",
+      "source_chapter": "How to Gain the Permission to Persuade",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-getting-stuck-on-yes-or-no-answers",
+      "book_id": "never-split-the-difference",
+      "name": "Avoid Getting Stuck on 'Yes' or 'No' Answers",
+      "summary": "Aim for a deeper understanding of your adversary's perspective and concerns instead of focusing on 'yes' or 'no' answers.",
+      "source_chapter": "How to Gain the Permission to Persuade",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "understand-the-other-s-perspective",
+      "book_id": "never-split-the-difference",
+      "name": "Understand the Other's Perspective",
+      "summary": "To gain permission to persuade, you must first understand the other person's perspective and goals by actively listening and seeking to understand their needs.",
+      "source_chapter": "How to Gain the Permission to Persuade",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-giving-unsolicited-advice",
+      "book_id": "never-split-the-difference",
+      "name": "Avoid Giving Unsolicited Advice",
+      "summary": "Giving unsolicited advice can be counterproductive in a negotiation; instead, focus on listening and seeking to understand their perspective.",
+      "source_chapter": "How to Gain the Permission to Persuade",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "create-unconditional-positive-regard",
+      "book_id": "never-split-the-difference",
+      "name": "Create Unconditional Positive Regard",
+      "summary": "Show genuine interest and empathy towards the other person to create a sense of safety and increase the chances of a successful outcome.",
+      "source_chapter": "How to Gain the Permission to Persuade",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-compromise",
+      "book_id": "never-split-the-difference",
+      "name": "Don't Compromise",
+      "summary": "Compromise can lead to poor results; instead, focus on creative solutions that require risk and conflict.",
+      "source_chapter": "How to Shape What Is Fair",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-time-your-ally",
+      "book_id": "never-split-the-difference",
+      "name": "Make Time Your Ally",
+      "summary": "Deadlines can be leveraged to gain leverage in negotiations; hiding deadlines can lead to impasses.",
+      "source_chapter": "How to Shape What Is Fair",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "fairness-is-subjective",
+      "book_id": "never-split-the-difference",
+      "name": "Fairness is Subjective",
+      "summary": "Fairness is often based on emotions, not logic, and is a key emotional trigger in decision-making.",
+      "source_chapter": "How to Shape What Is Fair",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "anchoring-emotions",
+      "book_id": "never-split-the-difference",
+      "name": "Anchoring Emotions",
+      "summary": "Start with an accusation audit to anchor the other side's emotions, then play on their loss aversion.",
+      "source_chapter": "How to Shape What Is Fair",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "let-the-other-guy-go-first",
+      "book_id": "never-split-the-difference",
+      "name": "Let the Other Guy Go First",
+      "summary": "Don't anchor monetary negotiations by opening with confidence; let the other side set the tone.",
+      "source_chapter": "How to Shape What Is Fair",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "establish-a-range-for-negotiation",
+      "book_id": "never-split-the-difference",
+      "name": "Establish a Range for Negotiation",
+      "summary": "Set a range for negotiation to create a sense of flexibility and avoid extreme anchors.",
+      "source_chapter": "How to Shape What Is Fair",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-ranges-to-bend-reality",
+      "book_id": "never-split-the-difference",
+      "name": "Use Ranges to Bend Reality",
+      "summary": "Offering a range can help bend your counterpart's reality and make their initial offer seem reasonable.",
+      "source_chapter": "How to Shape What Is Fair",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pivot-to-nonmonetary-terms",
+      "book_id": "never-split-the-difference",
+      "name": "Pivot to Nonmonetary Terms",
+      "summary": "Negotiation is often about finding mutually beneficial solutions, not just numbers; pivoting to nonmonetary terms can create a collaborative environment.",
+      "source_chapter": "How to Shape What Is Fair",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-odd-numbers-to-fortify-offers",
+      "book_id": "never-split-the-difference",
+      "name": "Use Odd Numbers to Fortify Offers",
+      "summary": "Using odd numbers in your offers can make them seem more thoughtful and serious.",
+      "source_chapter": "How to Shape What Is Fair",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "surprise-with-a-gift-to-create-reciprocity",
+      "book_id": "never-split-the-difference",
+      "name": "Surprise with a Gift to Create Reciprocity",
+      "summary": "Making an unexpected gift or gesture can create a sense of reciprocity, where your counterpart feels obligated to respond in kind.",
+      "source_chapter": "How to Shape What Is Fair",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "calibrate-questions",
+      "book_id": "never-split-the-difference",
+      "name": "Calibrate Questions",
+      "summary": "Use open-ended questions to coax and co-opt, not overcome or defeat. 'What' and 'how' questions help.",
+      "source_chapter": "How to Calibrate Questions to Transform Conflict into Collaboration",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-confrontation",
+      "book_id": "never-split-the-difference",
+      "name": "Avoid Confrontation",
+      "summary": "Confrontational approaches lead to breakdowns. Instead, focus on communication without reciprocity.",
+      "source_chapter": "How to Calibrate Questions to Transform Conflict into Collaboration",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "give-illusion-of-control",
+      "book_id": "never-split-the-difference",
+      "name": "Give Illusion of Control",
+      "summary": "Define the conversation, letting counterparts suggest solutions, building trust and cooperation.",
+      "source_chapter": "How to Calibrate Questions to Transform Conflict into Collaboration",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "regulate-emotions",
+      "book_id": "never-split-the-difference",
+      "name": "Regulate Emotions",
+      "summary": "Maintain emotional control to achieve better outcomes. Pause, think, and avoid knee-jerk reactions.",
+      "source_chapter": "How to Calibrate Questions to Transform Conflict into Collaboration",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-accusatory-language",
+      "book_id": "never-split-the-difference",
+      "name": "Avoid Accusatory Language",
+      "summary": "Use 'what', 'how', and 'why' instead of accusatory language to avoid defensiveness.",
+      "source_chapter": "How to Calibrate Questions to Transform Conflict into Collaboration",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "forced-empathy",
+      "book_id": "never-split-the-difference",
+      "name": "Forced Empathy",
+      "summary": "Use questions making counterparts consider your situation, creating a positive dynamic.",
+      "source_chapter": "How to Spot the Liars and Ensure Follow-Through from Everyone Else",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "implementation-focus",
+      "book_id": "never-split-the-difference",
+      "name": "Implementation Focus",
+      "summary": "Make counterparts articulate implementation in their own words for better follow-through.",
+      "source_chapter": "How to Spot the Liars and Ensure Follow-Through from Everyone Else",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "identify-committee-players",
+      "book_id": "never-split-the-difference",
+      "name": "Identify Committee Players",
+      "summary": "Understand motivations of multiple parties in negotiations by asking questions like 'How does this affect your team?'",
+      "source_chapter": "How to Spot the Liars and Ensure Follow-Through from Everyone Else",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "subsume-ego",
+      "book_id": "never-split-the-difference",
+      "name": "Subsume Ego",
+      "summary": "Let counterparts feel victory by summarizing their statements, helping them think it was their idea.",
+      "source_chapter": "How to Spot the Liars and Ensure Follow-Through from Everyone Else",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-seven"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "analyze-entire-negotiation-space",
+      "book_id": "never-split-the-difference",
+      "name": "Analyze Entire Negotiation Space",
+      "summary": "Consider all parties affected by the negotiation, not just those present.",
+      "source_chapter": "How to Spot the Liars and Ensure Follow-Through from Everyone Else",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "watch-for-deception",
+      "book_id": "never-split-the-difference",
+      "name": "Watch for Deception",
+      "summary": "Pay attention to changes in language, tone, and body language that may indicate deception.",
+      "source_chapter": "How to Spot the Liars and Ensure Follow-Through from Everyone Else",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "humanize-yourself",
+      "book_id": "never-split-the-difference",
+      "name": "Humanize Yourself",
+      "summary": "Introduce yourself with a friendly tone to build rapport and get a personal connection.",
+      "source_chapter": "How to Spot the Liars and Ensure Follow-Through from Everyone Else",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-calibrated-questions",
+      "book_id": "never-split-the-difference",
+      "name": "Use Calibrated Questions",
+      "summary": "Ask repeated questions to keep counterparts engaged and contemplating their problems.",
+      "source_chapter": "How to Spot the Liars and Ensure Follow-Through from Everyone Else",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "mirror-and-label",
+      "book_id": "never-split-the-difference",
+      "name": "Mirror and Label",
+      "summary": "Use mirroring and labeling to build trust and create a sense of rapport.",
+      "source_chapter": null,
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "watch-for-nonverbal-cues",
+      "book_id": "never-split-the-difference",
+      "name": "Watch for Nonverbal Cues",
+      "summary": "Pay attention to tone of voice, body language, and incongruence between words and nonverbal signs.",
+      "source_chapter": "How to Spot the Liars and Ensure Follow-Through from Everyone Else",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "test-agreement",
+      "book_id": "never-split-the-difference",
+      "name": "Test Agreement",
+      "summary": "Use calibrated questions to test if a 'yes' is real or counterfeit.",
+      "source_chapter": "How to Spot the Liars and Ensure Follow-Through from Everyone Else",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "build-rapport",
+      "book_id": "never-split-the-difference",
+      "name": "Build Rapport",
+      "summary": "Establish a connection with your counterpart to create a favorable negotiation environment.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "understand-negotiation-styles",
+      "book_id": "never-split-the-difference",
+      "name": "Understand Negotiation Styles",
+      "summary": "Recognize your personal negotiation style and your counterpart's style to negotiate effectively.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-silence-effectively",
+      "book_id": "never-split-the-difference",
+      "name": "Use Silence Effectively",
+      "summary": "Be aware of your counterpart's interpretation of silence and adjust your communication style accordingly.",
+      "source_chapter": "How to Get Your Price",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-facts",
+      "book_id": "never-split-the-difference",
+      "name": "Focus on Facts",
+      "summary": "Use data comparisons to disagree with your counterpart and focus on the facts.",
+      "source_chapter": "How to Get Your Price",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-aware-of-tone",
+      "book_id": "never-split-the-difference",
+      "name": "Be Aware of Tone",
+      "summary": "Softening your tone can make you more approachable and increase collaboration chances.",
+      "source_chapter": "How to Get Your Price",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-anchors-and-leverage",
+      "book_id": "never-split-the-difference",
+      "name": "Use Anchors and Leverage",
+      "summary": "Start with an extreme anchor and use diminishing increases to convince your counterpart.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "tag-one",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prepare-and-refocus",
+      "book_id": "never-split-the-difference",
+      "name": "Prepare and Refocus",
+      "summary": "Develop a plan and use phrases to refocus your counterpart and maintain a collaborative relationship.",
+      "source_chapter": null,
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-precise-numbers",
+      "book_id": "never-split-the-difference",
+      "name": "Use Precise Numbers",
+      "summary": "Using non-round numbers gives credibility and weight to your offer.",
+      "source_chapter": "How to Get Your Price",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "break-free-from-expectations",
+      "book_id": "never-split-the-difference",
+      "name": "Break Free from Expectations",
+      "summary": "Recognize that your frames of reference may be limiting and break free to uncover unexpected information.",
+      "source_chapter": "How to Create Breakthroughs by Revealing the Unknown Unknowns",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "identify-unknowns",
+      "book_id": "never-split-the-difference",
+      "name": "Identify Unknowns",
+      "summary": "Look for pieces of information you don't know that could change the negotiation dynamic.",
+      "source_chapter": "How to Create Breakthroughs by Revealing the Unknown Unknowns",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "ask-the-right-questions",
+      "book_id": "never-split-the-difference",
+      "name": "Ask the Right Questions",
+      "summary": "Intensely listen and ask questions to uncover hidden information and adapt to new situations.",
+      "source_chapter": "How to Create Breakthroughs by Revealing the Unknown Unknowns",
+      "applies_to_tags": [
+        "tag-three",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-leverage",
+      "book_id": "never-split-the-difference",
+      "name": "Focus on Leverage",
+      "summary": "Understand that leverage is about creating a sense of loss or gain in the negotiation.",
+      "source_chapter": "How to Create Breakthroughs by Revealing the Unknown Unknowns",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "reveal-unknowns",
+      "book_id": "never-split-the-difference",
+      "name": "Reveal Unknowns",
+      "summary": "Use competition and calibrated questions to reveal counterpart's desires and needs, creating positive leverage.",
+      "source_chapter": "How to Create Breakthroughs by Revealing the Unknown Unknowns",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "control-the-narrative",
+      "book_id": "never-split-the-difference",
+      "name": "Control the Narrative",
+      "summary": "Delay making offers to maintain power and control what your counterpart wants, using their desires to your advantage.",
+      "source_chapter": "How to Create Breakthroughs by Revealing the Unknown Unknowns",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-leverage-wisely",
+      "book_id": "never-split-the-difference",
+      "name": "Use Leverage Wisely",
+      "summary": "Use positive leverage and calibrated questions to uncover hidden interests, while using negative leverage sparingly to avoid backfire.",
+      "source_chapter": "How to Create Breakthroughs by Revealing the Unknown Unknowns",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "understand-counterpart-s-worldview",
+      "book_id": "never-split-the-difference",
+      "name": "Understand Counterpart's Worldview",
+      "summary": "Know their 'religion' to gain normative leverage, understanding their values, beliefs, and constraints.",
+      "source_chapter": "How to Create Breakthroughs by Revealing the Unknown Unknowns",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "build-rapport-2",
+      "book_id": "never-split-the-difference",
+      "name": "Build Rapport",
+      "summary": "Find common ground and use empathetic language to build trust and rapport with your counterpart.",
+      "source_chapter": "How to Create Breakthroughs by Revealing the Unknown Unknowns",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-assumptions-2",
+      "book_id": "never-split-the-difference",
+      "name": "Avoid Assumptions",
+      "summary": "Don't assume irrationality or known interests, instead discover unknowns and supply missing information.",
+      "source_chapter": "How to Create Breakthroughs by Revealing the Unknown Unknowns",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "face-to-face-interaction",
+      "book_id": "never-split-the-difference",
+      "name": "Face-to-Face Interaction",
+      "summary": "In-person interactions are crucial for discovering hidden interests and constraints, as email can lead to missed opportunities.",
+      "source_chapter": "How to Create Breakthroughs by Revealing the Unknown Unknowns",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "observe-and-label",
+      "book_id": "never-split-the-difference",
+      "name": "Observe and Label",
+      "summary": "Pay attention to unguarded moments and use calibrated labels to extract information and uncover hidden interests.",
+      "source_chapter": "How to Create Breakthroughs by Revealing the Unknown Unknowns",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-conflict",
+      "book_id": "never-split-the-difference",
+      "name": "Embracing Conflict",
+      "summary": "Conflict can energize problem-solving, leading to better outcomes and stronger relationships, so don't avoid it.",
+      "source_chapter": "How to Create Breakthroughs by Revealing the Unknown Unknowns",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "stay-flexible",
+      "book_id": "never-split-the-difference",
+      "name": "Stay Flexible",
+      "summary": "Remain flexible and adaptable, as every case is new, and don't let knowns blind you to new possibilities.",
+      "source_chapter": "How to Create Breakthroughs by Revealing the Unknown Unknowns",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "collaboration-and-mentorship",
+      "book_id": "never-split-the-difference",
+      "name": "Collaboration and Mentorship",
+      "summary": "Collaboration with others, especially those with complementary skills, and having a supportive mentor can lead to significant outcomes.",
+      "source_chapter": null,
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prepare-and-set-goals",
+      "book_id": "never-split-the-difference",
+      "name": "Prepare and Set Goals",
+      "summary": "Set an optimistic but reasonable goal, define it clearly, and think about best and worst-case scenarios to gain flexibility.",
+      "source_chapter": "Appendix: Prepare a Negotiation One Sheet",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-calibrated-questions-2",
+      "book_id": "never-split-the-difference",
+      "name": "Use Calibrated Questions",
+      "summary": "Ask open-ended questions to gather information and build rapport, delving into underlying motivations.",
+      "source_chapter": "Appendix: Prepare a Negotiation One Sheet",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "identify-deal-killing-issues",
+      "book_id": "never-split-the-difference",
+      "name": "Identify Deal-Killing Issues",
+      "summary": "Ask questions to identify and diffuse deal-killing issues, focusing on self-esteem, status, autonomy, and nonfinancial needs.",
+      "source_chapter": "Appendix: Prepare a Negotiation One Sheet",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-data-to-inform-your-approach",
+      "book_id": "never-split-the-difference",
+      "name": "Use Data to Inform Your Approach",
+      "summary": "Base negotiation strategies on empirical research and data analysis, understanding human psychology.",
+      "source_chapter": "Notes",
+      "applies_to_tags": [
+        "tag-one"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "label-emotions-to-build-rapport",
+      "book_id": "never-split-the-difference",
+      "name": "Label Emotions to Build Rapport",
+      "summary": "Recognize and label emotions to build rapport and create an empathetic environment.",
+      "source_chapter": "Notes",
+      "applies_to_tags": [
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-the-no-rather-than-the-yes",
+      "book_id": "never-split-the-difference",
+      "name": "Focus on the 'No' Rather Than the 'Yes'",
+      "summary": "Understand the other party's 'no' rather than just seeking a 'yes'.",
+      "source_chapter": "Notes",
+      "applies_to_tags": [
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-aware-of-nonverbal-cues",
+      "book_id": "never-split-the-difference",
+      "name": "Be Aware of Nonverbal Cues",
+      "summary": "Nonverbal cues convey more information than verbal communication, be aware of these cues.",
+      "source_chapter": "Notes",
+      "applies_to_tags": [
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-be-afraid-to-take-risks",
+      "book_id": "never-split-the-difference",
+      "name": "Don't Be Afraid to Take Risks",
+      "summary": "Negotiation involves taking calculated risks, being prepared for unexpected outcomes.",
+      "source_chapter": "Notes",
+      "applies_to_tags": [
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-split-the-difference",
+      "book_id": "never-split-the-difference",
+      "name": "Don't Split the Difference",
+      "summary": "Find a mutually beneficial solution, rather than splitting the difference.",
+      "source_chapter": "Index",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "mirroring-and-active-listening",
+      "book_id": "never-split-the-difference",
+      "name": "Mirroring and Active Listening",
+      "summary": "Build rapport through mirroring body language, tone, and active listening, engaging fully with the other person.",
+      "source_chapter": null,
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "nonmonetary-issues",
+      "book_id": "never-split-the-difference",
+      "name": "Nonmonetary Issues",
+      "summary": "Negotiate nonmonetary issues before discussing salary or other monetary terms.",
+      "source_chapter": "Index",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-7-38-55-percent-rule",
+      "book_id": "never-split-the-difference",
+      "name": "The 7-38-55 Percent Rule",
+      "summary": "Use the 7-38-55 percent rule to anchor emotions and establish a range for negotiation.",
+      "source_chapter": "Index",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "positive-reinforcement",
+      "book_id": "never-split-the-difference",
+      "name": "Positive Reinforcement",
+      "summary": "Create positivity in negotiations through smiling and a positive/playful voice.",
+      "source_chapter": "Index",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-paradox-of-power",
+      "book_id": "never-split-the-difference",
+      "name": "The Paradox of Power",
+      "summary": "Negotiate by creating a sense of safety and security for both parties, understanding the paradox of power.",
+      "source_chapter": "Index",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    }
+  ],
+  "extraction_metadata": {
+    "chunking_strategy": "toc",
+    "chunking_reason": "embedded PDF TOC yielded 29 chapter-level entries",
+    "chapter_count": 19,
+    "chunk_count": 40,
+    "model": "llama-3.3-70b-versatile",
+    "generated_at": "2026-08-06T06:13:21.933524+00:00"
+  }
+}

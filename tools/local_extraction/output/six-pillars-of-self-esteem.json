@@ -1,0 +1,2147 @@
+{
+  "book": {
+    "book_id": "six-pillars-of-self-esteem",
+    "title": "The Six Pillars of Self-Esteem",
+    "author": "Nathaniel Branden",
+    "core_thesis": "This book argues that self-esteem is a fundamental human need that can be developed and strengthened through conscious practices, including self-awareness, self-responsibility, and personal growth. By integrating principles from psychology, philosophy, and spirituality, The Six Pillars of Self-Esteem provides a comprehensive framework for building resilience, confidence, and inner strength, enabling individuals to navigate life's challenges with courage, purpose, and fulfillment.",
+    "tone": "pragmatic",
+    "tracked_metrics": [],
+    "review_status": "pending_review",
+    "extraction_method": "local_model",
+    "version": 1
+  },
+  "principles": [
+    {
+      "principle_id": "self-esteem-is-a-fundamental-human-need",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Esteem is a Fundamental Human Need",
+      "summary": "Our self-esteem affects our ability to cope with life's challenges and achieve happiness. It is essential for personal growth and fulfillment.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "high-self-esteem-correlates-with-success-and-happiness",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "High Self-Esteem Correlates with Success and Happiness",
+      "summary": "Research shows that individuals with high self-esteem tend to be more successful, happy, and fulfilled in their personal and professional lives.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "low-self-esteem-leads-to-self-sabotage",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Low Self-Esteem Leads to Self-Sabotage",
+      "summary": "Individuals with low self-esteem often engage in self-sabotaging behaviors, such as seeking out toxic relationships or sabotaging their own happiness.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-affects-romantic-relationships",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Esteem Affects Romantic Relationships",
+      "summary": "A person's self-esteem can significantly impact their ability to form and maintain healthy romantic relationships.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "high-self-esteem-leads-to-ambition-and-personal-growth",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "High Self-Esteem Leads to Ambition and Personal Growth",
+      "summary": "Individuals with high self-esteem tend to be more ambitious and open to new experiences, leading to personal growth and fulfillment.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-is-a-continuous-feedback-loop",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Esteem is a Continuous Feedback Loop",
+      "summary": "Our actions and self-esteem are interconnected, with high self-esteem leading to more confident behavior and low self-esteem leading to decreased confidence.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "courage-to-tolerate-happiness",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Courage to Tolerate Happiness",
+      "summary": "Tolerating happiness without self-sabotage is essential for building self-esteem.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "confronting-destructive-voices",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Confronting Destructive Voices",
+      "summary": "Engaging with and challenging negative inner voices is crucial for self-esteem growth.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-as-a-basic-need",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Esteem as a Basic Need",
+      "summary": "Self-esteem is an essential need for effective functioning, akin to nutritional needs like calcium.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "happiness-anxiety-vs-success-anxiety",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Happiness Anxiety vs. Success Anxiety",
+      "summary": "Dread and disorientation from life successes conflicting with one's self-view can lead to self-destructive behavior.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "positive-self-esteem-as-immune-system",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Positive Self-Esteem as Immune System",
+      "summary": "A healthy self-esteem acts as a defense mechanism, providing resistance and strength against life's challenges.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "resilience-over-imperiousness",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Resilience Over Imperiousness",
+      "summary": "High self-esteem is about resilience, not being impervious to suffering or difficulties.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-and-economic-needs",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Esteem and Economic Needs",
+      "summary": "In today's economy, self-esteem has become a crucial need for adaptability and innovation.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "personal-autonomy-and-self-trust",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Personal Autonomy and Self-Trust",
+      "summary": "With many choices and decisions to make, we need reality-based self-trust and self-reliance.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-self-esteem-in-modern-life",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "The Importance of Self-Esteem in Modern Life",
+      "summary": "Lacking adequate self-esteem can be frightening in today's world with many options and challenges.",
+      "source_chapter": "Chapter 1: Self-Esteem: The Immune System of Consciousness",
+      "applies_to_tags": [
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-efficacy-is-confidence-in-our-ability-to-learn-and-achieve-goals",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-efficacy is confidence in our ability to learn and achieve goals",
+      "summary": "Confidence in our mental processes and abilities, not omniscience or omnipotence.",
+      "source_chapter": "Chapter 2: The Meaning of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-respect-is-the-experience-of-dignity-and-personal-worth",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-respect is the experience of dignity and personal worth",
+      "summary": "Assurance of one's value, comfort in asserting thoughts and needs, and feeling worthy of happiness.",
+      "source_chapter": "Chapter 2: The Meaning of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "healthy-self-esteem-requires-both-self-efficacy-and-self-respect",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Healthy self-esteem requires both self-efficacy and self-respect",
+      "summary": "Absence of either pillar impairs self-esteem, defining characteristics of the term.",
+      "source_chapter": "Chapter 2: The Meaning of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-is-not-set-once-and-for-all-in-childhood",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-esteem is not set once and for all in childhood",
+      "summary": "Can grow or deteriorate over time, influenced by choices made in face of challenges.",
+      "source_chapter": "Chapter 2: The Meaning of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-efficacy-is-trust-in-mental-processes",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Efficacy is Trust in Mental Processes",
+      "summary": "Confidence in our ability to learn and cope with life's challenges, not perfection or omnipotence.",
+      "source_chapter": "Chapter 2: The Meaning of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-respect-is-conviction-of-our-value",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Respect is Conviction of Our Value",
+      "summary": "Expectation of happiness and fulfillment as a natural result of who we are and what we do.",
+      "source_chapter": "Chapter 2: The Meaning of Self-Esteem",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pride-is-emotional-reward-of-achievement",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Pride is Emotional Reward of Achievement",
+      "summary": "Authentic pride comes from satisfaction, not emptiness or delusion, and acknowledges imperfections.",
+      "source_chapter": "Chapter 2: The Meaning of Self-Esteem",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pride-is-not-about-being-without-flaws-but-about-acknowledging-and-accepting-them",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Pride is not about being without flaws, but about acknowledging and accepting them",
+      "summary": "Self-esteem comes from satisfaction, not emptiness. Pride is an emotional reward of achievement, not a vice to be overcome.",
+      "source_chapter": "Chapter 2: The Meaning of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "achievement-does-not-always-result-in-pride-it-depends-on-aligning-with-one-s-true-values-and-goals",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Achievement does not always result in pride; it depends on aligning with one's true values and goals",
+      "summary": "A person can feel proud of their accomplishments while still acknowledging their own flaws and imperfections.",
+      "source_chapter": "Chapter 2: The Meaning of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-is-not-supported-by-secondhand-values-but-by-living-one-s-own-mind-judgment-and-values",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-esteem is not supported by secondhand values, but by living one's own mind, judgment, and values",
+      "summary": "True self-esteem requires courage to live authentically and make choices that reflect one's true nature.",
+      "source_chapter": "Chapter 2: The Meaning of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "relaxation-implies-self-acceptance-and-openness-to-experience",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Relaxation implies self-acceptance and openness to experience",
+      "summary": "Self-esteem is characterized by a relaxed and open demeanor, reflecting acceptance of oneself.",
+      "source_chapter": "Chapter 3: The Face of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "rationality-is-the-exercise-of-integrative-consciousness",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Rationality is the exercise of integrative consciousness",
+      "summary": "Healthy self-esteem involves rational thinking, applying principles to facts and pursuing meaning.",
+      "source_chapter": "Chapter 3: The Face of Self-Esteem",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "intuitiveness-relies-on-trusting-internal-signals",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Intuitiveness relies on trusting internal signals",
+      "summary": "High self-esteem individuals trust their intuition, relying on subconscious integrations.",
+      "source_chapter": "Chapter 3: The Face of Self-Esteem",
+      "applies_to_tags": [
+        "tag-three",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "flexibility-is-a-natural-consequence-of-self-esteem",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Flexibility is a natural consequence of self-esteem",
+      "summary": "A mind that trusts itself is flexible and open to change, unencumbered by attachments.",
+      "source_chapter": "Chapter 3: The Face of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "benevolence-and-cooperation-arise-from-self-trust",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Benevolence and cooperation arise from self-trust",
+      "summary": "Healthy self-esteem leads to benevolent and cooperative behavior, as individuals feel secure in their own boundaries.",
+      "source_chapter": "Chapter 3: The Face of Self-Esteem",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "fear-fuels-low-self-esteem",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Fear Fuels Low Self-Esteem",
+      "summary": "Low self-esteem is often driven by fear of reality, others, or failure.",
+      "source_chapter": "Chapter 4: The Illusion of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "consciousness-overcomes-fear",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Consciousness Overcomes Fear",
+      "summary": "Raising one's level of consciousness can help overcome the debilitating effects of fear on self-esteem.",
+      "source_chapter": "Chapter 4: The Illusion of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pseudo-self-esteem-is-an-illusion",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Pseudo Self-Esteem is an Illusion",
+      "summary": "Pseudo self-esteem is a false sense of confidence that masks underlying insecurities.",
+      "source_chapter": "Chapter 4: The Illusion of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-comes-from-within",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Esteem Comes from Within",
+      "summary": "True self-esteem comes from within and is based on one's own values, goals, and sense of purpose.",
+      "source_chapter": "Chapter 4: The Illusion of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "independence-is-key-to-self-esteem",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Independence is Key to Self-Esteem",
+      "summary": "Developing independence and internal support is essential for building strong self-esteem.",
+      "source_chapter": "Chapter 4: The Illusion of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "nurturing-inner-strength",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Nurturing Inner Strength",
+      "summary": "Cultivating inner strength and resilience is crucial for developing healthy self-esteem.",
+      "source_chapter": "Chapter 4: The Illusion of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-individual-action",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Focus on Individual Action",
+      "summary": "Self-esteem is generated by individual actions, not external influences.",
+      "source_chapter": "Chapter 5: The Focus on Action",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "practice-as-a-discipline",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Practice as a Discipline",
+      "summary": "Practices that support self-esteem involve consistent and deliberate action over time.",
+      "source_chapter": "Chapter 5: The Focus on Action",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "volition-is-not-omnipotence",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Volition is Not Omnipotence",
+      "summary": "Individuals have limited freedom and must navigate factors that affect their ability to exercise consciousness and self-trust.",
+      "source_chapter": "Chapter 5: The Focus on Action",
+      "applies_to_tags": [
+        "tag-three",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "parenting-s-role-in-self-esteem",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Parenting's Role in Self-Esteem",
+      "summary": "Good parenting involves modeling and providing a supportive environment.",
+      "source_chapter": "Chapter 5: The Focus on Action",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "confronting-inner-blocks",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Confronting Inner Blocks",
+      "summary": "Unresolved issues within oneself can hinder self-esteem, making it essential to address inner blocks and develop consciousness.",
+      "source_chapter": "Chapter 5: The Focus on Action",
+      "applies_to_tags": [
+        "tag-three",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "awareness-is-volitional",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Awareness is Volitional",
+      "summary": "Consciousness is a choice, and we have the option to seek awareness or avoid it.",
+      "source_chapter": "Chapter 6: The Practice of Living Conciously",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "mindfulness-in-action",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Mindfulness in Action",
+      "summary": "",
+      "source_chapter": "Chapter 6: The Practice of Living Conciously",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "context-determines-consciousness",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Context Determines Consciousness",
+      "summary": "",
+      "source_chapter": "Chapter 6: The Practice of Living Conciously",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "separate-facts-from-feelings",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Separate Facts from Feelings",
+      "summary": "",
+      "source_chapter": "Chapter 6: The Practice of Living Conciously",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "confronting-impulses",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Confronting Impulses",
+      "summary": "",
+      "source_chapter": "Chapter 6: The Practice of Living Conciously",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "monitor-your-actions-and-goals",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Monitor Your Actions and Goals",
+      "summary": "Regularly assess alignment between actions and goals to ensure progress towards desired outcomes.",
+      "source_chapter": "Chapter 6: The Practice of Living Conciously",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "persevere-in-the-pursuit-of-understanding",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Persevere in the Pursuit of Understanding",
+      "summary": "",
+      "source_chapter": "Chapter 6: The Practice of Living Conciously",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "cultivate-lifelong-learning",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Cultivate Lifelong Learning",
+      "summary": "Embracing new knowledge and experiences is essential for personal growth and adaptation.",
+      "source_chapter": "Chapter 6: The Practice of Living Conciously",
+      "applies_to_tags": [
+        "tag-three",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "know-thyself",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Know Thyself",
+      "summary": "",
+      "source_chapter": "Chapter 6: The Practice of Living Conciously",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "reflect-on-guiding-values",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Reflect on Guiding Values",
+      "summary": "Regularly evaluate values that drive actions and goals to ensure alignment with true interests.",
+      "source_chapter": "Chapter 6: The Practice of Living Conciously",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "awareness-of-unconscious-areas",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Awareness of Unconscious Areas",
+      "summary": "Identify areas where consciousness is limited and reflect on challenges of staying focused.",
+      "source_chapter": "Chapter 6: The Practice of Living Conciously",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "experimenting-with-consciousness",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Experimenting with Consciousness",
+      "summary": "Gradually increase consciousness in areas where fear or reluctance is present.",
+      "source_chapter": "Chapter 6: The Practice of Living Conciously",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-acceptance-as-precondition-for-change",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Acceptance as Precondition for Change",
+      "summary": "Accept reality, including uncomfortable emotions and thoughts, to learn from mistakes.",
+      "source_chapter": "Chapter 7: The Practice of Self-Acceptance",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "compassionate-interest-in-the-context-of-actions",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Compassionate Interest in the Context of Actions",
+      "summary": "Understand context behind actions, rather than just condemning them.",
+      "source_chapter": "Chapter 7: The Practice of Self-Acceptance",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "accepting-disowned-parts",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Accepting Disowned Parts",
+      "summary": "Awareness and acceptance of disowned parts is crucial for self-esteem growth.",
+      "source_chapter": "Chapter 7: The Practice of Self-Acceptance",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "take-responsibility-for-your-life-and-well-being",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Take Responsibility for Your Life and Well-being",
+      "summary": "Feeling competent to live and worthy of happiness requires experiencing control over existence.",
+      "source_chapter": "Chapter 8: The Practice of Self-Responsibility",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "acknowledge-the-difference-between-what-s-within-your-control-and-what-s-not",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Acknowledge the Difference Between What's Within Your Control and What's Not",
+      "summary": "Knowing distinction is crucial to maintaining self-esteem.",
+      "source_chapter": "Chapter 8: The Practice of Self-Responsibility",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "live-with-a-sense-of-purpose-and-productivity",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Live with a Sense of Purpose and Productivity",
+      "summary": "Having productive goals and efforts is essential for living self-responsibly.",
+      "source_chapter": "Chapter 8: The Practice of Self-Responsibility",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "think-for-yourself-rather-than-conforming-to-others-beliefs",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Think for Yourself, Rather Than Conforming to Others' Beliefs",
+      "summary": "Independent thinking is a corollary of living consciously and self-responsibility.",
+      "source_chapter": "Chapter 8: The Practice of Self-Responsibility",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "accept-responsibility-for-your-emotions-and-reactions",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Accept Responsibility for Your Emotions and Reactions",
+      "summary": "Recognizing how you often make yourself miserable can help focus on the good things in life.",
+      "source_chapter": "Chapter 8: The Practice of Self-Responsibility",
+      "applies_to_tags": [
+        "tag-three",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "independent-thinking",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Independent Thinking",
+      "summary": "Thinking for oneself is essential for self-responsibility and conscious living.",
+      "source_chapter": "Chapter 8: The Practice of Self-Responsibility",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-responsibility",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Responsibility",
+      "summary": "Embracing self-responsibility means accepting moral responsibility for one's existence and actions.",
+      "source_chapter": "Chapter 8: The Practice of Self-Responsibility",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "mutual-respect",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Mutual Respect",
+      "summary": "Self-responsibility implies treating others with respect and offering reasons that are meaningful and persuasive.",
+      "source_chapter": "Chapter 8: The Practice of Self-Responsibility",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "personal-awareness",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Personal Awareness",
+      "summary": "Self-responsibility involves being aware of thoughts, feelings, and actions.",
+      "source_chapter": "Chapter 8: The Practice of Self-Responsibility",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "no-one-is-coming",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "No One Is Coming",
+      "summary": "Self-responsibility means recognizing no external savior can solve problems.",
+      "source_chapter": "Chapter 8: The Practice of Self-Responsibility",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "asserting-consciousness",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Asserting Consciousness",
+      "summary": "The first act of self-assertion is asserting consciousness, choosing to see and think.",
+      "source_chapter": "Chapter 9: The Practice of Self-Assertiveness",
+      "applies_to_tags": [
+        "tag-one"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-awareness-for-self-assertion",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Awareness for Self-Assertion",
+      "summary": "Conviction in one's ideas and willingness to honor them are necessary for self-assertion.",
+      "source_chapter": "Chapter 9: The Practice of Self-Assertiveness",
+      "applies_to_tags": [
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-individuality",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Embracing Individuality",
+      "summary": "Individuation is necessary for community, not its enemy.",
+      "source_chapter": "Chapter 9: The Practice of Self-Assertiveness",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "overcoming-fear",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Overcoming Fear",
+      "summary": "Courage is needed to be who one is and overcome fear of self-assertiveness.",
+      "source_chapter": "Chapter 9: The Practice of Self-Assertiveness",
+      "applies_to_tags": [
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "authentic-expression-and-self-assertion-are-key-to-personal-growth",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Authentic Expression and Self-assertion are key to personal growth",
+      "summary": "Self-assertion entails the willingness to confront challenges and strive for mastery; authentic expression is crucial for personal growth. Being self-assured supports healthy self-esteem and helps build confidence.",
+      "source_chapter": "Chapter 9: The Practice of Self-Assertiveness",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-discipline-is-essential-for-living-purposefully",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-discipline is essential for living purposefully",
+      "summary": "Cultivate self-discipline to organize behavior over time in service of specific tasks. Regularly assess progress toward goals and make adjustments to stay on track.",
+      "source_chapter": "Chapter 10: The Practice of Living Purposefully",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-comes-from-internal-practices",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-esteem comes from internal practices",
+      "summary": "Achievements are not the primary source of self-esteem, but rather the internally generated practices that make them possible. A life without purpose can be just as unfulfilling as one with external success.",
+      "source_chapter": "Chapter 10: The Practice of Living Purposefully",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-assertion-is-a-manifestation-of-healthy-self-esteem",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-assertion is a manifestation of healthy self-esteem",
+      "summary": "Being self-assured is not just a trait, but also a skill that supports healthy self-esteem. Self-discipline and taking responsibility for one's actions are essential.",
+      "source_chapter": "Chapter 9: The Practice of Self-Assertiveness",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "own-and-accept-responsibility",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Own and Accept Responsibility",
+      "summary": "Personal integrity requires acknowledging and accepting responsibility for one's actions. Prioritize honesty over social status or personal gain.",
+      "source_chapter": "Chapter 11: The Practice of Personal Integrity",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "balance-projection-of-goals-into-the-future-with-appreciation-for-the-present",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Balance Projection of Goals into the Future with Appreciation for the Present",
+      "summary": "Living purposefully involves integrating goals for the future with appreciation for the present moment. This balance is difficult to achieve when driven by anxiety or a desire to prove oneself.",
+      "source_chapter": "Chapter 10: The Practice of Living Purposefully",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "kindness-is-a-conscious-choice",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Kindness is a Conscious Choice",
+      "summary": "Living purposefully involves cultivating kindness as a conscious choice, rather than relying on impulse or mood. This requires discipline and awareness.",
+      "source_chapter": "Chapter 10: The Practice of Living Purposefully",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "practice-independent-thinking",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Practice Independent Thinking",
+      "summary": "Develop the ability to think for yourself, without relying on others or external authorities. Prioritize honesty over social status or personal gain.",
+      "source_chapter": "Chapter 11: The Practice of Personal Integrity",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-is-not-a-function-of-external-validation",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Esteem is Not a Function of External Validation",
+      "summary": "Self-esteem should not be tied to external factors like job performance or financial success. This can lead to feelings of loss of personal effectiveness and diminished self-worth.",
+      "source_chapter": "Chapter 10: The Practice of Living Purposefully",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "cultivate-self-respect-and-autonomy",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Cultivate Self-Respect and Autonomy",
+      "summary": "Develop a sense of self-worth and autonomy, allowing you to make choices that align with your values. Prioritize honesty over social status or personal gain.",
+      "source_chapter": "Chapter 11: The Practice of Personal Integrity",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "beliefs-support-self-esteem",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Beliefs Support Self-Esteem",
+      "summary": "Convictions influence emotions and actions, shaping self-esteem. Believing in one's own worth is essential for developing a positive self-image.",
+      "source_chapter": "Chapter 12: The Philosophy of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-acceptance",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Acceptance",
+      "summary": "Accepting reality, including thoughts and emotions, fosters self-esteem. Accept yourself as you are, without judgment.",
+      "source_chapter": "Chapter 12: The Philosophy of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-responsibility-2",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Responsibility",
+      "summary": "Taking responsibility for one's existence and choices promotes self-esteem. Own your actions and decisions.",
+      "source_chapter": "Chapter 12: The Philosophy of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "purposefulness",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Purposefulness",
+      "summary": "Living with a clear purpose and reality-checking informs life decisions. Having direction helps you stay focused.",
+      "source_chapter": "Chapter 12: The Philosophy of Self-Esteem",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "provide-basic-safety-and-security",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Provide Basic Safety and Security",
+      "summary": "Ensure a child's basic needs are met, creating an environment for trust and individuation. A safe space fosters self-esteem.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "convey-love-without-performance",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Convey Love Without Performance",
+      "summary": "Show love and acceptance without tying it to performance or expectations. Unconditional love supports self-esteem.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "practice-acceptance",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Practice Acceptance",
+      "summary": "Treat a child's thoughts and feelings with acceptance, listening and acknowledging without judgment. Accepting their emotions helps build self-esteem.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "respect-in-parenting",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Respect in Parenting",
+      "summary": "Children learn self-respect by receiving respect from adults, who address them with courtesy. Treat children with kindness and respect.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "visibility-in-interactions",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Visibility in Interactions",
+      "summary": "Conveying love, appreciation, empathy, acceptance, and respect makes a child feel visible. Show them you care.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "age-appropriate-nurturing",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Age-Appropriate Nurturing",
+      "summary": "Nurturing must be age-appropriate to support a child's level of development and autonomy. Adapt your approach to their needs.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "specific-praise",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Specific Praise",
+      "summary": "Praise should be specific, targeted, and commensurate with the behavior being praised. Focus on what they did well.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "non-judgmental-criticism",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Non-Judgmental Criticism",
+      "summary": "Criticism should describe behavior, feelings, and desired outcomes, omitting character assassination. Focus on the action, not the person.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "respect-children-s-self-esteem",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Respect Children's Self-Esteem",
+      "summary": "Criticism should not assault a child's worth, intelligence, or character. Treat them with kindness and respect.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "set-clear-expectations",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Set Clear Expectations",
+      "summary": "Rational parents uphold ethical standards and expect children to learn, master knowledge and skills, and move toward increasing maturity. Establish clear boundaries.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "encourage-mistake-learning",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Encourage Mistake-Learning",
+      "summary": "Making mistakes is integral to learning; criticism can stifle growth if it's too harsh or frequent. Allow for errors and learn from them.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "practice-sanity-in-parenting",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Practice Sanity in Parenting",
+      "summary": "Adults should say what they mean, mean what they say, and acknowledge reality to create a sense of efficacy and healthy development. Communicate openly.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "offer-structure-and-support",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Offer Structure and Support",
+      "summary": "A good structure provides rules, values, and expectations that respect individuality and intelligence, promoting self-expression and growth. Establish routines.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "sense-of-rationality-and-predictability",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Sense of Rationality and Predictability",
+      "summary": "A child's sense of self-worth is shaped by their perception of a rational and predictable world. A stable environment supports self-esteem.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "intellectual-stimulation",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Intellectual Stimulation",
+      "summary": "Parents who provide intellectual stimulation and encourage critical thinking help their children develop a strong sense of self-worth. Engage in activities that challenge them.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "emotional-honesty",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Emotional Honesty",
+      "summary": "Children who feel safe expressing their emotions and desires without fear of punishment or ridicule are more likely to develop healthy self-esteem. Be honest about your feelings.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [
+        "tag-five",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "respect-for-autonomy",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Respect for Autonomy",
+      "summary": "Parents who respect their child's autonomy, dignity, and rights help them develop a strong sense of self-worth. Treat children as ends in themselves.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-seven"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "positive-parenting",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Positive Parenting",
+      "summary": "Parents who adopt positive parenting strategies, such as using humor and empathy to communicate disapproval, help their children develop healthy self-esteem. Focus on the positive.",
+      "source_chapter": "Chapter 13: Nurturing a Child's Self-Esteem",
+      "applies_to_tags": [
+        "tag-five",
+        "tag-eight"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "teacher-confidence-matters",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Teacher Confidence Matters",
+      "summary": "Teachers who project confidence in students' competence and goodness can positively impact self-esteem. Believe in your students.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "respectful-interactions",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Respectful Interactions",
+      "summary": "Treat students with respect and courtesy, as this fosters a positive learning environment and helps them understand human relationships. Treat others with kindness.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-humiliation",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Avoid Humiliation",
+      "summary": "Teachers who refuse to accept negative self-concepts and instead hold a better view of students' potential have the power to save lives. Avoid humiliating language.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-reality-based-self-esteem",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Focus on Reality-Based Self-Esteem",
+      "summary": "Self-esteem should be based on realistic assessments of abilities and accomplishments, not feelings or affirmations. Recognize that self-esteem pertains to choices open to our volitional control.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-pseudo-self-esteem",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Avoid Pseudo Self-Esteem",
+      "summary": "Values like family background, race, or achievements should not be used to create pseudo self-esteem. Instead, focus on personal character and autonomy.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "foster-critical-thinking",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Foster Critical Thinking",
+      "summary": "Build courses on critical thinking into every school curriculum to provide students with a foundation in the basics needed to function effectively in the modern world. This is essential for building self-esteem.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "create-an-internal-approach-to-self-esteem",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Create an Internal Approach to Self-Esteem",
+      "summary": "Teachers with high self-esteem help students develop problem-solving strategies, build trust, and foster a positive classroom environment. They convey that self-esteem comes from within.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "convey-respect-and-dignity",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Convey Respect and Dignity",
+      "summary": "Teachers treat all students with courtesy and respect to create an environment where dignity matters. This sends a signal that their feelings are valued.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "foster-justice-in-the-classroom",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Foster Justice in the Classroom",
+      "summary": "Consistency and fairness in rules and discipline help children feel safe and secure, enhancing their sense of justice and self-esteem.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "encourage-self-appreciation",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Encourage Self-Appreciation",
+      "summary": "Teachers focus on students' strengths and virtues to encourage self-awareness and appreciation. This helps build confidence and a positive self-image.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "provide-attention-and-validation",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Provide Attention and Validation",
+      "summary": "Teachers notice and validate shy or quiet students, making them feel seen and heard. This fosters social competence and self-esteem.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-positive-discipline-strategies",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Use Positive Discipline Strategies",
+      "summary": "Teachers use consequences that allow students to experience the logical outcome of their actions, rather than punishment, to promote autonomy and self-responsibility.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "authority-and-autonomy",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Authority and Autonomy",
+      "summary": "Teachers should balance authority with autonomy, allowing students to make choices while maintaining standards.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "emotional-intelligence",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Emotional Intelligence",
+      "summary": "Teaching emotional intelligence helps students understand and manage their feelings, leading to increased self-esteem.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "respect-for-individuality",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Respect for Individuality",
+      "summary": "Teachers should recognize and respect students' unique learning styles and cognitive strengths.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "internal-locus-of-control",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Internal Locus of Control",
+      "summary": "Teachers should encourage students to take responsibility for their actions and decisions, fostering an internal locus of control.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-acceptance-in-teaching",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Acceptance in Teaching",
+      "summary": "Teachers must embody self-acceptance to model living consciously for their students.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "internal-value-system",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Internal Value System",
+      "summary": "Effective teachers operate from an internal value system, considering others' needs too.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "responsibility-over-obedience",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Responsibility Over Obedience",
+      "summary": "Teachers should prioritize responsibility over obedience to inspire self-responsibility in students.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "personal-growth-through-teaching",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Personal Growth through Teaching",
+      "summary": "Teaching can be a spiritual discipline for personal growth and development.",
+      "source_chapter": "Chapter 14: Self-Esteem in the Schools",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-in-economic-adaptiveness",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Esteem in Economic Adaptiveness",
+      "summary": "Confidence in one's ability to think and learn is crucial for economic adaptability. As new knowledge and technology emerge, individuals must be able to adapt and innovate.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-shift-from-manufacturing-to-information-economy",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "The Shift from Manufacturing to Information Economy",
+      "summary": "The shift from manufacturing to an information economy requires workers with advanced verbal, mathematical, and social skills. Education and training are no longer enough; self-education is essential.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "global-competition-as-a-stimulant-for-innovation",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Global Competition as a Stimulant for Innovation",
+      "summary": "Global competition brings a richer mix of perspectives to business thinking, leading to innovation and growth. Other cultures' ideas can enrich our approach.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-interpersonal-competence-in-the-workplace",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "The Importance of Interpersonal Competence in the Workplace",
+      "summary": "Low self-esteem can hinder interpersonal competence in the workplace, making it difficult to work collaboratively and effectively with others.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-need-for-continuous-learning-and-adaptation",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "The Need for Continuous Learning and Adaptation",
+      "summary": "As new knowledge emerges, individuals must be able to adapt and learn continuously to remain competitive in the workforce. 'Freedom means change; the ability to manage change is at least in part a function of self-esteem.'",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "global-competition-fosters-innovation",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Global Competition Fosters Innovation",
+      "summary": "Global competition stimulates innovation more than domestic competition. New perspectives bring a richer mix to business thinking.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-required-for-global-competitiveness",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Esteem Required for Global Competitiveness",
+      "summary": "A higher level of self-esteem is needed to play in the global arena. Initial resistance to change can hinder progress.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-need-for-entrepreneurial-mindset",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "The Need for Entrepreneurial Mindset",
+      "summary": "Entrepreneurship is essential to big business success. It requires a mindset that can think outside the box and adapt quickly.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-reliance-and-self-acceptance",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Reliance and Self-Acceptance",
+      "summary": "Capitalism created a market for the independent mind. Self-reliance is essential for economic adaptiveness.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "adaptability-and-innovation",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Adaptability and Innovation",
+      "summary": "Innovation is crucial in today's fast-changing business environment. Comfort with change and adaptability are linked to self-esteem.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "need-for-self-esteem-in-rapidly-changing-economies",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Need for Self-Esteem in Rapidly Changing Economies",
+      "summary": "In rapidly changing economies, large numbers of individuals with healthy self-esteem are needed to manage change and innovation. High self-esteem confers a competitive edge.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "importance-of-mind-in-economic-activity",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Importance of Mind in Economic Activity",
+      "summary": "Wealth is created by transforming materials of nature to serve human purposes, emphasizing the importance of mind and labor.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [
+        "tag-one"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "conditions-for-high-self-esteem-in-organizations",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Conditions for High Self-Esteem in Organizations",
+      "summary": "An organization that supports self-esteem fosters innovation, creativity, and employee participation. Conditions include feeling safe, accepted, challenged, recognized, and valued.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "leaders-role-in-building-self-esteem",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Leaders' Role in Building Self-Esteem",
+      "summary": "Leaders must work on their own self-esteem, be present and empathic with employees, maintain a respectful tone, and create an environment that encourages self-responsibility.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "empowerment-through-self-responsibility",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Empowerment through Self-Responsibility",
+      "summary": "Giving employees space to take initiative, volunteer ideas, and attempt new tasks expands their range and fosters a culture of innovation.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "admit-mistakes-and-apologize",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Admit Mistakes and Apologize",
+      "summary": "Acknowledge and apologize for mistakes to maintain self-esteem. Admitting errors shows accountability and a willingness to learn.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "encourage-feedback-and-open-communication",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Encourage Feedback and Open Communication",
+      "summary": "Invite people to give feedback on your leadership style to improve and grow. This fosters a culture of self-esteem and accountability.",
+      "source_chapter": "Chapter 15: Self-Esteem and Work",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "recognize-survival-strategies-as-misguided-attempts-at-self-preservation",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Recognize survival strategies as misguided attempts at self-preservation",
+      "summary": "Identify dysfunctional responses to life's challenges as attempts to cope with pain or rejection.",
+      "source_chapter": "Chapter 16: Self-Esteem and Psychotherapy",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "understand-subpersonalities-for-healthy-self-esteem-development",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Understand subpersonalities for healthy self-esteem development",
+      "summary": "Recognize and integrate subselves with distinct perspectives, values, and feelings.",
+      "source_chapter": "Chapter 16: Self-Esteem and Psychotherapy",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "balance-adult-conscious-self-and-subpersonality",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Balance adult conscious self and subpersonality",
+      "summary": "Identify relationships between adult conscious self and subpersonalities for integration.",
+      "source_chapter": "Chapter 16: Self-Esteem and Psychotherapy",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "acceptance-of-internal-signals",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Acceptance of Internal Signals",
+      "summary": "Self-acceptance requires acknowledging and respecting internal signals for self-awareness.",
+      "source_chapter": "Chapter 16: Self-Esteem and Psychotherapy",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "internal-source-of-approval",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Internal Source of Approval",
+      "summary": "Adult self-esteem develops from internal sources of approval, shifting from external to internal validation.",
+      "source_chapter": "Chapter 16: Self-Esteem and Psychotherapy",
+      "applies_to_tags": [
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "comprehensive-therapy-approach",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Comprehensive Therapy Approach",
+      "summary": "A comprehensive therapy approach should address not only competence but also worth and self-respect for healthy self-esteem.",
+      "source_chapter": "Chapter 16: Self-Esteem and Psychotherapy",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "biological-need-for-self-esteem",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Biological Need for Self-Esteem",
+      "summary": "The need for self-esteem pertains to survival and continued efficacious functioning.",
+      "source_chapter": "Chapter 17: Self-Esteem and Culture",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-acceptance-is-essential",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Acceptance is Essential",
+      "summary": "Self-acceptance is necessary for self-esteem, as rejection harms it.",
+      "source_chapter": "Chapter 17: Self-Esteem and Culture",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-responsibility-is-key",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Responsibility is Key",
+      "summary": "Taking responsibility for one's choices and actions is essential for inner strength.",
+      "source_chapter": "Chapter 17: Self-Esteem and Culture",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "dependency-over-individuality",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Dependency Over Individuality",
+      "summary": "Cultures that prioritize group harmony over individuality can lead to a culture of dependency, undermining personal autonomy and self-esteem. Self-responsibility is crucial for self-esteem.",
+      "source_chapter": "Chapter 17: Self-Esteem and Culture",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "question-authority",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Question Authority",
+      "summary": "Challenge authority and question messages that undermine self-esteem, especially those rooted in religious teachings. Critical thinking is key to living consciously.",
+      "source_chapter": "Chapter 17: Self-Esteem and Culture",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-responsibility-3",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Responsibility",
+      "summary": "Value self-responsibility and accountability in personal growth and development. A culture that prizes self-responsibility fosters self-esteem, while a culture of entitlement breeds dependency and demoralization.",
+      "source_chapter": "Chapter 17: Self-Esteem and Culture",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "critical-thinking",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Critical Thinking",
+      "summary": "Encourage critical thinking and intellectual curiosity. A culture that values mind, intellect, knowledge, and understanding promotes self-esteem, while a culture that denigrates mind undermines it.",
+      "source_chapter": "Chapter 17: Self-Esteem and Culture",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "personal-autonomy",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Personal Autonomy",
+      "summary": "Emphasize personal autonomy and individual freedom. The American culture's emphasis on individualism and the right to pursue happiness supports self-esteem, while a culture of entitlement undermines it.",
+      "source_chapter": "Chapter 17: Self-Esteem and Culture",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "accountability",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Accountability",
+      "summary": "Hold individuals accountable for their actions. A culture of accountability is essential for self-esteem, as it promotes personal responsibility and growth.",
+      "source_chapter": "Chapter 17: Self-Esteem and Culture",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "question-assumptions",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Question Assumptions",
+      "summary": "Recognize that assumptions can be questioned and not necessarily ultimate truth. Critical thinking is key to living consciously.",
+      "source_chapter": "Chapter 17: Self-Esteem and Culture",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "individual-agenda-vs-societal-expectations",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Individual Agenda vs. Societal Expectations",
+      "summary": "Values of society may not align with individual growth needs or personal aspirations. Individuals must set their own standards and manifest integrity.",
+      "source_chapter": "Chapter 17: Self-Esteem and Culture",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-requires-effort-and-willingness",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Esteem Requires Effort and Willingness",
+      "summary": "Living consciously requires an effort to raise our consciousness, overcome inertia, and choose self-acceptance.",
+      "source_chapter": "Chapter 18: Conclusion: The Seventh Pillar of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoiding-discomfort-can-lead-to-tragedy",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Avoiding Discomfort Can Lead to Tragedy",
+      "summary": "Avoiding discomfort can lead to a cycle of avoidance, disowned pain on disowned pain. The reversal involves deciding that self-esteem and happiness matter more than short-term discomfort.",
+      "source_chapter": "Chapter 18: Conclusion: The Seventh Pillar of Self-Esteem",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "love-is-the-motive-power-for-self-esteem",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Love is the Motive Power for Self-Esteem",
+      "summary": "The energy for commitment comes from love for our own life, which is the beginning of virtue and the launching pad for noble aspirations.",
+      "source_chapter": "Chapter 18: Conclusion: The Seventh Pillar of Self-Esteem",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-is-based-on-internal-standards-not-external-comparisons",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-esteem is based on internal standards, not external comparisons",
+      "summary": "James's definition of self-esteem relies on how well an individual compares to others in their chosen field. This approach can lead to anxiety and a lack of healthy self-esteem.",
+      "source_chapter": "Appendix A: Critiqur of Other Definitions of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-is-not-solely-determined-by-success-or-achievement",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-esteem is not solely determined by success or achievement",
+      "summary": "Coopersmith's formulation highlights the importance of personal values and standards in shaping self-esteem. However, it raises questions about what constitutes 'success' and 'worthiness'.",
+      "source_chapter": "Appendix A: Critiqur of Other Definitions of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-requires-accurate-self-perception-and-realistic-expectations",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-esteem requires accurate self-perception and realistic expectations",
+      "summary": "The definition by Bednar et al. emphasizes the importance of a subjective and enduring sense of personal value based on accurate self-perception.",
+      "source_chapter": "Appendix A: Critiqur of Other Definitions of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-is-not-solely-about-feeling-lovable-or-worthy",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-esteem is not solely about feeling 'lovable' or 'worthy'",
+      "summary": "The popular phrase 'I am capable and lovable' oversimplifies the complexities of self-esteem. Genuine self-esteem involves a deeper understanding of one's values, standards, and personal growth.",
+      "source_chapter": "Appendix A: Critiqur of Other Definitions of Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-awareness-through-sentence-completion",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Awareness Through Sentence Completion",
+      "summary": "Regularly completing sentence stems helps increase self-awareness and understanding of one's thoughts, feelings, and behaviors.",
+      "source_chapter": "Appendix B: A Sentence-Completion Exercise for Building Self-Esteem",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-all-parts-of-self",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Embracing All Parts of Self",
+      "summary": "The program encourages acceptance and integration of all aspects of oneself, including emotions, thoughts, and desires.",
+      "source_chapter": "Appendix B: A Sentence-Completion Exercise for Building Self-Esteem",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "integrating-younger-selves",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Integrating Younger Selves",
+      "summary": "The program encourages integrating one's younger selves, including child and teenage aspects.",
+      "source_chapter": "Appendix B: A Sentence-Completion Exercise for Building Self-Esteem",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-acceptance-as-a-foundation-for-self-esteem",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Acceptance as a Foundation for Self-Esteem",
+      "summary": "Self-acceptance is essential to healthy self-esteem. It involves acknowledging and accepting oneself, flaws and all.",
+      "source_chapter": "Appendix C: Reccomendations for Further Study",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-self-responsibility",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "The Importance of Self-Responsibility",
+      "summary": "Self-responsibility is crucial for self-esteem. It involves taking ownership of one's actions, choices, and emotions.",
+      "source_chapter": "Appendix C: Reccomendations for Further Study",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-improvement-through-feedback-and-constructive-criticism",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Improvement through Feedback and Constructive Criticism",
+      "summary": "Feedback is essential for self-improvement, involving openness to constructive criticism for growth.",
+      "source_chapter": "Appendix C: Reccomendations for Further Study",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-esteem-and-productivity",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Esteem and Productivity",
+      "summary": "High self-esteem boosts productivity, motivating individuals to work efficiently.",
+      "source_chapter": "Appendix C: Reccomendations for Further Study",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "living-purposefully-and-mindfulness",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Living Purposefully and Mindfulness",
+      "summary": "Setting goals, taking action, and being mindful of values and beliefs is crucial.",
+      "source_chapter": "Appendix C: Reccomendations for Further Study",
+      "applies_to_tags": [
+        "tag-three",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-responsibility-and-personal-growth",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Responsibility and Personal Growth",
+      "summary": "Taking ownership of actions, choices, and emotions fosters personal growth.",
+      "source_chapter": "Appendix C: Reccomendations for Further Study",
+      "applies_to_tags": [
+        "self-responsibility",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-acceptance-and-mental-health",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Acceptance and Mental Health",
+      "summary": "Accepting oneself with flaws and strengths is vital for mental health.",
+      "source_chapter": "Appendix C: Reccomendations for Further Study",
+      "applies_to_tags": [
+        "self-acceptance",
+        "mental health"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-efficacy-and-motivation",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Efficacy and Motivation",
+      "summary": "Believing in one's ability to succeed boosts motivation.",
+      "source_chapter": "Appendix C: Reccomendations for Further Study",
+      "applies_to_tags": [
+        "self-efficacy",
+        "productivity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-respect-and-emotional-intelligence",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Self-Respect and Emotional Intelligence",
+      "summary": "Treating oneself with respect fosters emotional intelligence.",
+      "source_chapter": "Appendix C: Reccomendations for Further Study",
+      "applies_to_tags": [
+        "self-respect",
+        "emotional intelligence"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "reality-check-and-personal-growth",
+      "book_id": "six-pillars-of-self-esteem",
+      "name": "Reality Check and Personal Growth",
+      "summary": "Facing reality promotes personal growth.",
+      "source_chapter": "Appendix C: Reccomendations for Further Study",
+      "applies_to_tags": [
+        "reality check",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    }
+  ],
+  "extraction_metadata": {
+    "chunking_strategy": "toc",
+    "chunking_reason": "embedded PDF TOC yielded 21 chapter-level entries",
+    "chapter_count": 21,
+    "chunk_count": 48,
+    "model": "llama3.2:3b",
+    "generated_at": "2026-07-15T06:56:40.452094+00:00"
+  }
+}

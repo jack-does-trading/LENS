@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Groq API key (only used with --provider groq) — never committed.
+.env
+
+# Raw PDF text and raw per-chunk model output never leave this machine
+# and never get committed anywhere near the ingestion review queue.
+scratch/

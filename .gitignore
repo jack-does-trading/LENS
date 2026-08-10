@@ -1,0 +1,32 @@
+# --- Book PDFs: never committed, anywhere, under any name -----------------
+# Real copyrighted book text. The whole point of this project's design
+# (architecture SS2/SS8) is that raw book content never leaves the local
+# machine it was extracted on -- pushing it to GitHub (public or private)
+# would violate that guarantee outright, not just leak repo size.
+/books/
+tools/local_extraction/scratch/
+tools/local_extraction/**/raw_pdf_text.txt
+
+# --- Secrets ----------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.pem
+
+# --- Python -------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# --- Node / Next.js -------------------------------------------------------
+node_modules/
+.next/
+out/
+next-env.d.ts
+
+# --- OS / editor ----------------------------------------------------------
+.DS_Store
+.vscode/
+.idea/

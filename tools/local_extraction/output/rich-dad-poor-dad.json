@@ -1,0 +1,1421 @@
+{
+  "book": {
+    "book_id": "rich-dad-poor-dad",
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "core_thesis": "Financial success is not solely dependent on hard work, but rather on developing a strong money mindset, acquiring financial education, and taking calculated risks to build wealth through assets and passive income. By prioritizing financial intelligence, entrepreneurship, and risk-taking, individuals can break free from the constraints of a traditional income and achieve financial freedom. This requires a shift in perspective, embracing change, and being willing to challenge conventional wisdom and take bold action to create a life of wealth and prosperity.",
+    "tone": "pragmatic",
+    "tracked_metrics": [],
+    "review_status": "pending_review",
+    "extraction_method": "local_model",
+    "version": 1
+  },
+  "principles": [
+    {
+      "principle_id": "money-mindset-matters",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Money Mindset Matters",
+      "summary": "A person's thoughts and mindset about money can greatly impact their financial situation. The way one thinks about money can be influenced by their upbringing and the people around them. For example, saying 'I can't afford it' can be a sign of mental laziness, while asking 'How can I afford it?' can be a sign of financial responsibility.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "mindset"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "financial-education-is-key",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Financial Education is Key",
+      "summary": "Financial education is more powerful than money itself. Understanding how money works can give one power over it and enable them to build wealth. Positive thinking alone is not enough, as most people lack financial education and spend their lives working for money.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-education",
+        "wealth-building"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "thoughts-shape-our-lives",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Thoughts Shape Our Lives",
+      "summary": "Our thoughts and actions can shape our lives and financial situations. The way one thinks about money can be a self-fulfilling prophecy. For example, saying 'I'll never be rich' can become a reality, while thinking 'I'm a rich man' can lead to financial success.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "mindset",
+        "self-fulfilling-prophecy"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "learning-from-contrasting-views",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Learning from Contrasting Views",
+      "summary": "Having contrasting views and opinions can be beneficial in learning and growing. Exposure to different perspectives can help one make informed decisions and develop their own thoughts and opinions.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "learning",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-financial-literacy",
+      "book_id": "rich-dad-poor-dad",
+      "name": "The Importance of Financial Literacy",
+      "summary": "Financial literacy is essential in today's world. Most people learn about money from their parents, but this can lead to a poor financial mindset. Schools also fail to teach financial skills, leaving many people struggling financially.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "education"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "exercising-your-mind",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Exercising Your Mind",
+      "summary": "Exercising one's mind is essential for financial success. The brain is a powerful computer that can be strengthened through mental exercise. Asking questions like 'How can I afford it?' can be a sign of financial responsibility and mental exercise.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "mental-exercise",
+        "financial-success"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "financial-education-is-key-to-wealth",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Financial Education is Key to Wealth",
+      "summary": "Financial education is more powerful than money itself. It gives individuals the power to make money work for them, rather than the other way around.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "wealth-building"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-rich-don-t-work-for-money",
+      "book_id": "rich-dad-poor-dad",
+      "name": "The Rich Don't Work for Money",
+      "summary": "The rich have money work for them, while the poor and middle class work for money. This mindset allows them to achieve financial freedom and security.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "wealth-creation",
+        "financial-freedom"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "entrepreneurship-and-risk-taking-are-essential",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Entrepreneurship and Risk-Taking are Essential",
+      "summary": "Entrepreneurship and risk-taking are crucial for building wealth. Taking calculated risks and being willing to learn from failures can lead to financial success.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "entrepreneurship",
+        "risk-management"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "seek-out-mentorship-and-guidance",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Seek Out Mentorship and Guidance",
+      "summary": "Seeking out mentorship and guidance from experienced individuals can be a powerful way to learn and grow.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "mentorship",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "decisiveness-and-action-are-key-to-success",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Decisiveness and Action are Key to Success",
+      "summary": "Decisiveness and action are essential for achieving success. Making quick decisions and taking action can lead to financial freedom and security.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "decision-making",
+        "productivity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "hard-work-and-perseverance-are-valuable-traits",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Hard Work and Perseverance are Valuable Traits",
+      "summary": "Hard work and perseverance are valuable traits for building wealth. Putting in the effort required to achieve success can lead to financial freedom and security.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "hard-work",
+        "resilience"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "value-of-hard-work",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Value of Hard Work",
+      "summary": "Hard work is essential, but it's not the only factor in success. Life teaches valuable lessons through experiences, not just lectures.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "work ethic",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "importance-of-passion-and-desire",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Importance of Passion and Desire",
+      "summary": "Passion and desire are crucial for true learning and success. Being passionate about learning and taking risks can lead to financial freedom and security.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "motivation",
+        "financial freedom"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "fear-of-loss-vs-desire-for-gain",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Fear of Loss vs. Desire for Gain",
+      "summary": "Most people are driven by fear, which leads them to play it safe and work for money. Focusing on desire for gain can lead to financial freedom and security.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "fear",
+        "financial mindset"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-power-of-perspective",
+      "book_id": "rich-dad-poor-dad",
+      "name": "The Power of Perspective",
+      "summary": "Rich dad taught that perspective is key to success. Changing one's point of view can lead to new insights and financial freedom.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "perspective",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-value-of-taking-risks",
+      "book_id": "rich-dad-poor-dad",
+      "name": "The Value of Taking Risks",
+      "summary": "Taking risks is essential for success. Being willing to take risks and face challenges head-on can lead to financial freedom and security.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "risk-taking",
+        "financial freedom"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-self-responsibility",
+      "book_id": "rich-dad-poor-dad",
+      "name": "The Importance of Self-Responsibility",
+      "summary": "Rich dad taught that people are responsible for their own success or failure. Taking ownership of one's life can lead to financial freedom and security.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "self-responsibility",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "fear-and-greed-control-the-rat-race",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Fear and Greed Control the Rat Race",
+      "summary": "People's lives are controlled by fear and greed, leading them to work hard for money, only to be trapped in a cycle of spending and debt.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "personal-finance",
+        "mindset"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "desire-is-a-form-of-greed",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Desire is a Form of Greed",
+      "summary": "Desire for more money and material possessions can be a form of greed, leading people to work hard for money, only to be unsatisfied and wanting more.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "consumerism",
+        "mindset"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-truth-about-emotions",
+      "book_id": "rich-dad-poor-dad",
+      "name": "The Truth About Emotions",
+      "summary": "People often react to their emotions rather than confronting them logically, leading to a cycle of fear and greed.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "emotional-intelligence",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "money-can-t-soothe-fears",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Money Can't Soothe Fears",
+      "summary": "Money can't eliminate the fear of being poor or the fear of losing money, and people who try to use it to do so are often left with more fear and anxiety.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "mental-health"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "master-your-emotions",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Master Your Emotions",
+      "summary": "Emotions drive human behavior, but can be managed to achieve long-term goals. Acknowledging and understanding emotions can help individuals use them to their advantage.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "emotional-intelligence",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "choose-your-thoughts",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Choose Your Thoughts",
+      "summary": "Individuals have the power to choose their thoughts and not react impulsively to emotions. This allows for rational thinking and decision-making, rather than being controlled by emotions.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "thought-control",
+        "rational-thinking"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "money-is-an-illusion",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Money Is an Illusion",
+      "summary": "Money is not a tangible entity, but an illusion created by confidence and ignorance. The rich understand this and use it to their advantage, while the poor and middle class are trapped by their misconceptions.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "money",
+        "illusion",
+        "confidence"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "think-beyond-short-term-solutions",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Think Beyond Short-Term Solutions",
+      "summary": "Individuals should focus on long-term solutions rather than short-term fixes. This requires thinking critically and considering the consequences of one's actions.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "long-term-thinking",
+        "critical-thinking"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "financial-literacy-is-key",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Financial Literacy is Key",
+      "summary": "Financial literacy is crucial for achieving wealth and financial stability. It involves understanding the difference between assets and liabilities, as well as how to manage cash flow. Rich dad emphasized the importance of financial literacy.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "wealth-building"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "assets-generate-wealth",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Assets Generate Wealth",
+      "summary": "Assets, such as investments and real estate, can generate wealth over time. In contrast, liabilities, such as debt and expenses, can drain wealth.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "wealth-generation",
+        "asset-management"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "cash-flow-is-king",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Cash Flow is King",
+      "summary": "Cash flow is the lifeblood of financial stability. It's essential to understand how to manage cash flow, including income, expenses, and liabilities.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "cash-flow-management",
+        "financial-planning"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-confuse-assets-with-liabilities",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Don't Confuse Assets with Liabilities",
+      "summary": "Many people confuse assets with liabilities, which can lead to financial struggles. Rich dad taught the author to 'keep it simple' and understand the difference between assets and liabilities.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "asset-liability-difference",
+        "financial-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-financial-education",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Focus on Financial Education",
+      "summary": "Financial education is essential for achieving financial stability and wealth. Rich dad emphasized the importance of financial literacy.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-education",
+        "wealth-building"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "intelligence-solves-problems-not-money",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Intelligence Solves Problems, Not Money",
+      "summary": "Intelligence and financial knowledge are more important than having more money. Understanding how to manage money and make it work for you is key to financial success.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-intelligence",
+        "problem-solving"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-conform-to-common-opinions",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Don't Conform to Common Opinions",
+      "summary": "People often follow the crowd and conform to popular opinions, rather than questioning and seeking new ways to solve problems. This can lead to financial mistakes and missed opportunities.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-discipline",
+        "conformity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-acquiring-assets-not-just-a-bigger-paycheck",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Focus on acquiring assets, not just a bigger paycheck",
+      "summary": "Concentrate on buying income-generating assets to build wealth. This approach differs from the middle class's focus on increasing income without investing in assets.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "wealth-building",
+        "financial-independence"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "build-a-solid-asset-base-to-achieve-financial-freedom",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Build a solid asset base to achieve financial freedom",
+      "summary": "Building a solid asset base, rather than just accumulating liabilities, is essential for achieving financial freedom. This approach allows individuals to generate passive income and achieve financial independence.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-freedom",
+        "wealth-building"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "distinguish-between-assets-and-liabilities",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Distinguish Between Assets and Liabilities",
+      "summary": "Understand the difference between assets and liabilities, and prioritize acquiring assets that generate income or appreciate in value. Avoid buying liabilities, such as new cars, that lose value quickly.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "wealth-building"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "keep-expenses-low",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Keep Expenses Low",
+      "summary": "Maintain low expenses to free up resources for investing in assets. This will help build wealth and financial independence.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "wealth-building"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "understand-corporations",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Understand Corporations",
+      "summary": "Recognize the benefits of corporations, which can limit risk and reduce tax liabilities. Corporations are not physical entities, but rather legal documents that create a separate entity.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "tax-planning"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-punish-the-rich",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Don't Punish the Rich",
+      "summary": "Avoid the 'take-from-the-rich' mentality, which has led to increased taxes on the middle class. Instead, focus on building financial literacy and wealth through smart investing.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "tax-planning"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "minding-your-own-business",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Minding Your Own Business",
+      "summary": "Focus on building your own business and investing in assets, rather than relying on a safe, secure job. This will help you achieve financial independence and wealth.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "wealth-building"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "tax-knowledge-is-power",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Tax Knowledge is Power",
+      "summary": "Understanding tax laws and regulations can give individuals the power to minimize their tax burden. The rich use their knowledge of tax laws to their advantage.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "taxation",
+        "financial-literacy"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "financial-intelligence-is-key",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Financial Intelligence is Key",
+      "summary": "Financial intelligence involves understanding financial statements, investment strategies, and market trends. It can help individuals create wealth with little money and low risk.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-intelligence",
+        "wealth-creation"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-bold-and-take-risks",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Be Bold and Take Risks",
+      "summary": "In the real world, it's not the smart who get ahead, but the bold. Individuals who are willing to take risks can achieve great things and build wealth.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "risk-taking",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "developing-financial-iq-is-worth-it",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Developing Financial IQ is Worth It",
+      "summary": "Developing financial IQ can provide individuals with more options and opportunities in life. It's worth taking the time to learn about personal finance and develop financial intelligence.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-change",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Embracing Change",
+      "summary": "The author believes that change is inevitable and exciting. He encourages readers to welcome change and be excited about the opportunities it brings.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "adapting-to-change",
+        "emotional-intelligence"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "financial-intelligence-beats-saving",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Financial Intelligence Beats Saving",
+      "summary": "Developing financial intelligence can lead to greater wealth than saving money. Financial intelligence involves understanding financial statements, investment strategies, and market trends.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-intelligence",
+        "wealth-creation"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-power-of-compound-interest",
+      "book_id": "rich-dad-poor-dad",
+      "name": "The Power of Compound Interest",
+      "summary": "Compound interest can significantly increase wealth over time. For example, a $40,000 note at 10% interest generated $4,000 in annual cash flow.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "compound-interest",
+        "wealth-creation"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "financial-education-is-key-2",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Financial Education is Key",
+      "summary": "Developing financial education and intelligence is crucial for creating wealth. It involves understanding financial statements, investment strategies, and market trends.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-education",
+        "wealth-creation"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "wealth-creation-is-a-process",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Wealth Creation is a Process",
+      "summary": "Wealth creation is a process that involves developing financial intelligence, understanding market trends, and making informed decisions. It requires patience, persistence, and a long-term perspective.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "wealth-creation",
+        "financial-intelligence"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "risk-management",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Risk Management",
+      "summary": "Managing risk is crucial for financial success. It's not about avoiding risk, but learning to manage it. A solid asset foundation allows for greater risk-taking.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "risk-management",
+        "financial-literacy"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "opportunity-recognition",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Opportunity Recognition",
+      "summary": "Great opportunities are not seen with the eyes, but with the mind. It's about recognizing what others miss.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "opportunity-recognition",
+        "financial-literacy"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "games-reflect-behavior",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Games Reflect Behavior",
+      "summary": "Games reflect our behavior and provide instant feedback. They can help us recognize how our behavior is impacting our financial situation.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "self-awareness",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "money-is-not-real",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Money is Not Real",
+      "summary": "Money is not a physical entity, but rather a concept that we agree upon. If we can grasp this idea, we will be able to create wealth more easily.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "mindset",
+        "wealth-creation"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "investing-is-not-saving",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Investing is Not Saving",
+      "summary": "Investing involves taking calculated risks to create wealth. It's not just about saving money, but about making smart financial decisions.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "investing",
+        "risk-management"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "luck-is-created",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Luck is Created",
+      "summary": "Luck is not something that happens to us, but rather something that we create through our actions and decisions.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "proactivity",
+        "financial-control"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "money-can-be-invented",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Money Can Be Invented",
+      "summary": "Money can be created through financial intelligence and strategic transactions. For example, a $40,000 note was created in five hours, generating $4,000 in annual cash flow.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-intelligence",
+        "wealth-creation"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-timing",
+      "book_id": "rich-dad-poor-dad",
+      "name": "The Importance of Timing",
+      "summary": "Timing is crucial in financial transactions. Understanding market trends and timing can help individuals create wealth.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "market-timing",
+        "wealth-creation"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-let-fear-hold-you-back",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Don't Let Fear Hold You Back",
+      "summary": "Fear and self-doubt can hold individuals back from achieving their financial goals. It's essential to recognize and overcome these fears.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "fear-management",
+        "motivation"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "learning-from-failure",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Learning from Failure",
+      "summary": "Failure is part of the process of success. People who avoid failure also avoid success. Winners learn from their mistakes and take calculated risks. As Rich Dad said, 'Failure inspires winners. Failure defeats losers.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two",
+        "failure",
+        "resilience"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritize-skill-acquisition",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Prioritize Skill Acquisition",
+      "summary": "Most people need to learn and master one more skill to achieve great wealth. A synergy of skills can lead to exponential income growth. Rich dad encouraged me to know a little about a lot, rather than specializing in one area.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two",
+        "career-development",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "generalization-vs-specialization",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Generalization vs. Specialization",
+      "summary": "Rich dad encouraged me to know a little about a lot, rather than specializing in one area. This approach can lead to a broader understanding and more opportunities.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two",
+        "career-adaptability",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "seek-work-for-learning",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Seek Work for Learning",
+      "summary": "Prioritize learning over earning, focusing on acquiring skills for long-term success. As Rich Dad advises, 'If you're not a good leader, you'll get shot in the back, just like they do in business.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "career-development",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-focus-on-job-security",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Don't Focus on Job Security",
+      "summary": "Job security is not a reliable or sustainable goal. Instead, focus on developing skills and knowledge that can be applied across various industries and situations.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "job-security",
+        "career-adaptability"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "develop-business-systems-knowledge",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Develop Business Systems Knowledge",
+      "summary": "Building a successful business requires more than just technical skills. Developing knowledge of business systems, including sales, marketing, and management, is essential for long-term success. As Rich Dad notes, 'McDonald's is excellent at business systems.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "business-management",
+        "entrepreneurship"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "groom-yourself-for-success",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Groom Yourself for Success",
+      "summary": "To achieve success, it's essential to develop a broad range of skills and knowledge. This involves learning from others, seeking out new experiences, and building relationships with people who can help you grow.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "personal-growth",
+        "career-development"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritize-communication-and-sales-skills",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Prioritize Communication and Sales Skills",
+      "summary": "Developing strong communication and sales skills is crucial for personal and professional success. As Rich Dad notes, 'The ability to sell\u2014to communicate to another human being\u2014is the base skill of personal success.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "communication",
+        "sales"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "managing-fear",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Managing Fear",
+      "summary": "Fear of losing money is natural, but it's how you handle it that matters. Rich people manage their fear, while poor people let it control them. As Rich Dad said, 'If you hate risk and worry, start early.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "fear",
+        "risk-taking"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-success",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Focus on Success",
+      "summary": "To achieve success, you must focus on your goals and be willing to take calculated risks. As Rich Dad said, 'If you have little money and you want to be rich, you must first be focused, not balanced.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "focus",
+        "risk-taking"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-greedy-but-not-too-greedy",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Be Greedy, But Not Too Greedy",
+      "summary": "A little greed can be a good thing, as it can motivate people to work towards their goals. However, too much greed can be detrimental. As Rich Dad said, 'Greed is good.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "motivation",
+        "goal-setting"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pay-yourself-first",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Pay Yourself First",
+      "summary": "Prioritize your own financial needs by paying yourself first, even if it means taking on extra work or finding new income sources. As Rich Dad says, 'Motivation' is key.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-planning",
+        "wealth-building"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "invest-in-education",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Invest in Education",
+      "summary": "Investing in your education and personal development is essential for building wealth. By learning from experts and staying open to new ideas, you can gain valuable insights and make informed decisions about your finances.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "choose-your-habits-wisely",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Choose Your Habits Wisely",
+      "summary": "Your habits can either hold you back or propel you forward financially. By adopting good habits, such as paying yourself first and investing in your education, you can build wealth and achieve financial freedom.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-discipline",
+        "wealth-creation"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "develop-a-strong-reason-or-purpose",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Develop a Strong Reason or Purpose",
+      "summary": "Having a clear reason or purpose for achieving financial freedom is crucial. This motivation can help you overcome obstacles and stay committed to your goals. As Rich Dad says, 'Find a reason greater than reality: the power of spirit.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "motivation",
+        "financial-goals"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "choose-friends-wisely",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Choose Friends Wisely",
+      "summary": "Surround yourself with people who share your financial values and goals. Learn from those who have different perspectives. As Rich Dad notes, 'I learn from all of them.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-networking",
+        "personal-relationships"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "take-a-long-term-view",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Take a Long-Term View",
+      "summary": "Avoid short-term thinking and focus on building wealth over time. As Rich Dad says, 'I am long on education.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-planning",
+        "wealth-building"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "master-a-formula",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Master a Formula",
+      "summary": "Learn a new formula or recipe for making money and master it. As Rich Dad says, 'You are what you eat.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "investing"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pay-yourself-first-2",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Pay Yourself First",
+      "summary": "Prioritize your own financial needs by paying yourself first. As Rich Dad says, 'Pay yourself first.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-discipline",
+        "cash-flow"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-consumer-debt",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Avoid Consumer Debt",
+      "summary": "Avoid taking on large amounts of consumer debt, which can be a sign of financial weakness.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-discipline",
+        "debt-management"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "value-professional-advice",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Value Professional Advice",
+      "summary": "Invest in good advice by paying professionals well. They should provide valuable information and help you make money.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "professional-advice"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-true-to-yourself",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Be True to Yourself",
+      "summary": "Stay true to your own financial goals and values. Don't follow the crowd or listen to negative advice.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-discipline",
+        "self-awareness"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-a-sophisticated-investor",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Be a Sophisticated Investor",
+      "summary": "Look for assets that provide a return on investment and allow you to get your money back quickly. As Rich Dad says, 'How fast do I get my money back?' is a key question.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "investing",
+        "ROI"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-assets-to-buy-luxuries",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Use Assets to Buy Luxuries",
+      "summary": "Use assets to buy luxuries instead of buying them on credit. This approach requires discipline and financial intelligence.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-intelligence",
+        "asset-column"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "find-heroes",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Find Heroes",
+      "summary": "Having heroes can inspire and motivate you to achieve your goals. Copying or emulating heroes is a powerful way to learn.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "motivation",
+        "inspiration"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "give-to-receive",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Give to Receive",
+      "summary": "Giving is a key principle of financial intelligence. When you give, you receive in return. As Rich Dad says, 'If you want something, you first need to give.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "giving",
+        "reciprocity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "take-action",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Take Action",
+      "summary": "Taking action is crucial in achieving financial success. As Rich Dad says, 'The definition of insanity is doing the same thing over and over and expecting a different result.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "productivity",
+        "financial success"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-offers",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Make Offers",
+      "summary": "Making offers is a key principle in business and investing. As Rich Dad says, 'Profits are made in the buying, not in the selling.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "business",
+        "investing"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "think-big",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Think Big",
+      "summary": "Thinking big is essential in achieving financial success. As Rich Dad says, 'Small thinkers don't get the big breaks.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial success",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "learn-from-history",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Learn from History",
+      "summary": "Learning from history is essential in achieving financial success. As Rich Dad says, 'All the big companies on the stock exchange started out as small companies.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial success",
+        "education"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "start-small",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Start Small",
+      "summary": "Starting small is essential in achieving financial success. As Rich Dad says, 'It takes only a few dollars to start and grow it into something big.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial success",
+        "personal growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "convert-earned-income-to-passive-income",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Convert Earned Income to Passive Income",
+      "summary": "Converting earned income into passive income is key to financial freedom. As Rich Dad says, 'The key to becoming wealthy is the ability to convert earned income into passive income or portfolio income as quickly as possible.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-freedom",
+        "passive-income"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "diversify-income-streams",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Diversify Income Streams",
+      "summary": "Diversifying income streams is essential to achieving financial freedom. As Rich Dad says, 'The rich don't work for money. They have their money work for them.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "income-diversification",
+        "financial-freedom"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "invest-for-cash-flow",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Invest for Cash Flow",
+      "summary": "Investing for cash flow is a key strategy for achieving financial freedom. As Rich Dad says, 'Having money work hard for you, rather than working hard for money.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "cash-flow-investing",
+        "financial-freedom"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "take-control-of-your-financial-education",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Take Control of Your Financial Education",
+      "summary": "Taking control of your financial education is crucial to achieving financial freedom. As Rich Dad says, 'With each dollar bill that enters your hand, you, and only you, have the power to determine your destiny.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "financial-education"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "find-your-life-s-purpose",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Find Your Life's Purpose",
+      "summary": "Your life's path is not your profession, but finding your purpose and what you were put on this earth to do. As Thich Naht Hahn said, 'The path is the goal.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "life-purpose",
+        "self-discovery"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "non-traditional-education",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Non-Traditional Education",
+      "summary": "Traditional education focuses on mental development, neglecting emotional, physical, and spiritual growth. This can lead to a lack of fulfillment and success. Non-traditional education, such as personal development courses, can help individuals develop a more well-rounded approach to life.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "education",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "question-conventional-wisdom",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Question Conventional Wisdom",
+      "summary": "Robert Kiyosaki's story shows that questioning conventional wisdom and challenging the status quo can lead to discovering one's true path. This principle encourages readers to be open-minded and willing to challenge their assumptions.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "innovation",
+        "risk-taking"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-discovery-is-lifelong",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Self-Discovery is Lifelong",
+      "summary": "Robert Kiyosaki's journey shows that self-discovery is a lifelong process. He continued to learn and grow throughout his life, challenging his assumptions and trying new things. This principle encourages readers to be patient and persistent in their own journey of self-discovery.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "self-discovery",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "emotional-and-spiritual-development",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Emotional and Spiritual Development",
+      "summary": "Emotional and spiritual development are essential for success in life. As Robert Kiyosaki said, 'Developing myself emotionally and spiritually to become a kinder, gentler, and more compassionate person would be the hardest thing I could do.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "emotional-intelligence",
+        "spiritual-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "financial-education",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Financial Education",
+      "summary": "Financial education is essential for achieving financial freedom and security. It involves developing a deep understanding of personal finance, investing, and wealth-building strategies. By acquiring this knowledge, individuals can make informed decisions about their financial lives.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-literacy",
+        "wealth-building"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "hard-work-vs-smart-work",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Hard Work vs. Smart Work",
+      "summary": "The story of Ed and Bill illustrates the difference between hard work and smart work. 'Hauling buckets' is a metaphor for working hard, but not necessarily working smart. To achieve financial freedom, one must learn to work smart, not just hard.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-freedom",
+        "productivity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "financial-intelligence",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Financial Intelligence",
+      "summary": "Financial intelligence is the ability to control the direction of one's cash flow. As Robert Kiyosaki emphasizes, 'financial intelligence is key to financial freedom.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "financial-intelligence",
+        "cash-flow"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "personal-change",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Personal Change",
+      "summary": "Personal change is necessary to move from the left side to the right side of the CASHFLOW Quadrant. It requires a shift in mindset and behavior. As Robert Kiyosaki notes, 'it's more about who you have to be, instead of what you have to do.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "personal-growth",
+        "self-improvement"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "building-pipelines",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Building Pipelines",
+      "summary": "Building pipelines is a metaphor for creating systems that generate wealth and freedom. By building pipelines, one can achieve financial freedom and independence.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "wealth-creation",
+        "financial-freedom"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "importance-of-emotional-education",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Importance of Emotional Education",
+      "summary": "Emotional education is crucial for making permanent changes in life. Without it, people may struggle to overcome addictions or achieve success. As Thomas Edison said, 'I did not fail 1,014 times.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "emotional-education",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "finding-one-s-path",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Finding One's Path",
+      "summary": "Finding one's path in life is a crucial aspect of achieving success and fulfillment. It requires a willingness to take risks, learn from mistakes, and explore new opportunities. As the author notes, 'The path is the goal.'",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "personal-growth",
+        "life-purpose"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-limitations-of-traditional-education",
+      "book_id": "rich-dad-poor-dad",
+      "name": "The Limitations of Traditional Education",
+      "summary": "Traditional education often fails to prepare individuals for the real world. It can lead to a lack of financial literacy and a narrow focus on job security.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "traditional-education",
+        "financial-literacy"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "value-of-non-traditional-learning",
+      "book_id": "rich-dad-poor-dad",
+      "name": "Value of Non-Traditional Learning",
+      "summary": "Non-traditional learning experiences, such as seminars and workshops, can be highly effective in developing new skills and perspectives. These experiences can help individuals connect with their passions and interests.",
+      "source_chapter": null,
+      "applies_to_tags": [
+        "non-traditional-learning",
+        "personal-growth"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    }
+  ],
+  "extraction_metadata": {
+    "chunking_strategy": "fixed_size_overlap",
+    "chunking_reason": "no reliable embedded TOC or chapter headings found; falling back to fixed-size chunks of 3000 words with 150-word overlap",
+    "chapter_count": 24,
+    "chunk_count": 24,
+    "model": "llama-3.1-8b-instant",
+    "generated_at": "2026-08-07T07:24:58.661598+00:00"
+  }
+}

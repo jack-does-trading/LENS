@@ -1,0 +1,1222 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1a1a1a;
+  line-height: 1.5;
+  background: #eee8db;
+  /* The shelf owns the viewport; only inner panels scroll. */
+  overflow: hidden;
+}
+
+/* Full-bleed stage the 3D shelf fills. */
+.stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.stage-empty {
+  display: grid;
+  height: 100%;
+  padding: 0 clamp(20px, 5vw, 72px);
+  align-content: center;
+  justify-items: start;
+}
+
+.stage-empty__mark {
+  margin: 0 0 0.6rem;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: clamp(64px, 12vw, 150px);
+  font-weight: 430;
+  letter-spacing: -0.05em;
+  line-height: 0.85;
+}
+
+/* No-WebGL fallback: an ordinary scrolling document. */
+.classic-page {
+  max-width: 640px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.1rem; margin-top: 2rem; }
+
+label { display: block; margin-top: 1rem; font-weight: 600; }
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.suggestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.suggestion-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.suggestion-actions {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.suggestion-actions button { margin-top: 0; }
+
+.suggestion.done { opacity: 0.5; text-decoration: line-through; }
+.error { color: #b00020; }
+.muted { color: #666; font-size: 0.9rem; }
+
+.principle-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.principle-chip {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  padding: 0.25rem 0.85rem;
+  font-size: 0.85rem;
+  background: #fafafa;
+  cursor: default;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.principle-chip:hover {
+  background: #eaf1ff;
+  border-color: #3b6fd6;
+}
+
+.reflection-summary {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  margin-top: 0.25rem;
+  line-height: 1.6;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* ---------------------------------------------------------------------------
+   3D book shelf picker.
+   Adapted for Lens from "The Complete Shelf" by Mint (MIT License):
+   https://github.com/mintdotgg/mint-playground/tree/main/experiences/complete-shelf
+   All selectors are scoped to .shelf-experience so the surrounding page keeps
+   its own styles.
+   --------------------------------------------------------------------------- */
+
+.shelf-experience {
+  --paper: #eee8db;
+  --paper-light: #f6f1e7;
+  --ink: #25231f;
+  --ink-soft: rgba(37, 35, 31, 0.62);
+  --hairline: rgba(37, 35, 31, 0.19);
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  isolation: isolate;
+  overflow: hidden;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 50% 42%, rgba(255, 255, 255, 0.28), transparent 46%),
+    var(--paper);
+}
+
+/* ---- Opening title ------------------------------------------------------ */
+
+/* Washes the left of the shelf so the opening copy stays readable over it. */
+.shelf-experience .hero-scrim {
+  position: absolute;
+  z-index: 24;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(238, 232, 219, 0.97) 0%,
+    rgba(238, 232, 219, 0.88) 34%,
+    rgba(238, 232, 219, 0) 70%
+  );
+  transition: opacity 760ms ease;
+}
+
+.shelf-experience.is-open .hero-scrim { opacity: 0; }
+
+.shelf-experience .lens-mark {
+  position: absolute;
+  z-index: 26;
+  top: 44vh;
+  left: clamp(20px, 5vw, 72px);
+  margin: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  cursor: default;
+  /* Decorative and oversized while centred for the hero -- only clickable
+     once parked small in the corner (see .is-open below), so it never
+     steals clicks meant for the hero-copy scroll button beneath it. */
+  pointer-events: none;
+  font-family: var(--serif);
+  font-size: clamp(76px, 13vw, 176px);
+  font-weight: 430;
+  letter-spacing: -0.05em;
+  line-height: 0.82;
+  transform: translateY(-100%);
+  transition:
+    top 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    left 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    font-size 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    letter-spacing 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 260ms ease;
+}
+
+.shelf-experience.is-open .lens-mark {
+  top: 20px;
+  left: clamp(16px, 3vw, 40px);
+  font-size: clamp(17px, 1.8vw, 23px);
+  letter-spacing: 0.34em;
+  transform: translateY(0);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.shelf-experience.is-open .lens-mark:hover {
+  opacity: 0.68;
+}
+
+.shelf-experience .hero-copy {
+  position: absolute;
+  z-index: 26;
+  top: calc(44vh + 26px);
+  left: clamp(20px, 5vw, 72px);
+  width: min(440px, 64vw);
+  transition: opacity 460ms ease, transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.shelf-experience.is-open .hero-copy {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-16px);
+}
+
+.shelf-experience .hero-copy__text {
+  margin: 0;
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: clamp(15px, 1.25vw, 19px);
+  line-height: 1.5;
+}
+
+.shelf-experience .hero-scroll {
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.shelf-experience .hero-scroll__label {
+  padding-bottom: 6px;
+  border-bottom: 1px solid currentColor;
+}
+
+/* Chevron pointing down, nudging on a loop. */
+.shelf-experience .hero-scroll__arrow {
+  display: block;
+  width: 11px;
+  height: 11px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: rotate(45deg);
+  animation: lens-nudge 1.8s ease-in-out infinite;
+}
+
+@keyframes lens-nudge {
+  0%, 100% { opacity: 0.45; transform: translateY(-3px) rotate(45deg); }
+  50% { opacity: 1; transform: translateY(4px) rotate(45deg); }
+}
+
+/* Until the opening title is retired the shelf just idles behind it. */
+.shelf-experience.is-hero .shelf-canvas { pointer-events: none; }
+
+.shelf-experience.is-hero .browse-caption,
+.shelf-experience.is-hero .shelf-arrow,
+.shelf-experience.is-hero .shelf-index,
+.shelf-experience.is-hero .experience-status {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shelf-experience .lens-mark,
+  .shelf-experience .hero-copy,
+  .shelf-experience .hero-scrim { transition-duration: 1ms; }
+  .shelf-experience .hero-scroll__arrow { animation: none; }
+}
+
+/* The ported layout assumes border-box; the surrounding page does not set it. */
+.shelf-experience,
+.shelf-experience *,
+.shelf-experience *::before,
+.shelf-experience *::after {
+  box-sizing: border-box;
+}
+
+/* Neutralise the page's global button styling inside the canvas UI. */
+.shelf-experience button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+}
+
+.shelf-experience :focus-visible {
+  outline: 1px solid rgba(37, 35, 31, 0.55);
+  outline-offset: 3px;
+}
+
+.shelf-canvas {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+  opacity: 0;
+  transition: opacity 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.shelf-canvas.is-dragging { cursor: grabbing !important; }
+.shelf-experience.is-ready .shelf-canvas { opacity: 1; }
+
+.shelf-experience .browse-caption {
+  position: absolute;
+  z-index: 16;
+  bottom: clamp(96px, 17vh, 150px);
+  left: clamp(20px, 4vw, 60px);
+  width: min(380px, 46%);
+  isolation: isolate;
+  pointer-events: none;
+  transition: opacity 420ms ease, transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.shelf-experience .browse-caption::before {
+  position: absolute;
+  z-index: -1;
+  top: -36px;
+  right: -64px;
+  bottom: -32px;
+  left: -80px;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    rgba(238, 232, 219, 0.96) 0%,
+    rgba(238, 232, 219, 0.82) 58%,
+    rgba(238, 232, 219, 0) 100%
+  );
+}
+
+.shelf-experience.is-focused .browse-caption {
+  opacity: 0;
+  transform: translate3d(-22px, 0, 0);
+}
+
+.shelf-experience .eyebrow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 0 0 14px;
+  font-size: 9px;
+  font-weight: 620;
+  letter-spacing: 0.19em;
+  line-height: 1;
+}
+
+.shelf-experience .eyebrow__line {
+  width: 46px;
+  height: 1px;
+  background: var(--ink);
+  opacity: 0.35;
+}
+
+.shelf-experience .browse-caption h2 {
+  max-width: 360px;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(28px, 3.4vw, 50px);
+  font-weight: 430;
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+}
+
+.shelf-experience .browse-caption__author {
+  margin: 14px 0 0;
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.shelf-experience .inspect-button {
+  display: inline-flex;
+  gap: 21px;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 0 7px;
+  border-bottom: 1px solid currentColor;
+  cursor: pointer;
+  pointer-events: auto;
+  font-size: 10px;
+  font-weight: 620;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.shelf-experience .inspect-button span:last-child {
+  font-size: 14px;
+  font-weight: 420;
+  transition: transform 220ms ease;
+}
+
+.shelf-experience .inspect-button:hover span:last-child {
+  transform: translate3d(2px, -2px, 0);
+}
+
+.shelf-experience .shelf-arrow {
+  position: absolute;
+  z-index: 17;
+  top: 46%;
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid var(--hairline);
+  border-radius: 50%;
+  background: rgba(238, 232, 219, 0.68);
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: opacity 260ms ease, transform 260ms ease, background-color 220ms ease;
+}
+
+.shelf-experience .shelf-arrow:hover:not(:disabled) {
+  background: rgba(246, 241, 231, 0.92);
+  transform: scale(1.06);
+}
+
+.shelf-experience .shelf-arrow:disabled { cursor: default; opacity: 0.25; }
+
+.shelf-experience.is-focused .shelf-arrow {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.shelf-experience .shelf-arrow--left { left: clamp(14px, 2.4vw, 36px); }
+.shelf-experience .shelf-arrow--right { right: clamp(14px, 2.4vw, 36px); }
+
+.shelf-experience .arrow-icon {
+  position: relative;
+  display: block;
+  width: 17px;
+  height: 9px;
+}
+
+.shelf-experience .arrow-icon span,
+.shelf-experience .arrow-icon::before,
+.shelf-experience .arrow-icon::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background: currentColor;
+}
+
+.shelf-experience .arrow-icon span { top: 4px; width: 17px; height: 1px; }
+
+.shelf-experience .arrow-icon::before,
+.shelf-experience .arrow-icon::after { width: 6px; height: 1px; }
+
+.shelf-experience .arrow-icon--right::before { top: 2px; right: -1px; transform: rotate(45deg); }
+.shelf-experience .arrow-icon--right::after { right: -1px; bottom: 2px; transform: rotate(-45deg); }
+.shelf-experience .arrow-icon--left::before { top: 2px; left: -1px; transform: rotate(-45deg); }
+.shelf-experience .arrow-icon--left::after { bottom: 2px; left: -1px; transform: rotate(45deg); }
+
+.shelf-experience .shelf-index {
+  position: absolute;
+  z-index: 19;
+  right: clamp(20px, 4vw, 56px);
+  bottom: 28px;
+  left: clamp(20px, 4vw, 56px);
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) auto;
+  gap: 32px;
+  align-items: end;
+  transition: opacity 300ms ease, transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.shelf-experience.is-focused .shelf-index {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+}
+
+/* Column count follows the number of books rather than a fixed catalog size. */
+.shelf-experience .shelf-index__ticks {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  align-items: end;
+  height: 21px;
+}
+
+.shelf-experience .shelf-index__ticks button {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 21px;
+  cursor: pointer;
+}
+
+.shelf-experience .shelf-index__ticks button::before {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  left: 0;
+  height: 1px;
+  content: "";
+  background: var(--hairline);
+}
+
+.shelf-experience .shelf-index__ticks button span {
+  position: absolute;
+  z-index: 1;
+  right: 50%;
+  bottom: 1px;
+  width: 1px;
+  height: 7px;
+  background: var(--ink);
+  opacity: 0.48;
+  transition: height 220ms ease, opacity 220ms ease, width 220ms ease;
+}
+
+.shelf-experience .shelf-index__ticks button:hover span,
+.shelf-experience .shelf-index__ticks button.is-active span {
+  width: 2px;
+  height: 18px;
+  opacity: 1;
+}
+
+.shelf-experience .input-hint {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  padding-bottom: 1px;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+.shelf-experience .input-hint i {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.shelf-experience .book-details {
+  position: absolute;
+  z-index: 22;
+  top: 0;
+  right: 0;
+  width: min(580px, 48%);
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(44px);
+  transition: opacity 420ms ease 80ms, transform 620ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.shelf-experience .book-details::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(90deg, rgba(238, 232, 219, 0), rgba(238, 232, 219, 0.82) 10%, var(--paper) 24%),
+    var(--paper);
+}
+
+.shelf-experience.is-focused .book-details {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.shelf-experience .book-details__inner {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  height: 100%;
+  padding: 22px clamp(22px, 3vw, 48px) 24px clamp(34px, 4.5vw, 66px);
+  border-left: 1px solid rgba(37, 35, 31, 0.08);
+}
+
+.shelf-experience .back-button {
+  display: inline-flex;
+  gap: 13px;
+  align-items: center;
+  justify-self: start;
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.shelf-experience .back-button .arrow-icon { transform: scale(0.78); }
+
+.shelf-experience .book-details__position {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-self: end;
+  margin-top: -6px;
+  font-size: 9px;
+  font-weight: 620;
+  letter-spacing: 0.14em;
+}
+
+.shelf-experience .book-details__position span:first-child::after {
+  display: inline-block;
+  width: 34px;
+  height: 1px;
+  margin: 0 9px 3px 13px;
+  content: "";
+  background: currentColor;
+  opacity: 0.28;
+}
+
+/* The panel's scroller. The book blurb plus the form sit in the first screen;
+   a finished reflection is scrolled up to fill the panel on its own, and the
+   inputs come back with a scroll up rather than being unmounted. */
+.shelf-experience .book-details__copy {
+  align-self: stretch;
+  height: 100%;
+  padding: 20px 0 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--hairline) transparent;
+}
+
+.shelf-experience .book-details__selected {
+  margin: 18px 0 0;
+  color: var(--ink-soft);
+  font-size: 9px;
+  font-weight: 620;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.shelf-experience .book-details__copy .eyebrow {
+  margin-bottom: 16px;
+  color: var(--ink-soft);
+}
+
+.shelf-experience .book-details h2 {
+  max-width: 440px;
+  margin: 0;
+  text-wrap: balance;
+  font-family: var(--serif);
+  font-size: clamp(30px, 3.2vw, 48px);
+  font-weight: 440;
+  letter-spacing: -0.05em;
+  line-height: 0.94;
+}
+
+.shelf-experience .book-details__author {
+  margin: 14px 0 0;
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: 17px;
+  font-style: italic;
+}
+
+.shelf-experience .book-details__description {
+  max-width: 460px;
+  margin: 24px 0 0;
+  font-family: var(--serif);
+  font-size: clamp(15px, 1.1vw, 18px);
+  font-weight: 430;
+  line-height: 1.4;
+}
+
+/* ---- Ask form, in the opened book's panel ------------------------------- */
+
+.ask-form {
+  max-width: 460px;
+  margin-top: 30px;
+  padding-top: 26px;
+  padding-bottom: 30px;
+  border-top: 1px solid var(--hairline);
+}
+
+.ask-form__streak {
+  margin: 0 0 18px;
+  color: var(--ink-soft);
+  font-size: 9px;
+  font-weight: 620;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.field { display: block; margin-top: 20px; }
+.field:first-child { margin-top: 0; }
+
+.field__label {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.field__value {
+  color: var(--ink-soft, #666);
+  font-style: normal;
+  letter-spacing: 0.1em;
+}
+
+.shelf-experience .field input[type="text"],
+.shelf-experience .field input:not([type]),
+.shelf-experience .field textarea,
+.shelf-experience .field select {
+  width: 100%;
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--ink);
+  font-family: var(--serif);
+  /* The wrapping <label> is bold; the control itself should not be. */
+  font-weight: 430;
+  font-size: 16px;
+  line-height: 1.4;
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.shelf-experience .field textarea { resize: vertical; }
+
+.shelf-experience .field input:focus,
+.shelf-experience .field textarea:focus {
+  border-color: rgba(37, 35, 31, 0.5);
+  background: rgba(255, 255, 255, 0.86);
+  outline: none;
+}
+
+.shelf-experience .field ::placeholder {
+  color: rgba(37, 35, 31, 0.36);
+  font-style: italic;
+}
+
+.mood-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.mood-slider::-webkit-slider-runnable-track {
+  height: 1px;
+  background: rgba(37, 35, 31, 0.28);
+}
+
+.mood-slider::-moz-range-track {
+  height: 1px;
+  background: rgba(37, 35, 31, 0.28);
+}
+
+.mood-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -6.5px;
+  border: 0;
+  border-radius: 50%;
+  background: #25231f;
+}
+
+.mood-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border: 0;
+  border-radius: 50%;
+  background: #25231f;
+}
+
+.mood-scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+  font-size: 9px;
+  font-weight: 620;
+  letter-spacing: 0.1em;
+  opacity: 0.42;
+}
+
+.mood-scale .is-active { opacity: 1; }
+
+.advice-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px 0 12px;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: opacity 200ms ease;
+}
+
+.advice-button:disabled { cursor: default; opacity: 0.35; }
+
+/* The button's own slot, taken over while the model runs. */
+.advice-loading {
+  margin-top: 30px;
+  padding: 15px 0 14px;
+  border-top: 1px solid var(--hairline, #ddd);
+  border-bottom: 1px solid var(--hairline, #ddd);
+}
+
+.advice-loading__bar {
+  overflow: hidden;
+  height: 1px;
+  background: rgba(37, 35, 31, 0.14);
+}
+
+.advice-loading__bar span {
+  display: block;
+  width: 36%;
+  height: 100%;
+  background: #25231f;
+  animation: lens-sweep 1.5s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+@keyframes lens-sweep {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(380%); }
+}
+
+.advice-loading__quote {
+  margin: 16px 0 0;
+  color: var(--ink-soft, #666);
+  font-family: var(--serif, Georgia, serif);
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.45;
+  animation: lens-quote-in 620ms ease both;
+}
+
+.advice-loading__quote cite {
+  display: block;
+  margin-top: 7px;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 620;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+@keyframes lens-quote-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Reflection --------------------------------------------------------- */
+
+/* min-height makes the reflection fill the panel once scrolled to the top. */
+.ask-result {
+  min-height: 100%;
+  padding-bottom: 28px;
+  scroll-margin-top: 0;
+  animation: lens-quote-in 520ms ease both;
+}
+
+.ask-result .eyebrow {
+  margin: 0 0 14px;
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 0.19em;
+}
+
+.ask-result .eyebrow--tips { margin-top: 32px; }
+
+.shelf-experience .reflection-summary {
+  border-color: var(--hairline);
+  background: rgba(255, 255, 255, 0.45);
+  font-family: var(--serif);
+  font-size: 16px;
+}
+
+.shelf-experience .suggestion { border-bottom-color: var(--hairline); }
+.shelf-experience .suggestion:last-child { border-bottom: 0; }
+.shelf-experience .suggestion-body strong { font-family: var(--serif); font-size: 16px; font-weight: 500; }
+.shelf-experience .muted { color: var(--ink-soft); }
+
+/* The shelf's blanket button reset outranks these bare class selectors, so the
+   page's own buttons are re-stated at shelf scope. */
+.shelf-experience .advice-button {
+  margin-top: 30px;
+  padding: 15px 0 12px;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+}
+
+.shelf-experience .suggestion-actions button {
+  padding: 7px 12px;
+  border: 1px solid var(--hairline);
+  cursor: pointer;
+  font-size: 8px;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.shelf-experience .suggestion-actions button:disabled { cursor: default; opacity: 0.4; }
+
+.shelf-experience .focus-controls {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid var(--hairline);
+  color: var(--ink-soft);
+  font-size: 8px;
+  font-weight: 590;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.shelf-experience .focus-controls span + span::before {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  margin: 0 14px 2px 0;
+  border-radius: 50%;
+  content: "";
+  background: currentColor;
+}
+
+.shelf-experience .focus-controls button {
+  padding: 8px 12px;
+  border: 1px solid var(--hairline);
+  cursor: pointer;
+  font-size: 8px;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.shelf-experience .experience-status {
+  position: absolute;
+  z-index: 18;
+  top: 22px;
+  /* Top-left belongs to the parked wordmark. */
+  right: clamp(20px, 3vw, 44px);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--ink-soft);
+  font-size: 8px;
+  font-weight: 560;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: opacity 300ms ease;
+}
+
+.shelf-experience .experience-status__dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #6c8b64;
+  box-shadow: 0 0 0 3px rgba(108, 139, 100, 0.13);
+}
+
+.shelf-experience.is-focused .experience-status { opacity: 0; }
+
+.shelf-experience .loading-screen {
+  position: absolute;
+  z-index: 40;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  background: var(--paper);
+  transition: opacity 720ms ease 120ms, visibility 720ms ease 120ms;
+}
+
+.shelf-experience.is-ready .loading-screen {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.shelf-experience .loading-screen__mark {
+  display: flex;
+  gap: 5px;
+  align-items: flex-end;
+  height: 62px;
+}
+
+.shelf-experience .loading-screen__mark span {
+  display: block;
+  width: 13px;
+  background: var(--ink);
+  animation: shelf-assemble 1.25s ease-in-out infinite alternate;
+}
+
+.shelf-experience .loading-screen__mark span:nth-child(1) { height: 46px; }
+.shelf-experience .loading-screen__mark span:nth-child(2) { height: 59px; animation-delay: -0.42s; }
+.shelf-experience .loading-screen__mark span:nth-child(3) { height: 39px; animation-delay: -0.78s; }
+
+.shelf-experience .loading-screen p {
+  margin: 19px 0 0;
+  font-size: 9px;
+  font-weight: 620;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+@keyframes shelf-assemble {
+  from { opacity: 0.45; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Credit line, pinned under the shelf-index row -- decorative only, never
+   intercepts drag/click input meant for the shelf beneath it. */
+.shelf-experience .site-footer {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  bottom: 6px;
+  margin: 0;
+  text-align: center;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* Same credit line for the no-WebGL fallback -- a normal document, so it
+   sits in flow at the end of the page rather than pinned to the viewport. */
+.site-footer--classic {
+  margin: 2.5rem 0 0;
+  text-align: center;
+  color: #3a3a3a;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 760px) {
+  .shelf-experience .lens-mark {
+    top: 46vh;
+    font-size: clamp(58px, 19vw, 96px);
+  }
+
+  .shelf-experience.is-open .lens-mark { top: 16px; font-size: 15px; }
+
+  .shelf-experience .hero-copy {
+    top: calc(46vh + 20px);
+    width: calc(100% - 2 * clamp(20px, 5vw, 72px));
+  }
+
+  .shelf-experience .hero-scrim {
+    background: linear-gradient(
+      180deg,
+      rgba(238, 232, 219, 0.94) 0%,
+      rgba(238, 232, 219, 0.9) 70%,
+      rgba(238, 232, 219, 0.5) 100%
+    );
+  }
+
+  .shelf-experience .browse-caption {
+    right: 0;
+    bottom: 92px;
+    left: 0;
+    width: auto;
+    padding: 46px 18px 16px;
+    background: linear-gradient(
+      180deg,
+      rgba(238, 232, 219, 0),
+      rgba(238, 232, 219, 0.96) 40px,
+      var(--paper) 58px
+    );
+  }
+
+  .shelf-experience .browse-caption::before { display: none; }
+
+  .shelf-experience .browse-caption h2 {
+    max-width: 78vw;
+    font-size: clamp(28px, 9vw, 42px);
+  }
+
+  .shelf-experience .shelf-arrow {
+    top: auto;
+    bottom: 52px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .shelf-experience .shelf-arrow--left { left: 14px; }
+  .shelf-experience .shelf-arrow--right { right: 14px; }
+
+  .shelf-experience .shelf-index {
+    right: 64px;
+    bottom: 58px;
+    left: 64px;
+    display: block;
+  }
+
+  .shelf-experience .shelf-index__ticks,
+  .shelf-experience .shelf-index__ticks button { height: 13px; }
+
+  .shelf-experience .shelf-index__ticks button span { bottom: 2px; height: 5px; }
+
+  .shelf-experience .shelf-index__ticks button:hover span,
+  .shelf-experience .shelf-index__ticks button.is-active span { height: 12px; }
+
+  .shelf-experience .input-hint { display: none; }
+
+  .shelf-experience .book-details {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    /* Tall enough to hold the form and a full reflection. */
+    height: 88%;
+    transform: translateY(100%);
+  }
+
+  .shelf-experience .book-details::before {
+    top: -55px;
+    background:
+      linear-gradient(180deg, rgba(238, 232, 219, 0), rgba(238, 232, 219, 0.94) 54px, var(--paper) 55px),
+      var(--paper);
+  }
+
+  .shelf-experience.is-focused .book-details { transform: translateY(0); }
+
+  .shelf-experience .book-details__inner {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    padding: 10px 18px 14px;
+    border-top: 1px solid rgba(37, 35, 31, 0.08);
+    border-left: 0;
+  }
+
+  .shelf-experience .back-button { grid-column: 1; grid-row: 1; }
+
+  .shelf-experience .book-details__position {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .shelf-experience .book-details__copy {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    align-self: stretch;
+    padding: 18px 0 0;
+  }
+
+  .ask-form { max-width: none; }
+
+  .shelf-experience .book-details h2 { max-width: 90%; font-size: clamp(26px, 8vw, 38px); }
+  .shelf-experience .book-details__author { margin-top: 8px; font-size: 14px; }
+  .shelf-experience .book-details__description { margin-top: 16px; font-size: 15px; }
+
+  .shelf-experience .focus-controls { grid-column: 1 / -1; grid-row: 3; }
+  .shelf-experience .focus-controls span:nth-child(2) { display: none; }
+}

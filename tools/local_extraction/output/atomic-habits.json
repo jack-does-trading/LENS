@@ -1,0 +1,1562 @@
+{
+  "book": {
+    "book_id": "atomic-habits",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "core_thesis": "Atomic habits, as outlined in James Clear's book, argue that small, consistent changes can lead to significant improvements over time. By focusing on systems rather than goals, and using strategies such as habit stacking, implementation intentions, and environmental cues, individuals can create a framework for lasting change. The key is to make progress visible, track habits, and automate good behaviors, while avoiding bad habits and making small changes that add up to big results.",
+    "tone": "pragmatic",
+    "tracked_metrics": [],
+    "review_status": "pending_review",
+    "extraction_method": "local_model",
+    "version": 1
+  },
+  "principles": [
+    {
+      "principle_id": "the-power-of-small-improvements",
+      "book_id": "atomic-habits",
+      "name": "The Power of Small Improvements",
+      "summary": "Tiny changes can lead to significant results when repeated over time. Small improvements accumulate into remarkable outcomes.",
+      "source_chapter": "1: The Surprising Power of Atomic Habits",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-systems-not-goals",
+      "book_id": "atomic-habits",
+      "name": "Focus on Systems, Not Goals",
+      "summary": "Success is achieved through the systems you follow, not just specific goals. Focus on creating a framework for improvement rather than setting individual targets.",
+      "source_chapter": "1: The Surprising Power of Atomic Habits",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-plateau-of-latent-potential",
+      "book_id": "atomic-habits",
+      "name": "The Plateau of Latent Potential",
+      "summary": "Progress is often delayed, but every effort contributes to eventual success. Don't give up on your efforts; they're being stored for future breakthroughs.",
+      "source_chapter": "1: The Surprising Power of Atomic Habits",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-compound-effect-of-habits",
+      "book_id": "atomic-habits",
+      "name": "The Compound Effect of Habits",
+      "summary": "Habits have a compounding effect, where small daily improvements lead to significant long-term results. Good habits build upon each other, while bad habits compound into negative outcomes.",
+      "source_chapter": "1: The Surprising Power of Atomic Habits",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-patience",
+      "book_id": "atomic-habits",
+      "name": "The Importance of Patience",
+      "summary": "Mastery requires patience and persistence. Small changes can lead to significant breakthroughs when repeated over time, but it's essential to stay committed to your efforts.",
+      "source_chapter": "1: The Surprising Power of Atomic Habits",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-systems-not-goals-2",
+      "book_id": "atomic-habits",
+      "name": "Focus on Systems, Not Goals",
+      "summary": "Goals are about results, while systems are about processes that lead to those results. Focus on designing your systems to make progress rather than setting goals.",
+      "source_chapter": "1: The Surprising Power of Atomic Habits",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "systems-are-key-to-progress-not-goals",
+      "book_id": "atomic-habits",
+      "name": "Systems Are Key to Progress, Not Goals",
+      "summary": "Achieving a goal only changes your life for the moment; solving problems at the system level leads to long-term improvement. Fixing inputs and outputs fixes themselves.",
+      "source_chapter": "1: The Surprising Power of Atomic Habits",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "goals-can-limit-happiness",
+      "book_id": "atomic-habits",
+      "name": "Goals Can Limit Happiness",
+      "summary": "The implicit assumption behind goals is that happiness comes after achieving them, but this creates an 'either-or' conflict. A systems-first mentality provides the antidote.",
+      "source_chapter": "1: The Surprising Power of Atomic Habits",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "systems-are-essential-for-long-term-progress",
+      "book_id": "atomic-habits",
+      "name": "Systems Are Essential for Long-Term Progress",
+      "summary": "A goal-oriented mindset can create a 'yo-yo' effect, where progress is focused on a single accomplishment. True long-term thinking is goal-less thinking; it's about the cycle of endless refinement and continuous improvement.",
+      "source_chapter": "1: The Surprising Power of Atomic Habits",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "small-changes-matter",
+      "book_id": "atomic-habits",
+      "name": "Small Changes Matter",
+      "summary": "Atomic habits, or tiny changes, are the building blocks of remarkable results. They may seem insignificant at first but build on each other to fuel bigger wins.",
+      "source_chapter": "1: The Surprising Power of Atomic Habits",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-identity-change",
+      "book_id": "atomic-habits",
+      "name": "Focus on Identity Change",
+      "summary": "Change your habits by changing your underlying beliefs and identity. True behavior change is identity change.",
+      "source_chapter": "2: How Your Habits Shape Your Identity (and Vice Versa)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "small-wins-matter",
+      "book_id": "atomic-habits",
+      "name": "Small Wins Matter",
+      "summary": "Prove new identities with small wins, not just big outcomes. New identities require new evidence.",
+      "source_chapter": "2: How Your Habits Shape Your Identity (and Vice Versa)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "habits-shape-identity",
+      "book_id": "atomic-habits",
+      "name": "Habits Shape Identity",
+      "summary": "Your habits are how you embody your identity. The more you repeat a behavior, the more you reinforce the identity associated with it.",
+      "source_chapter": "2: How Your Habits Shape Your Identity (and Vice Versa)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "identity-is-repeated-beingness",
+      "book_id": "atomic-habits",
+      "name": "Identity is Repeated Beingness",
+      "summary": "Your identity is literally your repeated beingness. Whatever your identity is right now, you only believe it because you have proof of it.",
+      "source_chapter": "2: How Your Habits Shape Your Identity (and Vice Versa)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "identity-driven-habits",
+      "book_id": "atomic-habits",
+      "name": "Identity-Driven Habits",
+      "summary": "Focus on becoming the type of person you want to be, rather than achieving a specific outcome. Your habits shape your identity, and your identity shapes your habits.",
+      "source_chapter": "2: How Your Habits Shape Your Identity (and Vice Versa)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "identity-change-is-key",
+      "book_id": "atomic-habits",
+      "name": "Identity Change is Key",
+      "summary": "The formation of all habits is driven by identity change, not just achieving a specific result. Your power lies in changing your beliefs about yourself.",
+      "source_chapter": "2: How Your Habits Shape Your Identity (and Vice Versa)",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-habits-obvious-to-increase-repetition",
+      "book_id": "atomic-habits",
+      "name": "Make habits obvious to increase repetition",
+      "summary": "Create an environment that triggers your habits, making them more noticeable and increasing the likelihood of repetition.",
+      "source_chapter": "3: How to Build Better Habits in 4 Simple Steps",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "identify-and-satisfy-cravings-for-rewards",
+      "book_id": "atomic-habits",
+      "name": "Identify and satisfy cravings for rewards",
+      "summary": "Understand what drives your behavior and identify the rewards that motivate you, then create habits that deliver those rewards.",
+      "source_chapter": "3: How to Build Better Habits in 4 Simple Steps",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-habits-easy-to-perform",
+      "book_id": "atomic-habits",
+      "name": "Make habits easy to perform",
+      "summary": "Reduce the number of decisions needed to perform a habit, making it easier to adopt and maintain.",
+      "source_chapter": "3: How to Build Better Habits in 4 Simple Steps",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-habits-obvious",
+      "book_id": "atomic-habits",
+      "name": "Make Habits Obvious",
+      "summary": "Create an environment that prompts you to perform a habit, making it more likely to occur. Make it obvious.",
+      "source_chapter": "3: How to Build Better Habits in 4 Simple Steps",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "attract-craving",
+      "book_id": "atomic-habits",
+      "name": "Attract Craving",
+      "summary": "Make the reason for performing a habit appealing and attractive, increasing motivation.",
+      "source_chapter": "3: How to Build Better Habits in 4 Simple Steps",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "simplify-response",
+      "book_id": "atomic-habits",
+      "name": "Simplify Response",
+      "summary": "Reduce the number of decisions needed to perform a habit, making it easier to act. Make it easy.",
+      "source_chapter": "3: How to Build Better Habits in 4 Simple Steps",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "provide-satisfying-reward",
+      "book_id": "atomic-habits",
+      "name": "Provide Satisfying Reward",
+      "summary": "Follow a habit with a reward that reinforces its repetition, creating a positive feedback loop. Make it satisfying.",
+      "source_chapter": "3: How to Build Better Habits in 4 Simple Steps",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "awareness-is-key-to-habit-change",
+      "book_id": "atomic-habits",
+      "name": "Awareness is Key to Habit Change",
+      "summary": "The process of behavior change starts with awareness, making it possible to respond in a way that benefits you. With enough practice, your brain will pick up on cues without consciously thinking about them.",
+      "source_chapter": "4: The Man Who Didn\u2019t Look Right",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "verbalize-your-actions",
+      "book_id": "atomic-habits",
+      "name": "Verbalize Your Actions",
+      "summary": "Pointing-and-Calling raises awareness by verbalizing actions, making it possible to respond in a way that benefits you. This approach makes the consequences of bad habits seem more real.",
+      "source_chapter": "4: The Man Who Didn\u2019t Look Right",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-a-specific-plan-for-when-and-where-you-will-perform-a-new-habit",
+      "book_id": "atomic-habits",
+      "name": "Make a specific plan for when and where you will perform a new habit",
+      "summary": "Create an implementation intention by specifying the time, location, and behavior. This increases the likelihood of following through with the habit.",
+      "source_chapter": "5: The Best Way to Start a New Habit",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "identify-a-current-habit-to-stack-your-new-behavior-on-top-of",
+      "book_id": "atomic-habits",
+      "name": "Identify a current habit to stack your new behavior on top of",
+      "summary": "Use habit stacking to pair a new habit with an existing one, making it easier to create a chain of habits.",
+      "source_chapter": "5: The Best Way to Start a New Habit",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "choose-a-highly-specific-and-immediately-actionable-cue-for-your-habit-stack",
+      "book_id": "atomic-habits",
+      "name": "Choose a highly specific and immediately actionable cue for your habit stack",
+      "summary": "Select a clear and concise trigger that eliminates ambiguity and increases the chances of success.",
+      "source_chapter": "5: The Best Way to Start a New Habit",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "design-your-environment-to-shape-behavior",
+      "book_id": "atomic-habits",
+      "name": "Design Your Environment to Shape Behavior",
+      "summary": "Environment plays a crucial role in shaping behavior, not motivation. Small changes can lead to large changes.",
+      "source_chapter": "6: Motivation Is Overrated; Environment Often Matters More",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-obvious-cues-for-good-habits",
+      "book_id": "atomic-habits",
+      "name": "Make Obvious Cues for Good Habits",
+      "summary": "Place cues for good habits in obvious locations to increase the chances of remembering them.",
+      "source_chapter": "6: Motivation Is Overrated; Environment Often Matters More",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "associate-habits-with-context-not-objects",
+      "book_id": "atomic-habits",
+      "name": "Associate Habits with Context, Not Objects",
+      "summary": "Habits are linked to context, not objects. Changing your environment can help you change your habits.",
+      "source_chapter": "6: Motivation Is Overrated; Environment Often Matters More",
+      "applies_to_tags": [
+        "tag-three",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "change-your-environment-change-your-habits",
+      "book_id": "atomic-habits",
+      "name": "Change Your Environment, Change Your Habits",
+      "summary": "Bad habits are autocatalytic; reduce exposure to cues that trigger them. Remove a single cue and the entire habit often fades away.",
+      "source_chapter": "7: The Secret to Self-Control",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-control-is-short-term-not-long-term",
+      "book_id": "atomic-habits",
+      "name": "Self-Control is Short-Term, Not Long-Term",
+      "summary": "Make your environment optimize for good habits, not willpower. Focus on reducing temptation rather than resisting it.",
+      "source_chapter": "7: The Secret to Self-Control",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "habits-are-intrinsic-to-the-brain",
+      "book_id": "atomic-habits",
+      "name": "Habits are Intrinsic to the Brain",
+      "summary": "Once a habit is formed, it's unlikely to be forgotten. Break habits by removing cues, not just resisting temptation.",
+      "source_chapter": "7: The Secret to Self-Control",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-habits-attractive-by-linking-them-to-something-you-already-want",
+      "book_id": "atomic-habits",
+      "name": "Make habits attractive by linking them to something you already want",
+      "summary": "Linking an action you need to do with an action you want to do makes it more attractive. Temptation bundling works.",
+      "source_chapter": "8: How to Make a Habit Irresistible",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "understand-the-dopamine-driven-feedback-loop",
+      "book_id": "atomic-habits",
+      "name": "Understand the dopamine-driven feedback loop",
+      "summary": "Habits are driven by anticipation of a reward, not just the reward itself. Dopamine release motivates behavior.",
+      "source_chapter": "8: How to Make a Habit Irresistible",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-temptation-bundling-to-make-habits-more-attractive",
+      "book_id": "atomic-habits",
+      "name": "Use temptation bundling to make habits more attractive",
+      "summary": "Temptation bundling links an action you need to do with an action you want to do, making it more attractive.",
+      "source_chapter": "8: How to Make a Habit Irresistible",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "apply-premack-s-principle-to-make-habits-more-attractive",
+      "book_id": "atomic-habits",
+      "name": "Apply Premack\u2019s Principle to make habits more attractive",
+      "summary": "Temptation bundling is based on Premack\u2019s Principle, which states that less probable behaviors will reinforce more probable ones.",
+      "source_chapter": "8: How to Make a Habit Irresistible",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-habit-stacking-temptation-bundling-to-create-a-set-of-rules",
+      "book_id": "atomic-habits",
+      "name": "Use habit stacking + temptation bundling to create a set of rules",
+      "summary": "Combine habit stacking and temptation bundling to create a formula: After [CURRENT HABIT], I will [HABIT I NEED]. After [HABIT I NEED], I will [HABIT I WANT].",
+      "source_chapter": "8: How to Make a Habit Irresistible",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pair-a-desired-action-with-an-essential-task",
+      "book_id": "atomic-habits",
+      "name": "Pair a desired action with an essential task",
+      "summary": "Combine two actions: one you want to do (want) and one you need to do (need). This creates a heightened version of reality, making the habit more attractive.",
+      "source_chapter": "8: How to Make a Habit Irresistible",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "anticipation-drives-motivation",
+      "book_id": "atomic-habits",
+      "name": "Anticipation drives motivation",
+      "summary": "The anticipation of a reward, not its fulfillment, motivates us to take action. By making your habits more attractive through temptation bundling, you can increase the dopamine spike.",
+      "source_chapter": "8: How to Make a Habit Irresistible",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-habits-attractive",
+      "book_id": "atomic-habits",
+      "name": "Make habits attractive",
+      "summary": "The 2nd Law of Behavior Change states that making an opportunity attractive increases its likelihood of becoming a habit. By pairing a desired action with an essential task, you can make your habits more appealing and increase motivation.",
+      "source_chapter": "8: How to Make a Habit Irresistible",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "imitate-to-belong",
+      "book_id": "atomic-habits",
+      "name": "Imitate to Belong",
+      "summary": "Humans imitate habits of those around them to fit in and belong. We follow social norms without thinking, questioning, or remembering.",
+      "source_chapter": "9: The Role of Family and Friends in Shaping Your Habits",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "proximity-influences-behavior",
+      "book_id": "atomic-habits",
+      "name": "Proximity Influences Behavior",
+      "summary": "We pick up habits from those around us, especially family and friends. The closer we are to someone, the more likely we are to imitate their habits.",
+      "source_chapter": "9: The Role of Family and Friends in Shaping Your Habits",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "conformity-can-be-overwhelming",
+      "book_id": "atomic-habits",
+      "name": "Conformity Can Be Overwhelming",
+      "summary": "When unsure how to act, we look to the group for guidance. This can lead to conformity over individual behavior.",
+      "source_chapter": "9: The Role of Family and Friends in Shaping Your Habits",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "imitate-for-status",
+      "book_id": "atomic-habits",
+      "name": "Imitate for Status",
+      "summary": "We imitate behaviors that earn us respect, approval, and status. We want to be like successful people because we desire success ourselves.",
+      "source_chapter": "9: The Role of Family and Friends in Shaping Your Habits",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "reframe-associations-to-fix-bad-habits",
+      "book_id": "atomic-habits",
+      "name": "Reframe Associations to Fix Bad Habits",
+      "summary": "Change your associations with bad habits to make them less attractive. Highlight benefits of avoiding them.",
+      "source_chapter": "10: How to Find and Fix the Causes of Your Bad Habits",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "underlying-motives-drive-behavior",
+      "book_id": "atomic-habits",
+      "name": "Underlying Motives Drive Behavior",
+      "summary": "Every behavior has a surface-level craving and a deeper underlying motive. Address the root cause to change habits.",
+      "source_chapter": "10: How to Find and Fix the Causes of Your Bad Habits",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "create-a-positive-habit-loop",
+      "book_id": "atomic-habits",
+      "name": "Create a Positive Habit Loop",
+      "summary": "Associate new habits with positive feelings and experiences. Create a motivation ritual to build a habit loop.",
+      "source_chapter": "10: How to Find and Fix the Causes of Your Bad Habits",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-action-not-motion",
+      "book_id": "atomic-habits",
+      "name": "Focus on Action, Not Motion",
+      "summary": "Prioritize taking action over planning and strategizing to achieve results. \"Action is the foundational element of all progress.\"",
+      "source_chapter": "11: Walk Slowly, but Never Backward",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "repetition-is-key",
+      "book_id": "atomic-habits",
+      "name": "Repetition is Key",
+      "summary": "Repeat an activity enough times for the brain to form a new habit through long-term potentiation.",
+      "source_chapter": "11: Walk Slowly, but Never Backward",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "frequency-not-time-matters",
+      "book_id": "atomic-habits",
+      "name": "Frequency, Not Time, Matters",
+      "summary": "The number of repetitions required to form a new habit is more important than time spent on it.",
+      "source_chapter": "11: Walk Slowly, but Never Backward",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-practice-easy",
+      "book_id": "atomic-habits",
+      "name": "Make Practice Easy",
+      "summary": "Adhere to the 3rd Law of Behavior Change: make practice happen by making it easy.",
+      "source_chapter": "11: Walk Slowly, but Never Backward",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-your-habits-simple-and-easy",
+      "book_id": "atomic-habits",
+      "name": "Make Your Habits Simple and Easy",
+      "summary": "Reduce friction in your habits to make them easier to follow. By making good habits convenient, you'll be more likely to stick with them.",
+      "source_chapter": "12: The Law of Least Effort",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prime-your-environment-for-future-use",
+      "book_id": "atomic-habits",
+      "name": "Prime Your Environment for Future Use",
+      "summary": "Organize your space to make the next action easy. Prepare each room for its intended purpose to reduce friction and increase productivity.",
+      "source_chapter": "12: The Law of Least Effort",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "start-small-with-the-two-minute-rule",
+      "book_id": "atomic-habits",
+      "name": "Start Small with the Two-Minute Rule",
+      "summary": "Begin new habits by making them easy to start, taking less than two minutes. This reduces mental resistance and sets a positive tone for continued effort.",
+      "source_chapter": "13: How to Stop Procrastinating by Using the Two-Minute Rule",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "ritualize-the-beginning-of-a-process",
+      "book_id": "atomic-habits",
+      "name": "Ritualize the Beginning of a Process",
+      "summary": "Make the first action of a process easy to start, reducing mental effort and increasing focus. This helps build momentum and sets the stage for deeper engagement.",
+      "source_chapter": "13: How to Stop Procrastinating by Using the Two-Minute Rule",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "standardize-before-optimizing",
+      "book_id": "atomic-habits",
+      "name": "Standardize Before Optimizing",
+      "summary": "Establish basic habits before trying to improve them. This ensures a solid foundation for further development and reduces frustration.",
+      "source_chapter": "13: How to Stop Procrastinating by Using the Two-Minute Rule",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-bad-habits-difficult",
+      "book_id": "atomic-habits",
+      "name": "Make Bad Habits Difficult",
+      "summary": "Make bad habits hard to follow by creating a commitment device or increasing friction. This makes it easier to form good habits and harder to break bad ones.",
+      "source_chapter": "14: How to Make Good Habits Inevitable and Bad Habits Impossible",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "automate-good-habits",
+      "book_id": "atomic-habits",
+      "name": "Automate Good Habits",
+      "summary": "Use technology to automate good habits, making them easy and painless. This frees up time and energy for more important tasks.",
+      "source_chapter": "14: How to Make Good Habits Inevitable and Bad Habits Impossible",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "create-a-commitment-device",
+      "book_id": "atomic-habits",
+      "name": "Create a Commitment Device",
+      "summary": "Make a choice in the present that controls your actions in the future. This helps to lock in good habits and restrict bad ones.",
+      "source_chapter": "14: How to Make Good Habits Inevitable and Bad Habits Impossible",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-it-satisfying",
+      "book_id": "atomic-habits",
+      "name": "Make it Satisfying",
+      "summary": "Repeat behaviors with immediate pleasure, not just knowledge. Consistency is key to habit adoption.",
+      "source_chapter": "15: The Cardinal Rule of Behavior Change",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "immediate-rewards-matter",
+      "book_id": "atomic-habits",
+      "name": "Immediate Rewards Matter",
+      "summary": "Rewarding immediate gratification increases repetition of a behavior. Delayed rewards are less effective.",
+      "source_chapter": "15: The Cardinal Rule of Behavior Change",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "align-short-term-rewards-with-long-term-goals",
+      "book_id": "atomic-habits",
+      "name": "Align Short-Term Rewards with Long-Term Goals",
+      "summary": "Make sure your habits align with your long-term vision for a healthy life. As intrinsic rewards kick in, you'll become less focused on short-term gains and more committed to the habit itself.",
+      "source_chapter": "15: The Cardinal Rule of Behavior Change",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "identity-sustains-habits",
+      "book_id": "atomic-habits",
+      "name": "Identity Sustains Habits",
+      "summary": "The more a habit becomes part of your life, the less you need external encouragement to follow through. Identity is the ultimate reinforcer.",
+      "source_chapter": "15: The Cardinal Rule of Behavior Change",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "immediate-reinforcement-matters",
+      "book_id": "atomic-habits",
+      "name": "Immediate Reinforcement Matters",
+      "summary": "Simple bits of reinforcement, like enjoyable experiences or small rewards, help maintain motivation in the short term. They make change easier and more enjoyable.",
+      "source_chapter": "15: The Cardinal Rule of Behavior Change",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-progress-visible",
+      "book_id": "atomic-habits",
+      "name": "Make Progress Visible",
+      "summary": "Tracking habits makes progress obvious, attractive, and satisfying. Visual cues like streaks on a calendar or lists of meals provide clear evidence of behavior.",
+      "source_chapter": "16: How to Stick with Good Habits Every Day",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "automate-measurement-when-possible",
+      "book_id": "atomic-habits",
+      "name": "Automate Measurement When Possible",
+      "summary": "Automating measurement can make tracking easier. Use existing data from tools like credit card statements, Fitbits, or calendars to review progress regularly.",
+      "source_chapter": "16: How to Stick with Good Habits Every Day",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "limit-manual-tracking-to-most-important-habits",
+      "book_id": "atomic-habits",
+      "name": "Limit Manual Tracking to Most Important Habits",
+      "summary": "Consistently tracking one habit is more effective than sporadically tracking multiple habits. Focus on the most important habits first.",
+      "source_chapter": "16: How to Stick with Good Habits Every Day",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "record-measurements-immediately-after-habits",
+      "book_id": "atomic-habits",
+      "name": "Record Measurements Immediately After Habits",
+      "summary": "Recording measurements immediately after habits creates a trigger for the next action, making it easier to stick with good habits.",
+      "source_chapter": "16: How to Stick with Good Habits Every Day",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-miss-twice",
+      "book_id": "atomic-habits",
+      "name": "Don't Miss Twice",
+      "summary": "Never miss twice. Get back on track as quickly as possible after missing a day to avoid a spiral of repeated mistakes.",
+      "source_chapter": "16: How to Stick with Good Habits Every Day",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-bad-habits-painful",
+      "book_id": "atomic-habits",
+      "name": "Make Bad Habits Painful",
+      "summary": "To prevent bad habits, add an instant cost to the action. This makes the behavior less likely to repeat. \"Pain is an effective teacher.\"",
+      "source_chapter": "17: How an Accountability Partner Can Change Everything",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "create-a-social-contract-for-habits",
+      "book_id": "atomic-habits",
+      "name": "Create a Social Contract for Habits",
+      "summary": "Make habits unsatisfying by adding a social cost, such as punishment or accountability partners. This makes the behavior less likely to repeat.",
+      "source_chapter": "17: How an Accountability Partner Can Change Everything",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "choose-your-field-wisely",
+      "book_id": "atomic-habits",
+      "name": "Choose Your Field Wisely",
+      "summary": "Select a field that aligns with your natural inclinations and abilities, increasing the chances of success. As physician Gabor Mate notes, 'Genes can predispose, but they don't predetermine.'",
+      "source_chapter": "18: The Truth About Talent (When Genes Matter and When They Don\u2019t)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "align-your-ambition-with-ability",
+      "book_id": "atomic-habits",
+      "name": "Align Your Ambition with Ability",
+      "summary": "Direct your effort toward areas that excite you and match your natural skills, to align your ambition with your ability. Master a specific skill to overcome the limitations of genetics and create a unique advantage.",
+      "source_chapter": "18: The Truth About Talent (When Genes Matter and When They Don\u2019t)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "play-to-your-strengths",
+      "book_id": "atomic-habits",
+      "name": "Play to Your Strengths",
+      "summary": "Focus on habits and activities where the odds are in your favor, leveraging your unique strengths and abilities. As Scott Adams says, 'Everyone has at least a few areas in which they could be in the top 25% with some effort.'",
+      "source_chapter": "18: The Truth About Talent (When Genes Matter and When They Don\u2019t)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "find-your-flow",
+      "book_id": "atomic-habits",
+      "name": "Find Your Flow",
+      "summary": "Engage in activities that induce flow, where happiness and peak performance converge. When you're in flow, a behavior is more likely to be satisfying.",
+      "source_chapter": "18: The Truth About Talent (When Genes Matter and When They Don\u2019t)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-your-own-potential-rather-than-comparing-to-others",
+      "book_id": "atomic-habits",
+      "name": "Focus on your own potential rather than comparing to others",
+      "summary": "Avoid comparing yourself to others, as it can lead to discouragement. Instead, focus on understanding your strengths and working towards your own potential.",
+      "source_chapter": "18: The Truth About Talent (When Genes Matter and When They Don\u2019t)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "specialization-is-key-to-overcoming-genetic-limitations",
+      "book_id": "atomic-habits",
+      "name": "Specialization is key to overcoming genetic limitations",
+      "summary": "Mastering a specific skill can help you overcome the limitations of bad genetics. By specializing, you can become better than others in that area.",
+      "source_chapter": "18: The Truth About Talent (When Genes Matter and When They Don\u2019t)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "genes-clarify-hard-work-not-eliminate-it",
+      "book_id": "atomic-habits",
+      "name": "Genes clarify hard work, not eliminate it",
+      "summary": "Your genes may limit your potential, but they don't eliminate the need for hard work. Focus on working hard in areas where you excel.",
+      "source_chapter": "18: The Truth About Talent (When Genes Matter and When They Don\u2019t)",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "choose-habits-that-align-with-your-personality-and-skills",
+      "book_id": "atomic-habits",
+      "name": "Choose habits that align with your personality and skills",
+      "summary": "Pick behaviors that come naturally to you, as they will be easier to maintain over time. Work hard on things that are easy for you.",
+      "source_chapter": "18: The Truth About Talent (When Genes Matter and When They Don\u2019t)",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "find-a-game-that-favors-your-strengths-and-play-it",
+      "book_id": "atomic-habits",
+      "name": "Find a game that favors your strengths and play it",
+      "summary": "Identify areas where you excel and focus on developing those skills. This will help you make progress and stay motivated.",
+      "source_chapter": "18: The Truth About Talent (When Genes Matter and When They Don\u2019t)",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "work-on-tasks-of-manageable-difficulty",
+      "book_id": "atomic-habits",
+      "name": "Work on tasks of manageable difficulty",
+      "summary": "Humans experience peak motivation when working on challenges that are right on the edge of their current abilities. This is known as the Goldilocks Rule, where tasks should not be too hard or too easy.",
+      "source_chapter": "19: The Goldilocks Rule: How to Stay Motivated in Life and Work",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "variety-keeps-habits-interesting",
+      "book_id": "atomic-habits",
+      "name": "Variety keeps habits interesting",
+      "summary": "To avoid boredom and maintain motivation, introduce novelty into your habits. This can be achieved through variable rewards, new challenges, or changes in routine.",
+      "source_chapter": "19: The Goldilocks Rule: How to Stay Motivated in Life and Work",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "consistency-over-motivation",
+      "book_id": "atomic-habits",
+      "name": "Consistency over motivation",
+      "summary": "Professionals stick to their schedule and work on their habits even when they don't feel motivated. Consistency is key to achieving remarkable results.",
+      "source_chapter": "19: The Goldilocks Rule: How to Stay Motivated in Life and Work",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "balance-challenge-and-progress",
+      "book_id": "atomic-habits",
+      "name": "Balance challenge and progress",
+      "summary": "Improvement requires a delicate balance between pushing yourself to your edge and making enough progress to stay motivated. Novelty and variety are essential to maintaining interest in habits.",
+      "source_chapter": "19: The Goldilocks Rule: How to Stay Motivated in Life and Work",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "boredom-is-the-greatest-villain",
+      "book_id": "atomic-habits",
+      "name": "Boredom is the greatest villain",
+      "summary": "Boredom is a major obstacle to achieving goals. To overcome it, focus on tasks that are engaging and challenging, but not too difficult or too easy.",
+      "source_chapter": "19: The Goldilocks Rule: How to Stay Motivated in Life and Work",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "mastering-habits-requires-deliberate-practice",
+      "book_id": "atomic-habits",
+      "name": "Mastering Habits Requires Deliberate Practice",
+      "summary": "To achieve mastery, habits must be combined with deliberate practice. Automatic habits are necessary but not sufficient.",
+      "source_chapter": "20: The Downside of Creating Good Habits",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "reflection-and-review-are-crucial-for-improvement",
+      "book_id": "atomic-habits",
+      "name": "Reflection and Review Are Crucial for Improvement",
+      "summary": "Regular reflection and review help identify areas for improvement and prevent complacency. It's essential to view yourself from a conversational distance, not an inch away.",
+      "source_chapter": "20: The Downside of Creating Good Habits",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoiding-identity-lock-in-is-key-to-growth",
+      "book_id": "atomic-habits",
+      "name": "Avoiding Identity Lock-In Is Key to Growth",
+      "summary": "Tying too much identity to a single aspect can lead to brittleness and prevent growth. Keep your identity small and flexible.",
+      "source_chapter": "20: The Downside of Creating Good Habits",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-power-of-small-changes",
+      "book_id": "atomic-habits",
+      "name": "The Power of Small Changes",
+      "summary": "Small, consistent changes can lead to significant improvements over time. Tiny changes. Remarkable results.",
+      "source_chapter": "Conclusion: The Secret to Results That Last",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "building-on-success",
+      "book_id": "atomic-habits",
+      "name": "Building on Success",
+      "summary": "Success is not a goal, but an ongoing process of improvement and refinement.",
+      "source_chapter": "Conclusion: The Secret to Results That Last",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-four-laws-of-behavior-change",
+      "book_id": "atomic-habits",
+      "name": "The Four Laws of Behavior Change",
+      "summary": "To build good habits, make them obvious, attractive, easy, and satisfying. To break bad habits, make them invisible, unattractive, hard, and unsatisfying.",
+      "source_chapter": "Conclusion: The Secret to Results That Last",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "continuous-improvement",
+      "book_id": "atomic-habits",
+      "name": "Continuous Improvement",
+      "summary": "There is no finish line; continuous improvement is key to achieving lasting results.",
+      "source_chapter": "Conclusion: The Secret to Results That Last",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "stay-curious",
+      "book_id": "atomic-habits",
+      "name": "Stay Curious",
+      "summary": "Continuously seek out new knowledge and experiences to expand your understanding of various subjects.",
+      "source_chapter": "What Should You Read Next?",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "explore-related-work",
+      "book_id": "atomic-habits",
+      "name": "Explore Related Work",
+      "summary": "If you enjoyed Atomic Habits, consider reading other books on related topics.",
+      "source_chapter": "What Should You Read Next?",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "awareness-precedes-desire",
+      "book_id": "atomic-habits",
+      "name": "Awareness precedes desire",
+      "summary": "A craving is created when you assign meaning to a cue, and happiness arises from the absence of desire.",
+      "source_chapter": "Little Lessons from the Four Laws",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "happiness-is-fleeting",
+      "book_id": "atomic-habits",
+      "name": "Happiness is fleeting",
+      "summary": "Happiness arrives when you no longer want to change your state, but it's short-lived as a new desire always comes along.",
+      "source_chapter": "Little Lessons from the Four Laws",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "emotions-drive-behavior-and-craving-comes-before-response",
+      "book_id": "atomic-habits",
+      "name": "Emotions drive behavior and craving comes before response",
+      "summary": "Every decision is an emotional decision at some level, and craving comes before response. Resisting temptation doesn't satisfy your craving; it creates space for the craving to pass.",
+      "source_chapter": "Little Lessons from the Four Laws",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-control-is-difficult-because-it-s-not-satisfying",
+      "book_id": "atomic-habits",
+      "name": "Self-control is difficult because it's not satisfying",
+      "summary": "Resisting temptation doesn't satisfy your craving; it creates space for the craving to pass.",
+      "source_chapter": "Little Lessons from the Four Laws",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "expectations-determine-satisfaction",
+      "book_id": "atomic-habits",
+      "name": "Expectations determine satisfaction",
+      "summary": "The gap between our cravings and rewards determines how satisfied we feel, with positive surprises leading to repetition and negative disappointments leading to avoidance.",
+      "source_chapter": "Little Lessons from the Four Laws",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "start-small",
+      "book_id": "atomic-habits",
+      "name": "Start Small",
+      "summary": "Begin with tiny, manageable changes to build momentum and create lasting habits.",
+      "source_chapter": "How to Apply These Ideas to Business",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-it-visible",
+      "book_id": "atomic-habits",
+      "name": "Make It Visible",
+      "summary": "Exposure is key to changing behavior; track progress to stay motivated.",
+      "source_chapter": "How to Apply These Ideas to Business",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "create-an-implementation-intention",
+      "book_id": "atomic-habits",
+      "name": "Create an Implementation Intention",
+      "summary": "Specify when and where you will perform a habit-forming action.",
+      "source_chapter": "How to Apply These Ideas to Business",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-what-you-can-control",
+      "book_id": "atomic-habits",
+      "name": "Focus on what you can control",
+      "summary": "Habits are a crucial factor in success, but luck also plays a role. Focus on building good habits and improving yourself.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "small-changes-lead-to-big-results",
+      "book_id": "atomic-habits",
+      "name": "Small changes lead to big results",
+      "summary": "Making small adjustments can have significant effects over time. This is known as the 'Marginal Gains' principle.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "habits-are-a-double-edged-sword",
+      "book_id": "atomic-habits",
+      "name": "Habits are a double-edged sword",
+      "summary": "Good habits can improve your life, but bad ones can have negative consequences. Be mindful of your habits and make conscious choices.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-power-of-implementation-intentions",
+      "book_id": "atomic-habits",
+      "name": "The power of implementation intentions",
+      "summary": "Writing down specific plans and intentions can increase the likelihood of success. This is known as an 'implementation intention'.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-feedback-and-self-awareness",
+      "book_id": "atomic-habits",
+      "name": "The importance of feedback and self-awareness",
+      "summary": "Recognizing your own strengths and weaknesses is crucial for personal growth and improvement. Seek feedback from others and be open to constructive criticism.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "implementation-intentions",
+      "book_id": "atomic-habits",
+      "name": "Implementation Intentions",
+      "summary": "Writing down exact times and dates for actions can increase success rates. For example, recording flu shot appointments led to higher vaccination rates.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "environmental-cues",
+      "book_id": "atomic-habits",
+      "name": "Environmental Cues",
+      "summary": "People are influenced by their surroundings, making it easier to change behavior when the environment changes. This is why people often adopt new habits in a new location or with a new routine.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "dopamine-driven-feedback-loops",
+      "book_id": "atomic-habits",
+      "name": "Dopamine-Driven Feedback Loops",
+      "summary": "Habits are created by dopamine release, making it easier to form new habits when the brain associates them with pleasure or reward. This is why small rewards can motivate behavior change.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "social-influence",
+      "book_id": "atomic-habits",
+      "name": "Social Influence",
+      "summary": "People are more likely to adopt a habit if their friends or peers have already adopted it, as seen in studies on weight loss and social networks.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "find-an-ally-for-dissent",
+      "book_id": "atomic-habits",
+      "name": "Find an Ally for Dissent",
+      "summary": "Having someone to stand by your opinion makes it easier to hold onto it, even when others disagree. When you have an ally, group pressure is less likely to sway you from your true belief.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "repetition-is-change",
+      "book_id": "atomic-habits",
+      "name": "Repetition is Change",
+      "summary": "Automaticity is the ability to perform a behavior without conscious thought. This can be both beneficial and detrimental, as it allows for efficiency but also makes habits harder to break.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "tag-three",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-commitment-devices",
+      "book_id": "atomic-habits",
+      "name": "Use Commitment Devices",
+      "summary": "A commitment device is a choice you make in the present that helps you stay on track with long-term goals. By making a conscious decision, you can overcome procrastination and build habits.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "tag-five",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "track-your-progress",
+      "book_id": "atomic-habits",
+      "name": "Track Your Progress",
+      "summary": "Monitoring your progress towards goals like weight loss or habit formation can promote goal attainment. Seeing the results of your efforts can motivate you to continue working towards your objectives.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-power-of-progress",
+      "book_id": "atomic-habits",
+      "name": "The Power of Progress",
+      "summary": "Motivation is most effective when based on progress, not perfection. Research shows that progress drives motivation more than goal attainment.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "missing-once-won-t-ruin-you",
+      "book_id": "atomic-habits",
+      "name": "Missing Once Won't Ruin You",
+      "summary": "Missing a habit once has virtually no impact on developing it over time, as long as you get back on track.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-aggregation-of-marginal-gains",
+      "book_id": "atomic-habits",
+      "name": "The Aggregation of Marginal Gains",
+      "summary": "Small changes can lead to significant improvements when applied consistently and in combination, as seen in British Cycling's success.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "automate-your-habits",
+      "book_id": "atomic-habits",
+      "name": "Automate Your Habits",
+      "summary": "Automating habits can lead to consistent behavior change, as seen in the example of Thomas Frank's contract.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-context",
+      "book_id": "atomic-habits",
+      "name": "The Importance of Context",
+      "summary": "Context plays a crucial role in shaping behavior and habits, as seen in the example of the Pointing-and-Calling subway safety system.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-it-obvious",
+      "book_id": "atomic-habits",
+      "name": "Make It Obvious",
+      "summary": "To build a habit, make your cues obvious. The environment should be designed to support good habits and make bad ones less appealing.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "make-it-attractive",
+      "book_id": "atomic-habits",
+      "name": "Make It Attractive",
+      "summary": "Create an environment that makes good habits appealing, using supernormal stimuli or attractive cues.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "parenting",
+        "habit-building"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "lock-in-your-future-actions",
+      "book_id": "atomic-habits",
+      "name": "Lock in Your Future Actions",
+      "summary": "Make a plan and stick to it, controlling your desires and long-term goals.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "parenting",
+        "goal-setting"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-hyperbolic-discounting",
+      "book_id": "atomic-habits",
+      "name": "Avoid Hyperbolic Discounting",
+      "summary": "Don't overestimate short-term gains, considering long-term consequences.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "parenting",
+        "decision-making"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-habit-contracts",
+      "book_id": "atomic-habits",
+      "name": "Use Habit Contracts",
+      "summary": "Create a plan with goals and commitments to build lasting change.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "parenting",
+        "habit-building"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "find-your-flow-state",
+      "book_id": "atomic-habits",
+      "name": "Find Your Flow State",
+      "summary": "Engage in activities that utilize both System 1 and System 2, increasing productivity.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "parenting",
+        "productivity"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-variable-rewards",
+      "book_id": "atomic-habits",
+      "name": "Use Variable Rewards",
+      "summary": "Introduce intermittent rewards to increase motivation and engagement.",
+      "source_chapter": "How to Apply These Ideas to Parenting",
+      "applies_to_tags": [
+        "parenting",
+        "motivation"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    }
+  ],
+  "extraction_metadata": {
+    "chunking_strategy": "toc",
+    "chunking_reason": "embedded PDF TOC yielded 25 chapter-level entries",
+    "chapter_count": 25,
+    "chunk_count": 36,
+    "model": "llama3.2:3b",
+    "generated_at": "2026-08-05T09:46:38.191789+00:00"
+  }
+}

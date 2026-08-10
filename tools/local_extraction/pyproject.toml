@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-extraction"
+version = "0.1.0"
+description = "Standalone local book-extraction CLI (architecture §2 Path B) — never part of the app server."
+requires-python = ">=3.10"
+dependencies = [
+    "pymupdf==1.28.0",
+    "requests==2.34.2",
+    "tqdm==4.68.4",
+    "python-dotenv==1.0.1",
+]
+
+[project.scripts]
+local-extraction = "local_extraction.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

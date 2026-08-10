@@ -1,0 +1,2931 @@
+{
+  "book": {
+    "book_id": "12-rules-for-life",
+    "title": "12 Rules for Life",
+    "author": "Jordan B. Peterson",
+    "core_thesis": "This book presents a comprehensive guide for living a meaningful life by applying 12 rules that promote personal growth, responsibility, and self-awareness. The principles outlined in the book emphasize the importance of treating oneself with kindness, setting boundaries, and taking responsibility for one's actions. It also highlights the need to balance order and chaos, cultivate resilience, and prioritize meaning over expediency. By following these rules, individuals can develop a stronger sense of purpose, improve their relationships, and navigate life's challenges with greater confidence and wisdom.",
+    "tone": "philosophical",
+    "tracked_metrics": [],
+    "review_status": "pending_review",
+    "extraction_method": "local_model",
+    "version": 1
+  },
+  "principles": [
+    {
+      "principle_id": "stand-up-straight-with-confidence",
+      "book_id": "12-rules-for-life",
+      "name": "Stand up straight with confidence",
+      "summary": "Maintain good posture to project self-assurance and confidence. Stand tall, not slouching.",
+      "source_chapter": "Title Page",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "treat-yourself-with-kindness",
+      "book_id": "12-rules-for-life",
+      "name": "Treat yourself with kindness",
+      "summary": "Practice self-compassion by treating yourself as you would a close friend.",
+      "source_chapter": "Title Page",
+      "applies_to_tags": [
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "surround-yourself-with-positive-influences",
+      "book_id": "12-rules-for-life",
+      "name": "Surround yourself with positive influences",
+      "summary": "Seek out people who genuinely care about your well-being and success.",
+      "source_chapter": "Title Page",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-expect-rules-to-be-one-size-fits-all",
+      "book_id": "12-rules-for-life",
+      "name": "Don't Expect Rules to Be One-Size-Fits-All",
+      "summary": "Life is complicated, and rules should account for individual situations. Without this, we risk becoming slaves to our passions.",
+      "source_chapter": "Foreword",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "rules-are-easier-to-understand-when-embedded-in-a-story",
+      "book_id": "12-rules-for-life",
+      "name": "Rules Are Easier to Understand When Embedded in a Story",
+      "summary": "The Bible's use of storytelling makes its rules more relatable and memorable. This approach can facilitate understanding and adherence.",
+      "source_chapter": "Foreword",
+      "applies_to_tags": [
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-wary-of-ideologies-that-disguise-chaos-within",
+      "book_id": "12-rules-for-life",
+      "name": "Be Wary of Ideologies That Disguise Chaos Within",
+      "summary": "Ideologies often mask personal flaws, leading to hubris and danger when in power.",
+      "source_chapter": "Foreword",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "set-your-house-in-order-before-trying-to-fix-others",
+      "book_id": "12-rules-for-life",
+      "name": "Set Your House in Order Before Trying to Fix Others",
+      "summary": "Prioritize personal growth and self-awareness before attempting to change others or the world.",
+      "source_chapter": "Foreword",
+      "applies_to_tags": [
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-complexity-can-lead-to-greater-freedom",
+      "book_id": "12-rules-for-life",
+      "name": "Embracing Complexity Can Lead to Greater Freedom",
+      "summary": "Acknowledging and working with complexity can lead to a more authentic and fulfilling life.",
+      "source_chapter": "Foreword",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "true-knowledge-is-not-a-substitute-for-wisdom",
+      "book_id": "12-rules-for-life",
+      "name": "True Knowledge Is Not a Substitute for Wisdom",
+      "summary": "Knowledge alone is not enough; wisdom requires understanding the complexities of human nature.",
+      "source_chapter": "Foreword",
+      "applies_to_tags": [
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "understand-ideology-s-retooling-of-religious-stories",
+      "book_id": "12-rules-for-life",
+      "name": "Understand Ideology's Retooling of Religious Stories",
+      "summary": "Ideologies retool religious stories, eliminating narrative and psychological richness. Communism borrowed from the Children of Israel story.",
+      "source_chapter": "Foreword",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "moral-relativism-leads-to-nihilism-and-ideology",
+      "book_id": "12-rules-for-life",
+      "name": "Moral Relativism Leads to Nihilism and Ideology",
+      "summary": "Modern moral relativism leads to nihilism, despair, and ideology. It undermines the study of virtue and practical wisdom.",
+      "source_chapter": "Foreword",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-virtue-in-human-life",
+      "book_id": "12-rules-for-life",
+      "name": "The Importance of Virtue in Human Life",
+      "summary": "Aristotle defined virtues as ways of behaving conducive to happiness. Cultivating judgment on virtue is the beginning of wisdom.",
+      "source_chapter": "Foreword",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-need-for-moral-structure-in-life",
+      "book_id": "12-rules-for-life",
+      "name": "The Need for Moral Structure in Life",
+      "summary": "Humans are rule generators, concerned with morality. Simplistic modern relativism hobbles us by pretending we're not moral animals.",
+      "source_chapter": "Foreword",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "integrate-existing-wisdom-with-new-discoveries",
+      "book_id": "12-rules-for-life",
+      "name": "Integrate existing wisdom with new discoveries",
+      "summary": "The author suggests integrating the best of human knowledge from thousands of years with modern learning, rather than dismissing it as superstition. This approach allows for a more comprehensive understanding of human wisdom.",
+      "source_chapter": "Foreword",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "take-responsibility-for-your-own-life",
+      "book_id": "12-rules-for-life",
+      "name": "Take responsibility for your own life",
+      "summary": "The foremost rule emphasizes individual responsibility for one's life, encouraging people to focus on personal growth and self-improvement before taking on bigger responsibilities.",
+      "source_chapter": "Foreword",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "reach-for-ideals-that-are-above-you",
+      "book_id": "12-rules-for-life",
+      "name": "Reach for ideals that are above you",
+      "summary": "The author suggests striving for ideals that are superior to oneself, even if they may not be attainable. This allows individuals to stretch beyond their current limits and give life meaning.",
+      "source_chapter": "Foreword",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-shared-belief-systems",
+      "book_id": "12-rules-for-life",
+      "name": "The Importance of Shared Belief Systems",
+      "summary": "Shared belief systems simplify the world, enabling cooperation and predictability. They regulate powerful forces like emotions and conflict.",
+      "source_chapter": "Overture",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "value-is-essential-for-meaningful-life",
+      "book_id": "12-rules-for-life",
+      "name": "Value is Essential for Meaningful Life",
+      "summary": "A shared system of value stabilizes human interaction, but its absence leads to chaos and nihilism. We must have meaning to counter suffering.",
+      "source_chapter": "Overture",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-centre-is-occupied-by-the-individual",
+      "book_id": "12-rules-for-life",
+      "name": "The Centre is Occupied by the Individual",
+      "summary": "Existence at the cross (suffering and transformation) needs to be voluntarily accepted. It's possible to transcend group adherence and nihilism through individual consciousness.",
+      "source_chapter": "Overture",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "conflict-is-inevitable-but-can-be-managed",
+      "book_id": "12-rules-for-life",
+      "name": "Conflict is Inevitable, but Can Be Managed",
+      "summary": "Shared belief systems regulate conflict, reducing uncertainty and chaotic emotions. We must find a balance between group cohesion and individual freedom.",
+      "source_chapter": "Overture",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-individual-responsibility",
+      "book_id": "12-rules-for-life",
+      "name": "Embracing Individual Responsibility",
+      "summary": "Voluntarily accepting personal responsibility for life, society, and the world can reduce suffering. We must each take ownership of our existence.",
+      "source_chapter": "Overture",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "finding-meaning-in-consciousness",
+      "book_id": "12-rules-for-life",
+      "name": "Finding Meaning in Consciousness",
+      "summary": "Individual consciousness and experience hold sufficient meaning to transcend group adherence and nihilism. We must find purpose in ourselves.",
+      "source_chapter": "Overture",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "stand-up-straight-with-your-shoulders-back",
+      "book_id": "12-rules-for-life",
+      "name": "Stand up straight with your shoulders back",
+      "summary": "Maintain confidence and assertiveness is crucial for success, just like lobsters establishing dominance in their territory.",
+      "source_chapter": "RULE 1: Stand up straight with your shoulders back",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "defeat-can-be-a-transformative-experience",
+      "book_id": "12-rules-for-life",
+      "name": "Defeat can be a transformative experience",
+      "summary": "Lobsters' brains dissolve after a defeat, and they regrow with a new brain suitable for their new position.",
+      "source_chapter": "RULE 1: Stand up straight with your shoulders back",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-principle-of-unequal-distribution-applies",
+      "book_id": "12-rules-for-life",
+      "name": "The principle of unequal distribution applies",
+      "summary": "A small fraction of individuals dominate in various fields, such as music or science, while the majority struggle to be noticed.",
+      "source_chapter": "RULE 1: Stand up straight with your shoulders back",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "establishing-dominance-is-key-to-stability",
+      "book_id": "12-rules-for-life",
+      "name": "Establishing dominance is key to stability",
+      "summary": "Maintain confidence to succeed in life, like a dominant lobster. Higher serotonin levels are linked to better physical and mental health.",
+      "source_chapter": "\u200cRULE 1: Stand up straight with your shoulders back",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "recognize-the-importance-of-dominance-hierarchies",
+      "book_id": "12-rules-for-life",
+      "name": "Recognize the importance of dominance hierarchies",
+      "summary": "Dominance hierarchies are old and universal, shaping our behavior and culture. Our perceptions of the world, including personalities and intentions, shape our understanding of reality.",
+      "source_chapter": "\u200cRULE 1: Stand up straight with your shoulders back",
+      "applies_to_tags": [
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-romanticize-nature",
+      "book_id": "12-rules-for-life",
+      "name": "Don't romanticize nature",
+      "summary": "Nature is complex and dynamic, with both chaotic and ordered aspects. Straddle the duality of order and chaos to find meaning and stability.",
+      "source_chapter": "\u200cRULE 1: Stand up straight with your shoulders back",
+      "applies_to_tags": [
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "cultivate-serotonin-to-improve-well-being",
+      "book_id": "12-rules-for-life",
+      "name": "Cultivate serotonin to improve well-being",
+      "summary": "Take your medication as prescribed to maintain health and well-being. Chaos can lead to neglect, while order brings stability.",
+      "source_chapter": "\u200cRULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "assess-your-position-in-the-dominance-hierarchy",
+      "book_id": "12-rules-for-life",
+      "name": "Assess your position in the dominance hierarchy",
+      "summary": "Recognize that fear can lead to negative feedback loops, causing you to retreat further into anxiety. The line dividing good and evil cuts through the heart of every human being.",
+      "source_chapter": "\u200cRULE 1: Stand up straight with your shoulders back",
+      "applies_to_tags": [
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-prepared-for-the-unexpected",
+      "book_id": "12-rules-for-life",
+      "name": "Be Prepared for the Unexpected",
+      "summary": "Maintain Routine and Structure. People often prioritize their pets' needs over their own, highlighting the importance of self-love and care.",
+      "source_chapter": "\u200cRULE 1: Stand up straight with your shoulders back",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "maintain-routine-and-structure",
+      "book_id": "12-rules-for-life",
+      "name": "Maintain Routine and Structure",
+      "summary": "Recognize your own vulnerability and take ownership of your flaws. Balance order and chaos in life to find meaning and stability.",
+      "source_chapter": "\u200cRULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-let-fear-define-you",
+      "book_id": "12-rules-for-life",
+      "name": "Don't Let Fear Define You",
+      "summary": "Treat yourself with responsibility. Harmony between structure and freedom is necessary for a fulfilling life.",
+      "source_chapter": "\u200cRULE 1: Stand up straight with your shoulders back",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "stand-up-for-yourself",
+      "book_id": "12-rules-for-life",
+      "name": "Stand Up for Yourself",
+      "summary": "Asserting yourself can help prevent exploitation and bullying by setting boundaries. Balance order and chaos in life to find meaning and stability.",
+      "source_chapter": "\u200cRULE 1: Stand up straight with your shoulders back",
+      "applies_to_tags": [
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "balance-compassion-with-assertiveness",
+      "book_id": "12-rules-for-life",
+      "name": "Balance Compassion with Assertiveness",
+      "summary": "Straddle the duality of order and chaos to find meaning and stability. Harmony between structure and freedom is necessary for a fulfilling life.",
+      "source_chapter": "\u200cRULE 1: Stand up straight with your shoulders back",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "posture-matters",
+      "book_id": "12-rules-for-life",
+      "name": "Posture Matters",
+      "summary": "Recognize that fear can lead to negative feedback loops, causing you to retreat further into anxiety. The line dividing good and evil cuts through the heart of every human being.",
+      "source_chapter": "\u200cRULE 1: Stand up straight with your shoulders back",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embody-strength",
+      "book_id": "12-rules-for-life",
+      "name": "Embody Strength",
+      "summary": "Take your medication as prescribed to maintain health and well-being. Chaos can lead to neglect, while order brings stability.",
+      "source_chapter": "\u200cRULE 1: Stand up straight with your shoulders back",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-confident-in-your-worth",
+      "book_id": "12-rules-for-life",
+      "name": "Be Confident in Your Worth",
+      "summary": "Recognize your own vulnerability and take ownership of your flaws. Balance order and chaos in life to find meaning and stability.",
+      "source_chapter": "\u200cRULE 1: Stand up straight with your shoulders back",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "treat-yourself-with-responsibility",
+      "book_id": "12-rules-for-life",
+      "name": "Treat yourself with responsibility",
+      "summary": "People often prioritize their pets' needs over their own, highlighting the importance of self-love and care. Harmony between structure and freedom is necessary for a fulfilling life.",
+      "source_chapter": "\u200cRULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritize-self-care-over-others",
+      "book_id": "12-rules-for-life",
+      "name": "Prioritize self-care over others",
+      "summary": "Maintain confidence to succeed in life, like a dominant lobster. Higher serotonin levels are linked to better physical and mental health.",
+      "source_chapter": "\u200cRULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "recognize-the-value-of-subjective-experience",
+      "book_id": "12-rules-for-life",
+      "name": "Recognize the value of subjective experience",
+      "summary": "Straddle the duality of order and chaos to find meaning and stability. Harmony between structure and freedom is necessary for a fulfilling life.",
+      "source_chapter": "\u200cRULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "balance-order-and-chaos-in-life",
+      "book_id": "12-rules-for-life",
+      "name": "Balance order and chaos in life",
+      "summary": "Recognize that fear can lead to negative feedback loops, causing you to retreat further into anxiety. The line dividing good and evil cuts through the heart of every human being.",
+      "source_chapter": "\u200cRULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "perception-shapes-reality",
+      "book_id": "12-rules-for-life",
+      "name": "Perception shapes reality",
+      "summary": "Take your medication as prescribed to maintain health and well-being. Chaos can lead to neglect, while order brings stability.",
+      "source_chapter": "\u200cRULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "treat-yourself-like-someone-you-are-responsible-for-helping",
+      "book_id": "12-rules-for-life",
+      "name": "Treat yourself like someone you are responsible for helping",
+      "summary": "Recognize your own vulnerability and take ownership of your flaws. The line dividing good and evil cuts through the heart of every human being.",
+      "source_chapter": "\u200cRULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "treat-yourself-with-responsibility-2",
+      "book_id": "12-rules-for-life",
+      "name": "Treat yourself with responsibility",
+      "summary": "Maintain confidence to succeed in life, like a dominant lobster. Higher serotonin levels are linked to better physical and mental health.",
+      "source_chapter": "\u200cRULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-challenge-is-essential-for-growth",
+      "book_id": "12-rules-for-life",
+      "name": "Embracing challenge is essential for growth",
+      "summary": "Challenge and danger are necessary for human potential to reach its full potential. \"Treat yourself like someone you are responsible for helping\".",
+      "source_chapter": "RULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "morality-is-a-product-of-self-consciousness",
+      "book_id": "12-rules-for-life",
+      "name": "Morality is a product of self-consciousness",
+      "summary": "The development of self-consciousness brings the knowledge of Good and Evil into the world.",
+      "source_chapter": "RULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "responsibility-trumps-protection",
+      "book_id": "12-rules-for-life",
+      "name": "Responsibility trumps protection",
+      "summary": "It's better to render beings in your care competent than to protect them from harm.",
+      "source_chapter": "RULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "treat-yourself-with-respect",
+      "book_id": "12-rules-for-life",
+      "name": "Treat Yourself with Respect",
+      "summary": "To take care of yourself, you must respect your own value and worth. You deserve sympathy for the burden of being human.",
+      "source_chapter": "RULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-compassion-is-key",
+      "book_id": "12-rules-for-life",
+      "name": "Self-Compassion is Key",
+      "summary": "You are not alone in your struggles; everyone faces challenges. Treat yourself with kindness and understanding, just as you would a loved one.",
+      "source_chapter": "RULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "take-responsibility-for-your-own-care",
+      "book_id": "12-rules-for-life",
+      "name": "Take Responsibility for Your Own Care",
+      "summary": "You are morally obliged to take care of yourself, just as you would someone you love. This is not selfish, but necessary for your own well-being.",
+      "source_chapter": "RULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "balance-self-contempt-with-gratitude",
+      "book_id": "12-rules-for-life",
+      "name": "Balance Self-Contempt with Gratitude",
+      "summary": "Acknowledge your flaws, but also recognize the incredible strength and resilience of humanity. Balance self-contempt with gratitude for tradition, the state, and everyday heroism.",
+      "source_chapter": "RULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritize-your-own-good",
+      "book_id": "12-rules-for-life",
+      "name": "Prioritize Your Own Good",
+      "summary": "What is good for you is not always what others want or expect. Prioritize your own well-being and make choices that promote your growth and happiness.",
+      "source_chapter": "RULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-care",
+      "book_id": "12-rules-for-life",
+      "name": "Self-Care",
+      "summary": "Treat yourself like someone you're responsible for helping to prioritize your well-being.",
+      "source_chapter": "RULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "define-your-purpose",
+      "book_id": "12-rules-for-life",
+      "name": "Define Your Purpose",
+      "summary": "Know who you are, where you are, and where you're going to create direction and meaning.",
+      "source_chapter": "RULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "discipline-yourself",
+      "book_id": "12-rules-for-life",
+      "name": "Discipline Yourself",
+      "summary": "Carefully discipline yourself to keep promises and reward yourself for trust and motivation.",
+      "source_chapter": "RULE 2: Treat yourself like someone you are responsible for helping",
+      "applies_to_tags": [
+        "tag-one"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "surround-yourself-with-people-who-want-to-help-you-grow",
+      "book_id": "12-rules-for-life",
+      "name": "Surround yourself with people who want to help you grow",
+      "summary": "People's intentions and actions can greatly impact your life. Surrounding yourself with those who genuinely care about your well-being is crucial for personal growth.",
+      "source_chapter": "RULE 3: Make friends with people who want the best for you",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-cautious-of-people-who-bring-negativity-and-stagnation",
+      "book_id": "12-rules-for-life",
+      "name": "Be cautious of people who bring negativity and stagnation",
+      "summary": "Some individuals can drain your energy and prevent you from moving forward. Be aware of their presence and take steps to distance yourself if necessary.",
+      "source_chapter": "RULE 3: Make friends with people who want the best for you",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-power-of-social-connections-in-personal-growth",
+      "book_id": "12-rules-for-life",
+      "name": "The power of social connections in personal growth",
+      "summary": "Moving to a new place can be transformative, but it's not always the case. Surrounding yourself with positive influences and supportive people is key to unlocking your full potential.",
+      "source_chapter": "RULE 3: Make friends with people who want the best for you",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-confuse-moving-with-growth",
+      "book_id": "12-rules-for-life",
+      "name": "Don't confuse moving with growth",
+      "summary": "Just because you move to a new place doesn't mean you'll automatically grow as a person. Surrounding yourself with the right people and being intentional about your personal development is crucial.",
+      "source_chapter": "RULE 3: Make friends with people who want the best for you",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-self-awareness-in-relationships",
+      "book_id": "12-rules-for-life",
+      "name": "The importance of self-awareness in relationships",
+      "summary": "Being aware of your own strengths, weaknesses, and intentions is essential when forming relationships. This self-awareness can help you navigate complex social situations and make better choices.",
+      "source_chapter": "RULE 3: Make friends with people who want the best for you",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "choose-people-who-want-to-improve-themselves",
+      "book_id": "12-rules-for-life",
+      "name": "Choose people who want to improve themselves",
+      "summary": "Select friends who strive for personal growth and positive change, rather than those who stagnate or worsen their circumstances. \"Repetition compulsion\" can lead individuals to repeat patterns of behavior that harm them.",
+      "source_chapter": "RULE 3: Make friends with people who want the best for you",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "assume-the-person-s-suffering-is-not-a-demand-for-your-resources",
+      "book_id": "12-rules-for-life",
+      "name": "Assume the person's suffering is not a demand for your resources",
+      "summary": "Don't assume someone's misery is a call for help or rescue. Instead, consider whether they may be deliberately choosing to suffer and reject personal responsibility.",
+      "source_chapter": "RULE 3: Make friends with people who want the best for you",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-cautious-of-enabling-others-destructive-tendencies",
+      "book_id": "12-rules-for-life",
+      "name": "Be cautious of enabling others' destructive tendencies",
+      "summary": "Watch out for signs that someone is using your help or friendship to avoid taking responsibility for their own life. This can perpetuate negative patterns and hinder personal growth.",
+      "source_chapter": "RULE 3: Make friends with people who want the best for you",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "evaluate-friendships-based-on-mutual-benefit",
+      "book_id": "12-rules-for-life",
+      "name": "Evaluate friendships based on mutual benefit",
+      "summary": "Consider whether a friendship is truly beneficial or if it's simply easier to maintain due to convenience or emotional attachment. Negotiate loyalty fairly and honestly.",
+      "source_chapter": "RULE 3: Make friends with people who want the best for you",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritize-personal-growth-over-others-expectations",
+      "book_id": "12-rules-for-life",
+      "name": "Prioritize personal growth over others' expectations",
+      "summary": "Lead by example and prioritize your own personal growth, rather than pretending to solve problems for the sake of appearances. This can help you stay true to yourself and avoid enabling destructive patterns.",
+      "source_chapter": "RULE 3: Make friends with people who want the best for you",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-confuse-virtue-with-success",
+      "book_id": "12-rules-for-life",
+      "name": "Don't confuse virtue with success",
+      "summary": "Virtue is often inexplicable, while success can be achieved through cultivating bad habits. Focus on personal growth and progress rather than external validation.",
+      "source_chapter": "RULE 3: Make friends with people who want the best for you",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "surround-yourself-with-people-who-support-your-growth",
+      "book_id": "12-rules-for-life",
+      "name": "Surround yourself with people who support your growth",
+      "summary": "Choose friends who want to see you improve and succeed, not hold you back. This helps you stay motivated and focused on your goals.",
+      "source_chapter": "RULE 3: Make friends with people who want the best for you",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-cautious-of-people-who-bring-you-down",
+      "book_id": "12-rules-for-life",
+      "name": "Be cautious of people who bring you down",
+      "summary": "Avoid friends who are cynical or destructive, as they can undermine your progress and discourage you from striving for excellence.",
+      "source_chapter": "RULE 3: Make friends with people who want the best for you",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "use-discernment-when-forming-friendships",
+      "book_id": "12-rules-for-life",
+      "name": "Use discernment when forming friendships",
+      "summary": "Don't be swayed by false loyalty or pity; instead, prioritize relationships with people who genuinely want the best for you.",
+      "source_chapter": "\u200cRULE 3: Make friends with people who want the best for you",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-personal-growth-not-comparisons-to-others",
+      "book_id": "12-rules-for-life",
+      "name": "Focus on personal growth, not comparisons to others",
+      "summary": "Compare yourself to who you were yesterday, not to who someone else is today. Focus on your internal progress and development.",
+      "source_chapter": "\u200cRULE 4: Compare yourself to who you were yesterday, not to who someone else is today",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "standards-are-necessary-for-personal-growth",
+      "book_id": "12-rules-for-life",
+      "name": "Standards are necessary for personal growth",
+      "summary": "Without standards, there's nowhere to go and nothing to do. Develop your own values and criteria for success.",
+      "source_chapter": "\u200cRULE 4: Compare yourself to who you were yesterday, not to who someone else is today",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-improvement-not-perfection",
+      "book_id": "12-rules-for-life",
+      "name": "Focus on improvement, not perfection",
+      "summary": "Set realistic goals and aim for incremental progress. You can't fix everything at once.",
+      "source_chapter": "\u200cRULE 4: Compare yourself to who you were yesterday, not to who someone else is today",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "know-your-flaws",
+      "book_id": "12-rules-for-life",
+      "name": "Know your flaws",
+      "summary": "Conduct an internal audit to identify areas for improvement, just like hiring an inspector for a house.",
+      "source_chapter": "\u200cRULE 4: Compare yourself to who you were yesterday, not to who someone else is today",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "compare-yourself-to-who-you-were-yesterday-not-to-who-someone-else-is-today",
+      "book_id": "12-rules-for-life",
+      "name": "Compare yourself to who you were yesterday, not to who someone else is today",
+      "summary": "Don't compare your current self to others; focus on personal growth and improvement. You can't change what you are after more profoundly by comparing yourself to others.",
+      "source_chapter": "\u200cRULE 4: Compare yourself to who you were yesterday, not to who someone else is today",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "take-responsibility-for-your-unhappiness",
+      "book_id": "12-rules-for-life",
+      "name": "Take responsibility for your unhappiness",
+      "summary": "Acknowledge that your desires and ambitions may be causing your unhappiness, and take steps to address the root cause. You can't just change yourself easily.",
+      "source_chapter": "\u200cRULE 4: Compare yourself to who you were yesterday, not to who someone else is today",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritize-values-over-petty-desires",
+      "book_id": "12-rules-for-life",
+      "name": "Prioritize values over petty desires",
+      "summary": "Don't let petty desires like envy or ambition control your life; prioritize values and moral principles instead. A better life is not just about personal gain.",
+      "source_chapter": "\u200cRULE 4: Compare yourself to who you were yesterday, not to who someone else is today",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "consider-the-impact-on-others",
+      "book_id": "12-rules-for-life",
+      "name": "Consider the impact on others",
+      "summary": "When aiming for a better life, consider how it will affect those around you, including your enemies. A better life is not just about personal gain.",
+      "source_chapter": "\u200cRULE 4: Compare yourself to who you were yesterday, not to who someone else is today",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-the-improvement-of-being",
+      "book_id": "12-rules-for-life",
+      "name": "Focus on the Improvement of Being",
+      "summary": "Aim for a life that improves not just yourself, but also those around you and the world at large. This is the key to true fulfillment.",
+      "source_chapter": "\u200cRULE 4: Compare yourself to who you were yesterday, not to who someone else is today",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "focus-on-improvement-not-comparison",
+      "book_id": "12-rules-for-life",
+      "name": "Focus on Improvement, Not Comparison",
+      "summary": "Compare yourself to who you were yesterday, not to others today. Focus on personal growth and improvement.",
+      "source_chapter": "\u200cRULE 4: Compare yourself to who you were yesterday, not to who someone else is today",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pay-attention-to-your-surroundings",
+      "book_id": "12-rules-for-life",
+      "name": "Pay Attention to Your Surroundings",
+      "summary": "Notice what bothers you and what you could fix. Pay attention to your physical and psychological environment.",
+      "source_chapter": "\u200cRULE 4: Compare yourself to who you were yesterday, not to who someone else is today",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "set-boundaries-with-children",
+      "book_id": "12-rules-for-life",
+      "name": "Set Boundaries with Children",
+      "summary": "Parents should establish limits to prevent children from acting out of frustration or attention-seeking.",
+      "source_chapter": "\u200cRULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-spoil-your-children",
+      "book_id": "12-rules-for-life",
+      "name": "Don't Spoil Your Children",
+      "summary": "Overindulging children can lead to entitlement and a lack of self-discipline, damaging their future.",
+      "source_chapter": "\u200cRULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-let-your-children-dominate-social-interactions",
+      "book_id": "12-rules-for-life",
+      "name": "Don't Let Your Children Dominate Social Interactions",
+      "summary": "Allowing children to dominate conversations can be detrimental to their social skills and relationships.",
+      "source_chapter": "\u200cRULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-abandon-discipline-for-fear-of-disapproval",
+      "book_id": "12-rules-for-life",
+      "name": "Don't Abandon Discipline for Fear of Disapproval",
+      "summary": "Parents should not prioritize their children's friendship over discipline, as it can lead to a lack of respect and poor socialization.",
+      "source_chapter": "\u200cRULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "correct-aggression-early-and-consistently",
+      "book_id": "12-rules-for-life",
+      "name": "Correct Aggression Early and Consistently",
+      "summary": "Infants and toddlers should be corrected for aggressive behavior to learn limits and develop self-control, as it's easier to correct than to deal with the consequences of not doing so.",
+      "source_chapter": "\u200cRULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "reward-good-behavior",
+      "book_id": "12-rules-for-life",
+      "name": "Reward Good Behavior",
+      "summary": "Positive reinforcement through rewards can encourage good behavior and strengthen parent-child relationships.",
+      "source_chapter": "\u200cRULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-let-your-children-do-anything-that-makes-you-dislike-them",
+      "book_id": "12-rules-for-life",
+      "name": "Don't let your children do anything that makes you dislike them",
+      "summary": "Teach children to behave in ways that earn affection and goodwill from parents.",
+      "source_chapter": "\u200cRULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "discipline-with-care-not-just-reward",
+      "book_id": "12-rules-for-life",
+      "name": "Discipline with care, not just reward",
+      "summary": "Use both positive reinforcement and gentle punishment to shape behavior.",
+      "source_chapter": "\u200cRULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "teach-children-to-comply-with-expectations-of-civil-society",
+      "book_id": "12-rules-for-life",
+      "name": "Teach children to comply with expectations of civil society",
+      "summary": "Reward success in the world outside the family, and use threat/punishment when necessary.",
+      "source_chapter": "\u200cRULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-avoid-conflict-necessary-for-proper-child-rearing",
+      "book_id": "12-rules-for-life",
+      "name": "Don't avoid conflict necessary for proper child-rearing",
+      "summary": "Parents must take responsibility for disciplining children, rather than opting out of conflict.",
+      "source_chapter": "\u200cRULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "limit-rules",
+      "book_id": "12-rules-for-life",
+      "name": "Limit Rules",
+      "summary": "Don't overburden children with too many rules. Bad laws lead to disrespect for good ones. Simplify and focus on consequences.",
+      "source_chapter": "\u200cRULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "minimum-necessary-force",
+      "book_id": "12-rules-for-life",
+      "name": "Minimum Necessary Force",
+      "summary": "Use the least force necessary to enforce rules, not just punishment. Context matters, timing is crucial.",
+      "source_chapter": "\u200cRULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "parents-in-pairs",
+      "book_id": "12-rules-for-life",
+      "name": "Parents in Pairs",
+      "summary": "Have two parents present to observe and intervene when needed, reducing conflict and exhaustion.",
+      "source_chapter": "\u200cRULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "set-clear-boundaries",
+      "book_id": "12-rules-for-life",
+      "name": "Set Clear Boundaries",
+      "summary": "Establish clear rules and discipline to promote social development and psychological maturity. Parents should prioritize teaching right from wrong.",
+      "source_chapter": "RULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritize-social-desirability",
+      "book_id": "12-rules-for-life",
+      "name": "Prioritize Social Desirability",
+      "summary": "Parents' primary duty is to make their children socially desirable, providing opportunity and self-regard. This supersedes the responsibility to ensure happiness or foster individual identity.",
+      "source_chapter": "RULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "discipline-with-mercy",
+      "book_id": "12-rules-for-life",
+      "name": "Discipline with Mercy",
+      "summary": "Balance mercy and justice in discipline, promoting social development and psychological maturity. Clear rules and proper discipline help establish order and security.",
+      "source_chapter": "RULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-enabling-behavior",
+      "book_id": "12-rules-for-life",
+      "name": "Avoid Enabling Behavior",
+      "summary": "Parents should take responsibility for their children's discipline and apologize when wrong. They should have likes and dislikes, judging suitable from unsuitable.",
+      "source_chapter": "RULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "foster-social-sophistication",
+      "book_id": "12-rules-for-life",
+      "name": "Foster Social Sophistication",
+      "summary": "A properly socialized child is polite, engaging, and evokes interest from others. This helps establish individuality and thrive in the world.",
+      "source_chapter": "RULE 5: Do not let your children do anything that makes you dislike them",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "clean-up-your-life",
+      "book_id": "12-rules-for-life",
+      "name": "Clean Up Your Life",
+      "summary": "Take responsibility for your actions, make peace with others, and improve yourself before criticizing the world. 'The wages of sin is death'.",
+      "source_chapter": "RULE 6: Set your house in perfect order before you criticize the world",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "start-small",
+      "book_id": "12-rules-for-life",
+      "name": "Start Small",
+      "summary": "Begin by addressing small issues to create a foundation for positive change.",
+      "source_chapter": "RULE 6: Set your house in perfect order before you criticize the world",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-humble",
+      "book_id": "12-rules-for-life",
+      "name": "Be Humble",
+      "summary": "Recognize the limitations of your knowledge and experience. Prioritize personal growth over external changes.",
+      "source_chapter": "RULE 6: Set your house in perfect order before you criticize the world",
+      "applies_to_tags": [
+        "tag-one"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "order-your-own-experience",
+      "book_id": "12-rules-for-life",
+      "name": "Order Your Own Experience",
+      "summary": "Prioritize personal growth and self-improvement over external changes.",
+      "source_chapter": "RULE 6: Set your house in perfect order before you criticize the world",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pursue-meaning-over-expediency",
+      "book_id": "12-rules-for-life",
+      "name": "Pursue Meaning Over Expediency",
+      "summary": "Prioritize values and meaning over short-term gains or convenience. Sacrifice what's loved to achieve a better future.",
+      "source_chapter": "RULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-power-of-delayed-gratification",
+      "book_id": "12-rules-for-life",
+      "name": "The Power of Delayed Gratification",
+      "summary": "Delaying pleasure can lead to a better future, as it allows for the development of social contracts and moral principles.",
+      "source_chapter": "RULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "sacrifice-for-the-greater-good",
+      "book_id": "12-rules-for-life",
+      "name": "Sacrifice for the Greater Good",
+      "summary": "Make sacrifices to alleviate suffering and bring about a better world. Larger sacrifices can improve the future.",
+      "source_chapter": "RULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-emergence-of-social-contracts",
+      "book_id": "12-rules-for-life",
+      "name": "The Emergence of Social Contracts",
+      "summary": "Sharing and trade can lead to the development of social contracts and moral principles.",
+      "source_chapter": "RULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-moral-principles",
+      "book_id": "12-rules-for-life",
+      "name": "The Importance of Moral Principles",
+      "summary": "Reliable, honest, and generous behavior can emerge from the simple notion of 'leftovers are a good idea'.",
+      "source_chapter": "RULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "resist-temptation-to-selfishness",
+      "book_id": "12-rules-for-life",
+      "name": "Resist Temptation to Selfishness",
+      "summary": "Avoid giving in to immediate gratification and strive for long-term meaning and purpose.",
+      "source_chapter": "RULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "listen-to-your-inner-voice",
+      "book_id": "12-rules-for-life",
+      "name": "Listen to Your Inner Voice",
+      "summary": "Heed your internal spirit and trust its guidance in difficult decisions.",
+      "source_chapter": "RULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pursue-meaning-over-expedience",
+      "book_id": "12-rules-for-life",
+      "name": "Pursue Meaning Over Expedience",
+      "summary": "Prioritize meaningful pursuits over short-term gains, as true fulfillment lies in transcending immediate desires.",
+      "source_chapter": "\u200cRULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "acknowledge-the-tragedy-of-existence",
+      "book_id": "12-rules-for-life",
+      "name": "Acknowledge the Tragedy of Existence",
+      "summary": "Recognize that life is marked by suffering, illness, and mortality. However, humans are strong enough to tolerate these challenges without breaking or becoming evil.",
+      "source_chapter": "\u200cRULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [
+        "tag-one"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "confront-evil-with-courage",
+      "book_id": "12-rules-for-life",
+      "name": "Confront Evil with Courage",
+      "summary": "Willfully confront and consider the malevolent aspects of human nature, rather than avoiding or denying them.",
+      "source_chapter": "\u200cRULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "live-for-something-higher",
+      "book_id": "12-rules-for-life",
+      "name": "Live for Something Higher",
+      "summary": "Prioritize living a life that brings meaning and fulfillment, rather than seeking power or material wealth.",
+      "source_chapter": "\u200cRULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "take-responsibility-for-your-life",
+      "book_id": "12-rules-for-life",
+      "name": "Take Responsibility for Your Life",
+      "summary": "Refuse to rely on external forces or safety nets to solve your problems. Instead, take personal responsibility and make choices that align with your values and principles.",
+      "source_chapter": "\u200cRULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "act-to-alleviate-suffering",
+      "book_id": "12-rules-for-life",
+      "name": "Act to Alleviate Suffering",
+      "summary": "Make the alleviation of unnecessary pain and suffering a top priority.",
+      "source_chapter": "\u200cRULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritize-meaning-over-expediency",
+      "book_id": "12-rules-for-life",
+      "name": "Prioritize meaning over expediency",
+      "summary": "Meaning emerges when impulses are regulated and unified, providing life-sustaining purpose.",
+      "source_chapter": "\u200cRULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "act-with-responsibility-not-impulse",
+      "book_id": "12-rules-for-life",
+      "name": "Act with responsibility, not impulse",
+      "summary": "Expedience is short-term gain, while meaning is mature replacement that makes everything matter.",
+      "source_chapter": "\u200cRULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "seek-to-make-the-world-better",
+      "book_id": "12-rules-for-life",
+      "name": "Seek to make the world better",
+      "summary": "Attending to moral obligations can lead to ever-deepening meaning and atonement for existence.",
+      "source_chapter": "\u200cRULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-cowardly-actions",
+      "book_id": "12-rules-for-life",
+      "name": "Avoid cowardly actions",
+      "summary": "Expedience is wrong because it produces the character of a demon, transferring curses to others or future self.",
+      "source_chapter": "\u200cRULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "follow-meaning-not-just-desires",
+      "book_id": "12-rules-for-life",
+      "name": "Follow meaning, not just desires",
+      "summary": "Meaning is something that comes upon you, and cannot be simply produced as an act of will.",
+      "source_chapter": "\u200cRULE 7: Pursue what is meaningful (not what is expedient)",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "tell-the-truth-or-don-t-lie",
+      "book_id": "12-rules-for-life",
+      "name": "Tell the truth or don't lie",
+      "summary": "Honesty is crucial, especially in difficult situations. Telling the truth can be harsh but leads to trust and understanding.",
+      "source_chapter": "\u200cRULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-aware-of-your-motivations",
+      "book_id": "12-rules-for-life",
+      "name": "Be aware of your motivations",
+      "summary": "Recognize why you're speaking or acting, as this can reveal underlying biases or intentions.",
+      "source_chapter": "\u200cRULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-manipulate-reality",
+      "book_id": "12-rules-for-life",
+      "name": "Don't manipulate reality",
+      "summary": "Life-lies, or manipulating reality with perception and action, can lead to unsustainable and unjustifiable goals.",
+      "source_chapter": "\u200cRULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-avoidance",
+      "book_id": "12-rules-for-life",
+      "name": "Avoid avoidance",
+      "summary": "Failing to act when you could stop something bad from happening is considered more serious than committing a wrong.",
+      "source_chapter": "\u200cRULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-honest-with-yourself",
+      "book_id": "12-rules-for-life",
+      "name": "Be honest with yourself",
+      "summary": "Understanding your own flaws and biases is essential for personal growth and making informed decisions.",
+      "source_chapter": "\u200cRULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "tell-the-truth-or-don-t-lie-2",
+      "book_id": "12-rules-for-life",
+      "name": "Tell the truth, or don't lie",
+      "summary": "Avoid oversimplification and falsification in life, as it can lead to stagnation and corruption. Authenticity is key to vitality and original contribution.",
+      "source_chapter": "\u200cRULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "acknowledge-the-truth-even-if-uncomfortable",
+      "book_id": "12-rules-for-life",
+      "name": "Acknowledge the truth, even if uncomfortable",
+      "summary": "Recognize that error necessitates sacrifice and correction, and that willful blindness can lead to corruption and chaos. Admitting mistakes is essential for growth.",
+      "source_chapter": "\u200cRULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "confront-the-unknown-with-courage",
+      "book_id": "12-rules-for-life",
+      "name": "Confront the unknown with courage",
+      "summary": "Embracing uncertainty and taking risks allows for personal growth, new experiences, and the discovery of new genes that can lead to transformation. Be willing to learn from what you don't know.",
+      "source_chapter": "\u200cRULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-blaming-others-or-making-excuses",
+      "book_id": "12-rules-for-life",
+      "name": "Avoid blaming others or making excuses",
+      "summary": "Take responsibility for your actions and acknowledge the impact of your deceit on yourself and others. Blaming others or making excuses can lead to stagnation and corruption.",
+      "source_chapter": "\u200cRULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "seek-truth-not-just-comfort",
+      "book_id": "12-rules-for-life",
+      "name": "Seek truth, not just comfort",
+      "summary": "Prioritize seeking truth and understanding over avoiding discomfort or pain. This allows for growth, resilience, and a deeper connection with others.",
+      "source_chapter": "\u200cRULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "face-reality",
+      "book_id": "12-rules-for-life",
+      "name": "Face Reality",
+      "summary": "Acknowledge and confront the truth, even if it's uncomfortable or challenging. Deceit can lead to misery and suffering.",
+      "source_chapter": "RULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "set-ambitions",
+      "book_id": "12-rules-for-life",
+      "name": "Set Ambitions",
+      "summary": "Establish goals that align with personal growth and development, rather than status or power.",
+      "source_chapter": "RULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-aware-of-your-own-blindness",
+      "book_id": "12-rules-for-life",
+      "name": "Be Aware of Your Own Blindness",
+      "summary": "Recognize the limitations of your knowledge and be willing to learn from others.",
+      "source_chapter": "RULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-rely-on-tradition-alone",
+      "book_id": "12-rules-for-life",
+      "name": "Don't Rely on Tradition Alone",
+      "summary": "Use tradition as a guide, but also critically evaluate and adapt it to new information.",
+      "source_chapter": "RULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "tell-the-truth",
+      "book_id": "12-rules-for-life",
+      "name": "Tell the Truth",
+      "summary": "Honesty is essential for personal growth, relationships, and making informed decisions.",
+      "source_chapter": "RULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "live-in-truth-or-face-consequences",
+      "book_id": "12-rules-for-life",
+      "name": "Live in Truth or Face Consequences",
+      "summary": "Mature and become more responsible by living truthfully, even if it\u2019s difficult.",
+      "source_chapter": "RULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-truth-sets-you-free",
+      "book_id": "12-rules-for-life",
+      "name": "The Truth Sets You Free",
+      "summary": "Truth builds edifices that can stand a thousand years, feeds the poor, makes nations wealthy and safe.",
+      "source_chapter": "RULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-lie-to-avoid-chaos",
+      "book_id": "12-rules-for-life",
+      "name": "Don't Lie to Avoid Chaos",
+      "summary": "Lies corrupt the world and lead to chaos, while truth brings habitable reality into being.",
+      "source_chapter": "RULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-courageous-in-your-truth",
+      "book_id": "12-rules-for-life",
+      "name": "Be Courageous in Your Truth",
+      "summary": "It takes courage to live in truth and face the consequences.",
+      "source_chapter": "RULE 8: Tell the truth\u2014or, at least, don\u2019t lie",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "listen-actively",
+      "book_id": "12-rules-for-life",
+      "name": "Listen Actively",
+      "summary": "Psychotherapy is genuine conversation, not advice.",
+      "source_chapter": "RULE 9: Assume that the person you are listening to might know something you don\u2019t",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-assumptions",
+      "book_id": "12-rules-for-life",
+      "name": "Avoid Assumptions",
+      "summary": "Assume the person you're listening to might know something you don't.",
+      "source_chapter": "RULE 9: Assume that the person you are listening to might know something you don\u2019t",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-fix-it",
+      "book_id": "12-rules-for-life",
+      "name": "Don't Fix It",
+      "summary": "Avoid simplifying clients' lives or telling them what they should do.",
+      "source_chapter": "RULE 9: Assume that the person you are listening to might know something you don\u2019t",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "empathize-with-complexity",
+      "book_id": "12-rules-for-life",
+      "name": "Empathize with Complexity",
+      "summary": "Life is complicated, and understanding it requires changing your perspective.",
+      "source_chapter": "RULE 9: Assume that the person you are listening to might know something you don\u2019t",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "listen-with-empathy",
+      "book_id": "12-rules-for-life",
+      "name": "Listen with Empathy",
+      "summary": "To truly listen, you must put yourself in the other person's shoes and understand their perspective.",
+      "source_chapter": "RULE 9: Assume that the person you are listening to might know something you don\u2019t",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-straw-men",
+      "book_id": "12-rules-for-life",
+      "name": "Avoid Straw Men",
+      "summary": "When engaging with others, avoid oversimplifying or distorting their arguments.",
+      "source_chapter": "RULE 9: Assume that the person you are listening to might know something you don\u2019t",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "practice-active-listening",
+      "book_id": "12-rules-for-life",
+      "name": "Practice Active Listening",
+      "summary": "To effectively listen, summarize the other person's words back to them.",
+      "source_chapter": "RULE 9: Assume that the person you are listening to might know something you don\u2019t",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-willing-to-be-changed",
+      "book_id": "12-rules-for-life",
+      "name": "Be Willing to Be Changed",
+      "summary": "True listening requires being open to the possibility of being changed by what you hear.",
+      "source_chapter": "RULE 9: Assume that the person you are listening to might know something you don\u2019t",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "seek-common-ground",
+      "book_id": "12-rules-for-life",
+      "name": "Seek Common Ground",
+      "summary": "When engaging with others, seek common ground and try to find areas of agreement.",
+      "source_chapter": "RULE 9: Assume that the person you are listening to might know something you don\u2019t",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "listen-without-judgment",
+      "book_id": "12-rules-for-life",
+      "name": "Listen without judgment",
+      "summary": "Give people a chance to share their thoughts and feelings without interrupting or dismissing them.",
+      "source_chapter": "RULE 9: Assume that the person you are listening to might know something you don\u2019t",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-premature-conclusions",
+      "book_id": "12-rules-for-life",
+      "name": "Avoid premature conclusions",
+      "summary": "Don't assume you know what someone else is thinking or feeling.",
+      "source_chapter": "RULE 9: Assume that the person you are listening to might know something you don\u2019t",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "active-listening",
+      "book_id": "12-rules-for-life",
+      "name": "Active Listening",
+      "summary": "Listen attentively to others, assuming they may possess knowledge you lack.",
+      "source_chapter": "RULE 9: Assume that the person you are listening to might know something you don\u2019t",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "humility-in-knowledge",
+      "book_id": "12-rules-for-life",
+      "name": "Humility in Knowledge",
+      "summary": "Recognize that true wisdom lies in seeking knowledge, not possessing it.",
+      "source_chapter": "RULE 9: Assume that the person you are listening to might know something you don\u2019t",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-precise-in-your-perception",
+      "book_id": "12-rules-for-life",
+      "name": "Be precise in your perception",
+      "summary": "We perceive a narrow slice of a causally interconnected matrix, but our perceptions are simplified.",
+      "source_chapter": "RULE 10: Be precise in your speech",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "see-the-world-as-functional-utility",
+      "book_id": "12-rules-for-life",
+      "name": "See the world as functional utility",
+      "summary": "Our evolved perceptual systems transform the complex multi-level world into useful things.",
+      "source_chapter": "RULE 10: Be precise in your speech",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-mistake-simplicity-for-reality",
+      "book_id": "12-rules-for-life",
+      "name": "Don't mistake simplicity for reality",
+      "summary": "The world is intricate beyond imagining, and our perceptions are limited.",
+      "source_chapter": "RULE 10: Be precise in your speech",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-precise-in-your-speech",
+      "book_id": "12-rules-for-life",
+      "name": "Be precise in your speech",
+      "summary": "Specify problems and desires to solve them, rather than avoiding or hiding from issues. Precision separates unique terrible things from vague possibilities.",
+      "source_chapter": "RULE 10: Be precise in your speech",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "confront-chaos-with-clarity",
+      "book_id": "12-rules-for-life",
+      "name": "Confront chaos with clarity",
+      "summary": "Acknowledge and examine the complexity of problems, rather than ignoring or avoiding them. Clarity of thought enables the creation of new order.",
+      "source_chapter": "RULE 10: Be precise in your speech",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "define-your-reality",
+      "book_id": "12-rules-for-life",
+      "name": "Define your reality",
+      "summary": "Identify specific issues and desires to create a clear understanding of your situation. Precision in language simplifies complexity and makes it manageable.",
+      "source_chapter": "RULE 10: Be precise in your speech",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "speak-forthrightly",
+      "book_id": "12-rules-for-life",
+      "name": "Speak forthrightly",
+      "summary": "Use honest, precise speech to communicate your needs and desires. This enables the creation of habitable order from chaos.",
+      "source_chapter": "RULE 10: Be precise in your speech",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "know-where-you-are-going",
+      "book_id": "12-rules-for-life",
+      "name": "Know where you are going",
+      "summary": "Determine your destination in life to create a clear path forward. Precision in language and understanding of yourself is necessary for progress.",
+      "source_chapter": "RULE 10: Be precise in your speech",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "know-your-direction",
+      "book_id": "12-rules-for-life",
+      "name": "Know Your Direction",
+      "summary": "Determine where you've been to understand where you are and where you're going. Random wandering won't move you forward.",
+      "source_chapter": "RULE 10: Be precise in your speech",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-clear-about-your-intentions",
+      "book_id": "12-rules-for-life",
+      "name": "Be Clear About Your Intentions",
+      "summary": "Specify your destination, chart your course, and admit to what you want to achieve.",
+      "source_chapter": "RULE 10: Be precise in your speech",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-underestimate-the-power-of-silence",
+      "book_id": "12-rules-for-life",
+      "name": "Don't underestimate the power of silence",
+      "summary": "Sometimes, the most effective response is to remain silent and observe.",
+      "source_chapter": "RULE 10: Be precise in your speech",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "acknowledge-the-chaos-within",
+      "book_id": "12-rules-for-life",
+      "name": "Acknowledge the chaos within",
+      "summary": "Recognize that uncertainty and confusion are inherent in life, and prepare for them.",
+      "source_chapter": "RULE 10: Be precise in your speech",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-overprotect-children",
+      "book_id": "12-rules-for-life",
+      "name": "Don't Overprotect Children",
+      "summary": "Children need to take risks and develop competence through experience. Too much protection can lead to stagnation and failure when faced with unexpected challenges.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-risk-is-essential-for-growth",
+      "book_id": "12-rules-for-life",
+      "name": "Embracing Risk is Essential for Growth",
+      "summary": "People are hard-wired to enjoy risk and feel invigorated by optimizing their performance. Overprotection can lead to a lack of confidence and unformed individuals.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "designs-that-punish-are-often-motivated-by-resentment",
+      "book_id": "12-rules-for-life",
+      "name": "Designs that Punish are Often Motivated by Resentment",
+      "summary": "Rules and regulations that restrict children's activities may be driven by underlying resentment or a desire to control others, rather than a genuine concern for their well-being.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "guilt-and-shame-can-lead-to-self-destruction",
+      "book_id": "12-rules-for-life",
+      "name": "Guilt and Shame can Lead to Self-Destruction",
+      "summary": "Unaddressed guilt and shame can lead individuals to withdraw from the world, develop negative attitudes towards themselves and others, and engage in self-destructive behaviors.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "true-virtue-lies-in-embracing-complexity",
+      "book_id": "12-rules-for-life",
+      "name": "True Virtue Lies in Embracing Complexity",
+      "summary": "Those who claim to stand for something often do so out of a desire to control or manipulate others, rather than a genuine commitment to their principles.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "respect-human-life",
+      "book_id": "12-rules-for-life",
+      "name": "Respect Human Life",
+      "summary": "Human life is valuable and should be respected, even in difficult circumstances. 'We could cut ourselves some slack'.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-denounce-humanity",
+      "book_id": "12-rules-for-life",
+      "name": "Don't Denounce Humanity",
+      "summary": "Criticism of humanity can lead to self-appointment as a judge, resulting in harm.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "value-competition-and-win-loss-dynamics",
+      "book_id": "12-rules-for-life",
+      "name": "Value Competition and Win-Loss Dynamics",
+      "summary": "Boys are more competitive and face different win-loss dynamics than girls, affecting their lives.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-five",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritize-market-driven-success-over-personal-convenience",
+      "book_id": "12-rules-for-life",
+      "name": "Prioritize market-driven success over personal convenience",
+      "summary": "The market defines work, not individual preferences. Women who want to marry or date face a shortage of excellent men due to economic constraints.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "recognize-the-complexity-of-cultural-evolution",
+      "book_id": "12-rules-for-life",
+      "name": "Recognize the complexity of cultural evolution",
+      "summary": "Culture is an imperfect collective attempt by men and women to free each other from privation and drudgery. It's not a monolithic patriarchy.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-oversimplifying-historical-context",
+      "book_id": "12-rules-for-life",
+      "name": "Avoid oversimplifying historical context",
+      "summary": "The past is willfully blind, and out of date. Don't assume that men tyrized women; instead, consider the struggles of both sexes.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-three",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-cautious-of-radical-ideologies",
+      "book_id": "12-rules-for-life",
+      "name": "Be cautious of radical ideologies",
+      "summary": "Marxist ideas can be attractive to intellectual utopians but have led to horrors like the Khmer Rouge. Be aware of the consequences of extreme ideologies.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "value-the-pursuit-of-goals-over-equality",
+      "book_id": "12-rules-for-life",
+      "name": "Value the pursuit of goals over equality",
+      "summary": "The collective pursuit of valued goals produces hierarchies, which are necessary for life's sustaining meaning. Absolute equality would require the sacrifice of value.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-confuse-ideology-with-evidence",
+      "book_id": "12-rules-for-life",
+      "name": "Don't confuse ideology with evidence",
+      "summary": "Ideology can lead to a lack of critical thinking and a disregard for evidence. Beware of single cause interpretations and those who purvey them.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "competence-not-power-determines-status",
+      "book_id": "12-rules-for-life",
+      "name": "Competence, not power, determines status",
+      "summary": "In societies that function well, competence, ability, and skill are prime determiners of status. This is evident in both anecdotal and factual observations.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-cautious-of-postmodern-ideology",
+      "book_id": "12-rules-for-life",
+      "name": "Be cautious of postmodern ideology",
+      "summary": "Postmodern ideology can lead to a lack of nuance and a disregard for complexity. It often fixes a point of truth and forces everything to rotate around it.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-conflate-equality-with-sameness",
+      "book_id": "12-rules-for-life",
+      "name": "Don't conflate equality with sameness",
+      "summary": "Equality does not necessarily mean sameness. Different dimensions of comparison, such as tenure and social influence, must be taken into account when evaluating outcomes.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-the-tyranny-of-the-majority",
+      "book_id": "12-rules-for-life",
+      "name": "Avoid the tyranny of the majority",
+      "summary": "The majority's opinion should not dictate the rules. Instead, consider the facts and evidence to make informed decisions.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-force-people-to-conform-to-a-specific-gender-role",
+      "book_id": "12-rules-for-life",
+      "name": "Don't force people to conform to a specific gender role",
+      "summary": "Aggression is innate and not solely learned. Conforming to traditional gender roles can be limiting.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-aware-of-your-own-emotional-triggers",
+      "book_id": "12-rules-for-life",
+      "name": "Be aware of your own emotional triggers",
+      "summary": "Too-agreeable people often sacrifice themselves for others, leading to resentment and bitterness.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "set-boundaries-with-others-to-protect-yourself",
+      "book_id": "12-rules-for-life",
+      "name": "Set boundaries with others to protect yourself",
+      "summary": "Learn to assert yourself in relationships without being overly aggressive or passive.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-coddle-children-when-they-re-learning-to-navigate-challenges",
+      "book_id": "12-rules-for-life",
+      "name": "Don't coddle children when they're learning to navigate challenges",
+      "summary": "Shielding kids from reality can hinder their growth and independence. This allows them to develop resilience and self-reliance.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "toughen-up-don-t-be-a-slave-to-rules",
+      "book_id": "12-rules-for-life",
+      "name": "Toughen up, don't be a slave to rules",
+      "summary": "Men need to develop inner strength and character, rather than relying on external validation or rules. This fosters independence and self-respect.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-expect-men-to-be-overly-emotional-or-dependent",
+      "book_id": "12-rules-for-life",
+      "name": "Don't expect men to be overly emotional or dependent",
+      "summary": "Men should not be expected to be overly sensitive or reliant on others, as this can lead to resentment and a lack of personal growth.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "encourage-men-to-take-responsibility-for-their-own-lives",
+      "book_id": "12-rules-for-life",
+      "name": "Encourage men to take responsibility for their own lives",
+      "summary": "Men should strive to be self-sufficient and take ownership of their actions, rather than relying on others or making excuses.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-interfere-with-children-s-exploration",
+      "book_id": "12-rules-for-life",
+      "name": "Don't Interfere with Children's Exploration",
+      "summary": "Allow children to take risks and explore their interests without adult interference. As Jordan Peterson says, 'Leave children alone when they are skateboarding.' This principle encourages parents and caregivers to give children the space to develop problem-solving skills, independence, and self-reliance.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-antisocial-behavior-in-boys",
+      "book_id": "12-rules-for-life",
+      "name": "Embracing Antisocial Behavior in Boys",
+      "summary": "Recognize that boys' antisocial behavior is often a natural part of their development into men. This principle acknowledges that boys need to test limits, push boundaries, and challenge authority to become strong and confident individuals.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-healthy-competition",
+      "book_id": "12-rules-for-life",
+      "name": "The Importance of Healthy Competition",
+      "summary": "Healthy competition between men and women is essential for mutual growth and attraction. Women desire men who can outclass them in various aspects, making it challenging for them to find suitable partners.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-negate-consciousness",
+      "book_id": "12-rules-for-life",
+      "name": "Don't Negate Consciousness",
+      "summary": "Consciousness and self-awareness are essential human qualities. This principle warns against negating or suppressing these qualities, which can lead to destructive behavior and a lack of personal growth.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-dangers-of-weak-men",
+      "book_id": "12-rules-for-life",
+      "name": "The Dangers of Weak Men",
+      "summary": "Weak men can be more destructive than strong men. This principle highlights the importance of developing inner strength, resilience, and confidence in individuals to prevent harm to themselves and others.",
+      "source_chapter": "RULE 11: Do not bother children when they are skateboarding",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "accept-limitations-as-essential-to-human-experience",
+      "book_id": "12-rules-for-life",
+      "name": "Accept limitations as essential to human experience",
+      "summary": "Life's fragility and vulnerability are inherent, making limitations a fundamental aspect of existence. 'What can be truly loved about a person is inseparable from their limitations.'",
+      "source_chapter": "RULE 12: Pet a cat when you encounter one on the street",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "don-t-artificially-fortify-or-fix-others-vulnerabilities",
+      "book_id": "12-rules-for-life",
+      "name": "Don't artificially fortify or fix others' vulnerabilities",
+      "summary": "Intervening to eliminate or mitigate someone's limitations can be detrimental, as it would alter their essential nature.",
+      "source_chapter": "RULE 12: Pet a cat when you encounter one on the street",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-imperfection-is-key-to-human-connection",
+      "book_id": "12-rules-for-life",
+      "name": "Embracing imperfection is key to human connection",
+      "summary": "Acknowledging and accepting others' flaws and vulnerabilities fosters deeper relationships and understanding.",
+      "source_chapter": "RULE 12: Pet a cat when you encounter one on the street",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-value-of-life-lies-in-its-fragility-not-its-strength",
+      "book_id": "12-rules-for-life",
+      "name": "The value of life lies in its fragility, not its strength",
+      "summary": "Life's vulnerability is what makes it valuable and worth cherishing.",
+      "source_chapter": "RULE 12: Pet a cat when you encounter one on the street",
+      "applies_to_tags": [
+        "tag-three",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "limitation-is-necessary-for-being-to-exist",
+      "book_id": "12-rules-for-life",
+      "name": "Limitation is necessary for Being to exist",
+      "summary": "Existence requires limitation, as without it, there's nowhere to go and nothing to be. A being with no limitations is meaningless.",
+      "source_chapter": "RULE 12: Pet a cat when you encounter one on the street",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "vulnerability-is-essential-for-growth",
+      "book_id": "12-rules-for-life",
+      "name": "Vulnerability is essential for growth",
+      "summary": "Being vulnerable allows us to grow and become something more, as limitation is necessary for growth.",
+      "source_chapter": "RULE 12: Pet a cat when you encounter one on the street",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pain-can-be-a-catalyst-for-change",
+      "book_id": "12-rules-for-life",
+      "name": "Pain can be a catalyst for change",
+      "summary": "Pain can prompt us to re-evaluate our lives and make changes, but it's essential to find healthy ways to cope with it.",
+      "source_chapter": "RULE 12: Pet a cat when you encounter one on the street",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "acceptance-of-limitations-is-crucial",
+      "book_id": "12-rules-for-life",
+      "name": "Acceptance of limitations is crucial",
+      "summary": "Accepting our limitations allows us to move forward and find meaning in life, rather than trying to overcome them.",
+      "source_chapter": "RULE 12: Pet a cat when you encounter one on the street",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "prioritize-present-day-tasks-over-long-term-planning",
+      "book_id": "12-rules-for-life",
+      "name": "Prioritize present-day tasks over long-term planning",
+      "summary": "When faced with a crisis, focus on managing it daily to conserve energy and avoid exhaustion. Don't let worries about the future consume you.",
+      "source_chapter": "RULE 12: Pet a cat when you encounter one on the street",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "stay-functional-during-difficult-times",
+      "book_id": "12-rules-for-life",
+      "name": "Stay functional during difficult times",
+      "summary": "In a war of survival, prioritize staying functional over thinking through every detail. Conserve your strength and focus on making progress.",
+      "source_chapter": "\u200cRULE 12: Pet a cat when you encounter one on the street",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "schedule-focused-thinking-time",
+      "book_id": "12-rules-for-life",
+      "name": "Schedule focused thinking time",
+      "summary": "Designate specific times for focused thinking to avoid mental fatigue and ensure clarity. This helps you stay in control and make better decisions.",
+      "source_chapter": "\u200cRULE 12: Pet a cat when you encounter one on the street",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "cultivate-faith-in-the-goodness-of-being",
+      "book_id": "12-rules-for-life",
+      "name": "Cultivate faith in the goodness of Being",
+      "summary": "Place your trust in a higher power or the natural order of things to find courage and resilience. This mindset helps you persevere through pain and loss.",
+      "source_chapter": "\u200cRULE 12: Pet a cat when you encounter one on the street",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "appreciate-small-moments-of-joy",
+      "book_id": "12-rules-for-life",
+      "name": "Appreciate small moments of joy",
+      "summary": "Even in difficult times, look for opportunities to experience pleasure and find meaning. These small moments can bring lightness and hope.",
+      "source_chapter": "\u200cRULE 12: Pet a cat when you encounter one on the street",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "ask-yourself-what-you-can-do-to-improve-not-just-what-you-want",
+      "book_id": "12-rules-for-life",
+      "name": "Ask yourself what you can do to improve, not just what you want",
+      "summary": "Instead of asking for favors or solutions, ask what actions you can take to increase your resolve and character. This requires a willingness to confront your own flaws and weaknesses.",
+      "source_chapter": "\u200cCoda",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "seek-peace-over-being-right",
+      "book_id": "12-rules-for-life",
+      "name": "Seek peace over being right",
+      "summary": "Prioritize finding common ground and resolving conflicts through open communication, rather than insisting on being right. This requires a willingness to listen and compromise.",
+      "source_chapter": "\u200cCoda",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-imperfection",
+      "book_id": "12-rules-for-life",
+      "name": "Embracing Imperfection",
+      "summary": "Recognize and accept your insufficiency to continually rectify it. Painful, but a good deal. \"An aged man is but a paltry thing.\"",
+      "source_chapter": "\u200cCoda",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-three"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "gratitude-over-greed",
+      "book_id": "12-rules-for-life",
+      "name": "Gratitude Over Greed",
+      "summary": "Give instead of receive to make things better and foster improvement.",
+      "source_chapter": "\u200cCoda",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "self-improvement-over-criticism",
+      "book_id": "12-rules-for-life",
+      "name": "Self-Improvement Over Criticism",
+      "summary": "Set your house in perfect order before criticizing the world. Focus on personal growth.",
+      "source_chapter": "\u200cCoda",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-five"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "embracing-uncertainty",
+      "book_id": "12-rules-for-life",
+      "name": "Embracing Uncertainty",
+      "summary": "Focus on the next right move and aim to be strong in the face of adversity.",
+      "source_chapter": "\u200cCoda",
+      "applies_to_tags": [
+        "tag-three",
+        "tag-six"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "personal-responsibility",
+      "book_id": "12-rules-for-life",
+      "name": "Personal Responsibility",
+      "summary": "Take responsibility for your actions and their impact on yourself and others.",
+      "source_chapter": "\u200cCoda",
+      "applies_to_tags": [
+        "tag-two",
+        "tag-four"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-understanding-human-nature",
+      "book_id": "12-rules-for-life",
+      "name": "The Importance of Understanding Human Nature",
+      "summary": "Human behavior is shaped by a complex interplay of factors, including biology, culture, and environment. As Solzhenitsyn noted, 'the line separating good and evil passes not through states, nor between classes, nor between political parties.' This principle emphasizes the need to understand human nature in all its complexity to make informed decisions.",
+      "source_chapter": "\u200cEndnotes",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-power-of-resilience",
+      "book_id": "12-rules-for-life",
+      "name": "The Power of Resilience",
+      "summary": "Resilience is a critical component of personal growth and development. As psychologist Carl Rogers noted, 'the necessary and sufficient conditions of therapeutic personality change' include a state of incongruence, or knowledge that something is wrong and needs to change. This principle highlights the importance of developing resilience in the face of adversity.",
+      "source_chapter": "\u200cEndnotes",
+      "applies_to_tags": [
+        "tag-one"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-impact-of-social-status-on-health",
+      "book_id": "12-rules-for-life",
+      "name": "The Impact of Social Status on Health",
+      "summary": "Social status has a significant impact on health outcomes, with higher social status associated with better physical and mental health. Research by Sapolsky and others has shown that social status can affect the body's stress response, leading to a range of negative health consequences.",
+      "source_chapter": "\u200cEndnotes",
+      "applies_to_tags": [
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-importance-of-emotional-intelligence",
+      "book_id": "12-rules-for-life",
+      "name": "The Importance of Emotional Intelligence",
+      "summary": "Emotional intelligence is critical for effective communication, relationships, and decision-making. As psychologist Daniel Goleman noted, 'emotional intelligence is the ability to monitor and regulate your own emotions and those of others.' This principle emphasizes the importance of developing emotional intelligence in personal and professional settings.",
+      "source_chapter": "\u200cEndnotes",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "the-role-of-serotonin-in-behavior",
+      "book_id": "12-rules-for-life",
+      "name": "The Role of Serotonin in Behavior",
+      "summary": "Serotonin plays a critical role in regulating behavior, including mood, appetite, and aggression. Research by Kravitz and others has shown that serotonin is involved in the regulation of social behavior, including dominance and submission.",
+      "source_chapter": "\u200cEndnotes",
+      "applies_to_tags": [
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "emotional-expression-matters",
+      "book_id": "12-rules-for-life",
+      "name": "Emotional Expression Matters",
+      "summary": "Infants and young children's emotional expression is crucial for healthy development. Research suggests that early emotional regulation can impact future mental health.",
+      "source_chapter": "\u200cEndnotes",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "parental-divorce-affects-children",
+      "book_id": "12-rules-for-life",
+      "name": "Parental Divorce Affects Children",
+      "summary": "Parental divorce has a significant impact on children's well-being, with some studies suggesting long-term effects on emotional security and adjustment.",
+      "source_chapter": "\u200cEndnotes",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "education-matters-for-girls",
+      "book_id": "12-rules-for-life",
+      "name": "Education Matters for Girls",
+      "summary": "Girls tend to outperform boys in education, but this advantage can be lost in certain fields like computer science. Closing the gender gap in education is crucial.",
+      "source_chapter": "\u200cEndnotes",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "aggression-has-a-neurological-basis",
+      "book_id": "12-rules-for-life",
+      "name": "Aggression Has a Neurological Basis",
+      "summary": "Research suggests that aggression has a neurological basis, with studies linking it to personality traits and neuropsychological measures.",
+      "source_chapter": "\u200cEndnotes",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "fathers-play-a-crucial-role-in-child-development",
+      "book_id": "12-rules-for-life",
+      "name": "Fathers Play a Crucial Role in Child Development",
+      "summary": "The absence of fathers can have a significant impact on children's emotional security and adjustment. Fatherly presence is crucial for healthy development.",
+      "source_chapter": "\u200cEndnotes",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "respect-the-power-of-non-violence",
+      "book_id": "12-rules-for-life",
+      "name": "Respect the power of non-violence",
+      "summary": "Non-violent behavior can be a powerful tool for resolving conflicts and promoting peace. As Lao-Tse said, 'The Utility of Non-Existence.' This principle encourages individuals to consider the impact of their actions on others and seek peaceful solutions.",
+      "source_chapter": "\u200cEndnotes",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "avoid-perpetuating-myths-about-history",
+      "book_id": "12-rules-for-life",
+      "name": "Avoid perpetuating myths about history",
+      "summary": "Challenging outdated and inaccurate narratives about the past can help prevent the spread of misinformation and promote a more nuanced understanding of historical events.",
+      "source_chapter": "\u200cEndnotes",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "consider-the-impact-of-technology-on-society",
+      "book_id": "12-rules-for-life",
+      "name": "Consider the impact of technology on society",
+      "summary": "The development and use of new technologies can have significant effects on individuals, communities, and the environment. This principle encourages individuals to think critically about the consequences of their technological advancements.",
+      "source_chapter": "\u200cEndnotes",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "value-diversity-and-inclusivity",
+      "book_id": "12-rules-for-life",
+      "name": "Value diversity and inclusivity",
+      "summary": "Embracing differences and promoting inclusivity can lead to a more harmonious and equitable society. As Yeats said, 'Sailing to Byzantium.' This principle encourages individuals to celebrate their unique perspectives and experiences.",
+      "source_chapter": "\u200cEndnotes",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "seek-out-diverse-perspectives",
+      "book_id": "12-rules-for-life",
+      "name": "Seek out diverse perspectives",
+      "summary": "Broaden your understanding of the world by engaging with different viewpoints and ideas. This fosters personal growth.",
+      "source_chapter": "Endnotes",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "gratitude-matters",
+      "book_id": "12-rules-for-life",
+      "name": "Gratitude Matters",
+      "summary": "Expressing gratitude strengthens relationships and fosters a sense of community.",
+      "source_chapter": "Acknowledgements",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "collaboration-is-key",
+      "book_id": "12-rules-for-life",
+      "name": "Collaboration is Key",
+      "summary": "Working with others complements strengths and weaknesses, leading to better outcomes and perspectives.",
+      "source_chapter": "Acknowledgements",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "treat-yourself-with-empathy",
+      "book_id": "12-rules-for-life",
+      "name": "Treat Yourself with Empathy",
+      "summary": "Be kind and understanding towards yourself, like a close friend, for self-reflection and growth.",
+      "source_chapter": "Copyright Page",
+      "applies_to_tags": [
+        "tag-one",
+        "tag-two"
+      ],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "pursue-meaning-over-expediency-2",
+      "book_id": "12-rules-for-life",
+      "name": "Pursue Meaning Over Expediency",
+      "summary": "Prioritize meaningful experiences over convenience or short-term gains for a fulfilling life.",
+      "source_chapter": "Copyright Page",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "assume-others-know-more-than-you",
+      "book_id": "12-rules-for-life",
+      "name": "Assume Others Know More Than You",
+      "summary": "Approach conversations with an open mind, assuming others may have valuable insights.",
+      "source_chapter": "Copyright Page",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    },
+    {
+      "principle_id": "be-precise-in-your-speech-2",
+      "book_id": "12-rules-for-life",
+      "name": "Be Precise in Your Speech",
+      "summary": "Communicate clearly and accurately to avoid misunderstandings and build trust.",
+      "source_chapter": "Copyright Page",
+      "applies_to_tags": [],
+      "embedding_id": null,
+      "review_status": "pending_review"
+    }
+  ],
+  "extraction_metadata": {
+    "chunking_strategy": "toc",
+    "chunking_reason": "embedded PDF TOC yielded 20 chapter-level entries",
+    "chapter_count": 20,
+    "chunk_count": 65,
+    "model": "llama3.2:3b",
+    "generated_at": "2026-08-05T11:33:50.054748+00:00"
+  }
+}
