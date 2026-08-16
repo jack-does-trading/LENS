@@ -171,7 +171,7 @@ cp .env.example .env
 source .venv/bin/activate
 local-extraction \
   --provider groq \
-  --model llama-3.3-70b-versatile \
+  --model openai/gpt-oss-120b \
   --title "12 Rules for Life" \
   --author "Jordan B. Peterson" \
   --book-id 12-rules-for-life \
@@ -188,23 +188,29 @@ Notes specific to this path:
   it. A missing `.env` is not an error; `--provider ollama` needs nothing
   from it. `--groq-api-key` still works as a one-off override if you'd
   rather not use either.
-- **Free-tier limits** (as of this writing): `llama-3.3-70b-versatile` allows
-  30 requests/minute, 1,000/day — comfortably enough for one book (~40-70
-  calls including retries). The client throttles itself to
-  `--groq-requests-per-minute` (default 30) and retries on HTTP 429 honoring
-  `Retry-After`, up to 5 attempts; a 429 that persists past that (e.g. the
-  daily cap, not just the per-minute one) is raised rather than retried
-  forever.
+- **Model deprecation, 2026-08-16:** Groq decommissioned `llama-3.3-70b-versatile`
+  and `llama-3.1-8b-instant` on this date — requests to either now fail
+  outright. `openai/gpt-oss-120b` (used above) is Groq's recommended
+  same-class replacement for the 70B model; `openai/gpt-oss-20b` replaces
+  the 8B one. If a run suddenly starts failing with a model-not-found-style
+  error, check Groq's [deprecations page](https://console.groq.com/docs/deprecations)
+  before assuming it's this tool's bug.
+- **Free-tier limits** (as of this writing): check Groq's own docs for
+  current per-model rate limits before relying on any specific numbers here —
+  free-tier terms and limits change independently of this file. The client
+  throttles itself to `--groq-requests-per-minute` (default 30) and retries
+  on HTTP 429 honoring `Retry-After`, up to 5 attempts; a 429 that persists
+  past that (e.g. a daily cap, not just the per-minute one) is raised rather
+  than retried forever.
 - **No `--context-length` knob** — Groq manages context server-side per
   model; the flag only applies to `--provider ollama`.
 - **No sleep/power note applies** — there's no local model server to pause;
   ordinary network hiccups are handled by `--timeout` (default 300s) same as
   the Ollama path.
-- Other Groq free-tier models as of this writing: `llama-3.1-8b-instant`
-  (higher daily quota, 14,400/day, similar quality class to a local 8B
-  model), `meta-llama/llama-4-scout-17b-16e-instruct`,
-  `openai/gpt-oss-20b`/`120b`, `qwen/qwen3-32b`. Check Groq's own docs for
-  current limits before relying on the numbers above — free-tier terms change.
+- Other Groq models as of this writing: `openai/gpt-oss-20b`,
+  `meta-llama/llama-4-scout-17b-16e-instruct`, `qwen/qwen3.6-27b`. Check
+  Groq's model list (console.groq.com/docs/models) for what's currently live
+  before picking one — this list goes stale.
 
 ### Automated tests (no Ollama, no network, no real PDF required)
 

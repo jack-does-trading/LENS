@@ -31,7 +31,13 @@ services:
       - key: LLM_PROVIDER
         value: groq
       - key: GROQ_MODEL
-        value: llama-3.3-70b-versatile
+        # Groq decommissioned llama-3.3-70b-versatile (and llama-3.1-8b-instant)
+        # on 2026-08-16; openai/gpt-oss-120b is Groq's recommended same-class
+        # replacement. NOTE: this blueprint value only reaches a service that
+        # was created from this blueprint or re-synced -- if lens-backend
+        # predates/bypassed it, update GROQ_MODEL by hand in the Render
+        # dashboard's Environment tab too, or this line does nothing.
+        value: openai/gpt-oss-120b
       - key: VOYAGE_MODEL
         value: voyage-3
       - key: EMBEDDING_DIMENSION

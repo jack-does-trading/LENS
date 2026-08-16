@@ -115,7 +115,7 @@ Render's free tier sleeps the backend after ~15 minutes idle; a cold start takes
 | Database | Postgres — hosted on Supabase | Relational integrity for the book → principle → log → analysis → suggestion chain |
 | Vector search | `pgvector` extension on the same Postgres instance | Keeps infra to one database at this corpus size (hundreds–low thousands of principle rows); no need for a dedicated vector DB yet |
 | Embeddings | Voyage AI | Purpose-built retrieval embeddings |
-| LLM (synthesis + verification) | Groq (`llama-3.3-70b-versatile`) | Fast hosted inference; instruction-following quality matters here because the strict-JSON, grounded-only constraints are exactly where weaker models fail |
+| LLM (synthesis + verification) | Groq (`openai/gpt-oss-120b`) | Fast hosted inference; instruction-following quality matters here because the strict-JSON, grounded-only constraints are exactly where weaker models fail. (Was `llama-3.3-70b-versatile` until Groq decommissioned it 2026-08-16.) |
 | Book extraction (offline, admin-only) | Ollama (local, default) or Groq (opt-in) | See [Design choices](#design-choices) — deliberately kept separate from the runtime LLM client |
 | Migrations | Alembic | |
 | CI | GitHub Actions | Runs the full backend + frontend test suite on every push/PR — does **not** deploy anything; Render/Vercel redeploy on push via their own native GitHub integration |
