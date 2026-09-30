@@ -6,6 +6,13 @@ from app.json_extraction import JSONExtractionError, extract_json_object
 from app.llm import LLMClient
 from app.models import Book, Principle
 
+# Bump by hand whenever SYNTHESIS_PROMPT_TEMPLATE or _build_retry_reminder
+# changes. It is recorded on every analysis row (migration 008) so that a
+# movement in eval scores can be attributed to a prompt edit rather than
+# silently blamed on the model or on retrieval. An eval harness without this
+# produces numbers nobody can act on.
+PROMPT_VERSION = "synthesis-v1"
+
 SYNTHESIS_PROMPT_TEMPLATE = """\
 SYSTEM:
 You are an advisor analyzing a user's day and writing them a personal

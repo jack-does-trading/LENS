@@ -11,12 +11,23 @@ from app.models import Principle
 
 MAX_SUGGESTIONS = 3
 
+# Hand-bumped alongside ENTAILMENT_PROMPT_TEMPLATE and the rule set below,
+# for the same attribution reason as synthesis.PROMPT_VERSION.
+PROMPT_VERSION = "verification-v2"  # v2: principle_ids added to the entailment prompt
+
 # Lens speaks TO the user as their advisor, not AS the user -- a reflection
 # written in first person ("I'm feeling...", "my mood...") reads like the
 # user's own voice, not advice. Checked with a regex (not left to the LLM's
 # prompt compliance alone) for the same reason quote limits are: rule-based
 # code is deterministic, the model's instruction-following isn't.
-_FIRST_PERSON_PATTERN = re.compile(r"\b(?:I|I'm|I've|I'd|I'll|my|mine|myself|me)\b")
+# Case-insensitive: the synthesis prompt's own example of a violation is
+# "My mood today suggests I'm feeling uncertain", and a sentence-initial "My"
+# slipped through the original case-sensitive pattern -- the single most
+# likely place for this failure to appear, since reflections start sentences.
+# Caught by eval/adversarial/rules.jsonl::reject-first-person-sentence-initial.
+_FIRST_PERSON_PATTERN = re.compile(
+    r"\b(?:I|I'm|I've|I'd|I'll|my|mine|myself|me)\b", re.IGNORECASE
+)
 
 ENTAILMENT_PROMPT_TEMPLATE = """\
 You are a fact-checker verifying that a generated reflection + suggestions
@@ -94,8 +105,17 @@ def _rule_based_issues(
 
 
 def _build_entailment_prompt(reflection: str, suggestions: list[dict], principles: list[Principle]) -> str:
-    principles_block = "\n".join(f"- {p.name}: {p.summary}" for p in principles)
-    suggestions_block = "\n".join(f"- {s['text']} ({s['explanation']})" for s in suggestions) or "(none)"
+    # principle_id appears on both sides deliberately. The prompt asks the
+    # judge to fail output that "cites a principle_id for the wrong principle",
+    # but the blocks used to carry no ids at all -- neither on the principles
+    # nor on the suggestions citing them -- so that instruction was
+    # unfalsifiable and the check silently did nothing. Covered by
+    # eval/adversarial/entailment.jsonl::reject-explanation-describes-wrong-principle.
+    principles_block = "\n".join(f"- id: {p.principle_id}\n  {p.name}: {p.summary}" for p in principles)
+    suggestions_block = (
+        "\n".join(f"- cites {s['principle_id']}: {s['text']} ({s['explanation']})" for s in suggestions)
+        or "(none)"
+    )
     return ENTAILMENT_PROMPT_TEMPLATE.format(
         principles_block=principles_block, reflection_block=reflection, suggestions_block=suggestions_block
     )

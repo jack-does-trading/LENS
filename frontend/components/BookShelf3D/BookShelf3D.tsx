@@ -6,8 +6,16 @@
 
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { Book } from "@/app/api";
+import { usePresence } from "@/app/usePresence";
 import { toCatalog } from "./lensCatalog";
 import { ShelfEngine, type ShelfMode } from "./ShelfEngine";
+
+/** 1240 -> "1.2k". Keeps the status cluster from reflowing the layout
+ *  once the counters outgrow three digits. */
+function formatCount(n: number): string {
+  if (n < 1000) return String(n);
+  return `${(n / 1000).toFixed(n < 10_000 ? 1 : 0).replace(/\.0$/, "")}k`;
+}
 
 function ArrowIcon({ direction }: { direction: "left" | "right" }) {
   return (
@@ -46,6 +54,8 @@ export default function BookShelf3D({
   const [mode, setMode] = useState<ShelfMode>("browse");
   const [ready, setReady] = useState(false);
   const [status, setStatus] = useState("Preparing the shelf");
+
+  const presence = usePresence();
 
   const catalog = useMemo(() => toCatalog(books), [books]);
   // `books` (and so `catalog`) gets a brand-new array reference whenever
@@ -197,8 +207,6 @@ export default function BookShelf3D({
       <section className="browse-caption" aria-hidden={isFocused}>
         <p className="eyebrow">
           <span>{String(activeIndex + 1).padStart(2, "0")}</span>
-          <span className="eyebrow__line" />
-          <span>{String(catalog.length).padStart(2, "0")}</span>
         </p>
         <h2>{activeBook.shortTitle}</h2>
         <p className="browse-caption__author">{activeBook.author}</p>
@@ -285,7 +293,6 @@ export default function BookShelf3D({
 
             <div className="book-details__position">
               <span>{String(selectedIndex! + 1).padStart(2, "0")}</span>
-              <span>{String(catalog.length).padStart(2, "0")}</span>
             </div>
 
             <div className="book-details__copy">
@@ -316,8 +323,28 @@ export default function BookShelf3D({
       </aside>
 
       <div className="experience-status" role="status" aria-live="polite">
-        <span className="experience-status__dot" />
-        <span>{status}</span>
+        <span className="experience-status__item">
+          <span className="experience-status__dot" />
+          <span>{status}</span>
+        </span>
+        {/* Rendered only once a heartbeat has landed -- see usePresence: a
+            sleeping backend shows nothing rather than a misleading zero. */}
+        {presence ? (
+          <>
+            <span className="experience-status__item">
+              <span className="experience-status__value">
+                {formatCount(presence.total_visits)}
+              </span>
+              <span>{presence.total_visits === 1 ? "visit" : "visits"}</span>
+            </span>
+            <span className="experience-status__item">
+              <span className="experience-status__value">
+                {formatCount(presence.people_online)}
+              </span>
+              <span>online</span>
+            </span>
+          </>
+        ) : null}
       </div>
 
       <div className="loading-screen" aria-hidden={ready}>
@@ -329,7 +356,12 @@ export default function BookShelf3D({
         <p>Assembling {catalog.length} {catalog.length === 1 ? "volume" : "volumes"}</p>
       </div>
 
-      <p className="site-footer">made with love ❤️ by @bhavyadeep</p>
+      <p className="site-footer">
+        made with love ❤️ by{" "}
+        <a href="https://x.com/jack__codes" target="_blank" rel="noopener noreferrer">
+          @bhavyadeep
+        </a>
+      </p>
     </div>
   );
 }

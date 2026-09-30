@@ -273,3 +273,32 @@ class AnalysisCreate(BaseModel):
 
 class SuggestionUpdate(BaseModel):
     status: SuggestionStatus
+
+
+class PresencePing(BaseModel):
+    """Body of POST /api/presence. `session_id` is minted by the browser."""
+
+    session_id: UUID
+
+
+class SitePresenceRead(BaseModel):
+    total_visits: int
+    people_online: int
+
+
+class QualityMetricsRead(BaseModel):
+    """Answer to "is the grounded-advice pipeline actually working right now?"
+
+    Counts only -- no reflection text, no journal entries, no principle text.
+    The endpoint is unauthenticated like the rest of this API, so it must not
+    be able to leak anything a visitor wrote.
+    """
+
+    window_days: int
+    total_analyses: int
+    fallback_used: int
+    fallback_rate: float
+    mean_synthesis_attempts: float | None
+    first_attempt_pass_rate: float | None
+    issue_counts: dict[str, int]
+    by_model: dict[str, int]

@@ -27,5 +27,23 @@ class Settings(BaseSettings):
     groq_model: str = "openai/gpt-oss-120b"
     cors_allow_origins: list[str] = ["http://localhost:3000"]
 
+    # --- Langfuse tracing (app/tracing.py) --------------------------------
+    # Off until explicitly switched on, so local dev, the test suite and CI
+    # behave exactly as they did before tracing existed. Two switches rather
+    # than one on purpose: "send nothing" and "send structure but not text" are
+    # different decisions, and a single flag would hide one of them.
+    langfuse_enabled: bool = False
+    langfuse_public_key: str | None = None
+    langfuse_secret_key: str | None = None
+    langfuse_host: str = "https://cloud.langfuse.com"
+    # Defaults to masking. Prompts contain users' journal entries verbatim, so
+    # the safe default has to be the private one -- a deployment that wants the
+    # raw text in the Langfuse UI has to say so, rather than discovering after
+    # the fact that it has been shipping personal data since the day it set a key.
+    langfuse_mask_inputs: bool = True
+    # Tags every trace, so eval runs and real traffic can share one Langfuse
+    # project without eval scores polluting the production distribution.
+    langfuse_environment: str = "production"
+
 
 settings = Settings()

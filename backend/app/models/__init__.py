@@ -205,6 +205,24 @@ class Analysis(Base):
     verification_status: Mapped[VerificationStatus] = mapped_column(
         String, nullable=False
     )
+    # --- Pipeline telemetry (migration 008) ---------------------------------
+    # verification_status alone says "passed" or "fallback_used" and nothing
+    # else, so an analysis that passed on the first attempt and one that only
+    # passed on the fifth are indistinguishable after the fact. That is exactly
+    # the blind spot the README calls out: a fail-closed design turns an outage
+    # into a quality regression, and the fallback template is indistinguishable
+    # from success unless something records *how* the answer was reached.
+    # All nullable: rows written before this migration legitimately have no
+    # telemetry, and a null must read as "unknown", never as zero.
+    synthesis_attempts: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    verification_issues: Mapped[list[str] | None] = mapped_column(JSONB, nullable=True)
+    llm_provider: Mapped[str | None] = mapped_column(String, nullable=True)
+    llm_model: Mapped[str | None] = mapped_column(String, nullable=True)
+    # Hand-bumped constants from synthesis.py/verification.py. Without them a
+    # change in eval scores can't be attributed to a prompt edit vs a model
+    # change vs a retrieval change.
+    prompt_version: Mapped[str | None] = mapped_column(String, nullable=True)
+    latency_ms: Mapped[int | None] = mapped_column(Integer, nullable=True)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), nullable=False, server_default=func.now()
     )
@@ -265,4 +283,31 @@ class StreakProgress(Base):
         nullable=False,
         server_default=func.now(),
         onupdate=func.now(),
+    )
+
+
+class SiteVisit(Base):
+    """One row per browser session that has ever opened the site.
+
+    Deliberately carries no user_id, no IP and no user-agent: the two numbers
+    on the shelf ("visits", "online") need a count of distinct sessions and
+    nothing else, and the app's no-PII stance (see README) applies here too.
+    `session_id` is a random UUID the browser mints into sessionStorage, so it
+    is a visit counter, not a person counter -- a returning user in a new tab
+    is a new visit, which is the conventional meaning of the metric anyway.
+    """
+
+    __tablename__ = "site_visits"
+
+    visit_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
+    )
+    session_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False, unique=True)
+    first_seen: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=func.now()
+    )
+    # Bumped by every heartbeat; "online" is a window over this column, so it
+    # carries the index rather than first_seen.
+    last_seen: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=func.now()
     )

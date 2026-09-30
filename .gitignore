@@ -31,3 +31,19 @@ next-env.d.ts
 .vscode/
 .idea/
 frontend/tsconfig.tsbuildinfo
+
+# Eval harness staging area: raw daily-log text exported straight out of the
+# database, before anyone has reviewed it.
+backend/eval/cases/staging.jsonl
+
+# eval/cases/golden.jsonl and eval/cassettes/ ARE committed -- a labelled
+# golden set and its recorded vectors are only useful if they travel with the
+# repo. That is safe only because every case carries redaction='redacted': the
+# entry text is an LLM paraphrase (eval/redact.py), not what the visitor
+# actually typed. The verbatim originals stay in eval/backups/ below, which is
+# not committed. If a verbatim case is ever added back, ignore golden.jsonl
+# again until scripts/redact_eval_cases.py has rewritten it.
+
+# Point-in-time dumps taken before a bulk principle rewrite. Reversal data,
+# not source: regenerate by running the backup step, don't commit copies.
+backend/eval/backups/

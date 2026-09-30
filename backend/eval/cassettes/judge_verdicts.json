@@ -1,0 +1,82 @@
+{
+  "24db6bdc8e5f9105c0b8d92aff4768fafcdde6f5a63d930b83881856435643e9": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\":\"the plateau of latent potential\",\"hallucination\":true,\"faithfulness\":1,\"suggestion_groundedness\":5,\"reason\":\"Reflection attributes a non\u2011existent \u201cplateau of latent potential\u201d to the book, which isn\u2019t in any principle; suggestion correctly applies start\u2011small.\"}"
+  },
+  "2a5be9d2af85ba1aad36d96b78097dfabb97e81e5d227ecf1eb8a9f42ee69a7a": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\":\"you should begin with the most demanding version of a habit\",\"hallucination\":true,\"faithfulness\":1,\"suggestion_groundedness\":1,\"reason\":\"Reflection and suggestion both contradict the start-small principle.\"}"
+  },
+  "4ae567a7db1e4824b892511b6590aa11656d6342128cf319a68b669e8fffc91a": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\":null,\"hallucination\":false,\"faithfulness\":5,\"suggestion_groundedness\":5,\"reason\":\"Reflection and suggestion align with design-environment principle; no invented or misattributed claims.\"}"
+  },
+  "565560c3e08c44cadcb9fa132b55113dd74419a5cddb1a21bea09b5ec4b0c89e": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\":\"Identity-based habits are about arranging your surroundings so the wanted choice is the easy one.\",\"hallucination\":true,\"faithfulness\":5,\"suggestion_groundedness\":2,\"reason\":\"Explanation misattributes design-environment concept to identity-habits; suggestion poorly linked.\"}"
+  },
+  "6af46d198ead1234a3e9590cf9cb40c61d6c4e14f86019a5d17ba41d64179b70": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\": null, \"hallucination\": false, \"faithfulness\": 5, \"suggestion_groundedness\": 2, \"reason\": \"Reflection aligns with design-environment; no hallucinations, but suggestion misapplies the cited principle.\"}"
+  },
+  "75b7de4d5ab7867f198b72cec3b0bb8b27a8545f35ddc949ff87b1db6fa1c36d": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\":null,\"hallucination\":false,\"faithfulness\":5,\"suggestion_groundedness\":2,\"reason\":\"Reflection matches design\u2011environment principle; suggestion misattributes a environment tactic to identity\u2011habits.\"}"
+  },
+  "79ba6c9980614d3899f9ecfeb3b008d2f22e8198ee15a23e1aefed772249de14": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\":\"The book's four-hour rule for deep work says you cannot concentrate for more than four hours a day\",\"hallucination\":true,\"faithfulness\":1,\"suggestion_groundedness\":2,\"reason\":\"Reflection cites a non-existent book rule; suggestion misapplies identity-habits principle.\"}"
+  },
+  "7a42ebaec55e3b7a73417cfd8a9f63b0877e72b4e82e1cc2ac4dd8628e710e3e": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\":null,\"hallucination\":false,\"faithfulness\":2,\"suggestion_groundedness\":5,\"reason\":\"Reflection claim about evening self\u2011control isn\u2019t in the principles, but suggestion matches design\u2011environment.\"}"
+  },
+  "7d49fd1c4a2982e41f0aec89a394782f028357734f1748cac3b54eb9edc17d5f": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\":null,\"hallucination\":false,\"faithfulness\":5,\"suggestion_groundedness\":5,\"reason\":\"Reflection and suggestion both align with the given principles; no invented claims.\"}"
+  },
+  "9e0f6a9b483e942851ff56bb10a5add5f2aa25935b0d49b413fe7fdd9757ba98": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\":null,\"hallucination\":false,\"faithfulness\":5,\"suggestion_groundedness\":5,\"reason\":\"Reflection and suggestion correctly echo identity-habits without adding unsupported claims.\"}"
+  },
+  "c356e956e73446b3dced2f03e7dfe418aeda9a7a3aa0ca61ad189758dda41606": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\":null,\"hallucination\":false,\"faithfulness\":2,\"suggestion_groundedness\":2,\"reason\":\"Reflection contains unsupported claim; two suggestions misapply cited principles, giving low scores.\"}"
+  },
+  "d7bb6c205de9a841edcb75abc3fcfa74631b792303f3f960a4102e4f63085307": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\":null,\"hallucination\":false,\"faithfulness\":5,\"suggestion_groundedness\":5,\"reason\":\"No invented claims; reflection matches design\u2011environment principle; suggestion correctly applies that principle.\"}"
+  },
+  "d918f475e3d66b0a906c4053d5ab1b17b547bc76e1f15afd91eb73299ea93253": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\":\"A study by Dr Halvorsen in the book found that two-minute habits survive four times as often as ambitious ones.\",\"hallucination\":true,\"faithfulness\":1,\"suggestion_groundedness\":5,\"reason\":\"Reflection fabricates a study not in principles; suggestion correctly applies start-small principle.\"}"
+  },
+  "e88b72c663243707755d70a510d1dc147f273d78d163c0ee9852c8bab75cb174": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\":\"ninety-two percent of people who start with a two-minute version stick with the habit for a year\",\"hallucination\":true,\"faithfulness\":1,\"suggestion_groundedness\":5,\"reason\":\"Reflection includes invented statistic not found in the principles.\"}"
+  },
+  "f0adb5a5f9e27b8685d192b2044679d42801ce6fe0897a2aeeb5247c31f03057": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\":null,\"hallucination\":false,\"faithfulness\":5,\"suggestion_groundedness\":5,\"reason\":\"Reflection and suggestion both correctly paraphrase and apply the start-small principle without invented claims.\"}"
+  },
+  "f270e01a3e86b428f8c7d9f1ed6eedcb97b476bd9470d5e297489d9bbf281eed": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "judge-v2",
+    "raw": "{\"hallucinated_item\": null, \"hallucination\": false, \"faithfulness\": 5, \"suggestion_groundedness\": 5, \"reason\": \"All claims match principles; suggestion correctly applies identity-habits.\"}"
+  }
+}

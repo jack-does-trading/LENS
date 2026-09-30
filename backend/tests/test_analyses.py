@@ -8,8 +8,10 @@ from sqlalchemy.orm import Session
 from app.config import settings
 from app.embeddings import FakeEmbeddingClient
 from app.llm import FakeLLMClient, GroqLLMClient, OllamaLLMClient
+from app.synthesis import PROMPT_VERSION as SYNTHESIS_PROMPT_VERSION
+from app.verification import PROMPT_VERSION as VERIFICATION_PROMPT_VERSION
 from app.main import app
-from app.models import Book, DailyLog, Principle, ReviewStatus, User
+from app.models import Analysis, Book, DailyLog, Principle, ReviewStatus, User
 from app.routers.analyses import MAX_SYNTHESIS_ATTEMPTS, get_embedding_client, get_llm_client
 
 
@@ -207,3 +209,77 @@ def test_create_analysis_rejects_unreviewed_book(
     _override_clients([])
     response = client.post("/api/analyses", json={"log_id": str(log.log_id)})
     assert response.status_code == 400
+
+
+# --- pipeline telemetry (migration 008) ------------------------------------
+# Until these columns existed, an analysis that passed on the first attempt and
+# one that only passed on the fifth were identical rows, and a total provider
+# outage was indistinguishable from normal operation.
+
+
+def test_passing_analysis_records_how_it_was_reached(
+    client: TestClient, db_session: Session, reviewed_principles: list[Principle], daily_log: DailyLog
+) -> None:
+    _override_clients(
+        [
+            '{"reflection": "You noticed the gap between intent and action today.", "suggestions": [{"text": "Write one fact down.", "principle_id": "living-consciously", "explanation": "Attention beats autopilot."}]}',
+            '{"verdict": "PASS"}',
+        ]
+    )
+    response = client.post("/api/analyses", json={"log_id": str(daily_log.log_id)})
+    assert response.status_code == 201
+
+    analysis = db_session.get(Analysis, uuid.UUID(response.json()["analysis_id"]))
+    assert analysis.synthesis_attempts == 1
+    assert analysis.verification_issues == []
+    assert analysis.prompt_version == f"{SYNTHESIS_PROMPT_VERSION}+{VERIFICATION_PROMPT_VERSION}"
+    assert analysis.llm_provider == settings.llm_provider
+    assert analysis.latency_ms is not None and analysis.latency_ms >= 0
+
+
+def test_retried_analysis_records_the_attempt_it_took(
+    client: TestClient, db_session: Session, reviewed_principles: list[Principle], daily_log: DailyLog
+) -> None:
+    """A retry is invisible to the user and used to be invisible afterwards
+    too -- `verification_status` says "passed" either way.
+    """
+    _override_clients(
+        [
+            # Attempt 1: rule-clean but the entailment judge rejects it.
+            '{"reflection": "You noticed something today.", "suggestions": [{"text": "Write one fact down.", "principle_id": "living-consciously", "explanation": "Attention beats autopilot."}]}',
+            '{"verdict": "FAIL"}',
+            # Attempt 2: accepted.
+            '{"reflection": "You noticed the gap between intent and action.", "suggestions": [{"text": "Write one fact down.", "principle_id": "living-consciously", "explanation": "Attention beats autopilot."}]}',
+            '{"verdict": "PASS"}',
+        ]
+    )
+    response = client.post("/api/analyses", json={"log_id": str(daily_log.log_id)})
+    assert response.status_code == 201
+    assert response.json()["verification_status"] == "passed"
+
+    analysis = db_session.get(Analysis, uuid.UUID(response.json()["analysis_id"]))
+    assert analysis.synthesis_attempts == 2
+
+
+def test_provider_outage_is_recorded_not_just_absorbed(
+    client: TestClient, db_session: Session, reviewed_principles: list[Principle], daily_log: DailyLog
+) -> None:
+    """The README's incident, reproduced: every provider call fails, the user
+    still gets a 201 and a reasonable-looking answer. The difference now is
+    that the row says why.
+    """
+    _override_clients([])  # FakeLLMClient raises LLMError on every call
+
+    response = client.post("/api/analyses", json={"log_id": str(daily_log.log_id)})
+    assert response.status_code == 201
+    assert response.json()["verification_status"] == "fallback_used"
+
+    analysis = db_session.get(Analysis, uuid.UUID(response.json()["analysis_id"]))
+    assert analysis.synthesis_attempts == MAX_SYNTHESIS_ATTEMPTS
+    assert analysis.verification_issues
+    assert any("rejected" in issue for issue in analysis.verification_issues)
+
+    # ...and it surfaces as a rate, which is the thing a human would notice.
+    metrics = client.get("/api/metrics/quality").json()
+    assert metrics["fallback_rate"] == 1.0
+    assert metrics["issue_counts"] == {"synthesis_error": 1}

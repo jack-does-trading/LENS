@@ -14,6 +14,7 @@ Lens is a small web app that sits between you and a self-help / nonfiction book 
 - [The idea, in one breath](#the-idea-in-one-breath)
 - [How it actually works](#how-it-actually-works)
 - [Design choices — and why](#design-choices)
+- [Is it any good?](#is-it-any-good)
 - [Tech stack](#tech-stack)
 - [Repository layout](#repository-layout)
 - [Running it locally](#running-it-locally)
@@ -110,6 +111,38 @@ Render's free tier sleeps the backend after ~15 minutes idle; a cold start takes
 
 ---
 
+## Is it any good?
+
+Measured, not asserted. Full method, every caveat and the runbook: [`docs/EVALUATION.md`](docs/EVALUATION.md).
+
+Before any of this, this repo had 124 passing tests. Every one of them proved the code *ran*. Not one measured whether the advice was **good** — and that mattered, because two Groq bugs once made every LLM call in the app fail for an unknown period and *nothing looked broken*. No 500s, no complaints. The pipeline fails closed to a template, and the template is a perfectly reasonable answer.
+
+**Retrieval** — 16 real situations mined from production, each with a human-decided expected principle set:
+
+| | shipped | now |
+|---|---|---|
+| MRR | 0.27 | **0.49** |
+| hit rate (got anything relevant) | 38% | **75%** |
+| precision@k | 0.19 | **0.21** |
+
+That came from finding a bug, not from tuning. A tag match added a flat 2.0 to a cosine similarity that maxes at 1.0, so **one tag hit essentially always outranked pure semantic similarity**. Fixing the tags is what exposed it — recall got *worse* after a data improvement, which is the sort of thing you only ever see if you are measuring. The fix was Reciprocal Rank Fusion, which fuses *ranks* instead of two score scales that were never comparable, plus a deterministic tie-break (the old one was database row order, so the metrics weren't reproducible across machines). The weight that replaced 2.0 was picked by a 45-configuration sweep, not by argument.
+
+**The verifier** catches 10/10 seeded bad outputs and wrongly rejects 0/3 good ones. Architecture §6 is blunt about why that set exists: *"a verification step that never fails anything is not a verification step."* Building it found a real hole — the entailment judge was asked to fail output that "cites a principle_id for the wrong principle" while being shown no `principle_id` at all. The instruction was unfalsifiable and the check did nothing. The adversarial case that isolates it went from 0/5 caught to 5/5 after the fix.
+
+**Faithfulness is scored by an LLM judge, and the judge is graded first.** Cohen's κ against human labels: faithfulness **0.87**, hallucination flag **1.00**, suggestion groundedness **0.95**. κ rather than raw agreement because a judge that answered "no hallucination" unconditionally would score 81% agreement on this set while detecting nothing; κ subtracts chance agreement, so that judge scores 0. There is a test asserting exactly that.
+
+Calibration earned its keep immediately. Version 1 of the judge had κ above the floor on all three fields and was still broken: on every one of the 16 cases it flagged a hallucination **if and only if** it had scored faithfulness ≤ 2. The flag was a deterministic function of its own score, so its κ of 0.73 was re-measuring faithfulness rather than validating the flag — and nothing in the κ table showed that. The fix made the flag evidence-first: quote the invented phrase *before* assigning any score. Hallucination κ went 0.73 → 1.00, faithfulness κ dropped 0.95 → 0.87, and that is the honest trade — one metric got worse, the instrument got trustworthy.
+
+**All of it runs on every pull request**, with no API key and no cost, because the Voyage vectors and the judge's verdicts are recorded once and replayed. A cassette miss raises rather than falling back to a fake vector: a silently-degraded embedding arm still produces a plausible-looking recall number, and that is the worst thing an eval can do. A separate nightly job calls the real providers, which is the only thing that can catch a model being decommissioned under you.
+
+**The gate bites.** Reverting the retrieval fix fails the build with `THRESHOLD BREACH: hit_rate` (0.625 < 0.68), and two of the tests exist specifically to prove the gates can fail.
+
+**Where it's weak**, stated plainly because a benchmark that oversells itself is worse than none: n=16, so everything is directional (±12pp standard error on a rate). Recall@5 is 0.122 against a **ceiling of 0.62** — several cases have 8+ expected principles, so 1.0 is unreachable by construction; §6's 0.80 target is not achievable at this k. All 16 cases were labelled with an LLM-proposed shortlist visible — a human accepted, edited or rejected each suggestion, but nobody labelled a control set blind, so discount for anchoring if you want to. There is one human rater, not the two §6 asked for. The judge is calibrated on 16 hand-authored cases, not yet run over real pipeline output. And the harness measured one thing it cannot fix: two of the sixteen real entries are disclosures of suicidal ideation, and Lens answers them with book advice.
+
+The whole harness adds **zero dependencies** — Cohen's κ is 60 lines of stdlib rather than a scikit-learn install, cassettes are `array` + `gzip` rather than numpy, and the Langfuse export is `urllib` rather than an SDK.
+
+---
+
 ## Tech stack
 
 | Layer | Choice | Why |
@@ -140,6 +173,7 @@ LENS/
 │   ├── Architecture.md          # source of truth: schemas, API contracts, prompts, eval plan
 │   ├── DEPLOYMENT.md            # full deploy runbook (Supabase/Render/Vercel/Groq)
 │   ├── ADDING_A_BOOK.md         # admin walkthrough: PDF → live in the app
+│   ├── EVALUATION.md            # how the advice is measured, and every caveat on the numbers
 │   └── HANDOFF.md               # running build log / implementation decisions
 ├── backend/                     # FastAPI app
 │   ├── app/
@@ -149,11 +183,24 @@ LENS/
 │   │   ├── synthesis.py         # Step B — the one LLM call that drafts a reflection + suggestions
 │   │   ├── verification.py      # Step C — rule checks + grounding LLM call
 │   │   ├── llm.py               # LLMClient protocol; Groq + Ollama implementations
-│   │   └── embeddings.py        # Voyage AI client
+│   │   ├── embeddings.py        # Voyage AI client
+│   │   ├── telemetry.py         # instrumented LLM client, structured logs, issue classification
+│   │   └── tracing.py           # Langfuse export — fails OPEN, masks user text by default
+│   ├── eval/                    # the quality harness (see docs/EVALUATION.md)
+│   │   ├── cases/golden.jsonl   # 16 real, human-labelled, LLM-redacted situations
+│   │   ├── metrics.py           # recall@k, precision@k, MRR, hit rate, recall ceilings
+│   │   ├── harness.py           # seeds a cassette, runs the REAL retriever, renders the report
+│   │   ├── cassettes/           # recorded Voyage vectors + judge verdicts: CI needs no API key
+│   │   ├── judge.py             # the faithfulness rubric (Architecture §6's, unchanged)
+│   │   ├── calibration.py       # Cohen's κ — what licenses trusting the judge at all
+│   │   ├── adversarial/         # seeded bad outputs: does the verifier fail anything?
+│   │   └── thresholds.json      # every gate, as data, so lowering one is a reviewable diff
 │   ├── scripts/
 │   │   ├── submit_local_draft.py   # push a draft JSON into the ingestion queue
-│   │   └── mark_reviewed.py        # flip review_status + generate embeddings (the "publish" step)
-│   └── tests/                   # 119 tests, pytest
+│   │   ├── mark_reviewed.py        # flip review_status + generate embeddings (the "publish" step)
+│   │   ├── eval_report.py          # the full quality report; exits 1 on a threshold breach
+│   │   └── calibrate_judge.py      # record judge verdicts, print κ, gate on it
+│   └── tests/                   # 207 default + 15 `eval` + 4 `eval_live`, pytest
 ├── frontend/                    # Next.js app
 │   ├── app/                     # page.tsx, api.ts, bookCatalogFallback.ts
 │   └── components/BookShelf3D/  # Three.js shelf: engine, cover art, motion, config
@@ -184,7 +231,7 @@ cp .env.local.example .env.local   # NEXT_PUBLIC_API_BASE=http://localhost:8000
 npm run dev
 ```
 
-Backend test suite: `cd backend && pytest` (119 tests, no external services required beyond the local Postgres container — LLM/embedding calls are faked in tests via dependency overrides).
+Backend test suite: `cd backend && pytest` (207 tests, no external services required beyond the local Postgres container — LLM/embedding calls are faked in tests via dependency overrides). The quality gates are a separate, deliberately-excluded run: `pytest -m eval` (15, replayed from committed cassettes, no API key, no cost) and `pytest -m eval_live` (4, real Groq + Voyage). See [`docs/EVALUATION.md`](docs/EVALUATION.md).
 
 Full production deploy steps (Supabase, Render, Vercel, Groq, env vars, CORS, order of operations): [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
 
@@ -201,6 +248,7 @@ Short version: extract → submit → **human review** → publish. The mandator
 | Doc | What's in it |
 |---|---|
 | [`docs/Architecture.md`](docs/Architecture.md) | The authoritative design doc — system diagram, data model, full prompt templates, tech stack rationale, evaluation plan, and the running addendum log of every real deviation from the original design |
+| [`docs/EVALUATION.md`](docs/EVALUATION.md) | How the advice is measured — golden set, retrieval metrics, the calibrated LLM judge and its Cohen's κ, the cassette system, and every caveat |
 | [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) | Step-by-step production deploy runbook |
 | [`docs/ADDING_A_BOOK.md`](docs/ADDING_A_BOOK.md) | Admin walkthrough: taking a book PDF from zero to live in the app |
 | [`docs/HANDOFF.md`](docs/HANDOFF.md) | Build log — what was built, in what order, and why, including every deviation from the original architecture and the reasoning behind it |

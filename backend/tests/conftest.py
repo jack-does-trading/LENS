@@ -1,11 +1,13 @@
 import os
 import uuid
+from types import SimpleNamespace
 from collections.abc import Generator
 
 import pytest
 from fastapi.testclient import TestClient
 from pydantic import ValidationError
 from sqlalchemy import create_engine, text
+from sqlalchemy.engine import make_url
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session, sessionmaker
 
@@ -20,13 +22,43 @@ from app.schemas import PrincipleWriteBase
 
 def _run_migrations(database_url: str) -> None:
     alembic_cfg = Config("alembic.ini")
-    alembic_cfg.set_main_option("sqlalchemy.url", database_url)
+    # Passed as an -x argument, not set_main_option: alembic/env.py resolves
+    # the URL itself and only an -x override outranks its settings-derived
+    # default. A set_main_option() here is silently discarded.
+    alembic_cfg.cmd_opts = SimpleNamespace(x=[f"db_url={database_url}"])
     command.upgrade(alembic_cfg, "head")
+
+
+# Every db_session TRUNCATEs each table in the schema. That is fine against a
+# throwaway container and catastrophic against a shared one, so the suite
+# refuses any host that isn't plainly local unless the operator says otherwise
+# with LENS_ALLOW_REMOTE_TEST_DB=1. Falling back to settings.database_url
+# (i.e. whatever .env points at, which in this repo is the live Supabase
+# instance) is what made a bare `pytest` able to reach production at all --
+# the guard below is what stops it, since the fallback itself is load-bearing
+# for anyone whose local DSN genuinely lives in .env.
+_LOCAL_HOSTS = frozenset({"localhost", "127.0.0.1", "::1", "postgres", "db", ""})
+
+
+def _assert_local(url: str) -> str:
+    if os.environ.get("LENS_ALLOW_REMOTE_TEST_DB") == "1":
+        return url
+    host = make_url(url).host or ""
+    if host not in _LOCAL_HOSTS:
+        raise pytest.UsageError(
+            f"Refusing to run the test suite against non-local database host {host!r}.\n"
+            "Every test TRUNCATEs every table, which would destroy real data and "
+            "hold ACCESS EXCLUSIVE locks on a live instance.\n"
+            "Start the local container (docker compose up -d) and set "
+            "TEST_DATABASE_URL=postgresql://lens:lens@localhost:5432/lens, or set "
+            "LENS_ALLOW_REMOTE_TEST_DB=1 if you are certain the target is disposable."
+        )
+    return url
 
 
 @pytest.fixture(scope="session")
 def database_url() -> str:
-    return os.environ.get("TEST_DATABASE_URL", settings.database_url)
+    return _assert_local(os.environ.get("TEST_DATABASE_URL", settings.database_url))
 
 
 @pytest.fixture(scope="session")
@@ -94,3 +126,22 @@ def seed_user(db_session: Session, seed_book: Book) -> User:
     db_session.commit()
     db_session.refresh(user)
     return user
+
+
+def pytest_collection_modifyitems(items) -> None:
+    """Refuse a test that claims to be both cassette-replayed and live.
+
+    `eval` means "no secrets, no network, runs on every PR"; `eval_live` means
+    "hits a paid provider". A test carrying both is selected by the PR gate,
+    where it either bills on every push or silently skips for want of a key --
+    and a gate that sometimes skips is not a gate. This is a real mistake that
+    happened once: the live judge check inherited a module-level `eval` mark and
+    was quietly making sixteen Groq calls inside the offline suite.
+    """
+    for item in items:
+        markers = {m.name for m in item.iter_markers()}
+        if {"eval", "eval_live"} <= markers:
+            raise pytest.UsageError(
+                f"{item.nodeid} is marked both `eval` and `eval_live`. Move it to its "
+                "own module -- a module-level pytestmark cannot be removed per test."
+            )

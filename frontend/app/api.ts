@@ -96,3 +96,11 @@ export const updateSuggestion = (suggestionId: string, status: "done" | "skipped
 
 export const getStreak = (userId: string, bookId: string) =>
   request<Streak>(`/api/streaks?user_id=${userId}&book_id=${encodeURIComponent(bookId)}`);
+
+export type Presence = { total_visits: number; people_online: number };
+
+export const recordPresence = (sessionId: string) =>
+  request<Presence>("/api/presence", {
+    method: "POST",
+    body: JSON.stringify({ session_id: sessionId }),
+  });

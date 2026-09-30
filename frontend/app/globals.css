@@ -433,13 +433,6 @@ button {
   line-height: 1;
 }
 
-.shelf-experience .eyebrow__line {
-  width: 46px;
-  height: 1px;
-  background: var(--ink);
-  opacity: 0.35;
-}
-
 .shelf-experience .browse-caption h2 {
   max-width: 360px;
   margin: 0;
@@ -715,16 +708,6 @@ button {
   font-size: 9px;
   font-weight: 620;
   letter-spacing: 0.14em;
-}
-
-.shelf-experience .book-details__position span:first-child::after {
-  display: inline-block;
-  width: 34px;
-  height: 1px;
-  margin: 0 9px 3px 13px;
-  content: "";
-  background: currentColor;
-  opacity: 0.28;
 }
 
 /* The panel's scroller. The book blurb plus the form sit in the first screen;
@@ -1101,7 +1084,7 @@ button {
   /* Top-left belongs to the parked wordmark. */
   right: clamp(20px, 3vw, 44px);
   display: flex;
-  gap: 8px;
+  gap: 14px;
   align-items: center;
   color: var(--ink-soft);
   font-size: 8px;
@@ -1109,6 +1092,34 @@ button {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   transition: opacity 300ms ease;
+}
+
+/* Each readout is its own flex row so the label can't wrap away from its
+   number; the cluster's gap does the separating. */
+.shelf-experience .experience-status__item {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* Hairline between readouts instead of a bullet -- same vocabulary as the
+   shelf's other rules, and it disappears cleanly when presence is absent. */
+.shelf-experience .experience-status__item + .experience-status__item::before {
+  width: 1px;
+  height: 8px;
+  margin-right: 8px;
+  content: "";
+  background: currentColor;
+  opacity: 0.22;
+}
+
+/* The number carries the weight; the label stays quiet. Tabular figures stop
+   the cluster twitching sideways as the online count ticks. */
+.shelf-experience .experience-status__value {
+  color: var(--ink);
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
 }
 
 .shelf-experience .experience-status__dot {
@@ -1187,6 +1198,25 @@ button {
   font-weight: 500;
   letter-spacing: 0.04em;
   pointer-events: none;
+}
+
+/* The <p> above is pointer-events: none so it never eats a shelf drag; the
+   handle is the one part that has to take a click, so it opts back in. */
+.shelf-experience .site-footer a,
+.site-footer--classic a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  border-bottom-color: rgba(37, 35, 31, 0.28);
+  pointer-events: auto;
+  transition: border-bottom-color 200ms ease;
+}
+
+.shelf-experience .site-footer a:hover,
+.shelf-experience .site-footer a:focus-visible,
+.site-footer--classic a:hover,
+.site-footer--classic a:focus-visible {
+  border-bottom-color: currentColor;
 }
 
 /* Same credit line for the no-WebGL fallback -- a normal document, so it

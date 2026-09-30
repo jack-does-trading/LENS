@@ -42,6 +42,38 @@ services:
         value: voyage-3
       - key: EMBEDDING_DIMENSION
         value: "1024"
+      # One JSON object per log line, so the pipeline's quality events
+      # (analysis.fallback_used, analysis.verification_failed) can be filtered
+      # and counted in Render's log search instead of eyeballed. Off by default
+      # in app/main.py -- plain text reads better locally and under pytest.
+      - key: LENS_JSON_LOGS
+        value: "1"
+      # --- Langfuse tracing (app/tracing.py) -- OFF unless you set a key ---
+      # Deliberately left at false. Turning this on ships prompts -- which
+      # contain users' journal entries -- to a third party, and that is a
+      # decision to make on purpose rather than inherit from a blueprint. See
+      # docs/Architecture.md section 10, deviation 5.
+      #
+      # Tracing fails OPEN: a Langfuse outage logs a warning and the analysis
+      # still succeeds. It is the one component in this app that does not fail
+      # closed, because a diagnostic must never cost a user their answer.
+      - key: LANGFUSE_ENABLED
+        value: "false"
+      - key: LANGFUSE_PUBLIC_KEY
+        sync: false
+      - key: LANGFUSE_SECRET_KEY
+        sync: false
+      - key: LANGFUSE_HOST
+        value: https://cloud.langfuse.com
+      # Masking ON. Structure, ids, scores, latencies and character counts are
+      # still exported; every piece of user text becomes a stable digest. You
+      # keep every operational metric and lose only the ability to read a prompt
+      # in the Langfuse UI. Set to "false" ONLY if you have decided, explicitly,
+      # that shipping journal text to Langfuse is acceptable for this deployment.
+      - key: LANGFUSE_MASK_INPUTS
+        value: "true"
+      - key: LANGFUSE_ENVIRONMENT
+        value: production
       # Update once the Vercel frontend URL is known (see deployment notes) --
       # a placeholder here would silently block every request with a CORS
       # error, so this is deliberately left for you to fill in rather than

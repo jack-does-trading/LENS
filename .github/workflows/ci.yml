@@ -40,6 +40,81 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python -m pytest -q
 
+  # Quality gates, separate from backend-tests on purpose: a failure here means
+  # "the advice got worse", not "a test broke", and that distinction is lost if
+  # it shows up as one more red dot in a 207-test run. Needs no secrets and
+  # makes no network calls -- retrieval replays vectors recorded in
+  # backend/eval/cassettes/, so the numbers move only when the code, the corpus
+  # or the cassette moves, never because Voyage retrained a model overnight.
+  eval-gates:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: lens
+          POSTGRES_PASSWORD: lens
+          POSTGRES_DB: lens
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U lens -d lens"
+          --health-interval 2s
+          --health-timeout 5s
+          --health-retries 10
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+
+      # The adversarial suites, the golden-set floors, and the judge-vs-human
+      # kappa. Fails the build on a threshold breach; eval/thresholds.json holds
+      # the numbers so lowering a gate is a reviewable diff rather than an edit
+      # buried in an assert. The kappa gate is what keeps every faithfulness
+      # number honest: an uncalibrated LLM judge produces readings, not
+      # measurements, and a judge that scores everything 5 reports a flawless
+      # system and never errors.
+      - name: Golden-set and adversarial gates
+        env:
+          TEST_DATABASE_URL: postgresql://lens:lens@localhost:5432/lens
+        run: python -m pytest -m eval -q
+
+      # Report runs even when the gates fail -- a red build that does not say
+      # which metric moved and by how much is most of the way to useless.
+      - name: Retrieval report
+        if: always()
+        run: |
+          psql postgresql://lens:lens@localhost:5432/postgres -c 'CREATE DATABASE lens_report'
+          python scripts/eval_report.py \
+            --database-url postgresql://lens:lens@localhost:5432/lens_report \
+            --out eval-report.md
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-report
+          path: backend/eval-report.md
+
+      - name: Comment on PR
+        if: always() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('backend/eval-report.md', 'utf8');
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body,
+            });
+
   frontend-checks:
     runs-on: ubuntu-latest
     defaults:

@@ -1,0 +1,126 @@
+name: Nightly eval (live providers)
+
+# Why this job exists, specifically.
+#
+# The PR gate (ci.yml's eval-gates) replays recorded vectors and recorded judge
+# verdicts. That is the right trade for a gate -- deterministic, free, no
+# secrets -- but it buys reproducibility by going blind to the providers. If
+# Groq decommissions a model or Voyage retrains voyage-3, the replayed numbers
+# stay exactly the same while production quietly breaks.
+#
+# That is not hypothetical here. Groq decommissioned llama-3.3-70b-versatile on
+# 2026-08-16 and every LLM call in this app began failing; nothing 500'd, because
+# the fallback template is a perfectly reasonable answer, and the outage was
+# invisible for an unknown period. This job is the thing that would have caught
+# it: it calls the real providers on a schedule and opens an issue when the
+# numbers move, rather than blocking a pull request nobody has opened.
+
+on:
+  schedule:
+    # 03:20 UTC. Off the hour on purpose -- GitHub's shared scheduler is
+    # heavily contended at :00 and queues cron jobs for tens of minutes.
+    - cron: "20 3 * * *"
+  workflow_dispatch:
+
+# A stuck live run must not stack up behind the next night's.
+concurrency:
+  group: nightly-eval
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  live-eval:
+    runs-on: ubuntu-latest
+    # A missing key is a configuration failure, not a reason to report success:
+    # the steps below assert the secrets exist rather than skipping quietly.
+    env:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+      LLM_PROVIDER: groq
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+
+      - name: Check the secrets are actually present
+        run: |
+          test -n "$GROQ_API_KEY" || { echo "GROQ_API_KEY secret is missing"; exit 1; }
+          test -n "$VOYAGE_API_KEY" || { echo "VOYAGE_API_KEY secret is missing"; exit 1; }
+
+      # Everything live, in one pytest run. Three things are being asked:
+      #   - the entailment judge still catches semantic hallucination (Groq)
+      #     -- tests/test_adversarial.py
+      #   - the faithfulness judge still agrees with the human labels (Groq)
+      #     -- tests/test_eval_judge_live.py
+      #   - live voyage-3 still reproduces the recorded query vectors (Voyage)
+      #     -- tests/test_eval_retrieval_live.py
+      #
+      # Needs no database. The Voyage check compares live vectors against the
+      # cassette directly rather than re-running retrieval, which keeps this job
+      # off any real Postgres -- pointing a scheduled job at the production
+      # instance to measure quality is how a read-only eval becomes an incident.
+      - name: Live provider evals
+        id: live
+        run: |
+          set -o pipefail
+          python -m pytest -m eval_live -q -v 2>&1 | tee live-eval.log
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nightly-eval-logs
+          path: backend/live-eval.log
+
+      # Opens (or reuses) a single tracking issue rather than one per night --
+      # a job that files an issue every 24h until someone looks trains people to
+      # filter the notifications, which is the opposite of the point.
+      - name: Open an issue on a live regression
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const read = (p) => { try { return fs.readFileSync(p, 'utf8').slice(-4000); } catch { return '(no log)'; } };
+            const title = 'Nightly live eval is failing';
+            const body = [
+              `Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              '',
+              'The cassette-replayed PR gate is still green, so this is a **provider-side**',
+              'change or a stale cassette, not a code regression. Check in this order:',
+              '',
+              '1. Is the Groq model in `app/config.py` still served? (It has been',
+              '   decommissioned under us once already.)',
+              '2. Did Voyage change `voyage-3`? Re-record with `scripts/record_cassettes.py`.',
+              '3. Did the judge drift? Re-record with `scripts/calibrate_judge.py --record`',
+              '   and check κ before trusting the new verdicts.',
+              '',
+              '<details><summary>pytest -m eval_live</summary>',
+              '',
+              '```',
+              read('backend/live-eval.log'),
+              '```',
+              '</details>',
+            ].join('\n');
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'nightly-eval',
+            });
+            if (existing.data.length) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: existing.data[0].number, body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['nightly-eval'],
+              });
+            }

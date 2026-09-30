@@ -415,7 +415,12 @@ export default function Home() {
 
         {error && books.length === 0 && <p className="error">{error}</p>}
         {result}
-        <p className="site-footer site-footer--classic">made with love ❤️ by @bhavyadeep</p>
+        <p className="site-footer site-footer--classic">
+          made with love ❤️ by{" "}
+          <a href="https://x.com/jack__codes" target="_blank" rel="noopener noreferrer">
+            @bhavyadeep
+          </a>
+        </p>
       </main>
     );
   }

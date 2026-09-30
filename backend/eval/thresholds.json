@@ -1,0 +1,28 @@
+{
+  "_comment": [
+    "Ship gates from docs/Architecture.md SS6, as data rather than scattered asserts.",
+    "A threshold is only allowed to move in a commit that explains why. Lowering one",
+    "to make CI green is the failure mode this file exists to make visible in review.",
+    "Recorded against n=16 golden cases; recall_at_k is the SS6 number and LENS is",
+    "nowhere near it, so it is tracked as a ratchet (see retrieval_recall_at_5_floor)",
+    "rather than an aspiration that fails every build."
+  ],
+  "retrieval": {
+    "top_k": 5,
+    "recall_at_k_target": 0.8,
+    "recall_at_k_floor": 0.1,
+    "precision_at_k_floor": 0.18,
+    "mrr_floor": 0.42,
+    "hit_rate_floor": 0.68
+  },
+  "verifier": {
+    "catch_rate_floor": 0.9,
+    "false_positive_rate_max": 0.1
+  },
+  "judge": {
+    "human_kappa_floor": 0.6,
+    "mean_faithfulness_floor": 4.0,
+    "mean_suggestion_groundedness_floor": 4.0,
+    "hallucination_free_rate_floor": 1.0
+  }
+}

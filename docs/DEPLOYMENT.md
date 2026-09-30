@@ -136,6 +136,50 @@ here.
    frontend request will fail with a CORS error despite everything else
    working.
 
+## 6b. Langfuse (optional tracing) — off unless you turn it on
+
+Skip this entirely and the app behaves exactly as it did before tracing existed.
+`LANGFUSE_ENABLED` defaults to `false`, and a half-configured setup (enabled, but
+missing a key) logs a warning and stays off rather than 401-ing on every analysis.
+
+If you do want traces:
+
+1. Create a free project at https://cloud.langfuse.com and copy its **public** and
+   **secret** keys.
+2. In Render → Environment, set `LANGFUSE_ENABLED=true`, `LANGFUSE_PUBLIC_KEY`,
+   `LANGFUSE_SECRET_KEY`. Leave `LANGFUSE_HOST` at `https://cloud.langfuse.com`
+   unless you self-host.
+3. Leave **`LANGFUSE_MASK_INPUTS=true`** unless you have made a deliberate
+   decision otherwise. Read the next paragraph before changing it.
+
+**What you are agreeing to.** Prompts contain users' journal entries verbatim. With
+masking on, every piece of user text is replaced by a stable 16-character digest
+before anything leaves the server — ids, scores, latencies, retry counts and
+character counts all still arrive, so every operational metric works and the only
+thing you lose is the ability to read an actual prompt in the UI. With masking
+**off**, you are sending real people's journal entries to a third party. That is a
+legitimate choice for a deployment you own end to end; it is not a default.
+
+**It cannot break an analysis.** Tracing is the one component in this app that
+fails *open*: every call is wrapped, a failure logs at WARNING, and the request
+proceeds. The export is also queued on FastAPI's `BackgroundTasks`, so it runs
+after the response has already been sent and adds no latency. If Langfuse is down,
+you lose traces and nothing else. There is a test that switches tracing on, makes
+Langfuse unreachable, and asserts the request still returns 201.
+
+What a trace contains: one `analysis` trace per request, a `retrieval` span (a
+span, not a generation — Step A runs no model), one generation per LLM call
+numbered so a retry visibly self-corrects, and scores for `verification_passed`,
+`synthesis_attempts` and `latency_ms`. Scores rather than metadata, because a score
+is what Langfuse can chart and alert on — and "what fraction of analyses fell back
+this week" is the exact question that went unanswered during the Groq outage.
+
+Verification issues are exported as classified rule *names* (`quote_too_long`,
+`first_person_voice`), never the raw strings, which interpolate ids and excerpts of
+generated text.
+
+---
+
 ## 7. GitHub Actions — what it does here, exactly
 
 `.github/workflows/ci.yml` (already added) runs on every push and PR to
@@ -143,7 +187,32 @@ here.
 - **backend-tests**: spins up a `pgvector/pgvector:pg16` service container
   (same image as local dev), installs `backend/requirements.txt`, runs the
   full `pytest` suite against it.
+- **eval-gates**: the quality harness. Same pgvector service, no secrets, no
+  network calls — retrieval replays Voyage vectors and the faithfulness judge
+  replays Groq verdicts, both recorded in `backend/eval/cassettes/`. Runs
+  `pytest -m eval`, then publishes `eval-report.md` as an artifact and (on a PR)
+  as a comment, with `if: always()` so a failing build still says which metric
+  moved and by how much.
 - **frontend-checks**: `npm ci`, `tsc --noEmit`, `next build`.
+
+**Why eval-gates is a separate job from backend-tests.** A failure there means
+*the advice got worse*, not *a test broke*, and that distinction is lost if it
+arrives as one more red dot in a 207-test run. Floors live in
+`backend/eval/thresholds.json` as data, so lowering one to make CI green is a
+reviewable diff rather than an edit buried in an `assert`. Full detail:
+[`EVALUATION.md`](EVALUATION.md).
+
+`.github/workflows/nightly-eval.yml` is the other half, and the only part of CI
+that needs secrets. It runs `pytest -m eval_live` against real Groq and real
+Voyage on a schedule (03:20 UTC, plus `workflow_dispatch`), needs
+`GROQ_API_KEY` and `VOYAGE_API_KEY` as repo secrets, and needs no database. It
+exists because the PR gate is blind to the providers by construction: replaying
+recorded vectors is what makes it deterministic and free, and is exactly why it
+cannot notice Groq decommissioning a model or Voyage retraining `voyage-3`. That
+is not hypothetical — `llama-3.3-70b-versatile` was decommissioned under this app
+on 2026-08-16 and every LLM call began failing silently. On failure the job opens
+(or comments on) a single `nightly-eval`-labelled tracking issue rather than
+filing one every night, and the body lists the three things to check in order.
 
 **This does not deploy anything, on purpose.** Once you connect the repo
 in both Vercel and Render's dashboards (steps 5-6 above), *they* watch

@@ -9,7 +9,7 @@ import urllib.error
 import urllib.request
 from typing import Protocol
 
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import defer, Session
 
 from app.models import Principle
 
@@ -185,7 +185,16 @@ def generate_embeddings_for_book(db: Session, book_id: str, client: EmbeddingCli
     instance), so it just marks "this principle currently has an embedding"
     rather than referencing anything external.
     """
-    principles = db.query(Principle).filter(Principle.book_id == book_id).all()
+    # defer(embedding): this function overwrites every vector it touches, so
+    # loading the existing 1024-float column first is pure cost -- and pgvector
+    # serialises vectors as text on the wire, which turns a few hundred rows
+    # into tens of megabytes and drops pooled Supabase connections outright.
+    principles = (
+        db.query(Principle)
+        .options(defer(Principle.embedding))
+        .filter(Principle.book_id == book_id)
+        .all()
+    )
     if not principles:
         return 0
 

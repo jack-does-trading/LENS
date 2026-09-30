@@ -58,9 +58,45 @@ def test_rank_fusion_weights_tag_matches_higher() -> None:
     tag_scores = {"p1": 1.0}
     embedding_scores = {"p2": 0.99, "p1": 0.5}
     ranked = rank_fusion(tag_scores, embedding_scores, top_k=5, tag_weight=2.0)
-    # p1 = 2*1.0 + 0.5 = 2.5; p2 = 0.99 -> p1 ranks first despite p2's raw
-    # embedding score being nearly a perfect match.
+    # Under RRF: p1 = 2/(60+1) + 1/(60+2) = .0328+.0161; p2 = 1/(60+1) = .0164.
+    # p1 still ranks first despite p2's raw embedding score being nearly a
+    # perfect match -- but note that what carries p1 is now its *rank* in each
+    # arm, not the magnitude 2.0, so the tag arm can no longer win purely
+    # because its units are larger than cosine's.
     assert ranked == ["p1", "p2"]
+
+
+def test_rank_fusion_gives_tied_tag_scores_identical_weight() -> None:
+    """A broad category tag-matches many principles at the same flat score.
+    Those ties must not be ordered by the tag arm -- it has no information to
+    order them with -- so the embedding arm decides, in its own order.
+    """
+    tag_scores = {"p1": 1.0, "p2": 1.0, "p3": 1.0}
+    embedding_scores = {"p3": 0.9, "p2": 0.8, "p1": 0.7}
+    assert rank_fusion(tag_scores, embedding_scores, top_k=3, tag_weight=2.0) == [
+        "p3",
+        "p2",
+        "p1",
+    ]
+
+
+def test_rank_fusion_is_deterministic_regardless_of_input_order() -> None:
+    """Ties used to resolve by dict insertion order, i.e. DB row order, which
+    made every retrieval metric irreproducible across databases."""
+    forward = rank_fusion({"a": 1.0, "b": 1.0, "c": 1.0}, {}, top_k=2)
+    reverse = rank_fusion({"c": 1.0, "b": 1.0, "a": 1.0}, {}, top_k=2)
+    assert forward == reverse == ["a", "b"]
+
+
+def test_rank_fusion_tag_arm_cannot_be_outscaled_by_unit_choice() -> None:
+    """The regression this replaced: cosine tops out near 0.4 in practice
+    while a tag hit scored a flat 2.0, so one tag match outranked every
+    embedding result no matter how strong. With rank-based fusion a
+    tag_weight of 0 leaves the embedding order completely intact.
+    """
+    embedding_scores = {"p1": 0.40, "p2": 0.39, "p3": 0.38}
+    ranked = rank_fusion({"p3": 1.0}, embedding_scores, top_k=3, tag_weight=0.0)
+    assert ranked == ["p1", "p2", "p3"]
 
 
 def test_rank_fusion_respects_top_k() -> None:

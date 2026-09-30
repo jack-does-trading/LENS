@@ -773,4 +773,59 @@ Use this when building the pass/fail matrix:
 
 ---
 
+## 19. Evaluation Harness (architecture §6 / §10 — ✅ BUILT)
+
+Architecture §6 specified an evaluation plan and a ship gate, and none of it existed. 124 tests proved the code ran; nothing measured whether the advice was good. Meanwhile a real incident — two Groq bugs, every LLM call failing, no 500s, no complaints, because the fallback template is a perfectly reasonable answer — showed exactly what that costs. This is the section covering what got built. Numbers, runbook and caveats: `docs/EVALUATION.md`. Design deviations: `Architecture.md` §10.
+
+### 19.1 What shipped, in build order
+
+| Phase | Artefact | What it does |
+|---|---|---|
+| 0 | `008_analysis_telemetry.py`, `app/telemetry.py`, `app/routers/metrics.py` | `analyses` records *how* an analysis was reached — attempts, issues, provider, model, prompt version, latency. `InstrumentedLLMClient` times every call. `GET /api/metrics/quality` answers "is it working right now" in one request, counts only. |
+| 1 | `scripts/export_eval_cases.py`, `scripts/label_eval_cases.py`, `eval/cases.py`, `eval/redact.py`, `scripts/redact_eval_cases.py` | 16 real situations mined from `daily_logs`, hand-labelled with an expected principle set, then LLM-paraphrased so the set can be committed at all. |
+| 2 | `eval/metrics.py`, `eval/cassettes.py`, `eval/harness.py`, `scripts/record_cassettes.py`, `scripts/measure_retrieval.py` | recall@k / precision@k / MRR / hit rate against recorded Voyage vectors. No API key, no cost, byte-identical across runs. |
+| 3a/3b | `eval/adversarial/`, `tests/test_adversarial.py` | Seeded bad outputs, rule half and entailment half, kept separate because `_rule_based_issues` short-circuits. |
+| 3c/3d | `eval/judge.py`, `eval/calibration.py`, `eval/judge_cases.py`, `scripts/calibrate_judge.py` | The faithfulness judge, and Cohen's κ against human labels — the thing that licenses trusting it. |
+| 4 | `eval/thresholds.json`, `ci.yml` `eval-gates`, `nightly-eval.yml` | Floors as data, enforced on every PR with a published report; live providers checked nightly. |
+| 5 | `app/tracing.py` | One Langfuse trace per analysis. Fails open, masks by default. |
+| 6 | `docs/EVALUATION.md`, `Architecture.md` §10, this section | The write-up. |
+
+### 19.2 Test counts
+
+`pytest` → **207**. `pytest -m eval` → **15** (cassette-replayed, no secrets). `pytest -m eval_live` → **4** (real Groq + Voyage). The default run excludes both via `addopts` in `pytest.ini`, so `pytest` means the same thing locally and in CI.
+
+`tests/conftest.py` gained a `pytest_collection_modifyitems` hook that **refuses** a test marked both `eval` and `eval_live`. That is not hypothetical: the live judge check inherited a module-level `eval` mark and was quietly making sixteen Groq calls inside the supposedly-offline suite, taking it from 0.06s to 166s. A marker cannot be removed from a single test in a marked module, so the live test moved to its own file (`tests/test_eval_judge_live.py`).
+
+### 19.3 The numbers that moved
+
+Retrieval, n=16: recall@k 0.07 → **0.122**, precision 0.19 → **0.213**, MRR 0.27 → **0.49**, hit rate 38% → **75%**. That came from finding a latent fusion bug, not from tuning: a tag hit added a flat 2.0 against a cosine that maxes at 1.0, so one tag match essentially always won. `scripts/retag_principles.py` fixing the placeholder tags is what *exposed* it (recall@3 fell 0.12 → 0.06 after the retag). The fix is RRF + competition ranking + a deterministic tie-break; see `Architecture.md` §10 deviation 3 for why `TAG_MATCH_WEIGHT = 0.5` does not mean what it looks like it means.
+
+Judge calibration: faithfulness κ **0.87**, hallucination κ **1.00**, groundedness κ **0.95**, all above the 0.60 floor.
+
+Verifier: catch rate 10/10, false-positive rate 0/3.
+
+### 19.4 Things that will bite the next person
+
+**pgvector serialises vectors as text on the wire.** ~20 KB per row. Loading a few hundred principles with their embeddings in one result set drops a pooled Supabase connection outright, and the error it produces (`SSL SYSCALL error`, `Can't assign requested address`) looks like a network problem rather than a payload problem. This bit **five** separate places: `generate_embeddings_for_book`, `retrieve_principles`, the labeller, the retag script and the cassette recorder. The fix is `defer(Principle.embedding)` wherever the vectors are not actually read, and `CHUNK = 50` two-pass pagination where they are.
+
+**Flush expensive artefacts on produce, not at end of run.** The labeller printed `kept -> golden.jsonl` while only appending to an in-memory list, with the real write deferred to `_finish()` — so a dropped connection mid-session silently destroyed every label made in that run. Same class of bug destroyed cached Voyage query vectors in `measure_retrieval.py`. Both now write after every single item. Human labelling and paid API calls are the two most expensive things in this repo; neither may depend on a loop completing.
+
+**Don't seed the eval from `tools/local_extraction/output/*.json`.** Those committed files still carry the placeholder `applies_to_tags` that the retag replaced, so seeding from them would silently restore the bug the retag fixed. The cassette is recorded from Postgres and there is a test asserting the recorded tags are not placeholders.
+
+**numpy is not a dependency**, and `pyyaml` is only transitive. The plan assumed pgvector pulled numpy in. It does not. Cassettes are stdlib `array` + `gzip`; thresholds are JSON not YAML.
+
+**`alembic/env.py` called `fileConfig()` with `disable_existing_loggers` at its default**, i.e. True — which disabled every `app.*` logger for the rest of any in-process run. Invisible on Render, where migrations are their own command; load-bearing under pytest, where `conftest.py` migrates in-process, and the effect was that any test asserting on an application log line quietly stopped asserting anything. Fixed, with a regression test, because this project's whole Phase 0 argument is that the log line at the moment of fallback is what makes an outage visible.
+
+**Re-recording a cassette is a deliberate, reviewable commit.** The cassette changes, the numbers change, the diff says which. A cassette miss always **raises** — never a default, never a fallback vector — because a silently-degraded embedding arm still produces a plausible-looking recall number, which is the single worst failure an eval harness can have.
+
+### 19.5 Immediate next steps for the harness
+
+1. **Score faithfulness over the golden set.** The judge is calibrated and `eval/thresholds.json` already holds `mean_faithfulness_floor: 4.0`. What is missing is running the real pipeline over all 16 cases, recording the outputs, judging them and adding that gate.
+2. **Grow the golden set, don't re-litigate it.** All 16 cases were labelled with `--assist` (LLM-proposed shortlist, human accepts/edits/rejects each one) and the owner has accepted those labels as ground truth — no un-assisted control set is planned, and `compare_labels.py` is deliberately not on this list. The useful work is re-running `export_eval_cases.py` as usage accrues and labelling the new cases the same way.
+3. **A second human rater** on the judge calibration set, for the human-vs-human κ §6 actually asked for.
+4. **Semantic category matching.** `frontend/app/page.tsx:238` takes free-text `category` while `tag_match_scores` does exact lowercased set intersection, which permanently caps the tag arm.
+5. **Crisis handling.** Two of the sixteen real entries disclose suicidal ideation and Lens answers them with book advice. This is a product decision, not an engineering one, and it is the most important item on this list.
+
+---
+
 *End of handoff. Start by reading `docs/Architecture.md` §4/§2/§8 and this file's §16 for the recommended next step.*
