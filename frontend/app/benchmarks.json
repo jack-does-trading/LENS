@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-09-30T18:30:47Z",
+  "commit": "8b4475a",
+  "prompt_versions": {
+    "synthesis": "synthesis-v1",
+    "verification": "verification-v2",
+    "judge": "judge-v2"
+  },
+  "golden_set": {
+    "n": 16,
+    "books": 6,
+    "principles": 1213,
+    "embedding_dimension": 1024,
+    "expected_per_case_min": 3,
+    "expected_per_case_max": 10,
+    "all_redacted": true,
+    "standard_error_pp": 12.5
+  },
+  "retrieval": {
+    "top_k": 5,
+    "baseline_top_k": 3,
+    "candidates": 25,
+    "tag_match_weight": 0.5,
+    "rrf_k": 60,
+    "metrics": [
+      {
+        "key": "recall_at_k",
+        "label": "recall@5",
+        "now": 0.122,
+        "before": 0.065,
+        "floor": 0.1,
+        "ceiling": 0.62,
+        "target": 0.8
+      },
+      {
+        "key": "precision_at_k",
+        "label": "precision@5",
+        "now": 0.213,
+        "before": 0.188,
+        "floor": 0.18
+      },
+      {
+        "key": "mrr",
+        "label": "MRR",
+        "now": 0.494,
+        "before": 0.271,
+        "floor": 0.42
+      },
+      {
+        "key": "hit_rate",
+        "label": "hit rate",
+        "now": 0.75,
+        "before": 0.375,
+        "floor": 0.68,
+        "percent": true
+      }
+    ],
+    "recall_vs_ceiling": 0.212
+  },
+  "verifier": {
+    "catch_rate": 1.0,
+    "caught": 10,
+    "seeded": 10,
+    "catch_rate_floor": 0.9,
+    "false_positive_rate": 0.0,
+    "wrongly_rejected": 0,
+    "clean_cases": 3,
+    "false_positive_rate_max": 0.1,
+    "known_gaps": [],
+    "entailment_cases": 7,
+    "prompt_version": "verification-v2"
+  },
+  "judge": {
+    "rubric_version": "judge-v2",
+    "model": "openai/gpt-oss-120b",
+    "kappa_floor": 0.6,
+    "n": 16,
+    "fields": [
+      {
+        "field": "faithfulness",
+        "kind": "ordinal",
+        "kappa": 0.8698,
+        "raw_agreement": 0.8125,
+        "band": "almost perfect"
+      },
+      {
+        "field": "hallucination",
+        "kind": "nominal",
+        "kappa": 1.0,
+        "raw_agreement": 1.0,
+        "band": "almost perfect"
+      },
+      {
+        "field": "suggestion_groundedness",
+        "kind": "ordinal",
+        "kappa": 0.9451,
+        "raw_agreement": 0.75,
+        "band": "almost perfect"
+      }
+    ]
+  },
+  "tests": {
+    "default": 207,
+    "eval": 24,
+    "eval_live": 4
+  }
+}

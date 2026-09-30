@@ -76,7 +76,7 @@ docker compose up -d                       # Postgres + pgvector
 export TEST_DATABASE_URL=postgresql://lens:lens@localhost:5432/lens
 
 python -m pytest                           # 207 tests. No evals, no network.
-python -m pytest -m eval                   # 15 gates. Cassette-replayed, free.
+python -m pytest -m eval                   # 24 gates. Cassette-replayed, free.
 python -m pytest -m eval_live              # 4 checks. Needs GROQ + VOYAGE keys.
 ```
 
@@ -399,6 +399,49 @@ measure quality is how a read-only eval becomes an incident.
 
 ---
 
+## 7b. The numbers on the site
+
+`/benchmarks` publishes all of this to visitors: retrieval before/after with the
+ceiling drawn on each bar, the judge's κ table, the verifier's catch rate, live
+production health, and the caveats from §10. The shelf's top-right status cluster
+carries the two headline figures and links to it.
+
+Two data sources, deliberately distinguished on screen because they have
+different reliability:
+
+- **`frontend/app/benchmarks.json`** — a committed snapshot written by
+  `scripts/export_benchmarks.py`. Imported at build time, so the page renders
+  instantly and survives a sleeping backend.
+- **`GET /api/metrics/quality`** — live, fetched client-side. The only part of
+  the page that can be missing, and it says so rather than rendering zeros:
+  "0% fallback over 0 analyses" is arithmetic pretending to be information.
+
+A snapshot is a copy, and a copy goes stale silently — which on a public page is
+a published claim rather than an internal one. So
+`tests/test_benchmarks_snapshot.py` recomputes every figure and fails if the file
+disagrees, inside the same `pytest -m eval` run that enforces the floors. Change
+retrieval, the rubric or a threshold and it fails until you re-export:
+
+```bash
+docker compose exec -T db psql -U lens -d postgres -c 'CREATE DATABASE lens_bench'
+python scripts/export_benchmarks.py \
+  --database-url postgresql://lens:lens@localhost:5432/lens_bench
+```
+
+It also asserts the published floors match `eval/thresholds.json` (a page showing
+a stricter gate than exists is a lie the code gates cannot catch), that recall is
+never published without its ceiling, that nothing shows a green mark over a
+breached floor, that the golden set is still entirely redacted, and that the test
+counts are not stale.
+
+One rounding note, because it caused a real discrepancy: κ is exported to four
+decimal places, not three. The page displays two, and rounding twice loses the
+half — 0.9451 → 0.945 → "0.94", where the CLI report prints the same figure as
+0.95. A published number that disagrees with the report it came from is a small
+error that looks exactly like a big one.
+
+---
+
 ## 8. Production telemetry
 
 Gates catch regressions before merge. They say nothing about right now.
@@ -536,5 +579,8 @@ Stated plainly, because a harness that oversells itself is worse than none.
 | `app/tracing.py` | Langfuse export |
 | `scripts/eval_report.py` | the full Markdown report; exits 1 on a breach |
 | `scripts/calibrate_judge.py` | record judge verdicts, print κ, gate on it |
+| `scripts/export_benchmarks.py` | freeze every figure into `frontend/app/benchmarks.json` |
+| `tests/test_benchmarks_snapshot.py` | recomputes every published figure; fails on drift |
+| `frontend/app/benchmarks/page.tsx` | the `/benchmarks` page |
 | `scripts/record_cassettes.py` | dump the corpus from a database |
 | `scripts/measure_retrieval.py` | live measurement + parameter sweep |

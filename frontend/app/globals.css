@@ -1384,3 +1384,397 @@ button {
   .shelf-experience .focus-controls { grid-column: 1 / -1; grid-row: 3; }
   .shelf-experience .focus-controls span:nth-child(2) { display: none; }
 }
+
+/* ---------------------------------------------------------------------------
+   Benchmarks page (/benchmarks).
+
+   Its own token block rather than reusing .shelf-experience's, because those
+   are scoped to the shelf and this route never mounts it. Same palette and the
+   same serif, so the two pages read as one site.
+
+   position: fixed + overflow-y: auto because body sets overflow: hidden -- the
+   shelf owns the viewport globally, so a scrolling route has to make its own.
+   --------------------------------------------------------------------------- */
+
+.bench {
+  --paper: #eee8db;
+  --paper-light: #f6f1e7;
+  --ink: #25231f;
+  --ink-soft: rgba(37, 35, 31, 0.62);
+  --hairline: rgba(37, 35, 31, 0.19);
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --good: #4f7a46;
+  --bad: #a4483a;
+
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.4), transparent 42%),
+    var(--paper);
+}
+
+.bench__inner {
+  max-width: 760px;
+  /* Side gutter never collapses below 20px, so nothing touches the edge on a
+     phone; the bottom pad clears iOS's home indicator. */
+  margin: 0 auto;
+  padding: clamp(32px, 7vw, 76px) clamp(20px, 5vw, 32px) 96px;
+}
+
+.bench__head h1 {
+  margin: 18px 0 0;
+  font-family: var(--serif);
+  font-size: clamp(38px, 9vw, 62px);
+  font-weight: 430;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+}
+
+.bench__back {
+  display: inline-block;
+  color: var(--ink-soft);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 160ms ease;
+}
+
+.bench__back:hover { color: var(--ink); }
+
+.bench__lede {
+  margin: 18px 0 0;
+  max-width: 58ch;
+  font-size: clamp(16px, 2.4vw, 18px);
+  line-height: 1.55;
+}
+
+.bench__meta {
+  margin: 14px 0 0;
+  color: var(--ink-soft);
+  font-size: 11.5px;
+  line-height: 1.7;
+}
+
+.bench__meta code {
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: rgba(37, 35, 31, 0.07);
+  font-size: 11px;
+}
+
+.bench__why {
+  margin-top: 30px;
+  padding: 20px 22px;
+  border-left: 2px solid var(--hairline);
+  background: var(--paper-light);
+}
+
+.bench__why p { margin: 0; font-size: 15px; line-height: 1.6; }
+
+.bench__section { margin-top: 52px; }
+
+.bench__section h2 {
+  margin: 0 0 12px;
+  font-family: var(--serif);
+  font-size: clamp(24px, 4.6vw, 31px);
+  font-weight: 450;
+  letter-spacing: -0.02em;
+}
+
+.bench__subhead {
+  margin: 28px 0 10px;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.bench__note {
+  margin: 12px 0 0;
+  max-width: 62ch;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.62;
+}
+
+.bench__note code,
+.bench__weak code {
+  padding: 1px 4px;
+  border-radius: 3px;
+  background: rgba(37, 35, 31, 0.07);
+  font-size: 12.5px;
+}
+
+.bench__callout {
+  margin: 22px 0 0;
+  padding: 18px 20px;
+  border-radius: 4px;
+  background: var(--paper-light);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  font-size: 14.5px;
+  line-height: 1.62;
+}
+
+/* --- metric cards --------------------------------------------------------- */
+
+.bench__metrics {
+  display: grid;
+  gap: 14px;
+  margin: 22px 0 0;
+  padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  list-style: none;
+}
+
+.bench__metric {
+  padding: 16px 18px 14px;
+  border-radius: 4px;
+  background: var(--paper-light);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+
+.bench__metric-head {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.bench__metric-label {
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.bench__metric-delta {
+  color: var(--good);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.bench__metric-figure {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  margin-top: 8px;
+}
+
+.bench__metric-now {
+  font-family: var(--serif);
+  /* Tabular figures so a row of cards does not jitter when one value is
+     narrower than its neighbour. */
+  font-size: 34px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.bench__metric-before,
+.bench__metric-foot {
+  color: var(--ink-soft);
+  font-size: 11px;
+}
+
+.bench__metric-foot { margin: 8px 0 0; }
+
+/* The bar is scaled to the metric's own ceiling, and the floor is drawn as a
+   tick on it -- so "passing" is something you can see, not just read. */
+.bench__bar {
+  position: relative;
+  height: 4px;
+  margin-top: 12px;
+  border-radius: 2px;
+  background: rgba(37, 35, 31, 0.12);
+}
+
+.bench__bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 2px;
+  background: var(--ink);
+}
+
+.bench__bar-floor {
+  position: absolute;
+  top: -3px;
+  width: 1px;
+  height: 10px;
+  background: var(--bad);
+  opacity: 0.55;
+}
+
+.bench__ok { color: var(--good); font-weight: 650; }
+.bench__bad { color: var(--bad); font-weight: 650; }
+
+/* --- table ---------------------------------------------------------------- */
+
+.bench__table {
+  width: 100%;
+  margin: 22px 0 0;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+.bench__table th {
+  padding: 0 10px 8px 0;
+  border-bottom: 1px solid var(--hairline);
+  color: var(--ink-soft);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.bench__table td {
+  padding: 11px 10px 11px 0;
+  border-bottom: 1px solid rgba(37, 35, 31, 0.09);
+  vertical-align: baseline;
+}
+
+.bench__table td:first-child { font-weight: 560; }
+
+.bench__kind {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+.bench__figure { font-variant-numeric: tabular-nums; }
+
+.bench__table .bench__ok,
+.bench__table .bench__bad {
+  margin-left: 7px;
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* --- stat pairs ----------------------------------------------------------- */
+
+.bench__pair {
+  display: grid;
+  gap: 14px;
+  margin-top: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.bench__stat {
+  display: flex;
+  padding: 18px 20px;
+  border-radius: 4px;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--paper-light);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+
+.bench__stat-value {
+  font-family: var(--serif);
+  font-size: 36px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.bench__stat-label { font-size: 13px; }
+.bench__stat-foot { color: var(--ink-soft); font-size: 11px; }
+
+.bench__pending {
+  margin: 20px 0 0;
+  padding: 16px 18px;
+  border-left: 2px solid var(--hairline);
+  max-width: 62ch;
+  color: var(--ink-soft);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+.bench__issues {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13.5px;
+}
+
+.bench__issues li {
+  display: flex;
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(37, 35, 31, 0.09);
+  justify-content: space-between;
+}
+
+/* --- caveats -------------------------------------------------------------- */
+
+.bench__section--weak { margin-top: 56px; }
+
+.bench__weak {
+  display: grid;
+  gap: 14px;
+  margin: 22px 0 0;
+  padding: 0;
+  max-width: 64ch;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.bench__weak li {
+  padding-left: 16px;
+  border-left: 2px solid var(--hairline);
+  color: var(--ink-soft);
+}
+
+.bench__weak strong { color: var(--ink); }
+
+.bench__foot {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--hairline);
+}
+
+.bench__foot p { margin: 0 0 12px; max-width: 62ch; font-size: 13.5px; line-height: 1.6; }
+.bench__foot a { color: inherit; }
+
+@media (max-width: 760px) {
+  .bench__metric-now { font-size: 29px; }
+  .bench__stat-value { font-size: 30px; }
+  .bench__table { font-size: 12.5px; }
+  /* The rubric-field column carries two lines of text; let the numbers shrink
+     before the labels wrap into unreadability. */
+  .bench__table th:nth-child(3) { width: 26%; }
+}
+
+/* ---------------------------------------------------------------------------
+   Additions to the shelf's top-right status cluster: the measured hit rate
+   (static, from the committed snapshot), live grounded rate, and the link to
+   /benchmarks.
+   --------------------------------------------------------------------------- */
+
+.shelf-experience .experience-status__link {
+  color: var(--ink);
+  font-weight: 650;
+  text-decoration: none;
+  transition: opacity 160ms ease;
+}
+
+.shelf-experience .experience-status__link:hover { opacity: 0.6; }
+
+@media (max-width: 760px) {
+  /* Five readouts do not fit beside the wordmark at phone width. Presence is
+     the least informative pair, so it is what gives way -- the measured
+     numbers and the link to the evidence are the point of the cluster. */
+  .shelf-experience .experience-status__item--presence { display: none; }
+  .shelf-experience .experience-status { gap: 10px; }
+}

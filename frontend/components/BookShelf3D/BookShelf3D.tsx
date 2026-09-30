@@ -7,6 +7,8 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { Book } from "@/app/api";
 import { usePresence } from "@/app/usePresence";
+import { useQuality } from "@/app/useQuality";
+import { benchmarks } from "@/app/benchmarksData";
 import { toCatalog } from "./lensCatalog";
 import { ShelfEngine, type ShelfMode } from "./ShelfEngine";
 
@@ -16,6 +18,14 @@ function formatCount(n: number): string {
   if (n < 1000) return String(n);
   return `${(n / 1000).toFixed(n < 10_000 ? 1 : 0).replace(/\.0$/, "")}k`;
 }
+
+/** The one benchmark worth putting in a corner: of sixteen real situations,
+ *  how many surfaced at least one principle a human agreed was relevant. Read
+ *  from the committed snapshot (frontend/app/benchmarks.json) rather than
+ *  fetched, so it is on screen instantly and survives a sleeping backend --
+ *  and a test refuses to let that file drift from what the eval harness
+ *  actually computes. */
+const HIT_RATE = benchmarks.retrieval.metrics.find((m) => m.key === "hit_rate")?.now ?? null;
 
 function ArrowIcon({ direction }: { direction: "left" | "right" }) {
   return (
@@ -56,6 +66,7 @@ export default function BookShelf3D({
   const [status, setStatus] = useState("Preparing the shelf");
 
   const presence = usePresence();
+  const quality = useQuality();
 
   const catalog = useMemo(() => toCatalog(books), [books]);
   // `books` (and so `catalog`) gets a brand-new array reference whenever
@@ -331,13 +342,13 @@ export default function BookShelf3D({
             sleeping backend shows nothing rather than a misleading zero. */}
         {presence ? (
           <>
-            <span className="experience-status__item">
+            <span className="experience-status__item experience-status__item--presence">
               <span className="experience-status__value">
                 {formatCount(presence.total_visits)}
               </span>
               <span>{presence.total_visits === 1 ? "visit" : "visits"}</span>
             </span>
-            <span className="experience-status__item">
+            <span className="experience-status__item experience-status__item--presence">
               <span className="experience-status__value">
                 {formatCount(presence.people_online)}
               </span>
@@ -345,6 +356,29 @@ export default function BookShelf3D({
             </span>
           </>
         ) : null}
+
+        {/* Measured, not claimed. The hit rate comes from the committed eval
+            snapshot so it is never blank; the grounded figure is live, and only
+            appears once at least one analysis exists in the window -- a
+            percentage over zero analyses is arithmetic, not information. */}
+        {HIT_RATE !== null ? (
+          <span className="experience-status__item">
+            <span className="experience-status__value">{Math.round(HIT_RATE * 100)}%</span>
+            <span>hit rate</span>
+          </span>
+        ) : null}
+        {quality && quality.total_analyses > 0 ? (
+          <span className="experience-status__item">
+            <span className="experience-status__value">
+              {Math.round((1 - quality.fallback_rate) * 100)}%
+            </span>
+            <span>grounded</span>
+          </span>
+        ) : null}
+        <a className="experience-status__item experience-status__link" href="/benchmarks">
+          <span>Benchmarks</span>
+          <span aria-hidden="true">&#8599;</span>
+        </a>
       </div>
 
       <div className="loading-screen" aria-hidden={ready}>

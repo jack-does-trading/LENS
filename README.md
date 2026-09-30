@@ -113,7 +113,7 @@ Render's free tier sleeps the backend after ~15 minutes idle; a cold start takes
 
 ## Is it any good?
 
-Measured, not asserted. Full method, every caveat and the runbook: [`docs/EVALUATION.md`](docs/EVALUATION.md).
+Measured, not asserted. The numbers are also **on the site itself** at [`/benchmarks`](https://lens-taupe-eight.vercel.app/benchmarks), generated from the harness rather than typed in by hand. Full method, every caveat and the runbook: [`docs/EVALUATION.md`](docs/EVALUATION.md).
 
 Before any of this, this repo had 124 passing tests. Every one of them proved the code *ran*. Not one measured whether the advice was **good** — and that mattered, because two Groq bugs once made every LLM call in the app fail for an unknown period and *nothing looked broken*. No 500s, no complaints. The pipeline fails closed to a template, and the template is a perfectly reasonable answer.
 
@@ -199,10 +199,13 @@ LENS/
 │   │   ├── submit_local_draft.py   # push a draft JSON into the ingestion queue
 │   │   ├── mark_reviewed.py        # flip review_status + generate embeddings (the "publish" step)
 │   │   ├── eval_report.py          # the full quality report; exits 1 on a threshold breach
-│   │   └── calibrate_judge.py      # record judge verdicts, print κ, gate on it
+│   │   ├── calibrate_judge.py      # record judge verdicts, print κ, gate on it
+│   │   └── export_benchmarks.py    # freeze the numbers into frontend/app/benchmarks.json
 │   └── tests/                   # 207 default + 15 `eval` + 4 `eval_live`, pytest
 ├── frontend/                    # Next.js app
 │   ├── app/                     # page.tsx, api.ts, bookCatalogFallback.ts
+│   │   ├── benchmarks/page.tsx  # /benchmarks — the eval numbers, on the site itself
+│   │   └── benchmarks.json      # committed snapshot; a test refuses to let it go stale
 │   └── components/BookShelf3D/  # Three.js shelf: engine, cover art, motion, config
 ├── tools/local_extraction/      # standalone CLI: PDF → draft principles JSON (never deployed, never imported by backend/)
 └── books/                       # source PDFs for extraction (gitignored — never committed, never uploaded anywhere)
@@ -231,7 +234,7 @@ cp .env.local.example .env.local   # NEXT_PUBLIC_API_BASE=http://localhost:8000
 npm run dev
 ```
 
-Backend test suite: `cd backend && pytest` (207 tests, no external services required beyond the local Postgres container — LLM/embedding calls are faked in tests via dependency overrides). The quality gates are a separate, deliberately-excluded run: `pytest -m eval` (15, replayed from committed cassettes, no API key, no cost) and `pytest -m eval_live` (4, real Groq + Voyage). See [`docs/EVALUATION.md`](docs/EVALUATION.md).
+Backend test suite: `cd backend && pytest` (207 tests, no external services required beyond the local Postgres container — LLM/embedding calls are faked in tests via dependency overrides). The quality gates are a separate, deliberately-excluded run: `pytest -m eval` (24, replayed from committed cassettes, no API key, no cost) and `pytest -m eval_live` (4, real Groq + Voyage). See [`docs/EVALUATION.md`](docs/EVALUATION.md).
 
 Full production deploy steps (Supabase, Render, Vercel, Groq, env vars, CORS, order of operations): [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
 
@@ -248,6 +251,7 @@ Short version: extract → submit → **human review** → publish. The mandator
 | Doc | What's in it |
 |---|---|
 | [`docs/Architecture.md`](docs/Architecture.md) | The authoritative design doc — system diagram, data model, full prompt templates, tech stack rationale, evaluation plan, and the running addendum log of every real deviation from the original design |
+| [`/benchmarks`](https://lens-taupe-eight.vercel.app/benchmarks) | The numbers, live on the site — retrieval before/after, the judge's κ, the verifier's catch rate, production health, and the caveats |
 | [`docs/EVALUATION.md`](docs/EVALUATION.md) | How the advice is measured — golden set, retrieval metrics, the calibrated LLM judge and its Cohen's κ, the cassette system, and every caveat |
 | [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) | Step-by-step production deploy runbook |
 | [`docs/ADDING_A_BOOK.md`](docs/ADDING_A_BOOK.md) | Admin walkthrough: taking a book PDF from zero to live in the app |

@@ -104,3 +104,19 @@ export const recordPresence = (sessionId: string) =>
     method: "POST",
     body: JSON.stringify({ session_id: sessionId }),
   });
+
+/** Operational health of the grounded-advice pipeline. Counts only -- the
+ *  endpoint is unauthenticated, so it deliberately exposes no user text. */
+export type QualityMetrics = {
+  window_days: number;
+  total_analyses: number;
+  fallback_used: number;
+  fallback_rate: number;
+  mean_synthesis_attempts: number | null;
+  first_attempt_pass_rate: number | null;
+  issue_counts: Record<string, number>;
+  by_model: Record<string, number>;
+};
+
+export const getQualityMetrics = (windowDays = 30) =>
+  request<QualityMetrics>(`/api/metrics/quality?window_days=${windowDays}`);

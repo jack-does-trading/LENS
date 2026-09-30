@@ -789,10 +789,11 @@ Architecture §6 specified an evaluation plan and a ship gate, and none of it ex
 | 4 | `eval/thresholds.json`, `ci.yml` `eval-gates`, `nightly-eval.yml` | Floors as data, enforced on every PR with a published report; live providers checked nightly. |
 | 5 | `app/tracing.py` | One Langfuse trace per analysis. Fails open, masks by default. |
 | 6 | `docs/EVALUATION.md`, `Architecture.md` §10, this section | The write-up. |
+| 6b | `scripts/export_benchmarks.py`, `frontend/app/benchmarks/page.tsx`, `tests/test_benchmarks_snapshot.py` | `/benchmarks` on the live site, generated from the harness. A committed snapshot, with a test that recomputes every published figure so the page cannot drift from the gates. |
 
 ### 19.2 Test counts
 
-`pytest` → **207**. `pytest -m eval` → **15** (cassette-replayed, no secrets). `pytest -m eval_live` → **4** (real Groq + Voyage). The default run excludes both via `addopts` in `pytest.ini`, so `pytest` means the same thing locally and in CI.
+`pytest` → **207**. `pytest -m eval` → **24** (cassette-replayed, no secrets). `pytest -m eval_live` → **4** (real Groq + Voyage). The default run excludes both via `addopts` in `pytest.ini`, so `pytest` means the same thing locally and in CI.
 
 `tests/conftest.py` gained a `pytest_collection_modifyitems` hook that **refuses** a test marked both `eval` and `eval_live`. That is not hypothetical: the live judge check inherited a module-level `eval` mark and was quietly making sixteen Groq calls inside the supposedly-offline suite, taking it from 0.06s to 166s. A marker cannot be removed from a single test in a marked module, so the live test moved to its own file (`tests/test_eval_judge_live.py`).
 
